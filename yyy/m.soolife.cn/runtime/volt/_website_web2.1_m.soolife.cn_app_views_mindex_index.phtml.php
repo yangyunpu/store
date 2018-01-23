@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/mindex/index.css"/>
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+
+
+</head>
+<body>
+<div class="header_top">
+	<div class="wrap">
+		<!-- 头部1 -->
+		<div class="head">
+			<div class="search">
+				<img src="../public/img/mindex/shop_serach_small@2x.png">
+				<div class="sael">搜索商品</div>
+			</div>
+			<?php if ($is_login) { ?>
+			<div class="advices adewr">
+				<a href="/i/msg/msgindex.html">
+					<img src="../public/img/mindex/Group 7.png">
+				</a>
+			</div>
+			<?php } else { ?>
+			<div class="advices adewr">
+				<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>">
+					<img src="../public/img/mindex/Group 7.png">
+				</a>
+			</div>
+			<?php } ?>
+			<!-- 遮罩 -->
+			<div class="lj_shad">
+				<div class="seekser"></div>
+				<!-- 消息 -->
+				<?php if ($is_login) { ?>
+				<a href="/i/msg/msgindex.html">
+					<div class="messages"></div>
+				</a>
+				<?php } else { ?>
+				<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>">
+					<div class="messages"></div>
+				</a>
+				<?php } ?>
+			</div>
+		</div>
+		<!-- 头部2 -->
+		<div class="head2">
+			<div class="lj_seek">
+				<a href="#">
+					<img src="../public/img/mindex/shop_search-white@2x.png">
+				</a>
+			</div>
+			<?php if ($is_login) { ?>
+			<div class="advices">
+				<a href="/i/msg/msgindex.html">
+					<img src="../public/img/mindex/Group 7.png">
+				</a>
+			</div>
+			<?php } else { ?>
+			<div class="advices">
+				<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>">
+					<img src="../public/img/mindex/Group 7.png">
+				</a>
+			</div>
+			<?php } ?>
+			<?php if ($is_login) { ?>
+			<div class="lj_shad2">
+				<p class="seeked"></p>
+				<a href="/i/msg/msgindex.html"><p class="messaged"></p></a>
+			</div>
+			<?php } else { ?>
+			<div class="lj_shad2">
+				<p class="seeked"></p>
+				<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>"><p class="messaged"></p></a>
+			</div>
+			<?php } ?>
+
+		</div>
+		<!-- 下载框 -->
+		<div class="download_box" id="download-nav">
+			<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+			<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+			<div class="word">下载如此生活客户端</div>
+			<div class="sure" id="download-nav-sure"><div>下载</div></div>
+		</div>
+		<div class="scroller">
+			<!-- 领星币 -->
+			<div class="drowstar">
+				<div class="getstar">
+					<div class="coin">
+						<p>
+							<span class="num"><?= $coin ?></span><span class="coins">星币</span>
+						</p>
+						<?php if ($is_login && !$is_get) { ?>
+						<p class="register" >今日可领取<?= $get_state[0]['coin'] ?>星币</p>
+						<?php } elseif ($is_login && $is_get) { ?>
+						<p class="register" >今日已领取<?= $get_state[0]['coin'] ?>星币,明日可领取<?= $get_state[1]['coin'] ?>星币</p>
+						<?php } elseif (!$is_login) { ?>
+						<p class="register" >登录后可领取星币</p>
+						<?php } ?>
+					</div>
+					<a href="<?= $url_m ?>/huilife/newcollar.html"><div class="getbtn">领星币</div></a>
+				</div>
+			</div>
+
+			<div class="lj_star">
+
+				<div class="conver">
+					<!-- 星兑换?? -->
+					<div>
+						<?php if ($data['app.index.banner']['children']['app.index.banner.ex_change']['items']) { ?>
+						<a href="<?= $data['app.index.banner']['children']['app.index.banner.ex_change']['items']['0']['mobile_link'] ?>">
+							<img src="<?= $data['app.index.banner']['children']['app.index.banner.ex_change']['items']['0']['picture'] ?>">
+						</a>
+						<?php } ?>
+					</div>
+					<!-- 星换购 -->
+					<div>
+						<?php if ($data['app.index.banner']['children']['app.index.banner.ex_buy']['items']) { ?>
+						<a href=" <?= $data['app.index.banner']['children']['app.index.banner.ex_buy']['items']['0']['mobile_link'] ?> ">
+							<img src="<?= $data['app.index.banner']['children']['app.index.banner.ex_buy']['items']['0']['picture'] ?>">
+						</a>
+						<?php } ?>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- 星粉联 -->
+
+		<div class="unite">
+			<?php if ($data['app.index.banner']['children']['app.index.banner.star_link']['items']) { ?>
+			<!-- <a href="<?= $data['app.index.banner']['children']['app.index.banner.star_link']['items']['0']['mobile_link'] ?>"> -->
+			<a href="<?= $url_m ?>/starfans/index.html">
+				<img src="<?= $data['app.index.banner']['children']['app.index.banner.star_link']['items']['0']['picture'] ?>">
+			</a>
+			<?php } ?>
+		</div>
+
+		<!-- 惠赚钱 -->
+
+		<div class="make_money">
+			<?php if ($data['app.index.banner']['children']['app.index.banner.ch_money']['items']) { ?>
+			<!-- <a href="<?= $data['app.index.banner']['children']['app.index.banner.ch_money']['items']['0']['mobile_link'] ?>"> -->
+			<a href="<?= $url_money ?>/lead/leader.html">
+				<img src="<?= $data['app.index.banner']['children']['app.index.banner.ch_money']['items']['0']['picture'] ?>">
+			</a>
+			<?php } ?>
+		</div>
+
+
+		<?php if ($data['app.index.banner']['children']['app.index.banner.carousel']['items']) { ?>
+		<!-- 轮播 -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+
+				<?php foreach ($data['app.index.banner']['children']['app.index.banner.carousel']['items'] as $d) { ?>
+					<div class="swiper-slide">
+						<!-- <a href="<?= $d['mobile_link'] ?>"> -->
+						<a href="<?php if ($d['mobile_link'] != 'http://') { ?><?= $d['mobile_link'] ?> <?php } ?>">
+							<img src="<?= $d['picture'] ?>">
+						</a>
+					</div>
+				<?php } ?>
+
+			</div>
+			<!-- 分页效果 -->
+			<div class="pagination"></div>
+		</div>
+		<?php } ?>
+
+
+		<!-- 星集结 -->
+		<div class="lj_mass">
+			<?php if ($data['app.index.banner']['children']['app.index.banner.assemble']['items']) { ?>
+			<!-- <a href="<?= $data['app.index.banner']['children']['app.index.banner.assemble']['items']['0']['mobile_link'] ?>"> -->
+			<a href="<?= $url_sales ?>/m/lucky/index.html">
+				<img src="<?= $data['app.index.banner']['children']['app.index.banner.assemble']['items']['0']['picture'] ?>">
+			</a>
+			<?php } ?>
+		</div>
+
+
+
+		<!-- 满额抽奖 -->
+		<div class="lj_draw">
+			<?php if ($data['app.index.banner']['children']['app.index.banner.quota_draw']['items']) { ?>
+			<!-- <a href="<?= $data['app.index.banner']['children']['app.index.banner.quota_draw']['items']['0']['mobile_link'] ?>"> -->
+			<a href="<?= $url_m ?>/lottery/homepage.html">
+				<img src="<?= $data['app.index.banner']['children']['app.index.banner.quota_draw']['items']['0']['picture'] ?>">
+			</a>
+			<?php } ?>
+		</div>
+
+
+
+
+		<!-- 星星杀 -->
+		<div class="star_skll">
+			<?php if ($data['app.index.banner']['children']['app.index.banner.star_haggle']['items']) { ?>
+			<!-- <a href="<?= $data['app.index.banner']['children']['app.index.banner.star_haggle']['items']['0']['mobile_link'] ?>"> -->
+			<a href="<?= $url_m ?>/starkill/start.html">
+				<img src="<?= $data['app.index.banner']['children']['app.index.banner.star_haggle']['items']['0']['picture'] ?>">
+			</a>
+			<?php } ?>
+		</div>
+
+
+		<!-- 四小块 -->
+		<div class="nubble">
+			<ul>
+			<!-- 星主题 -->
+				<li>
+					<?php if ($data['app.index.banner']['children']['app.index.banner.star_theme']['items']) { ?>
+					<a href="<?= $url_m ?>/startheme/startheme.html">
+						<img src="<?= $data['app.index.banner']['children']['app.index.banner.star_theme']['items']['0']['picture'] ?>">
+					</a>
+					<?php } ?>
+				</li>
+				<!-- 海外精品 -->
+				<li>
+					<?php if ($data['app.index.banner']['children']['app.index.banner.overseas']['items']) { ?>
+					<a href="<?= $url_m ?>/overseagoods.html">
+						<img src="<?= $data['app.index.banner']['children']['app.index.banner.overseas']['items']['0']['picture'] ?>">
+					</a>
+					<?php } ?>
+				</li>
+				<!-- 星特惠 -->
+				<li>
+					<?php if ($data['app.index.banner']['children']['app.index.banner.star_gratia']['items']) { ?>
+					<a href="<?= $url_m ?>/starhui/starhui.html">
+						<img src="<?= $data['app.index.banner']['children']['app.index.banner.star_gratia']['items']['0']['picture'] ?>">
+					</a>
+					<?php } ?>
+				</li>
+				<!-- 品牌特惠 -->
+				<li>
+					<?php if ($data['app.index.banner']['children']['app.index.banner.brand_gratia']['items']) { ?>
+					<a href="<?= $url_m ?>/brandhui/brandhui.html">
+						<img src="<?= $data['app.index.banner']['children']['app.index.banner.brand_gratia']['items']['0']['picture'] ?>">
+					</a>
+					<?php } ?>
+				</li>
+			</ul>
+		</div>
+
+		<div class="classify">
+			<!-- 衣 -->
+			<div class="clothes">
+				<div class="clo_title">
+					<div class="clo">
+					<?php if ($data['app.index.drees']['children']['app.index.drees.column01']['items']) { ?>
+							<img src="<?= $data['app.index.drees']['children']['app.index.drees.column01']['items']['0']['picture'] ?>">
+					<?php } ?>
+					</div>
+					<div class="lj_clothes">
+							<a href="/second/secondindex.html?firstcode=<?= $catedata['cloth'] ?>"><img src="../public/img/mindex/Home_Dress@2x.png"></a>
+					</div>
+				</div>
+				<!-- 星范儿 -->
+				<div class="lj_banners">
+					<?php if ($data['app.index.drees']['children']['app.index.drees.column02']['items']) { ?>
+					<!-- <a href="<?= $data['app.index.drees']['children']['app.index.drees.column02']['items'][0]['mobile_link'] ?>"> -->
+					<a href="<?= $url_m ?>/starmodel/starmodel.html">
+						<img src="<?= $data['app.index.drees']['children']['app.index.drees.column02']['items'][0]['picture'] ?>">
+					</a>
+					<?php } ?>
+				</div>
+
+				<div class="lj_ban">
+					<!-- 左一 -->
+					<div class="star-one">
+					<?php if ($data['app.index.drees']['children']['app.index.drees.centre01']['items']) { ?>
+						<a href="<?= $data['app.index.drees']['children']['app.index.drees.centre01']['items']['0']['mobile_link'] ?>">
+							<img src="<?= $data['app.index.drees']['children']['app.index.drees.centre01']['items']['0']['picture'] ?>">
+						</a>
+						<?php } ?>
+					</div>
+					<div class="star_two">
+						<!-- 右上 -->
+						<div class="star_twotop">
+						<?php if ($data['app.index.drees']['children']['app.index.drees.centre02']['items']) { ?>
+							<a href="<?= $data['app.index.drees']['children']['app.index.drees.centre02']['items']['0']['mobile_link'] ?>">
+								<img src="<?= $data['app.index.drees']['children']['app.index.drees.centre02']['items']['0']['picture'] ?>">
+							</a>
+						<?php } ?>
+						</div>
+
+						<div class="star_twobottom">
+							<div class="star_twoleft">
+							<?php if ($data['app.index.drees']['children']['app.index.drees.centre03']['items']) { ?>
+								<a href="<?= $data['app.index.drees']['children']['app.index.drees.centre03']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.drees']['children']['app.index.drees.centre03']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+							<div class="star_tworight">
+							<?php if ($data['app.index.drees']['children']['app.index.drees.centre04']['items']) { ?>
+								<a href="<?= $data['app.index.drees']['children']['app.index.drees.centre04']['items']['0']['mobile_link'] ?>">
+										<img src="<?= $data['app.index.drees']['children']['app.index.drees.centre04']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php if ($star) { ?>
+				<div class="lj_clik">
+					<?php if ($star['cloth']) { ?>
+					<a href="<?= $url_m ?>/startheme/themechild/<?= $star['cloth']['id'] ?>.html">
+						<img src="<?= $star['cloth']['banner'] ?>">
+					</a>
+					<?php } ?>
+					<img src="../public/img/mindex/san@2x.png" class="triangle">
+				</div>
+				<div class="clothes_child">
+					<ul>
+						<?php if ($star['cloth']) { ?>
+						<?php foreach ($star['cloth']['goods'] as $d) { ?>
+						<li>
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html" >
+							<img src="<?= $d['sku_img'] ?>">
+							<p>￥<?= $d['price'] ?></p>
+						</a>
+						</li>
+						<?php } ?>
+						<?php } ?>
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+			<!-- 食 -->
+			<div class="clothes">
+
+					<div class="clo_title">
+						<div class="clo">
+						<?php if ($data['app.index.food']['children']['app.index.food.column01']['items']) { ?>
+							<!-- <a href="<?= $data['app.index.food']['children']['app.index.food.column01']['items']['0']['mobile_link'] ?>"> -->
+								<img src="<?= $data['app.index.food']['children']['app.index.food.column01']['items']['0']['picture'] ?>">
+							<!-- </a> -->
+						<?php } ?>
+						</div>
+						<div class="lj_clothes">
+							<a href="/second/secondindex.html?firstcode=<?= $catedata['foods'] ?>"><img src="../public/img/mindex/Home_Food@2x.png"></a>
+						</div>
+					</div>
+
+
+
+				<!-- <div class="lj_banners">
+				<?php if ($data['app.index.food']['children']['app.index.food.centre01']['items']) { ?>
+					<a href="<?= $data['app.index.food']['children']['app.index.food.centre01']['items']['0']['mobile_link'] ?>">
+						<img src="<?= $data['app.index.food']['children']['app.index.food.centre01']['items']['0']['picture'] ?>">
+					</a>
+				<?php } ?>
+				</div>
+				 -->
+				<div class="lj_ban">
+					<div class="star-one">
+					<?php if ($data['app.index.food']['children']['app.index.food.centre01']['items']) { ?>
+						<a href="<?= $data['app.index.food']['children']['app.index.food.centre01']['items']['0']['mobile_link'] ?>">
+							<img src="<?= $data['app.index.food']['children']['app.index.food.centre01']['items']['0']['picture'] ?>">
+						</a>
+					<?php } ?>
+					</div>
+					<div class="star_two">
+						<div class="star_twotop">
+						<?php if ($data['app.index.food']['children']['app.index.food.centre02']['items']) { ?>
+							<a href="<?= $data['app.index.food']['children']['app.index.food.centre02']['items']['0']['mobile_link'] ?>">
+								<img src="<?= $data['app.index.food']['children']['app.index.food.centre02']['items']['0']['picture'] ?>">
+							</a>
+						<?php } ?>
+						</div>
+						<div class="star_twobottom">
+							<div class="star_twoleft">
+							<?php if ($data['app.index.food']['children']['app.index.food.centre03']['items']) { ?>
+								<a href="<?= $data['app.index.food']['children']['app.index.food.centre03']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.food']['children']['app.index.food.centre03']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+							<div class="star_tworight">
+							<?php if ($data['app.index.food']['children']['app.index.food.centre04']['items']) { ?>
+								<a href="<?= $data['app.index.food']['children']['app.index.food.centre04']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.food']['children']['app.index.food.centre04']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php if ($star) { ?>
+				<div class="lj_clik">
+				<?php if ($star['foods']) { ?>
+					<a href="<?= $url_m ?>/startheme/themechild/<?= $star['foods']['id'] ?>.html">
+						<img src="<?= $star['foods']['banner'] ?>">
+					</a>
+				<?php } ?>
+				<img src="../public/img/mindex/san@2x.png" class="triangle">
+				</div>
+				<div class="clothes_child">
+					<ul>
+						<!-- <?php if ($star['foods']['goods']) { ?> -->
+						<?php foreach ($star['foods']['goods'] as $d) { ?>
+						<li>
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html">
+							<img src="<?= $d['sku_img'] ?>">
+							<p>￥<?= $d['price'] ?></p>
+						</a>
+						</li>
+						<?php } ?>
+						<!-- <?php } ?> -->
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+			<!-- 住 -->
+			<div class="clothes">
+
+				<div class="clo_title">
+					<div class="clo">
+					<?php if ($data['app.index.live']['children']['app.index.live.column01']['items']) { ?>
+					<!-- 头部banner -->
+						<!-- <a href="<?= $data['app.index.live']['children']['app.index.live.column01']['items']['0']['mobile_link'] ?>"> -->
+							<img src="<?= $data['app.index.live']['children']['app.index.live.column01']['items']['0']['picture'] ?>">
+						<!-- </a> -->
+					<?php } ?>
+					</div>
+
+					<div class="lj_clothes">
+						<a href="/second/secondindex.html?firstcode=<?= $catedata['live'] ?>"><img src="../public/img/mindex/Home_Live@2x.png"></a>
+					</div>
+				</div>
+
+
+				<div class="lj_ban">
+					<div class="star-one">
+					<?php if ($data['app.index.live']['children']['app.index.live.centre01']['items']) { ?>
+						<a href="<?= $data['app.index.live']['children']['app.index.live.centre01']['items']['0']['mobile_link'] ?>">
+							<img src="<?= $data['app.index.live']['children']['app.index.live.centre01']['items']['0']['picture'] ?>">
+						</a>
+					<?php } ?>
+					</div>
+					<div class="star_two">
+						<div class="star_twotop">
+						<?php if ($data['app.index.live']['children']['app.index.live.centre02']['items']) { ?>
+							<a href="<?= $data['app.index.live']['children']['app.index.live.centre02']['items']['0']['mobile_link'] ?>">
+								<img src="<?= $data['app.index.live']['children']['app.index.live.centre02']['items']['0']['picture'] ?>">
+							</a>
+						<?php } ?>
+						</div>
+						<div class="star_twobottom">
+							<div class="star_twoleft">
+							<?php if ($data['app.index.live']['children']['app.index.live.centre03']['items']) { ?>
+								<a href="<?= $data['app.index.live']['children']['app.index.live.centre03']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.live']['children']['app.index.live.centre03']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+							<div class="star_tworight">
+							<?php if ($data['app.index.live']['children']['app.index.live.centre04']['items']) { ?>
+								<a href="<?= $data['app.index.live']['children']['app.index.live.centre04']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.live']['children']['app.index.live.centre04']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php if ($star) { ?>
+				<div class="lj_clik">
+				<?php if ($star['live']) { ?>
+					<a href="<?= $url_m ?>/startheme/themechild/<?= $star['live']['id'] ?>.html">
+						<img src="<?= $star['live']['banner'] ?>">
+					</a>
+				<?php } ?>
+				<img src="../public/img/mindex/san@2x.png" class="triangle">
+				</div>
+				<div class="clothes_child">
+					<ul>
+						<!-- <?php if ($star['live']['goods']) { ?> -->
+						<?php foreach ($star['live']['goods'] as $d) { ?>
+						<li>
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html">
+							<img src="<?= $d['sku_img'] ?>">
+							<p>￥<?= $d['price'] ?></p>
+						</a>
+						</li>
+						<?php } ?>
+						<!-- <?php } ?> -->
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+			<!-- 行 -->
+			<div class="clothes">
+
+
+				<div class="clo_title">
+					<div class="clo">
+						<?php if ($data['app.index.walk']['children']['app.index.walk.column01']['items']) { ?>
+						<!-- <a href=""> -->
+						 <img src="<?= $data['app.index.walk']['children']['app.index.walk.column01']['items']['0']['picture'] ?>">
+						<!-- </a> -->
+						<?php } ?>
+					 </div>
+					<div class="lj_clothes">
+						<a href="/second/secondindex.html?firstcode=<?= $catedata['walk'] ?>"><img src="../public/img/mindex/Home_Walk@2x.png"></a>
+					</div>
+				</div>
+
+				<!-- <div class="lj_banners">
+					<img src="../public/img/mindex/coat (6).png">
+				</div> -->
+				<div class="lj_ban">
+					<div class="star-one">
+						<?php if ($data['app.index.walk']['children']['app.index.walk.centre01']['items']) { ?>
+							<a href="<?= $data['app.index.walk']['children']['app.index.walk.centre01']['items']['0']['mobile_link'] ?>">
+								<img src="<?= $data['app.index.walk']['children']['app.index.walk.centre01']['items']['0']['picture'] ?>">
+							</a>
+						<?php } ?>
+					</div>
+					<div class="star_two">
+						<div class="star_twotop">
+							<?php if ($data['app.index.walk']['children']['app.index.walk.centre02']['items']) { ?>
+								<a href="<?= $data['app.index.walk']['children']['app.index.walk.centre02']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.walk']['children']['app.index.walk.centre02']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+						</div>
+						<div class="star_twobottom">
+							<div class="star_twoleft">
+								<?php if ($data['app.index.walk']['children']['app.index.walk.centre03']['items']) { ?>
+									<a href="<?= $data['app.index.walk']['children']['app.index.walk.centre03']['items']['0']['mobile_link'] ?>">
+										<img src="<?= $data['app.index.walk']['children']['app.index.walk.centre03']['items']['0']['picture'] ?>">
+									</a>
+								<?php } ?>
+							</div>
+							<div class="star_tworight">
+								<?php if ($data['app.index.walk']['children']['app.index.walk.centre04']['items']) { ?>
+									<a href="<?= $data['app.index.walk']['children']['app.index.walk.centre04']['items']['0']['mobile_link'] ?>">
+										<img src="<?= $data['app.index.walk']['children']['app.index.walk.centre04']['items']['0']['picture'] ?>">
+									</a>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php if ($star) { ?>
+				<div class="lj_clik">
+					<?php if ($star['walk']) { ?>
+					<a href="<?= $url_m ?>/startheme/themechild/<?= $star['walk']['id'] ?>.html">
+						<img src="<?= $star['walk']['banner'] ?>">
+					</a>
+					<?php } ?>
+					<img src="../public/img/mindex/san@2x.png" class="triangle">
+				</div>
+				<div class="clothes_child">
+					<ul>
+						<?php if ($star['walk']) { ?>
+						<?php foreach ($star['walk']['goods'] as $d) { ?>
+						<li>
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html">
+							<img src="<?= $d['sku_img'] ?>">
+							<p>￥<?= $d['price'] ?></p>
+						</a>
+						</li>
+						<?php } ?>
+						<?php } ?>
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+			<!-- 娱 -->
+			<div class="clothes">
+
+					<div class="clo_title">
+						<div class="clo">
+							<?php if ($data['app.index.happy']['children']['app.index.happy.column01']['items']) { ?>
+							<!-- <a href=""> -->
+								<img src="<?= $data['app.index.happy']['children']['app.index.happy.column01']['items']['0']['picture'] ?>">
+							<!-- </a> -->
+							<?php } ?>
+						</div>
+						<div class="lj_clothes">
+							<a href="/second/secondindex.html?firstcode=<?= $catedata['amusement'] ?>"><img src="../public/img/mindex/Home_Happy@2x.png"></a>
+						</div>
+					</div>
+
+				<!-- <div class="lj_banners">
+					<img src="../public/img/mindex/coat (6).png">
+				</div> -->
+				<div class="lj_ban">
+					<div class="star-one">
+						<?php if ($data['app.index.happy']['children']['app.index.happy.centre01']['items']) { ?>
+							<a href="<?= $data['app.index.happy']['children']['app.index.happy.centre01']['items']['0']['mobile_link'] ?>">
+								<img src="<?= $data['app.index.happy']['children']['app.index.happy.centre01']['items']['0']['picture'] ?>">
+							</a>
+						<?php } ?>
+					</div>
+					<div class="star_two">
+						<div class="star_twotop">
+							<?php if ($data['app.index.happy']['children']['app.index.happy.centre02']['items']) { ?>
+								<a href="<?= $data['app.index.happy']['children']['app.index.happy.centre02']['items']['0']['mobile_link'] ?>">
+									<img src="<?= $data['app.index.happy']['children']['app.index.happy.centre02']['items']['0']['picture'] ?>">
+								</a>
+							<?php } ?>
+						</div>
+						<div class="star_twobottom">
+							<div class="star_twoleft">
+								<?php if ($data['app.index.happy']['children']['app.index.happy.centre03']['items']) { ?>
+									<a href="<?= $data['app.index.happy']['children']['app.index.happy.centre03']['items']['0']['mobile_link'] ?>">
+										<img src="<?= $data['app.index.happy']['children']['app.index.happy.centre03']['items']['0']['picture'] ?>">
+									</a>
+								<?php } ?>
+							</div>
+							<div class="star_tworight">
+								<?php if ($data['app.index.happy']['children']['app.index.happy.centre04']['items']) { ?>
+									<a href="<?= $data['app.index.happy']['children']['app.index.happy.centre04']['items']['0']['mobile_link'] ?>">
+										<img src="<?= $data['app.index.happy']['children']['app.index.happy.centre04']['items']['0']['picture'] ?>">
+									</a>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php if ($star) { ?>
+				<div class="lj_clik">
+					<?php if ($star['amusement']) { ?>
+					<a href="<?= $url_m ?>/startheme/themechild/<?= $star['amusement']['id'] ?>.html">
+						<img src="<?= $star['amusement']['banner'] ?>">
+					</a>
+					<?php } ?>
+					<img src="../public/img/mindex/san@2x.png" class="triangle">
+				</div>
+				<div class="clothes_child">
+					<ul>
+						<?php if ($star['amusement']) { ?>
+						<?php foreach ($star['amusement']['goods'] as $d) { ?>
+						<li>
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html">
+							<img src="<?= $d['sku_img'] ?>">
+							<p>￥<?= $d['price'] ?></p>
+						</a>
+						</li>
+						<?php } ?>
+						<?php } ?>
+
+					</ul>
+				</div>
+				<?php } ?>
+			</div>
+		</div>
+		<!-- 猜你喜欢 -->
+		<div class="guess">
+			<div class="like"><span>猜你喜欢</span></div>
+		</div>
+		<div class="lj_like">
+	           <ul>
+				<?php if ($datalike) { ?>
+	            <?php foreach ($datalike as $d) { ?>
+		           	<li class="items">
+						<a href="<?= $url_goods ?>/<?= $d['sku_id'] ?>.html">
+							<div class="imgs">
+								<img src="<?= $d['logo'] ?>">
+							</div>
+							<div class="words">
+								<p><?= $d['sku_name'] ?></p>
+								<p>￥<?= $d['act_price'] ?></p>
+							</div>
+						</a>
+		           	</li>
+		           	<?php } ?>
+		           	<?php } ?>
+
+	           </ul>
+		</div>
+		<div class="foot"></div>
+		<!-- 底部导航 -->
+		<footer class="navigation">
+			<ul>
+				<li>
+					<a href="/mindex/index.html">
+						<img src="../public/img/mindex/Tab_Home_pre@2x.png">
+						<p class="footer_bottom_color">首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="/newcategory.html">
+						<img src="../public/img/mindex/Tab_Menu@2x.png">
+						<p >分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="/lifehui/index.html">
+						<img src="../public/img/mindex/Tab_Life@2x.png">
+						<p>惠生活</p>
+					</a>
+				</li>
+				<li>
+					<a href="<?= $url_order ?>/index.html">
+						<img src="../public/img/mindex/Tab_Shop@2x.png">
+						<p>购物车</p>
+						<span class="shopping_car">1</span>
+					</a>
+				</li>
+				<li>
+					<a href="/i/index/index.html">
+						<img src="../public/img/mindex/Tab_Me@2x.png">
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer>
+	</div>
+	<!-- 搜索框页面 -->
+	<div class="seek">
+		<div class="Hnavigation" url_search=<?= $url_m ?>>
+		    <span class="HnavigationLeft" ></span>
+		    <div class="HnavigationCenter">
+			    <span></span>
+			    <input type="text" class="search_auto"   placeholder-class="inputPlace" placeholder="搜索商品" value = ""/>
+		    </div>
+		    <span class="HnavigationRight">搜索</span>
+		</div>
+		<div class="search_display">
+			<div class="Hhistory">
+			    <h3>最近搜索</h3>
+			    <div class="Hback">
+			        <div class="Hhistoryspan">
+			           <!-- <a href="#"><span class="hot">66666666666</span></a> -->
+
+			        </div>
+			        <button class="Hdelete">清除</button>
+			    </div>
+			</div>
+			<div class="Htags">
+			<?php if ($hot) { ?>
+			    <h3>热门搜索</h3>
+			   <div class="Hback">
+			       <div class="Htagsspan">
+			       <?php foreach ($hot as $d) { ?>
+			           <a href="/newcategory/threecate.html?firstcode=&keyword=<?= $d['name'] ?>&csstag=9"><span class="hot"><?= $d['name'] ?></span></a>
+			       <?php } ?>
+			       </div>
+			   </div>
+			<?php } ?>
+			</div>
+		</div>
+		<ul class="search_display_list">
+		</ul>
+	</div>
+	<!-- 蒙版 -->
+	<!-- 回到顶部 -->
+	<div id="back-ceil" style="border:none !important; margin-right: -20px;"><img style="width: 35px;" src="../public/img/mindex/first_top@2x.png"></div>
+</div>
+</body>
+</html>
+
+<script src="/public/js/rem.js"></script>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script type="text/javascript" src="/public/js/mindex/view.index.js"></script>

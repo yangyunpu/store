@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|海外精品</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>  
+	<link rel="stylesheet" type="text/css" href="/public/css/overseagoods/more.css"/> 
+	<script src="/public/js/rem2.js"></script> 
+</head>
+<body>
+<div id="oversea">
+	<!-- 头部 -->
+	<div id="head">
+		<div id="head-left" onclick="window.history.go(-1)"><img src="/public/img/newcategory/Group22Copy2.png" alt=""></div>
+		<div id="head-right" > </div>
+		<div id="head-center" class="between">海外精品</div>
+	</div>
+	<div id="top_place"></div>  
+	<div class="morebtn clear-f bg-white">
+		<div class="item active float-l">今日</div>
+		<div class="item float-l">明日</div>
+	</div>  
+	<div class="inlinestyle" id="today">  	 
+ 		{% for item in 1..5 %}
+ 		<div>
+	 		<p class="alltitle" data-begintime="xxx" data-endtime="xxx">距离结束还有 23:59:59 </p>	
+	 		<div class="item bg-white margin-b">
+	 			<div class="img_box float-l">
+	 				<a href="xxx/xxx.html"><img src="/public/img/newcategory/q.png"></a>
+	 				<!-- <p class="tag">海外精品</p>   -->
+	 			</div>
+	 			<div class="wen_box float-l">
+	 				<p class="name">xxx</p>
+	 				 <!-- <p class="smalltag"><span>海外精品</span></p>  -->
+	 				<!-- <p class="sales">销量:132</p> -->
+	 				<p class="piece">￥xxx<span class="oldpiece">￥xxx</span></p> 
+	 			</div>
+	 		</div> 
+ 		</div>
+ 		{% endfor %} 
+ 	</div>
+	<div class="inlinestyle" id="torrow" style="display:none">  	 
+ 		<p id="alltitle">即将开启 敬请期待</p>
+ 		{% for item in 1..5 %}
+ 		<div class="item bg-white margin-b">
+ 			<div class="img_box float-l">
+ 				<a href="xxx/xxx.html"><img src="/public/img/newcategory/q.png"></a>
+ 				<!-- <p class="tag">海外精品</p>   -->
+ 			</div>
+ 			<div class="wen_box float-l">
+ 				<p class="name">xxx</p>
+ 				 <!-- <p class="smalltag"><span>海外精品</span></p>  -->
+ 				<!-- <p class="sales">销量:132</p> -->
+ 				<p class="piece">￥xxx<span class="oldpiece">￥xxx</span></p> 
+ 			</div>
+ 		</div> 
+ 		{% endfor %} 
+ 	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>  
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>   
+<!-- <script src="/public/js/overseagoods/overseagoods.js"></script> -->

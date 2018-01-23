@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>如此生活|全民星探</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="/public/css/business/business.css"/>
+</head>
+<body class="lh_business" token={{token}} url_member={{url_member}} mid={{id}}>
+<!-- 商探申请 -->
+<?php if(!empty($mata['is_agent'])) {?>
+{% if mata['is_agent'] == false %}
+     <div class="lcy_apply">
+       <header class="head">
+           <div class="back" onclick="javascript:history.go(-1)"></div>
+           <h5>商探申请</h5>
+           <div class="back2"></div>
+       </header>
+       <div class="banner">
+           <img src="/public/img/business_bannar.png" alt="">
+       </div>
+       <div class="banner">
+           <img src="/public/img/apply_step.png" alt="">
+       </div>
+       <p class="introduce">
+           "如此生活"用心打造全方位立体化一站式服务平台，让星粉们过上幸福、快乐、优质的美好生活！
+       </p>
+       <div class="join_top">|&nbsp;全民商探参与方式</div>
+       <p class="words"><span>商家报备：</span>提交商家相关信息，由“如此生活”专业人员进行洽谈，签单成功，提供1000元奖励，返还到星钱包（星钱包只能在如此生活平台使用，不可体现）。</p>
+       <p class="words"><span>商家签约：</span>自己和商家洽谈，签约成功，并上传相应详细资料到如此生活，提供3000元现金奖励，返还到您绑定的账号。</p>
+       <div class="btn" id="go_http" token={{token}} url_member={{url_member}} mid={{id}}>我要做全民商探</div>
+   </div>
+   {% endif %}
+   <?php }  ?>
+<!-- 提交申请 -->
+     <div class="lcy_submit">
+        <header class="head">
+             <a href="/index.html">
+                <div class="back back3"></div>
+             </a>
+            <div class="title">提交申请</div>
+        </header>
+        <div class="box">            
+            <div class="command">
+                <p class="word"><span>*&nbsp;</span >推荐人</p>
+                <input type="text" class="text a"  value = {{nickname}} disabled="disabled">
+            </div>
+
+            <!-- 基本信息 -->
+            <p class="mess_top">公司基本信息</p>
+            <div class="message_box">
+                <div class="mess_con">
+                    <p class="word"><span>*&nbsp;</span>公司名称</p>
+                    <input type="text" class="text b" placeholder="请输入公司名称">
+                </div>
+                <div class="mess_con">
+                    <p class="word"><span>*&nbsp;</span>所属行业</p>
+                    <input type="text" class="text c" placeholder="请输入所属行业">
+                </div>
+                <div class="mess_con">
+                    <p class="word"><span class="red">*&nbsp;</span>所在区域  </p>
+                    <p class="text text_mark"><span class="elect" >选择区域</span>&nbsp;></p>
+                    <!-- 城市三级联动 -->
+                    <div class="mark">
+                        <div class="marks">
+                            <p><span class="province" >省份：</span><span class="provinced" data="北京">北京</span></p>
+                              <div class="spinner">
+                                  <ul class="sheng">
+                                  </ul>
+                              </div>
+                            <p><span class="province" >城市：</span><span class="citys" data="市辖区">市辖区</span></p>
+                            <div class="cityed">
+                                <ul class="shi">
+                                </ul>
+                            </div>
+                            <p><span class="province" >区县：</span><span class="sanjaksd" data="东城区">东城区</span></p>
+                               <div class="countiesd">
+                                   <ul class="qu">
+                                   </ul>
+                               </div>
+                            <p class="sure">确定</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mess_con">
+                    <p class="word"><span class="red">*&nbsp;</span>详细地址</p>
+                    <input type="text" class="text e" placeholder="请输入详细地址">
+                </div>
+                <div class="mess_con no_border">
+                    <p class="word"><span class="red">*&nbsp;</span>公司电话</p>
+                    <input type="text" class="text f" placeholder="请输入公司电话">
+                </div>
+            </div>
+            <!-- 联系信息 -->
+            <p class="mess_top">联系信息</p>
+            <div class="message_box">
+                <div class="mess_con">
+                    <p class="word"><span>*&nbsp;</span>公司负责人</p>
+                    <input type="text" class="text g" placeholder="请输入公司负责人姓名">
+                </div>
+                <div class="mess_con">
+                    <p class="word"><span>*&nbsp;</span>联系人</p>
+                    <input type="text" class="text h" placeholder="请输入联系人姓名">
+                </div>
+                <div class="mess_con no_border">
+                    <p class="word"><span>*&nbsp;</span>联系人电话</p>
+                    <input type="text" class="text i" placeholder="请输入联系人电话">
+                </div>
+            </div>
+            <!-- 补充信息 -->
+            <p class="mess_top">补充信息信息</p>
+            <div class="message_box">
+                <div class="mess_con">
+                    <p class="word"><span>*&nbsp;</span>信息来源</p>
+                    <p class="text check_box h1">
+                        网络 
+                        <input type="checkbox" name="massage" class="check_box t1" data="网络"/>
+                        其他渠道 
+                        <input type="checkbox" name="massage" class="check_box t2 " data="其他渠道"/>
+                        朋友
+                        <input type="checkbox" name="massage" class="check_box t3" data="朋友"/>
+                        亲友
+                        <input type="checkbox" name="massage" class="check_box t4" data="亲友"/>
+                    </p>
+                </div>
+                <div class="mess_con no_border">
+                    <p class="word"><span>*&nbsp;</span>联系与否</p>
+                    <p class="text check_box h2">
+                        没有联系 
+                        <input type="radio" name="massage" class="check_box" data="没有联系"/>
+                        已介绍如此生活 
+                        <input type="radio" name="massage" class="check_box" data="已介绍如此生活"/>
+                        已告知
+                        <input type="radio" name="massage" class="check_box" data="已告知"/>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 提交 -->
+        <div class="btn submit" url_member={{url_member}}>提交</div>       
+    </div>
+
+
+<!-- hlk.html   -->
+<!-- 商家签约 -->
+    <div class="h_contract">
+        <header class="mui-bar mui-bar-nav">
+            <a class="back3" href="/index.html"><div class="back_img"></div></a>
+            <h5>全民商探</h5>
+        </header>
+        <div class="hkl_qy">
+            <ul>
+                <li></li>
+                <li class="hkl_wz"><span>商家签约指导</span></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="hkl_nav">
+            <h6>&nbsp;&nbsp;商家签约您需要完成以下任务</h6>
+            <p class="hkl_bottom">1.取得商家授权</p>
+            <p>2.获取商家相关资料，资料如下</p>
+            <p>企业资质相关资料</p>
+            <ol>
+                <li>营业执照复印件</li>
+                <li>组织结构代码复印件</li>
+                <li>税务登记证复印件</li>
+                <li>开户银行许可证复印件</li>
+                <li>商标证复印件、商标使用授权书或商标使用许可合同及备案表</li>
+            </ol>
+            <p>商品资质相关资料：</p>
+            <ol>
+                <li>品牌销售授权证明复印件</li>
+                <li>质检报告复印件或产品质量合格证明</li>
+                <li>生产许可证、卫生许可证及相关行政许可证明</li>
+                <li>中国商品条码系统成员证明</li>
+                <li>专利证明文件</li>
+                <li>质量认证资质</li>
+            </ol>
+            <p>3.到PC端SOP页面注册，并上传相关资料，sop页面链接如下：<a href="http://sop.soolife.cn">http://sop.soolife.cn/</a></p>
+            <p>4.待如此生活后台审核商家通过，将直接将奖励返还到您绑定的账号。<a href="https://i.soolife.cn/m/safety/cashes.html">现在就去绑定&gt;&gt;</a></p>
+        </div>
+    </div>
+<!-- 方式选择 -->
+    <div class="h_way">
+        <header class="mui-bar mui-bar-nav">
+            <a id="back2" href="/index.html"><div class="back_img"></div></a>
+            <h5>方式选择</h5>
+        </header>
+        <div class="mui-content">   
+            <div class="xing_sale">
+                <div id="xing_hot_slider" class="mui-slider">
+                        <div id="item1mobile" class="mui-control-content mui-active">
+                        <!-- 星钱包余额 -->
+                            <div class="xing_hot_goods_1">
+                                <img src="/public/img/business_bannar.png" alt="">
+                            </div>
+                            <div class="superkitty"><img src="/public/img/h_quanmin_way.png" alt=""></div>
+                            <div class="recharge-youhui"><p>"如此生活"用心打造全方位立体化一站式服务平台，让星粉们过上幸福、快乐、优质的美好生活</p></div>
+                            <a class="recharge-promptlya"  id="m_bao">商家报备</a>
+                            <a class="recharge-promptly" id="m_qian">商家签约</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div><!--接上面-->
+<!-- 补充协议 -->
+    <div class="h_bcxy">
+        <header class="mui-bar mui-bar-nav">
+            <a id="back1" href="/index.html"><div class="back_img"></div></a>
+            <h5>补充协议</h5>
+        </header>
+        <div class="hkl_bcxy">
+            <span>本协议是您与“如此生活”电子商务交易平台（简称"本站"，网址：http://www.soolife.cn）所有者（以下
+简称为"如此生活"）之间就开通“如此生活”电子商务交易平台的“全民商探”功能模块等相关事宜所订立的
+契约，也是《如此生活服务协议》（网址：http://www.soolife.cn/about/agreement.html）的补充协议。请
+您仔细阅读本协议，您点击"同意并继续"按钮后，本协议即构成对双方有约束力的法律文件。</span>
+            <p class="hkl_weiht hkl_topz">第 1  条 什么是“全民商探”？</p>
+            <p>1.1 “全民商探”功能介绍</p>
+            <span>“全民商探”是指如此生活会员根据自己现有的（商家）资源，将相应的商家信息提交到如此生活平台，
+由如此生活成功签约该商家，或会员直接促成商家签约并提交完整入驻资料成功通过审核后，将给予会员
+相应余额或现金奖励。</span><br>
+            <p>1.2 “全民商探”执行政策</p>
+            <span>1.2.1 用户开通“全民商探”功能模块后，可以向本站提交商家信息。根据用户提交的商家信息，本站成功
+签约该品牌商家的，用户的钱包余额将可获得 1000 元/家的返现 ， 钱包余额只能用户如此生活平台的消费
+购物，不可提现转出。</span><br>
+            <span>1.2.2 用户开通“全民商探”功能模块后，直接促成品牌商家与本站签约的，用户账户钱包的现金余额将可
+获得 3000 元/家的返现 ， 现金余额中的钱款将由如此生活平台每月定期打入到用户绑定的银行卡中。
+</span><br>
+
+<p style="line-height:25px">1.2.3 本站享有“全民商探”执行政策的最终解释权</p>
+            <p class="hkl_weiht hkl_topz">第 2  条  开通“全民商探”功能服务条款的确认和同意</p>
+            <span>2.1 本站的“全民商探”功能模块的所有权和运作权归如此生活所有。用户同意所有协议条款并完成开通程
+序，才能使用“全民商探”功能。用户确认：本协议条款是处理双方权利义务的契约，始终有效，法律另有
+强制性规定或双方另有特别约定的，依其规定。</span><br>
+            <span>2.2 用户点击同意本协议的，即视为用户确认自己具有享受“全民商探”功能模块服务相应的权利能力和行为
+能力，能够独立承担法律责任。</span><br>
+            <span>2.3 如果您在 18 周岁以下，您只能在父母或监护人的监护参与下才能使用“全民商探”功能。</span><br>
+            <span>2.4 如此生活保留在中华人民共和国大陆地区法施行之法律允许的范围内独自决定拒绝服务、关闭“全民商
+探”功能、清除或编辑“全民商探”功能模块内容的权利。</span><br>
+            <p class="hkl_weiht hkl_topz">第 3  条  使用“ 全民商探” 功能模块服务</p>
+            <span>3.1 如此生活通过互联网依法为用户提供“全民商探”功能模块服务，用户在完全同意本协议、《如此生活服
+务协议》及本站规定的情况下，方有权使用“全民商探”功能模块服务。</span><br>
+            <span>3.2 用户必须自行准备如下设备和承担如下开支：（1）上网设备，包括并不限于电脑或者其他上网终端、
+调制解调器及其他必备的上网装置；（2）上网开支，包括并不限于网络接入费、上网设备租用费、手机流
+量费等。</span><br>
+            <span>3.3 用户应自行诚信向本站提供注册资料，用户同意其提供的注册资料真实、准确、完整、合法有效，用户
+注册资料如有变动的，应及时更新其注册资料。如果用户提供的注册资料不合法、不真实、不准确、不详
+尽的，用户需承担因此引起的相应责任及后果，并且如此生活保留终止用户使用“全民商探”功能模块服务
+及其他各项服务的权利。</span><br>
+            <div class="hkl_btn">
+                <button class="hkl_btn_height" id="no">取消</button>
+                <button id="yes">确定</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/business/business.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

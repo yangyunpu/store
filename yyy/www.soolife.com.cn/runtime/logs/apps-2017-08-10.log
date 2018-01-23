@@ -1,0 +1,19 @@
+Thu 10 17:08:41 [INFO] 200:stdClass::__set_state(array(
+   'code' => 104,
+   'login_info' => 
+  stdClass::__set_state(array(
+     'member_id' => '30001106',
+     'login_id' => '13122197379',
+     'nickName' => '糖粘牙',
+     'token' => '26981f51605bb107c69038a01459cf4e',
+     'type' => '1',
+     'visit' => '88',
+     'last_time' => 1502356121,
+     'ip' => '103.214.84.243',
+  )),
+   'entry' => 
+  stdClass::__set_state(array(
+     'msg' => '登录成功',
+     'key' => '',
+  )),
+))

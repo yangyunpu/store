@@ -1,0 +1,90 @@
+body,html,p,span,ul,ol,li,a,img{ margin: 0 auto; padding: 0;}
+body{
+	    font-family: "Arial","Microsoft YaHei";
+}
+img{border: none;}
+ul,li,ol{ list-style: none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.qmd_body{
+	width: 100%; margin: 0 auto; padding: 0; background: #af1d41;
+}
+.qmd_body .banner_a{
+	width:100%; margin: 0 auto; padding: 0;
+}
+.qmd_body .banner_a img{
+	width:100%; margin: 0 auto; padding: 0;
+}
+.background_yhj{
+	width: 100%; padding: 0; background: url(../img/beijing_a.jpg) no-repeat;  background-size:100% 100% ;
+}
+.background_yhj .coupon{
+	width: 1000px; margin: 0 auto; padding: 20px 0 30px;
+}
+.background_relaxation{
+	width: 1275px; margin: 0 auto; padding: 160px 155px 240px ; background: url(/theme/activity/2016_09_nopay/pc/img/beijing_b.png) no-repeat; margin-top: 50px; overflow: hidden;
+}
+.background_relaxation ul li{
+	float: left; margin: 10px; height: 405px;
+}
+.background_relaxation ul li a{
+	width: 301px; height: 405px;*display: inline; zoom: 1; cursor: pointer;
+}
+.background_relaxation ul li .picture{
+	width: 301px; height: 295px; text-align: center; background: #fff;
+}
+
+.background_relaxation ul li .details{
+	width: 301px; height: 100px;  background: #7f0280; color: #fff; padding:5px  20px;
+}
+
+.background_exercise{
+	width: 1275px; margin: 0 auto; padding: 150px 70px 250px; background: url(/theme/activity/2016_09_nopay/pc/img/beijing_c.png) no-repeat; margin-top: 50px; overflow: hidden;
+}
+.background_exercise ul li{
+	float: left; margin: 10px; height: 440px;
+}
+.background_exercise ul li a{
+	width: 327px; height: 440px; *display: inline; zoom: 1; cursor: pointer;
+}
+.background_exercise ul li .picture{
+	width: 327px; height: 330px; text-align: center; background: #fff;
+}
+.background_exercise ul li .details{
+	width: 327px; height: 100px;  background: #7f0280; color: #fff; padding:5px 20px;
+}
+.details .name{
+	height: 30px; line-height: 30px; font-size:18px; 
+}
+.details .lijgm{
+	width: 100px; height: 25px; line-height: 25px; color: #000000; background: #fff; text-align: center;
+}
+.details .price{
+	width: 260px; height: 30px;
+}
+.details .price .fl{
+	width: 140px;
+}
+.details .price .fr{
+	width: 115px;
+}
+.details .bazaar{
+	text-decoration:line-through; height: 25px; line-height: 25px; font-size: 14px; font-weight: 100; width: 160px;color: #fff;
+}
+
+.dibu{
+	width: 100%; margin: 0; padding: 0; 
+}
+.dibu img{
+	width: 100%; margin: 0; padding: 0;
+}
+
+
+
+
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>账单详情|如此生活</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--   <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">    -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <!-- <link rel="stylesheet" href="/public/css/huilife/common.css"> -->
+    <!-- <link rel="stylesheet" href="/public/css/huilife/index.css"> -->
+	<link rel="stylesheet" href="/public/css/me/index.css">
+</head>
+<body id="bde_me_cash">
+
+
+<!-- 头部 -->
+<div id="ba-new-header">
+	<div class="header-left fl-left">
+		<a onclick="window.history.go(-1)"> <img src="../public/img/common/shop_back_black@2x.png" alt=""></a>
+	</div>
+	<!-- <div id="header-center">领星币</div> -->
+	<div class="header-center fl-left">账单详情</div>
+	<div class="header-right"></div>
+</div>
+<div class="details">
+	<div class="heading">
+		<p class="names">{{data['msg']}}</p>
+        <p class="price">{{data['money']}}</p>
+        <?php if ($data['tax'] > 0): ?>
+    		<p class="color-h">代扣税{{data['tax']}}</p>
+        <?php endif ?>
+	</div>
+	<div class="describe">
+		<div class="flowing">
+			<p class="fl-left text-l ">交易流水号：</p>
+			<p class="content text-r">{{data['id']}}</p>
+		</div>
+		<div class="flowing">
+			<p class="fl-left text-l ">创建时间：</p>
+			<p class="content text-r">{{data['time']}}</p>
+		</div>
+	</div>
+</div>
+ <div class="relation ">
+		<div class="flowing">
+			<p class="fl-left text-l ">提现账户：</p>
+			<p class="content text-r">{{data['bank']}}</p>
+		</div>
+			<div class="flowing mar_t_30">
+			<p class="text-l fl-left">处理进度：</p>
+			 <div class="technological">
+			<?php if ($data['status'] == 5) {  ?>
+                <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">申请成功</p>
+                	<p class="time">{{data['time']}}</p>
+                </div>
+                <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">银行处理</p>
+                	<p class="time">{{data['settime']}}</p>
+                </div>
+                 <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="selected fl-left"><p class="core"></p></div>
+                    <p class="fl-left se_notes">提现成功</p>
+                	<!-- <p class="time">{{data['updatetime']}}</p> -->
+                </div>
+			 </div>	
+			<?php }elseif ($data['status'] == 2) { ?>
+                <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">申请成功</p>
+                	<p class="time">{{data['time']}}</p>
+                </div>
+                <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">提现失败</p>
+                	<p class="time">{{data['settime']}}</p>
+                </div>
+			 </div>	
+			<?php }elseif($data['status'] == 3){ ?>
+                <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">申请成功</p>
+                	<p class="time">{{data['time']}}</p>
+                </div>
+                <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">银行处理</p>
+                	<p class="time">{{data['settime']}}</p>
+                </div>
+                 <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                    <p class="fl-left notes">提现成功</p>
+                	<p class="time">{{data['updatetime']}}</p>
+                </div>
+			 </div>	
+			<?php }elseif ($data['status'] == 4) {  ?>
+                <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">申请成功</p>
+                	<p class="time">{{data['time']}}</p>
+                </div>
+                <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">银行处理</p>
+                	<p class="time">{{data['settime']}}</p>
+                </div>
+                 <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                    <p class="fl-left notes">提现失败</p>
+                	<p class="time">{{data['updatetime']}}</p>
+                </div>
+			 </div>	
+			<?php }else{ ?>
+                <div class="first">
+                    <div class="node fl-left"><p class="core"></p></div>
+                	<p class="fl-left notes">申请成功</p>
+                	<p class="time">{{data['time']}}</p>
+                </div>
+                <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="selected fl-left"><p class="core"></p></div>
+                	<p class="fl-left se_notes">银行处理</p>
+                	<!-- <p class="time">{{data['settime']}}</p> -->
+                </div>
+                 <div class="vertical">
+                </div>
+                  <div class="first">
+                    <div class="selected fl-left"><p class="core"></p></div>
+                    <p class="fl-left se_notes">提现成功</p>
+                	<!-- <p class="time">{{data['updatetime']}}</p> -->
+                </div>
+			 </div>	
+			<?php } ?>
+
+		</div>
+</div>
+<?php if ($data['status'] == 2 || $data['status'] == 4){ ?>
+	<div class="reason">
+	   原因: {{data['reasonn']}}
+	  </div>
+<?php } ?>
+
+<script>
+
+</script>
+
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/jquery.base64.js"></script>
+<script src="/public/js/huilife/life.index.js"></script>
+<script src="/public/ext/js/rem.js"></script>
+<script src="/public/js/me/index.js"></script>
+</body>
+</html>

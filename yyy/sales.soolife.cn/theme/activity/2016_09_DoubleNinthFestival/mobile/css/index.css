@@ -1,0 +1,103 @@
+body,html,p,span,ul,ol,li,a,img{ margin: 0 auto; padding: 0;}
+body{
+	    font-family: "Microsoft YaHei","Arial";
+}
+em, i, u {
+    font-style: normal;
+}   
+img{border: none;}
+ul,li,ol{ list-style: none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.festival{
+	width: 100%; margin: 0 auto; padding: 0; background: #efe7d1;
+}
+.festival .banner_a{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.festival .banner_a img{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.besatisfied{
+	width: 100%; margin: 0; padding: 0;
+}
+.title{
+	width: 100%; margin: 0; padding: 0;
+}
+.title img{
+	width: 100%; margin: 0; padding: 0;
+}
+.bj_a{
+	background: url(/theme/activity/2016_09_DoubleNinthFestival/mobile/img/bj_a.jpg) no-repeat; background-size:100%  100%; width: 100%; margin: 0; ;margin-top: -10px; padding-top: 10px;
+}
+.centre{
+	width: 86%; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.centre ul li{
+	float: left; width: 46%;margin: 1% 2%; padding: 0;
+}
+.centre ul li img{
+	width: 100%; 
+}
+.bj_b{
+	background: url(/theme/activity/2016_09_DoubleNinthFestival/mobile/img/bj_b.jpg) no-repeat; background-size:100%  100%; width: 100%; margin: 0; ;margin-top: -10px; padding-top: 10px;
+}
+.emboitement,.gift,.burglary,.choice{
+	width: 100%;margin: 0; padding: 0;
+}
+
+.bj_c{
+	background: url(/theme/activity/2016_09_DoubleNinthFestival/mobile/img/bj_c.jpg) no-repeat; background-size:100%  100%; width: 100%; margin: 0; ;margin-top: -10px; padding-top: 10px;
+}
+.bj_d{
+	background: url(/theme/activity/2016_09_DoubleNinthFestival/mobile/img/bj_d.jpg) no-repeat; background-size:100%  100%; width: 100%; margin: 0; ;margin-top: -10px; padding-top: 10px;
+}
+.bj_e{
+	background: url(/theme/activity/2016_09_DoubleNinthFestival/mobile/img/bj_e.jpg) no-repeat; background-size:100%  100%; width: 100%; margin: 0; ;margin-top: -10px; padding-top: 10px;
+}
+.dibu{
+	width: 100%; margin: 0; padding: 0;
+}
+.dibu img{
+	width: 100%; margin: 0; padding: 0;
+}
+.bj_a .particulars{
+	width: 100%; margin: 0 auto; padding: 0.5rem 0 1rem 0; border-top:1px solid #e97c77;
+}
+.bj_b .particulars{
+	width: 100%; margin: 0 auto; padding: 0.5rem 0 1rem 0; border-top:1px solid #879bee;
+}
+.bj_c .particulars{
+	width: 100%; margin: 0 auto; padding: 0.5rem 0 1rem 0; border-top:1px solid #a2d08e;
+}
+.bj_d .particulars{
+	width: 100%; margin: 0 auto; padding: 0.5rem 0 1rem 0; border-top:1px solid #d0b38e;
+}
+.bj_e .particulars{
+	width: 100%; margin: 0 auto; padding: 0.5rem 0 1rem 0; border-top:1px solid #d0898b;
+}
+.name{
+	width: 95%; margin: 0 auto; font-size:1rem; line-height: 1.2rem; overflow: hidden;white-space:nowrap; overflow:hidden; 
+	text-overflow:ellipsis; text-align: center; color: #350406; font-weight: 500;
+}
+.result{
+	width: 95%; margin: 0 auto; font-size:1rem; line-height: 1.4rem; overflow: hidden;white-space:nowrap; overflow:hidden; 
+	text-overflow:ellipsis; text-align: center; color: #350406; font-weight: 700;
+}
+.centre .particulars img{
+	display: block; width: 80%; margin: 0 auto; padding: 0;
+}
+.price_y{
+	width: 80%; margin: 0 auto; padding: 0;font-size:1rem; line-height: 1.2rem; overflow: hidden;white-space:nowrap; overflow:hidden; 
+	text-overflow:ellipsis;  color: #350406;text-decoration:line-through ;
+}
+
+
+
+
+

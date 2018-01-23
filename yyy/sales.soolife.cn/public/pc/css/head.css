@@ -1,0 +1,49 @@
+#header{background: #F5F5F5;height: 30px;line-height: 30px;position: relative;left: -18px;}
+#header .mainBox label,#header .mainBox em{margin: 0 5px;font-weight: normal;}
+#header .mainBox label span a{color: inherit;line-height: 30px;}
+#header .mainBox label.separator{line-height: 30px;color:#999}
+#header .mainBox em.separator{line-height: 30px;color:#999;font-style:normal;}
+/*#header .mainBox a{color:white;}*/#header .mainBox a:hover{color: #f6ab00;}
+#header .mainBox .weixin{height: 20px;width: 20px;background: url(http://static.soolife.cn/asset/img/top_icon.png) no-repeat;display: inline-block;margin: 8px 0 0 6px;float: left;position: relative;background-position: -62px;}
+#header .mainBox .weixin:hover{background-position: -62px;}
+#header .mainBox .weixin .hide_weixin{display: none;width: 110px;height: 110px;background-color: #F5F5F5;position: absolute;top: 21px;left: -28px;padding: 10px;z-index: 1000;}
+#header .mainBox .weixin .hide_weixin .img-weixin{display:block;width:90px;height:90px;background:url(http://static.soolife.cn/asset/img/weixin.jpg) no-repeat;}
+#header .mainBox .sina .hide_sina{display: none;width: 110px;height: 110px;background-color: #F5F5F5;position: absolute;top: 21px;left: -54px;padding: 10px;z-index: 1000;}
+#header .mainBox .sina .hide_sina .img-sina{display:block;width:90px;height:90px;background:url(http://static.soolife.cn/asset/img/sina.jpg) no-repeat;}
+#header .mainBox .sina{height: 20px;width: 20px;background: url(http://static.soolife.cn/asset/img/top_icon.png) no-repeat -90px -1px;display: inline-block;margin: 9px 0 0 6px;float: left;position: relative;background-position: -28px 0px;}
+#header .mainBox .sina:hover{background-position: -28px 0px;}
+#header .mainBox .center,#header .mainBox .headhelp{display: inline-block;position: relative;float: left;height: 30px}
+#header .mainBox .center:hover,#header .mainBox .headhelp:hover{/*background-color: rgb(55,160,219);*/cursor: pointer;}
+#header .mainBox .center span,#header .mainBox .headhelp span,#header .save{line-height: 30px}
+
+#header .center .hide_center,#header .headhelp .hide_headhelp{text-align: center;display: none;width: 75px;background: #fff;position: absolute;top: 30px;*top: 25px;left: -3px;border: 1px solid #D5D5D5;border-top: solid 4px #39a1ea;z-index: 110}
+#header .rightflo .center .hover,#header .rightflo .headhelp .hover{display:block}
+#header .center .hide_center a,#header .headhelp .hide_headhelp a{color: gray;display: block;line-height: 30px;}
+#header .center .hide_center a:hover,#header .headhelp .hide_headhelp a:hover{color: #FAAB02;}
+#header .mainBox .map{display: inline-block;position: relative;float: left;}
+#header .mainBox .hide_map{display:none;position: absolute;top: 30px;*top: 25px;right: -10px;border: 1px solid #D5D5D5;height: 200px;width: 980px;z-index: 100;padding-top: 10px;background-color: white;border-top: solid 4px #39a1ea;}
+#header .mainBox .map .hover{display:block}
+#header .hide_map .site-cont{height: 180px;display: inline-block;overflow:hidden;padding-left: 30px;}
+#header .hide_map .site-cont h2{font-size:16px;padding-bottom:8px;font-family:'\5FAE\8F6F\96C5\9ED1',arial,"\5b8b\4f53"}
+#header .hide_map .site-cont h2 i{margin-right: 3px;}
+#header .hide_map .site-cont h2 span{padding-left:6px}
+#header .hide_map .site-cont ul{margin-right:-20px;overflow:hidden;}
+#header .hide_map .site-hot h2,#header .hide_map .site-hot a:hover{color:rgb(246,171,0)}
+#header .hide_map .site-market h2,#header .hide_map .site-market a:hover{color:rgb(55,160,219)}
+#header .hide_map .site-brand h2,#header .hide_map .site-brand a:hover{color:rgb(0,104,182)}
+#header .hide_map .site-help h2,#header .hide_map .site-help a:hover{color:rgb(44,64,152)}
+#header .hide_map .site-hot{width:280px}
+#header .hide_map .site-market{width:280px;border-left:1px solid #f5f5f5;border-right:1px solid #f5f5f5}
+#header .hide_map .site-brand{width:180px;border-right:1px solid #f5f5f5}
+#header .hide_map .site-help{width:200px;}
+#header .hide_map .site-list li{width: 61px;float: left;padding: 3px 0;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+#header .hide_map .sn-sitemap .mui-global-iconfont{padding-right:4px}
+#header .hide_map .site-list li a{position:relative;_display:inline-block;_display:inline;_zoom:1;color: gray;}
+#header .hide_map .sn-sitemap-icon{position:absolute;width:9px;height:11px;line-height:0;font-size:0;overflow:hidden;top:-7px;right:-7px;background: url(http://static.soolife.cn/asset/img/mapicon.png) no-repeat;}
+
+#header .hide_map .sn-sitemap-icon-new{background-position: -3px -11px;}
+#header .hide_map .sn-sitemap-icon-hot{background-position: -3px 0;}
+#codeweixin{}
+#codeweixin .code-weixin img{width: 470px;}
+#codesina{}
+#codesina .code-sina img{width: 470px;}

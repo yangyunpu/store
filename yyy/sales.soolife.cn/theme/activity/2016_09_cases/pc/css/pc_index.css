@@ -1,0 +1,30 @@
+body,p{margin:0;padding:0;}
+.f_complete ul li{list-style-type:none;}
+.f_pc_luggage img{width:100%;border:none; cursor: pointer;}
+.f_complete{width:100%;background:#E3EFFF;overflow: hidden;}
+.f_pc_first a{text-decoration: none;}
+.f_pc_first{width:1200px;margin:0 auto;overflow: hidden;position: relative;}
+.first_row ul .first_one{float:left;width:580px;height:415px;background:#EEF2FB;line-height:415px;margin-left:-3%;}
+.first_row ul .first_two{float:left;width:580px;height:415px;background:#EEF2FB;line-height:415px;margin-left:3%;}
+.first_row ul li img{margin-left:3%;margin-top:3%;border:none;}
+.f_pc_picture ul li{float:left;width:280px;height:370px;background:#EEF2FB;margin-top:3%;margin-left:1.1%;}
+.f_pc_picture ul li .f_color{width:265px;height:225px;background: #D1E2FF;margin-left:2.5%;margin-top:2.5%;overflow: hidden;}
+.f_pc_picture ul .picture_one{margin-left:0%;}
+.f_pc_picture ul li img{width:100%;margin-top:10%;}
+.f_pc_picture ul li a .picture_font{height:140px;margin-left:3%;}
+.f_pc_picture ul li a .picture_font .activity{margin-top:3%;}
+.f_pc_picture ul li a .picture_font .activity .activity_buy{color:#F5A101;font-size: 14px;font-weight: 600;font-family: "微软雅黑";}
+.f_pc_picture ul li a .picture_font .activity .money{color:#F5A101;font-size: 24px;font-weight: 600;font-family: "微软雅黑";}
+.f_pc_picture ul li a .picture_font .activity .black{color:#818588;font-size: 14px;text-decoration: line-through;font-family: "微软雅黑";margin-top:1%;}
+.f_pc_picture ul li a .picture_font .narrate{padding-top:1.5px;height:45px;width:70%;margin-bottom: -20%;margin-top: 4%;background: url("/theme/activity/2016_09_Luggage/pc/img/picture/triangle_one.jpg") no-repeat;}
+.f_pc_picture ul li a .picture_font .narrate img{width:100%;}
+.f_pc_picture ul li a .picture_font .immediately{cursor: pointer; padding-top:7px;width:23%;height:56px;background:#F5A101;float: right;margin-bottom:5%;border-radius: 4px;text-align: center;line-height:18px;margin-right:5%;}
+.f_pc_picture ul li a .picture_font .immediately span{color:white;font-size:22px;}
+.narrate .f_whone{color:white;font-size:16px;font-weight: 600;font-family: "微软雅黑";margin-left:3%;}
+.narrate .f_white{font-size:14px;color:white;font-family: "微软雅黑";margin-left:3%;}
+#new_product{text-align:center;margin-left:15%;}
+#new_product img{width:48%;}
+.bottom_three{width:100%;}
+.f_bottom img{border:none;}
+.f_bottom .purchase_one{position: absolute;width:5%;height:60px;left:72.5%;top:80%;}
+.f_bottom .purchase_two{position: absolute;width:5%;height:60px;left:72.5%;top:93.5%;}

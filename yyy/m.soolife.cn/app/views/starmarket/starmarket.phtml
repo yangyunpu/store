@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>如此生活|星超市</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- <link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/> -->
+	<link rel="stylesheet" type="text/css" href="/public/css/starmarket.css"/>
+</head>
+<body class="lcy_starmarket">
+<!-- 头部 -->
+	<header class="market_head">
+		<a href="/index.html"><div class="back_img"></div></a>
+		<p>星超市</p>
+	</header>
+	<div class="banner_top white_bg">
+	    <?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.banner']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.banner']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	</div>
+	<!-- 快速分类 -->
+	<div class="classify white_bg" url_search={{url_search}}>
+		<ul>
+			<li code='I'>
+				<img src="/public/img/starmarket/StarSupermarket_Chowhound-world@2x.png" alt="">
+				<a>吃货天下</a>
+			</li>
+			<li code='G'>
+				<img src="/public/img/starmarket/StarSupermarket_Quality-life@2x.png" alt="">
+				<a>品质生活</a>
+			</li>
+			<li code='D'>
+				<img src="/public/img/starmarket/StarSupermarket_Clean@2x.png" alt="">
+				<a>个人清洁</a>
+			</li>
+			<li code='H'>
+				<img src="/public/img/starmarket/StarSupermarket_baby@2x.png" alt="">
+				<a>熊娃必备</a>
+			</li>
+			<li code='K'>
+				<img src="/public/img/starmarket/StarSupermarket_intelligence-appliance@2x.png" alt="">
+				<a>智能家电</a>
+			</li>
+		</ul>
+	</div>
+	<!-- 小banner1-->
+	<div class="banner_samll white_bg">
+		<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.column01']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.column01']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	</div>
+	<!-- 第一商品 -->
+ 	<div class="market_goods_top white_bg">
+	 	<div class="goods1">
+	 	<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.01']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.01']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	 	</div>
+	 	<div class="goods2">
+	 	<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.02']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.02']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	 	</div>
+	 	<div class="goods2">
+	 	<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.03']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.03']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	 	</div>
+	 	<div class="goods3">
+	 	<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.04']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.04']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	 	</div>
+ 	</div>
+	<!-- 小banner2-->
+	<div class="banner_samll white_bg">
+		<?php if(!empty($data['app.supermarket.main']['children']['app.supermarket.main.column02']['items'])) { ?>
+		{% for d in data['app.supermarket.main']['children']['app.supermarket.main.column02']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php  break; ?>
+		{% endfor %}
+		<?php } ?>
+	</div>
+	<!-- 秒杀 -->
+	<div class="market_seckill white_bg">
+		<div class="seckill_top">
+			<img src="/public/img/msha_tag.png" alt="">
+		</div>
+		<div class="goodslist">
+			<ul>
+			<?php if(!empty($data['app.supermarket.seckilling']['children']['app.supermarket.seckilling.goods']['items'])) { ?>
+		    {% for d in data['app.supermarket.seckilling']['children']['app.supermarket.seckilling.goods']['items'] %}
+				<li>
+					<div class="goods_box">
+						<div class="img_box">
+							<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+						</div>
+						<!--<p class="gooods_name"></p>
+						<p>
+							<span class=""></span>
+							<span></span>
+							<span></span>
+						</p>-->
+					</div>
+				</li>
+			{% endfor %}
+		    <?php } ?>
+				
+			</ul>
+		</div>
+	</div>
+	<!-- 小banner3-->
+	<div class="banner_samll white_bg">
+	 <?php if(!empty($data['app.supermarket.seckilling']['children']['app.supermarket.seckilling.column']['items'])) { ?>
+	 {% for d in data['app.supermarket.seckilling']['children']['app.supermarket.seckilling.column']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+	 <?php break; ?>
+	 {% endfor %}
+	 <?php } ?>
+	</div>
+	<!-- 限时抢购	 -->
+	<div class="market_onlytime white_bg">
+		<div class="onlytime_top">
+			<img src="/public/img/onlytime.png" alt="">
+		</div>
+		<div class="onlytime_list">
+			<div class="onlygoods_1">
+				<?php if(!empty($data['app.supermarket.limit']['children']['app.supermarket.limit.01']['items'])) { ?>
+			    {% for d in data['app.supermarket.limit']['children']['app.supermarket.limit.01']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="onlygoods_1">
+				<?php if(!empty($data['app.supermarket.limit']['children']['app.supermarket.limit.02']['items'])) { ?>
+			    {% for d in data['app.supermarket.limit']['children']['app.supermarket.limit.02']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="onlygoods_1">
+				<?php if(!empty($data['app.supermarket.limit']['children']['app.supermarket.limit.03']['items'])) { ?>
+			    {% for d in data['app.supermarket.limit']['children']['app.supermarket.limit.03']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="onlygoods_1">
+				<?php if(!empty($data['app.supermarket.limit']['children']['app.supermarket.limit.04']['items'])) { ?>
+			    {% for d in data['app.supermarket.limit']['children']['app.supermarket.limit.04']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+		</div>
+		
+	</div>
+	<!-- 小banner4-->
+	<div class="banner_samll white_bg">
+		<?php if(!empty($data['app.supermarket.limit']['children']['app.supermarket.limit.column']['items'])) { ?>
+	    {% for d in data['app.supermarket.limit']['children']['app.supermarket.limit.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php break; ?>
+	    {% endfor %}
+	    <?php } ?>
+	</div>
+	<!-- 分场惠 -->	
+	<div class="market_feng white_bg">
+		<div class="feng_top">
+			<img src="/public/img/feng_tag.png" alt="">
+		</div>
+		<div class="feng_list">
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.01']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.01']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.02']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.02']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.03']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.03']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.04']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.04']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.05']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.05']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.06']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.06']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.07']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.07']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.08']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.08']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+			<div class="fenggoods_1">
+				<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.09']['items'])) { ?>
+			    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.09']['items'] %}
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+				<?php break; ?>
+			    {% endfor %}
+			    <?php } ?>
+			</div>
+		</div>
+	</div>
+
+	<!-- 小banner5-->
+	<div class="banner_samll white_bg">
+		<?php if(!empty($data['app.supermarket.meeting']['children']['app.supermarket.meeting.column']['items'])) { ?>
+	    {% for d in data['app.supermarket.meeting']['children']['app.supermarket.meeting.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" ></a>
+		<?php break; ?>
+	    {% endfor %}
+	    <?php } ?>
+	</div>
+	<!-- 滑动导航条 -->
+	<div class="slider_nav white_bg">
+		<ul>
+		    <?php if(!empty($mata)) { ?>
+		    <li code=''><a data="#market_more">全部分类</a></li>
+			{% for i,v in mata %}
+			<li code={{v['code']}}><a data="#market_more{{v['code']}}">{{v['name']}}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<!-- more商品 -->
+	<div class="market_more_box white_bg">
+	    
+		<div class="market_more" id="market_more" url_goods={{url_goods}}>
+			<!-- 商品循环 -->
+			{% if wata %}
+			{% for k,v1 in wata %}
+			<div class="more_goods" >
+				<div class="img_box">
+					<a href="{{url_goods}}/{{v1['sku_id']}}.html"><img src="{{v1['logo']}}" alt=""></a>
+				</div>
+				<p class="goodsname">{{v1['name']}}</p>
+				<p class="piece">￥{{v1['shop_price']}}</p>
+			</div>
+			{% endfor %}	
+			{% endif %}	
+		</div>
+		
+	<?php  } ?>
+
+	</div>
+	<div class="to_head" id="to_head"><img src="/public/img/index/scrolltop.png" alt=""></div>
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/index/soolife.starmarket.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>
+

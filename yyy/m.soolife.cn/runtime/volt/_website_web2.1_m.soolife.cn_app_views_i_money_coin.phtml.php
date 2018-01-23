@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|会员中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/i/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/i/money/view.money.css"/>
+</head>
+<body>
+<div class="index_wrap">
+	<div class="header">
+	    <a onclick="window.history.go(-1)"><img class="arrow"  src="/public/img/common/shop_back_black@1x.png " ></a>
+		<span class="head_title">星币</span> 
+	</div>
+	<!-- 下载框 -->
+<!-- 	<div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+	<div id="wrap">
+		<div class="money_top">
+	        <div class="money_bg">
+	        	<p class="money_explain">星币说明</p>
+	        	<?php if ($member) { ?>
+	        	    <div class="money_num"><span>当前星币</span>  <span id="num"><?= $member['coin'] ?></span>  <span>个</span></div>
+                <?php } ?>
+	        	<a  class="money_change" href="/huilife/newcollar.html">领星币</a>
+	        </div>
+		</div>
+        <div class="money_list">
+            <?php if ($coin) { ?>
+	        <div class="record_date">
+	        	<p>最近30天记录</p>
+	        </div>
+	    	<ul class="money_record">
+	    		<?php foreach ($coin as $d) { ?>
+	    		<li>
+	    			<div class="record_list">
+	    				<p><?= $d['type'] ?></p>
+	    				<p><?= $d['time'] ?></p>
+	    			</div>
+	    			<p class="record_num"><?= $d['pay'] ?></p>
+	    		</li>
+	    		<?php } ?>
+	    	</ul>
+	    	<?php } else { ?>
+	    	<!-- 没有数据页面 -->
+	    	<div class="money_data">
+	    		<p class="data_no">暂时没有历史纪录</p>
+	    	</div>
+	    	<?php } ?>
+        </div>
+    	<!-- 蒙版 -->
+    	<div id="money_mask" class="hide">
+    		<div id="money_rule">
+    			<div class="rule_con">
+    				<p>星币累计方式</p>
+    				<p class="rule_txt">首日可领5个，连续第二天可领10个，连续第三天15个...最多每天可获得35个星币。</p>
+    			</div>
+    			<div class="rule_con">
+    				<p>星币价值</p>
+    				<p class="rule_val">1个星币＝1元人民币</p>
+    			</div>
+    			<a class="rule_know">知道了</a>
+    		</div>
+    	</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/i/money/coin.js"></script> 

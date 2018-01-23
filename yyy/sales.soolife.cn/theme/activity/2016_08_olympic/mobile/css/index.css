@@ -1,0 +1,205 @@
+body{color: #5D5E5F; font-family: "Arial","Microsoft YaHei";font-style: normal;}
+body, html, p, span, img, a, div, ul, li{margin: 0; padding: 0;font: 'Microsoft YaHei';}
+ul,ol,li{ list-style: none;}
+img{ border: none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.snatchgold{
+	width: 100%; margin: 0 auto; padding: 0; 
+ }
+.snatchgold .banner{
+	width: 100%; margin: 0 auto; padding: 0; position: relative;
+
+}
+
+.modal{
+	width: 100%; margin: 0 auto; padding: 0; position: absolute; bottom: 40px;
+}
+.banner >img{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.jiangli{
+	width: 100%; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.qingd{
+	width: 98%; margin: 0 auto; padding: 0;
+}
+.jinp{
+	width: 100%; margin: 0; padding: 0; position: relative;
+}
+.jinp a >img{
+	width: 100%;
+}
+.jiangli{
+	width: 100%; margin: 0 auto; padding: 0; position: absolute; bottom: -70px;
+}
+.jiangli .bottom{
+	width: 50%; margin: 0 auto;padding: 0; 
+}
+.jiangli .bottom img{
+	width: 100%;
+}
+
+.dbj_a{
+	width: 100%; margin: 0 auto; padding: 0;background: url("../img/dbj_a.jpg") ; background-size:100%  100%;
+}
+.title{
+	width: 100%; margin: 0 auto; padding: 0; 
+}
+.title img{
+	width: 100%; margin: 0 auto; padding: 0; 
+}
+.qingd .left_qd{
+	width: 98%; margin: 0 auto; padding: 0; background: url("../img/bj_b.jpg") no-repeat; padding-top:10px ;margin-bottom: 5px;
+}
+.left_qd .shagpt_a {
+	width: 40%; margin: 0 auto; padding: 0; padding-left: 5%;
+}
+.left_qd .shagpt_a img{
+	width: 100%;
+}
+.left_qd .xiangq_a {
+	width: 50%; margin: 0 auto; padding: 0;padding-top: 3rem;
+}
+.left_qd .xiangq_a  .name{
+	width: 100%; height: 1.8rem; line-height: 1.8rem; color: #000; font-size: 1.1rem; font-weight: 700;  white-space:nowrap;overflow:hidden;text-overflow: ellipsis;
+}
+.left_qd .xiangq_a .jies{
+	width: 100%; height: 1.2rem; line-height: 1.2rem; color: #888888; font-size: 1rem;
+}
+.left_qd .xiangq_a .price_p {
+	width: 100%; margin: 0 auto; padding: 0; padding-top: 1rem;
+}
+.price_p .left{
+	width: 70%; margin: 0 auto; padding: 0;
+}
+.price_p .jiag{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.price_p .jiag span{
+	color: #ff0000; font-size: 0.8rem;
+}
+.price_p .jiag .price_xj{
+	color: #ff0000; font-size: 1.4rem; font-weight: 700;
+}
+.price_p .y_price{
+	width: 100%; height: 1.4rem; line-height: 1.4rem; font-size: 1rem; margin: 0; padding: 0; color: #000;text-decoration:line-through;
+}
+.price_p .right{
+	width: 30%;  margin: 0; padding: 0;
+}
+.price_p .right img{
+	width: 100%;
+}
+.right_qd {
+	width: 100%; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.right_qd ul li{
+	width: 48%; margin: 0 1%; float: left; background: #fff;
+}
+.right_qd ul li img{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.dbj_b{
+	width: 100%; margin: 0 auto; padding: 0;background: url("../img/dbj_c.jpg") ; background-size:100%  100%; padding-bottom: 20px;
+}
+.jcai_a{
+	width: 98%; margin: 0 auto; padding: 0;margin-bottom: 10px;
+}
+.jcai_a .left_qd{
+	width: 98%; margin: 0 auto; background: url("../img/bj_a.jpg") no-repeat; padding-top: 10px; margin-bottom: 5px;
+}
+.jcai_a .left_qd .shagpt_b{
+	width: 40%; margin: 0 auto; padding: 0;padding-left: 5%; 
+}
+.jcai_a .left_qd .shagpt_b img{
+	width: 100%;
+}
+.right_qd{
+	width: 100%; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.right_qd ul li{
+	width: 48%; margin: 1%  1%; float: left; background: #fff;
+}
+.dbj_c{
+	width: 100%; margin: 0 auto; padding: 0;background: url("../img/dbj_b.jpg") ; background-size:100%  100%;
+}
+.dbj_d{
+	width: 100%; margin: 0 auto; padding: 0;background: url("../img/dbj_d.jpg") ; background-size:100%  100%; padding-bottom: 50px; 
+}
+.left_qd  .shagpt_b {
+	width: 40%; padding-left: 5%; margin: 0 auto; padding: 0;
+}
+.left_qd  .shagpt_b img{
+	width: 100%; margin: 0; padding: 0;
+}
+.zgjyou{
+	width: 98%; margin: 0 auto; padding: 0;  padding-top: 10px; 
+}
+.zgjyou .left_qd {
+	width: 98%; margin: 0 auto; padding: 0;background: url("../img/bj_c.jpg") no-repeat; margin-bottom: 5px; padding-top: 10px;
+}
+.left_qd .shagpt_c {
+	width: 40%; padding-left: 5%; margin: 0 auto; padding: 0;   
+}
+.left_qd .shagpt_c img{
+	width: 100%; padding:0; margin: 0 auto; 
+}
+.zdzq_a {
+	width: 98%; margin: 0 auto; padding: 0;  padding-top: 10px;  
+}
+.left_qd .shagpt_d{
+	width: 40%; padding-left: 5%; margin: 0 auto; padding: 0;
+}
+.left_qd .shagpt_d img{
+	width: 100%; padding:0; margin: 0 auto; 
+}
+
+.zdzq_a .left_qd{
+	width: 98%; margin: 0 auto; padding: 0;margin-bottom: 5px;background: url("../img/bj_d.jpg") no-repeat; padding-top: 12px;
+}
+.right_p{
+	width: 96%; margin: 0 auto; padding: 0;
+}
+.right_p .name{
+	width: 100%; height: 1.6rem; line-height: 1.6rem; font-size: 1.1rem; color: #000; font-weight: 700;white-space: nowrap;
+	overflow: hidden;text-overflow: ellipsis; margin: 0 auto; padding: 0;
+}
+.right_p .jies{
+	width: 100%; height: 1.2rem; line-height: 1.2rem; font-size: 0.8rem; color: #888888; white-space: nowrap;
+	overflow: hidden;text-overflow: ellipsis; margin: 0 auto; padding: 0;
+}
+.price_a{
+	width: 100%; margin: 0 auto; padding: 0; margin-top:1rem ;margin-bottom:1rem ;
+} 
+.price_a .jiag span{
+	color: #ff0000;
+    font-size: 0.8rem;
+}
+.price_a .jiag .price_xj{
+	color: #ff0000;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.price_a .y_price{
+	width: 100%; height: 1.4rem; line-height: 1.4rem; font-size: 1rem; margin: 0;
+    padding: 0; color: #000; text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

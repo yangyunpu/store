@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- <link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/> -->
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/mindex/new_index.css"/>
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/mindex/index.css"/>
+
+</head>
+<body>
+	 <div class="addmenu" url="<?= $url_order ?>">
+	 <div class="head1" id="head">
+	 <a href="/search.html">
+       <div class="search1">
+          <div class="input">
+          <img src="/public/img/newindex/search.png">
+          <div class="font_h"><?php echo !empty($hot)?$hot:''; ?></div>
+          </div>
+          <div class="news">
+          		<?php if (@empty($login_data['is_login'])){ ?>
+          			<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>">
+          				<img src="/public/img/newindex/xiaoxi.png">
+          			</a>
+          		<?php }else{ ?>
+          			<a href="/i/msg/msgindex.html">
+          				<img src="/public/img/newindex/xiaoxi.png">
+          			</a>
+          		<?php } ?>
+          	<!-- <img src="/public/img/newindex/xiaoxi.png"> -->
+          </div>
+       </div>
+       </a>
+       <?php if (@empty($login_data['is_login'])) {  ?>
+       <div class="currency">
+       		<div class="c_left fl_l">
+       		    <div class="coins_num">
+       		    	<span class="font_48">0</span>
+       		    	<span >星币</span>
+       		    </div>
+       		    <p>登录可领星币</p>
+       		</div>
+       			<!-- <a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>"> -->
+       			<div class="c_right lingxingbi fl_r mar_t_8" url="<?= $url_m ?>" urlb="<?= $return_url ?>">
+       			领星币
+       		</div><!-- </a> -->
+       	</div>
+       	<?php }elseif ($login_data['is_login'] == 1 && !$login_data['is_get']) { ?>
+       	<div class="currency">
+	       	<div class="c_left fl_l">
+	       	    <div class="coins_num">
+	       	    	<span class="font_48"><?= $login_data['coin'] ?></span>
+	       	    	<span >星币</span>
+	       	    </div>
+	       	    <p>今日可领取<?= $login_data['data'][0]['coin'] ?>星币</p>
+	       	</div>
+	       	<!-- <a href="<?= $url_m ?>/huilife/newcollar.html"> --><div class="c_right fl_r mar_t_8">
+	       		领星币
+	       	</div><!-- </a> -->
+	    </div>
+       	<?php } ?>
+
+
+	 </div><!-- <img src="/public/img/newindex/banner_1.png"> -->
+	 <div class="swiper_content">
+            <?php if (!empty($banner)) {  ?>
+	 	 <div class="swiper-container" style="margin-top: 0!important;">
+            	<div class="swiper-wrapper">
+            		<?php foreach ($banner as $vo) { ?>
+            	    <div class="swiper-slide">
+            	    <a href="<?php if(!empty($vo['mobile_link'])){ echo $vo['mobile_link'];} ?>">
+            	    <img src="<?= $vo['picture'] ?>">
+            	    </a>
+            	    </div>
+            	    <?php } ?>
+            	</div>
+
+             <div class="pagination"></div>
+        </div>
+            <?php } ?>
+	 </div>
+	 <div class="activity">
+	<!--  <img src="http://d.test.soolife.cn/images/6bc03b6df852e0c7aa5890d67e54e70a.jpg"> -->
+	 	<?php if (!empty($ads_one)) { ?>
+		 	<a href="<?php if(!(empty($ads_one['mobile_link']) and isset($ads_one['mobile_link']))){ echo $ads_one['mobile_link'];} ?>"><img src="<?= $ads_one['picture'] ?>"></a>
+	 	<?php } ?>
+	 </div>
+	 <div class="main_menu">
+	 	<ul>
+	 		<li class="fl_l"><a href="<?= $url_m ?>/starfans/index.html"><img src="/public/img/newindex/xingfenlian.png">
+	 		<p>星粉联</p></a></li>
+	 		<li class="fl_l"><a href="<?= $url_money ?>/lead/leader.html"><img src="/public/img/newindex/maimaibangke.png">
+	 		<p>买卖帮客</p></a></li>
+	 		<li class="fl_l"><img src="/public/img/newindex/daV.png">
+	 		<p>大V卡</p></li>
+	 		<li class="fl_l"><a href="<?= $url_m ?>/lifehui/index.html"><img src="/public/img/newindex/lingquanhzongxin.png">
+	 		<p>体验店</p></a></li>
+	 		<li class="fl_l"><a href="<?= $url_m ?>/huilife/newcollar.html"><img src="/public/img/newindex/xingbilianmeng.png">
+	 		<p>星币联盟</p></a></li>
+	 	</ul> 
+	 </div>
+	 <div class="advertisement">
+	 		<ul>
+	 		<?php if (!empty($ads_two)): ?>
+		 		<a href="<?php if(!(empty($ads_two[0]['mobile_link']) and isset($ads_two[0]['mobile_link']))){ echo $ads_one['mobile_link'];} ?>">
+		 		<li class="fl_l one"><img src="<?= $ads_two[0]['picture'] ?>"></li>
+		 		</a>
+		 		<a href="<?php if(!(empty($ads_two[1]['mobile_link']) and isset($ads_two[1]['mobile_link']))){ echo $ads_one['mobile_link'];} ?>">
+		 		<li ><img src="<?= $ads_two[1]['picture'] ?>"></li>
+		 		</a>
+		 		<a href="<?php if(!(empty($ads_two[2]['mobile_link']) and isset($ads_two[2]['mobile_link']))){ echo $ads_one['mobile_link'];} ?>">
+		 		<li class="fl_l three"><img src="<?= $ads_two[2]['picture'] ?>"></li>
+		 		</a>
+		 		<a href="<?php if(!(empty($ads_two[3]['mobile_link']) and isset($ads_two[3]['mobile_link']))){ echo $ads_one['mobile_link'];} ?>">
+		 		<li class="two "><img src="<?= $ads_two[3]['picture'] ?>"></li>
+		 		</a>
+	 		<?php endif ?>
+	 	</ul> 
+	 </div>
+	 <?php if (!empty($goods)): ?>
+
+	<!-- 新品 -->
+	<?php if (@$goods['data']['newgoods_result']['gstatus'] ==1): ?>
+			 <div class="activity mar_t_20">
+			 <?php if (!empty($ads_new)) { ?>
+			 	<a href="<?php if(!(empty($ads_new['mobile_link']) and isset($ads_new['mobile_link']))){ echo $ads_new['mobile_link'];} ?>"><img src="<?= $ads_new['picture'] ?>"></a>
+			 <?php } ?>
+			 </div>
+			 <div class="commodity border-b">
+			 	<?php if (!empty($goods_new_one)): ?>	 		
+			 	<div class="c_right fl_l open-goods-detail" data-goods-id="<?= $goods_new_one['skuid'] ?>">
+			 		<img src="<?= $goods_new_one['slogo'] ?>">
+			 		<div class="remark m_t_32">
+			 			<p class="name"><?= $goods_new_one['sname'] ?></p>
+			 			<p class="price">￥<?= $goods_new_one['shopprice'] ?></p>
+			 			<p class="o_price">￥<?= $goods_new_one['marketprice'] ?></p>
+			 		</div>
+			 	</div>
+			 	<?php endif ?>
+			 	<div class="c_left fl_r">
+			 	<?php if (!empty($goods_new_two)): ?> 
+			 		<div class="l_top padd-20 border-b open-goods-detail" data-goods-id="<?= $goods_new_two['skuid'] ?>">
+			 			<img src="<?= $goods_new_two['slogo'] ?>">
+			 			<div class="l_remark ">
+				 			<p class="name"><?= $goods_new_two['sname'] ?></p>
+				 			<p class="price">￥<?= $goods_new_two['shopprice'] ?></p>
+				 			<p class="o_price">￥<?= $goods_new_two['marketprice'] ?></p>
+			 		    </div>
+			 		</div>
+			 		<?php endif ?>
+			 		<?php if (!empty($goods_new_there)): ?>	
+			 		<div class="l_bottom padd-20 open-goods-detail" data-goods-id="<?= $goods_new_there['skuid'] ?>">
+			 			<img src="<?= $goods_new_there['slogo'] ?>">
+			 			<div class="l_remark">
+				 			<p class="name"><?= $goods_new_there['sname'] ?></p>
+				 			<p class="price">￥<?= $goods_new_there['shopprice'] ?></p>
+				 			<p class="o_price">￥<?= $goods_new_there['marketprice'] ?></p>
+			 		    </div>
+			 		</div>
+			 		<?php endif ?>
+			 	</div>
+			 </div>
+			<?php if (!empty($goods_new)): ?>
+			 <div class="recommend">
+			 	<ul>
+			 			<?php foreach ($goods_new as $ve) { ?>
+				 		<li>
+				 			<div class=" open-goods-detail" data-goods-id="<?= $ve['skuid'] ?>">
+					 			<img src="<?= $ve['slogo'] ?>">
+					 			<div class="remark">
+					 				<p class="name"><?= $ve['sname'] ?></p>
+						 			<p class="price">￥<?= $ve['shopprice'] ?></p>
+						 			<p class="o_price">￥<?= $ve['marketprice'] ?></p>
+					 			</div>
+				 			</div>
+				 		</li>
+				 		<?php } ?>
+		<!-- 	 		<li>
+			 			<img src="/public/img/newindex/img.png">
+			 			<div class="remark">
+			 				<p class="name">榨汁机</p>
+				 			<p class="price">￥19.00</p>
+				 			<p class="o_price">￥200.00</p>
+			 			</div>
+			 		</li>
+			 		<li>
+			 			<img src="/public/img/newindex/img.png">
+			 			<div class="remark">
+			 				<p class="name">榨汁机</p>
+				 			<p class="price">￥19.00</p>
+				 			<p class="o_price">￥200.00</p>
+			 			</div>
+			 		</li>
+			 		<li>
+			 			<img src="/public/img/newindex/img.png">
+			 			<div class="remark">
+			 				<p class="name">榨汁机</p>
+				 			<p class="price">￥19.00</p>
+				 			<p class="o_price">￥200.00</p>
+			 			</div>
+			 		</li> -->
+			 	</ul>
+			 </div>
+	<?php endif ?>
+	 
+	<?php endif ?>
+		<!-- 限时折扣 -->
+		<?php if (@$goods['data']['discountgoods_result']['gstatus'] ==1): ?>
+	  <div class="activity mar_t_20">
+	  <?php if (!empty($ads_sale)) { ?>
+	 	<a href="<?php if(!empty($ads_sale['mobile_link'])){ echo $ads_sale['mobile_link'];} ?>"><img src="<?= $ads_sale['picture'] ?>"></a>
+	 	<?php } ?>
+	 </div>
+	 <?php if (!empty($goods_sale_one)) {  ?>
+	 <div class="count_down_shop border-b open-goods-detail" data-goods-id="<?= $goods_sale_one['skuid'] ?>">
+	 <input style="display: none;" class="date" type="text" value="<?php if(!empty($goods_sale_one['atime'])){ echo $goods_sale_one['atime'];} ?>" name="">
+	 	<div class="remark fl_l">
+	 	<?php if(!empty($goods_sale_one['timetype'] && $goods_sale_one['timetype'] != 0 && $goods_sale_one['atime'] != 0)){  ?>
+	 		<div class="count_down">
+	 			<?php if ($goods_sale_one['timetype'] == 2 && time() < $goods_sale_one['atime'] ){ ?>
+	 				<span>下次再约~</span>
+	 			<?php }else{ ?>
+	 			<p class="fl_l">距折扣<?php if(!empty($goods_sale_one['timetype']) && $goods_sale_one['timetype'] == 1 ){ echo '开始';}else{ echo "结束";} ?>还有</p>
+	 			<div class="time">
+	 				<span class="day bg">00</span>
+	 				<span class="">天</span>
+	 				<span class="hour bg">00</span>
+	 				<span class="zhongjian">:</span>
+	 				<span class="minute bg">00</span>
+	 				<span class="zhongjian">:</span>
+	 				<span class="second bg">00</span>
+	 			<?php } ?>
+	 			</div>
+	 		</div>
+	 		<?php }else{ ?>
+	 			<span>下次再约~</span>	
+	 		<?php } ?>
+
+	 		<p class="name xianshizhekou"><?= $goods_sale_one['sname'] ?></p>
+	 		<p class="interval "></p>   <!-- 时间<?= $goods_sale_one['atime'] ?> -->
+	 		<p class="price">¥<?= $goods_sale_one['promoprice'] ?></p>
+	 		<!-- <p class="price">¥<?= $goods_sale_one['shopprice'] ?></p> -->
+	 		<p class="o_price">¥<?= $goods_sale_one['marketprice'] ?></p>
+	 	</div>
+	 	<img src="<?= $goods_sale_one['slogo'] ?>">
+	 </div>
+	<?php } ?>
+	<?php if (!empty($goods_sale)): ?>
+	  <div class="recommend">
+	 	<ul>
+	 		<?php foreach ($goods_sale as $sale) { ?>
+	 		<li>
+	 			<div class=" open-goods-detail" data-goods-id="<?= $sale['skuid'] ?>">
+		 			<img src="<?= $sale['slogo'] ?>">
+		 			<div class="remark">
+		 				<p class="name"><?= $sale['sname'] ?></p>
+			 			<p class="price">￥<?= $sale['promoprice'] ?></p>
+			 			<!-- <p class="price">￥<?= $sale['shopprice'] ?></p> -->
+			 			<p class="o_price">￥<?= $sale['marketprice'] ?></p>
+		 			</div>
+	 			</div>
+	 		</li>
+	 		<?php } ?>
+<!-- 	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li> -->
+	 	</ul>
+	 </div>
+	<?php endif ?>
+	<?php endif ?>
+	<!-- 爆款 -->
+	<?php if (@$goods['data']['ex_result']['estatus'] ==1): ?>
+	  <div class="activity mar_t_20">
+	  <?php if (!empty($ads_blast)) { ?>
+	  <a href="<?php if(!empty($ads_blast['mobile_link'])){ echo $ads_blast['mobile_link'];} ?>"><img src="<?= $ads_blast['picture'] ?>"></a>
+	  <?php } ?>
+	 </div>
+	 <?php if (!empty($goods_blast)): ?>
+	 <div class="recommend_shop border-b">
+	 <?php if (!empty($goods_blast['left_sku_res'])): ?>
+	 <div class="evaluate border_b_r fl_l open-goods-detail" data-goods-id="<?= $goods_blast['left_sku_res']['skuid'] ?>">
+	 <div class="suspension">
+	 <img src="<?= $goods_blast['left_sku_res']['slogo'] ?>">
+	  <div class="baokuang"><?= $goods_blast['eleftskutag'] ?></div>
+	 </div>
+	 	<div class="remark mar-6 padd-20">
+	 	<p class="name"><?= $goods_blast['left_sku_res']['sname'] ?></p>
+	 	<div class="label">
+	 		<?= $goods_blast['eleftskuphrase'] ?>
+	 	</div>
+	 	<div class="price mar_top">
+	 		<span class="now_price">¥<?= $goods_blast['left_sku_res']['shopprice'] ?></span>
+	 		<span class="o_price">¥<?= $goods_blast['left_sku_res']['marketprice'] ?></span>
+	 	</div>
+	 	</div>
+	 	<div class="reason">
+	 		<?= $goods_blast['eleftskureason'] ?>>>
+	 	</div>
+	 </div>
+	 <?php endif ?>
+	 <?php if (!empty($goods_blast['right_sku_res'])): ?>
+	 <div class="evaluate e_l border_b_r open-goods-detail" data-goods-id="<?= $goods_blast['right_sku_res']['skuid'] ?>">
+	 <div class="suspension">
+	  <img src="<?= $goods_blast['right_sku_res']['slogo'] ?>">
+	  <div class="baokuang"><?= $goods_blast['erightskutag'] ?></div>
+	 </div>
+	 	<div class="remark  mar-6 padd-20">
+	 	<p class="name"><?= $goods_blast['right_sku_res']['sname'] ?></p>
+	 	<div class="label">
+	 		<?= $goods_blast['erightskuphrase'] ?>
+	 	</div>
+	 	<div class="price mar_top">
+	 		<span class="now_price">¥<?= $goods_blast['left_sku_res']['shopprice'] ?></span>
+	 		<span class="o_price">¥<?= $goods_blast['left_sku_res']['marketprice'] ?></span>
+	 	</div>
+	 	</div>
+	 	<div class="reason ">
+	 		<?= $goods_blast['erightskureason'] ?>>>
+	 	</div>
+	 </div>
+	 <?php endif ?>
+	 </div>
+	  <div class="recommend" >
+	  <?php if (!empty($goods_blast['elowersku_res'])): ?>
+	 	<ul>
+	 		<?php foreach ($goods_blast['elowersku_res'] as $re) { ?>
+	 		<li>
+	 		<div class="open-goods-detail" data-goods-id="<?= $re['skuid'] ?>">
+	 		<div class="suspension">
+	 		    <div class="tupian">
+	 		    	<img class="" src="<?= $re['slogo'] ?>">
+	 		    </div>
+	 			<div class="baokuang_1"><?= $re['lwerskutag'] ?></div>
+	 		</div>
+	 			<div class="remark mar_t">
+	 				<p class="name"><?= $re['sname'] ?></p>
+		 			<p class="price">￥<?= $re['shopprice'] ?></p>
+		 			<p class="o_price">￥<?= $re['marketprice'] ?></p>
+	 			</div>
+	 		</div>
+	 		</li>
+	 		<?php } ?>
+<!-- 	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li>
+	 		<li>
+	 			<img src="/public/img/newindex/img.png">
+	 			<div class="remark">
+	 				<p class="name">榨汁机</p>
+		 			<p class="price">￥19.00</p>
+		 			<p class="o_price">￥200.00</p>
+	 			</div>
+	 		</li> -->
+	 	</ul>
+	 	<?php endif ?>
+	 </div>
+	 <?php endif ?>
+	 <?php endif ?>
+	 <?php endif ?>
+	 	<!-- 最下方(猜你喜欢上部)广告位 -->
+	  <div class="activity mar_t_20">
+	  <?php if (!empty($ads_bottom_one)) { ?>
+	  	<a href="<?php if(!empty($ads_bottom_one['mobile_link'])){ echo $ads_bottom_one['mobile_link'];} ?>"><img src="<?= $ads_bottom_one['picture'] ?>"></a>
+	  <?php } ?>
+	 </div>
+	  <div class="advertisement">
+	 		<ul>
+	 		<?php if (!empty($ads_bottom_left)) { ?>
+	 		<a href="<?php if(!empty($ads_bottom_left['mobile_link'])){ echo $ads_bottom_left['mobile_link'];} ?>"><li class="fl_l one"><img src="<?= $ads_bottom_left['picture'] ?>"></li></a>
+	 		<?php } ?>
+	 		<?php if (!empty($ads_bottom_up)) { ?>
+	 		<a href="<?php if(!empty($ads_bottom_up['mobile_link'])){ echo $ads_bottom_up['mobile_link'];} ?>"><li ><img src="<?= $ads_bottom_up['picture'] ?>"></li></a>
+	 		<?php } ?>
+	 		<?php if (!empty($ads_bottom_right)) { ?>
+	 		<a href="<?php if(!empty($ads_bottom_right['mobile_link'])){ echo $ads_bottom_right['mobile_link'];} ?>"><li class="fl_l three"><img src="<?= $ads_bottom_right['picture'] ?>"></li></a>
+	 		<?php } ?>
+	 		<?php if (!empty($ads_bottom_down)) { ?>
+	 		<a href="<?php if(!empty($ads_bottom_down['mobile_link'])){ echo $ads_bottom_down['mobile_link'];} ?>"><li class="two "><img src="<?= $ads_bottom_down['picture'] ?>"></li></a>
+	 		<?php } ?>
+	 	</ul> 
+	 </div>
+	 <div class="guess_you mar_t_20" >
+	 	<div class="guess_title">
+	 		<img src="/public/img/newindex/guess@2x.png">
+	 	</div>
+	 	<div class="guess_shop">
+	 	<div  class="recommend_shop padd_none" id="left" style="float: left;width: 50%;">
+	 		<ul>
+	 		<?php if (!empty($left_like)) { ?>
+	 		<?php foreach ($left_like as $key => $list) { ?>
+	 	 			<?php if (!empty($list['id'])) { ?>
+	 	 			<?php if (!empty($list)) { ?>
+	 	 					<li><a href="<?php if(!empty($list['mobile_link'])){ echo $list['mobile_link'];} ?>"><img src="<?= $list['picture'] ?>"></a></li>
+	 	 			<?php } ?>
+					<?php }else{?>
+						<li><div class="evaluate open-goods-detail" data-goods-id="<?= $list['sku_id'] ?>">
+					 <img src="<?= $list['logo'] ?>">
+						<div class="remark padd-20 ">
+						<p class="name"><?= $list['sku_name'] ?></p>
+						<?php if (!empty($list['promo_list'])){ ?>
+					   <div class="label_t">
+						<?php foreach ($list['promo_list'] as $type) { ?>
+						<?php if (!empty($type['type_text'])){ ?>
+						<div class="label"><?= $type['type_text'] ?></div>
+						<?php }else{ ?>
+						<div class="label"></div>
+						<?php } ?>
+						<?php } ?>
+					   </div>
+						<?php } ?>
+						<div class="price">
+						  <?php if ($list['coin'] > 0){ ?>
+							<div class="now_price" style="width: 6.4rem;margin-top: 0.2rem"><p style="float: left;">¥<?= $list['act_price'] ?></p>
+							+<p style="float: left;"><img src="/public/img/newindex/icon_xingbi@2x.png"></p><?= $list['coin'] ?> 
+							</div>
+							<?php }else{ ?>
+							<div class="now_price" style="margin-top: 0.2rem"><p>¥<?= $list['act_price'] ?></p>
+						<!-- 	+<p style="float: left;"><img src="/public/img/newindex/icon_xingbi@2x.png"></p><?= $list['coin'] ?>  -->
+							</div>
+							<?php } ?>							<div class="o_price">¥<?= $list['market_price'] ?></div>
+						</div>
+						</div>
+						<?php if (!empty($list['content'])): ?>
+						<div class="reason1">
+							<span class="yonghu">[用户评价]</span><span><?= $list['content'] ?></span>
+						</div>
+						<?php endif ?>
+					</div>
+					</li>
+					<?php }?>
+	 	 		
+	 		
+	 		<?php } ?>
+			<?php }?>
+	 		</ul>
+	 	</div>
+	 	<div  class="recommend_shop padd_none " id="rigth"  style="float: left;width: 50%;">
+	 		<ul>
+	 			<?php if (!empty($left_like)) { ?>
+	 			<?php foreach ($right_like as $key => $list) { ?>
+	 	 			<?php if (!empty($list['id'])) { ?>
+	 	 			<?php if (!empty($list)) { ?>
+	 	 				<li><a href="<?php if(!empty($list['mobile_link'])){ echo $list['mobile_link'];} ?>"><img src="<?= $list['picture'] ?>"></a></li>
+					<?php } ?>
+					<?php }else{?>
+					<li><div class="evaluate open-goods-detail" data-goods-id="<?= $list['sku_id'] ?>">
+					 <img src="<?= $list['logo'] ?>">
+						<div class="remark padd-20 ">
+						<p class="name"><?= $list['sku_name'] ?></p>
+						<?php if (!empty($list['promo_list'])){ ?>
+					   <div class="label_t">
+						<?php foreach ($list['promo_list'] as $type) { ?>
+						<?php if (!empty($type['type_text'])){ ?>
+						<div class="label"><?= $type['type_text'] ?></div>
+						<?php }else{ ?>
+						<div class="label"></div>
+						<?php } ?>
+						<?php } ?>
+					   </div>
+						<?php } ?>
+						<div class="price"> 
+						<?php if ($list['coin'] > 0){ ?>
+							<div class="now_price" style="width: 6.4rem;margin-top: 0.2rem"><p style="float: left;">¥<?= $list['act_price'] ?></p>
+							+<p style="float: left;"><img src="/public/img/newindex/icon_xingbi@2x.png"></p><?= $list['coin'] ?> 
+							</div>
+							<?php }else{ ?>
+							<div class="now_price" style="margin-top: 0.2rem"><p>¥<?= $list['act_price'] ?></p>
+						<!-- 	+<p style="float: left;"><img src="/public/img/newindex/icon_xingbi@2x.png"></p><?= $list['coin'] ?>  -->
+							</div>
+							<?php } ?>
+							<div class="o_price">¥<?= $list['market_price'] ?></div>
+						</div>
+						</div>
+						<?php if (!empty($list['content'])): ?>
+						<div class="reason1">
+							<span class="yonghu">[用户评价]</span><span><?= $list['content'] ?></span>
+						</div>
+						<?php endif ?>
+					</div>
+					</li>
+					<?php }?>
+		 		<?php } ?>
+				<?php }?>
+	 		</ul>
+	 	</div>
+	 	</div>
+	 	<!--<div class="guess_shop">
+	 	<?php if (!empty($guess_list)): ?>
+	 	<ul class="recommend_shop ">
+	 	 <li class="guang">
+	 	<img src="/public/img/newindex/xingbilianmeng.png">
+	 	</li> 
+	 		<?php foreach ($guess_list as $key => $list) { ?>
+	 			<?php switch ($key) {
+	 				case 2:
+	 				case 5:
+	 				case 20:
+	 				case 23: ?>
+	 		<li>
+	 		<a href="<?php if(!empty($list['mobile_link'])){ echo $list['mobile_link'];} ?>"><img src="<?= $list['picture'] ?>"></a>
+	 		</li>
+	 			<?php   break;
+	 				
+	 				default: ?> 
+				 		<li>
+						 <div class="evaluate open-goods-detail" data-goods-id="<?= $list['sku_id'] ?>">
+						  <img src="<?= $list['logo'] ?>">
+						 	<div class="remark padd-20 ">
+						 	<p class="name"><?= $list['sku_name'] ?></p>
+						 	<?php if (!empty($list['promo_list'])){ ?>
+						    <div class="label_t">
+						 	<?php foreach ($list['promo_list'] as $type) { ?>
+						 	<?php if (!empty($type['type_text'])){ ?>
+						 	<div class="label"><?= $type['type_text'] ?></div>
+						 	<?php }else{ ?>
+						 	<div class="label"></div>
+						 	<?php } ?>
+						 	<?php } ?>
+						    </div>
+						 	<?php } ?>
+						 	<div class="price">
+						 		<div class="now_price" style="width: 6.4rem"><p style="float: left;">¥<?= $list['act_price'] ?></p>
+						 		 //星币 
+						 		<?php if ($list['coin'] > 0): ?>
+						 			+<p style="float: left;"><img src="/public/img/newindex/icon_xingbi@2x.png"></p><?= $list['coin'] ?> 
+						 		<?php endif ?>
+						 		</div>
+						 		<div class="o_price">¥<?= $list['market_price'] ?></div>
+						 	</div>
+						 	</div>
+						 	<?php if (!empty($list['content'])): ?>
+						 	<div class="reason">
+						 		<span class="yonghu">[用户评价]</span><span><?= $list['content'] ?></span>
+						 	</div>
+						 	<?php endif ?>
+						 </div>
+				 		</li>
+	 			<?php   break;
+	 			} ?>
+
+	 		<?php } ?>
+	 		-->
+	 		<!-- <li>
+	 		 <img src="/public/img/newindex/bitmap.png">
+	 		</li>
+	 		<li>
+			 <div class="evaluate">
+			  <img src="/public/img/newindex/rectangle1.png">
+			 	<div class="remark padd-20">
+			 	<p class="name">扣环装饰拼接羊绒披肩装饰拼接羊绒披肩</p>
+			 	<div class="label">扣环装饰</div>
+			 	<div class="price">
+			 		<span class="now_price">¥1780</span>
+			 		<span class="o_price">¥1780</span>
+			 	</div>
+			 	</div>
+			 	<div class="reason">
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 	</div>
+			 </div>
+	 		</li>
+	 		<li>
+	 		 <img src="/public/img/newindex/bitmap.png">
+	 		</li>
+	 		<li>
+			 <div class="evaluate">
+			  <img src="/public/img/newindex/rectangle1.png">
+			 	<div class="remark padd-20">
+			 	<p class="name">扣环装饰拼接羊绒披肩装饰拼接羊绒披肩</p>
+			 	<div class="label">扣环装饰</div>
+			 	<div class="price">
+			 		<span class="now_price">¥1780</span>
+			 		<span class="o_price">¥1780</span>
+			 	</div>
+			 	</div>
+			 	<div class="reason">
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 	</div>
+			 </div>
+	 		</li>
+	 		<li>
+			 <div class="evaluate">
+			  <img src="/public/img/newindex/rectangle1.png">
+			 	<div class="remark padd-20">
+			 	<p class="name">扣环装饰拼接羊绒披肩装饰拼接羊绒披肩</p>
+			 	<div class="label">扣环装饰</div>
+			 	<div class="price">
+			 		<span class="now_price">¥1780</span>
+			 		<span class="o_price">¥1780</span>
+			 	</div>
+			 	</div>
+			 	<div class="reason">
+			 		衣服质量意想不到的好，款式超级喜欢，很帅气，关键是那个萌优惠>>
+			 	</div>
+			 </div>
+	 		</li> -->
+
+	<!--  	</ul>
+	 <?php endif ?> 
+	 	</div>-->
+	 </div>
+	  <div class="refresh shuaxin">
+	  <div class="refresh_img">
+	 	<img src="/public/img/newindex/group.png">
+	 	 </div>
+	 </div> 
+	 <div class="refresh jintou" style="display: none;">
+	 <div class="refresh_img">
+	 	<img src="/public/img/newindex/home_end@3x.png">
+	 </div>
+	 	<div class="remark">直到世界的尽头</div>
+	 </div>
+	 <!-- <div class="foot"></div> -->
+		<!-- 底部导航 -->
+		<!-- <footer class="navigation">
+			<ul>
+				<li>
+					<a href="/mindex/index.html">
+						<img src="../public/img/newindex/icon_1_r.png">
+						<p class="footer_bottom_color">首页</p>
+					</a>
+				</li>
+				<li>
+					<a href="/newcategory.html">
+						<img src="../public/img/newindex/icon_2.png">
+						<p >分类</p>
+					</a>
+				</li>
+				<li>
+					<a href="/lifehui/index.html">
+						<img src="../public/img/newindex/iocn_2.png">
+						<p>体验店</p>
+					</a>
+				</li>
+				<li>
+					<a href="<?= $url_order ?>/index.html">
+						<img src="../public/img/newindex/icon_4.png">
+						<p>购物车</p>
+						<span class="shopping_car">1</span>
+					</a>
+				</li>
+				<li>
+					<a href="/i/index/index.html">
+						<img src="../public/img/newindex/iocn_5.png">
+						<p>我的</p>
+					</a>
+				</li>
+			</ul>
+		</footer> -->
+ </div>
+
+<!-- 下载框 -->
+ <div class="download_box" id="download-nav">
+	<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+	<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+	<div class="word">下载如此生活客户端</div>
+	<div class="sure" id="download-nav-sure"><div>下载</div></div>
+</div> 
+<div class="mask" style="display: none">
+	<img src="../public/img/newindex/GIF-3.gif">
+	 <p>+<?= $login_data['data'][0]['coin'] ?></p> 
+</div>
+<!-- 蒙版 -->
+<!-- 回到顶部 -->
+<!-- 回到顶部 -->
+	<div id="back-ceil" style="border:none !important; margin-right: -20px;"><img style="width: 35px;" src="../public/img/mindex/first_top@2x.png"></div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script type="text/javascript" src="/public/js/sdk.2.2.js"></script>
+<script type="text/javascript" src="/public/js/mindex/menu.js"></script>
+<script type="text/javascript" src="/public/js/mindex/new_index.js"></script>

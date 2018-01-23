@@ -1,0 +1,105 @@
+
+<div id="header">
+	<div class="mainBox clearfix" >
+        <div class="leftflo">
+{% if m_id == "0" %}
+            <label>Hi, 欢迎来到如此生活</label>
+            <a href="{{url_member}}/login.html">登录</a><em class="separator">|</em>
+            <a href="{{url_member}}/register.html">免费注册</a><em class="separator">|</em>
+{% else %}           
+<label>
+	Hi,{{m_nickname}}
+	欢迎来到如此生活(
+	<a href="{{url_member}}/assets/coin/index.html" target="_blank">星币</a>:
+	<span class="credit">{{m_coin}}<i class="xingbiicon"></i></span>
+	)
+</label>
+<em class="separator">|</em><a href="{{url_member}}/logout.html">退出</a><em class="separator">|</em>     
+{%  endif %}
+        </div>
+		<div class="weixin" data-toggle="modal" data-target="#codeweixin">
+			<div class="hide_weixin" style="display: none;">
+				<div class="img-weixin"></div>
+			</div>
+		</div>
+		<div class="sina" data-toggle="modal" data-target="#codesina">
+			<div class="hide_sina" style="display: none;">
+				<div class="img-sina"></div>
+			</div>
+		</div>
+		<div class="rightflo">
+			<div class="center">
+				<label><span><a href="/">我的生活</a></span></label>
+				<div class="hide_center">
+					<a href="{{url_member}}/orders/list/index.html">我的订单</a>
+					<a href="{{url_member}}/assets/coin/index.html">星币查询</a>
+					<a href="{{url_member}}/assets/coupon/index.html">我的优惠券</a>
+				</div>
+			</div>
+			<em class="separator leftflo">|</em>
+			<div class="businessor">
+				<a href="http://sop.soolife.cn/" target="_blank">商家入驻</a>
+			</div>
+			<em class="separator leftflo">|</em>
+			<div class="headhelp">
+				<label><span><a href="/help/index.html">帮助中心</a></span></label>
+				<div class="hide_headhelp">
+					<a href="{{url_help}}">帮助首页</a>
+					<a href="{{url_member}}/feedback/complain.html">我要投诉</a>
+					<a href="{{url_member}}/orders/service/index.html">售后服务</a>
+				</div>
+			</div>
+			
+			<dl class="navmore">
+				<dt>更多导航<i class=" fa fa-chevron-down"></i></dt>
+				<dd><a target="_blank" href="{{url_website}}/index.html">首页</a></dd>
+				<dd><a target="_blank" href="{{url_website}}/market.html">星超市</a></dd>
+				<dd><a target="_blank" href="{{url_website}}/mall.html">星商城</a></dd>
+				<dd><a target="_blank" href="{{url_website}}/clothes.html">服饰鞋包</a></dd>
+				<dd><a target="_blank" href="{{url_website}}/discount.html">品牌特惠</a></dd>
+				<dd><a target="_blank" href="{{url_website}}/zone.html">会员专区</a></dd>
+			</dl>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div id="codeweixin" class="modal fade modal-qrcode" style="display: none;" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button data-dismiss="modal" class="close" type="button">
+						<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+					</button>
+					<h4 id="myModalLabel" class="modal-title">关注<b class="color-orange">如此生活</b>官方微信</h4>
+				</div>
+				<div class="modal-body">
+					<div class="code-weixin">
+						<img src="{{url_member}}/public/pc/img/weixinbig.jpg" alt="关注如此生活官方微信">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a data-dismiss="modal" class="cancel_btn"> 关闭 </a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="codesina" class="modal fade modal-qrcode">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button data-dismiss="modal" class="close" type="button">
+						<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+					</button>
+					<h4 id="myModalLabel" class="modal-title">关注<b class="color-orange">如此生活</b>官方微博</h4>
+				</div>
+				<div class="modal-body">
+					<div class="code-sina">
+						<img src="{{url_member}}/public/pc/img/sinabig.jpg" alt="关注如此生活官方微博">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a data-dismiss="modal" class="cancel_btn"> 关闭 </a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+.rtbar .rtbar-tab .rtbar-img .icon-shopping-cart {
+	-webkit-animation: mymove 0.8s infinite;
+	-moz-animation: mymove 0.8s infinite;
+	-ms-animation: mymove 0.8s infinite;
+	-o-animation: mymove 0.8s infinite;
+	animation: mymove 0.8s infinite;
+}
+
+@-webkit-keyframes mymove {
+	0% {
+		color: #f6ab00;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #f6ab00;
+	}
+}
+
+@-moz-keyframes mymove {
+	0% {
+		color: #f6ab00;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #f6ab00;
+	}
+}
+
+@-ms-keyframes mymove {
+	0% {
+		color: #f6ab00;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #f6ab00;
+	}
+}
+
+@-o-keyframes mymove {
+	0% {
+		color: #f6ab00;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #f6ab00;
+	}
+}
+
+@keyframes mymove {
+	0% {
+		color: #f6ab00;
+	}
+	50% {
+		color: #fff;
+	}
+	100% {
+		color: #f6ab00;
+	}
+}

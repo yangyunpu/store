@@ -1,0 +1,406 @@
+/*消息列表*/
+.head_setting{
+	font-size: 0.597333rem;
+	color: #333333;
+	position: absolute;
+	right: 0.746667rem;
+}
+#msglist{
+	margin: 0 2.5%;
+	width: 90%;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 3px;
+	margin-top: 0.426667rem;
+	padding: 0 2.5%;
+	font-size: 0;
+}
+#msglist li{
+	width: 100%;
+	box-sizing:border-box;
+	height: 2.816rem;
+	border-bottom: 1px solid #ddd;
+	padding: 0.426667rem 0;
+}
+#msglist li:last-child{
+	border:none;
+}
+.list_img{
+   width: 13.433%;
+   height: 1.92rem;
+}
+.list_txt{
+	display: inline-block;
+	margin-left: 4.478%;
+	width: 70.193%;
+}
+.list_txt .list_title{
+	font-size: 0.597333rem;
+	color: #333333;
+	height: 1.024rem;
+	line-height: 1.024rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.list_txt .list_details{
+	font-size: 0.512rem;
+	color: #999999;
+	height: 0.938667rem;
+	line-height: 0.938667rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.list_date{
+	display: inline-block;
+	width: 11.896%;
+	font-size: 0.512rem;
+    color: #999999;
+    text-align: center;
+}
+/*系统消息*/
+#system{
+	margin: 0 2.5%;
+}
+.system_date{
+	height: 1.792rem;
+	line-height: 1.792rem;
+	text-align: center;
+	font-size: 0.512rem;
+    color: #999999;
+}
+.system_txt{
+	border-radius: 3px;
+	overflow: hidden;
+	background: #fff;
+	padding: 0 0.64rem;
+}
+.system_txt .title{
+	text-align: center;
+	font-size: 0.682667rem;
+    color: #333333;
+    height: 1.962667rem;
+    line-height: 1.962667rem;
+    font-weight: 500;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.system_txt .system_intro{
+	height: 1.962667rem;
+	overflow: hidden;
+}
+.system_txt .system_intro .height{
+	text-align: left;
+	font-size: 0.597333rem;
+	color: #999999;
+	overflow: hidden;
+	line-height: 0.896rem;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 2;
+	-ms-line-clamp: 2;
+	-moz-line-clamp: 2;
+	-o-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.system_txt .system_intro p{
+	text-align: left;
+	font-size: 0.597333rem;
+	color: #999999;
+	line-height: 0.896rem;
+	padding-bottom: 0.426667rem;
+}
+.system_txt  .system_all{
+	font-size: 0.597333rem;
+	color: #999999;
+	overflow: hidden;
+	line-height: 0.896rem;
+	z-index: 10;
+}
+.system_txt .system_more{
+	height: 1.792rem;
+	line-height: 1.792rem;
+	margin-top: 0.213333rem;
+	text-align: center;
+}
+.system_txt .system_more p{
+	display: inline-block;
+	font-size: 0.512rem;
+    color: #999999;
+}
+.system_txt .system_more img{
+	display: inline-block;
+	width: 0.256rem;
+
+}
+/*活动消息*/
+#msgactive{
+	width: 95%;
+	margin: 0 2.5%;
+	font-size: 0;
+	text-align: center;
+}
+#msgactive li .active_date{
+	height: 1.792rem;
+	line-height: 1.792rem;
+	font-size: 0.512rem;
+	color: #999999;
+}
+#msgactive li .active_txt{
+    background: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+#msgactive li .active_txt img{
+	width: 100%;
+	height: 6.4rem;
+}
+.active_txt .active_title{
+	height: 2.24rem;
+	line-height: 2.24rem;
+	font-size: 0.682667rem;
+    color: #333333; 
+}
+.active_txt  .active_intro{
+	height: 2.346667rem;
+	text-align: left;
+	padding:0  0.64rem;
+	padding-top: 0.64rem;
+}
+.active_txt  .active_intro p{
+	height: 1.706667rem;
+	font-size: 0.597333rem;
+    color: #999999;
+    line-height: 0.853333rem;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 2;
+	-ms-line-clamp: 2;
+	-moz-line-clamp: 2;
+	-o-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+/*订单消息*/
+#msgorder{
+	width: 95%;
+	margin:0 2.5%;
+}
+#msgorder .order_date{
+	height: 1.792rem;
+	line-height: 1.792rem;
+	font-size: 0.512rem;
+    color: #999999;
+    text-align: center;
+}
+#msgorder .order_con{
+    background: #fff;
+    border-radius: 3px;
+}
+#msgorder  .order_title{
+	height: 2.24rem;
+	line-height: 2.24rem;
+	font-size: 0.682667rem;
+    color: #333333;
+    text-align: center;
+    font-weight: 600;
+}
+#msgorder  .order_txt{
+    padding-bottom: 0.64rem;
+}
+.order_txt img{
+	width: 19.7%;
+	margin-left: 2.8%;
+	margin-right: 2.8%;
+}
+.order_msg{
+	display: inline-block;
+	width: 71.2%;
+}
+.order_msg .order_intro{
+	margin-top: 0.149333rem;
+	font-size: 0.597333rem;
+	color: #333333;
+	height: 1.792rem;
+	line-height: 0.896rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 2;
+	-ms-line-clamp: 2;
+	-moz-line-clamp: 2;
+	-o-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.order_msg  .order_num{
+	font-size: 0.512rem;
+    color: #999999;
+    margin-top: 0.298667rem;
+}
+/*资产消息*/
+#msgasset{
+	margin: 0 2.5%;
+	width: 95%;
+}
+#msgasset .asset_date{
+	height: 1.792rem;
+	line-height: 1.792rem;
+	font-size: 0.512rem;
+    color: #999999;
+    text-align: center;
+}
+#msgasset  .asset_con{
+	background: #fff;
+	border-radius: 3px;
+}
+#msgasset   .asset_title{
+	height: 1.749333rem;
+	line-height: 1.749333rem;
+	text-align: center;
+	font-size: 0.682667rem;
+    color: #333333;
+    font-weight: 600;
+}
+.asset_con .asset_txt{
+	font-size: 0.597333rem;
+    color: #333333;
+    overflow: hidden;
+}
+.asset_txt img{
+	display: inline-block;
+	width: 19.7%;
+	height: 2.986667rem;
+	margin-left: 2.8%;
+	margin-right: 2.8%;
+	float: left;
+}
+.asset_txt p{
+	width: 71.2%;
+	height: 2.688rem;
+	line-height: 0.896rem;
+	font-size: 0.597333rem;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -moz-box;
+    display: -o-box;
+    -webkit-line-clamp: 3;
+    -ms-line-clamp: 3;
+    -moz-line-clamp: 3;
+    -o-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+
+
+
+}
+.asset_txt  .asset_noimg{
+	padding: 0 4.2%;
+	width: 91.6%;
+	height: 2.688rem;
+	line-height: 0.896rem;
+	margin-bottom: 1.28rem;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -moz-box;
+    display: -o-box;
+    -webkit-line-clamp: 3;
+    -ms-line-clamp: 3;
+    -moz-line-clamp: 3;
+    -o-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+.asset_con .asset_more{
+    height: 1.792rem;
+    line-height: 1.792rem;
+    margin-top: 0.213333rem;
+    text-align: center;
+}
+.asset_con .asset_more p{
+	display: inline-block;
+	font-size: 0.512rem;
+	color: #999;
+}
+.asset_con .asset_more img{
+	width: 0.256rem;
+}
+/*售后消息*/
+.service_title{
+	height: 1.749333rem;
+	line-height: 1.749333rem;
+	text-align: center;
+	font-size: 0.682667rem;
+	color: #333333;
+	font-weight: 600;
+}
+#hidden{
+	margin-top: 0.64rem;
+}

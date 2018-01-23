@@ -1,0 +1,113 @@
+<!-- 侧边栏 -->
+<div class="sidebar">
+	<div class="rtbar">
+		<div class="rtbar-tab rtbar-avatar">
+			<div class="rtbar-icon">
+				<img alt="头像" src="{{avatar|default('/public/v3.0.1/img/s.gif')}}" class="avatar-female" style="width: 26px;">
+			</div>
+			<div class="rtbar-mbrcenter">
+				{% if m_id>0 %}
+				<div class="rtbar-mbrcenter-info" >
+					<div class="rtbar-mbrcenter-info-hd left">
+						<img alt="头像" src="{{avatar|default('/public/v3.0.1/img/icon/avatar-male.png')}}" class="mui-mbarp-prof-icon">
+						<div class="rtbar-mbrcenter-info-hd-edit">
+							<a onclick="" href="#" target="_blank">编辑</a>
+						</div>
+					</div>
+					<div class="rtbar-mbrcenter-info-bd left">
+						<p class="name">汪家大少 <small>个人</small></p>
+						<p><i class="fa icon-coin"></i> 星币数量 <span class="red">{{m_coin}}</span></p>
+						<p><i class="fa icon-coupon"></i> 优惠券数 <span class="blue">34</span></p>
+						<p><i class="fa icon-wallet"></i> 钱包余额 <span class="price">&yen; 203.00</span></p>
+					</div>
+				</div>
+				{% endif %}
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-mycart">
+			<div class="rtbar-icon">
+				<a href="{{url_orders}}" target="_blank"><i class="fa fa-shopping-cart fa-lg fa-spin"></i></a>
+			</div>
+			<a href="{{url_orders}}" target="_blank">
+				<div class="rtbar-hint">
+					<div class="rtbar-tips">我的购物</div>
+					<div class="rtbar-arrow">◆</div>
+				</div>
+				<div class="rtbar-title">购物车</div>
+				<div id="amount" class="rtbar-amount">0</div>
+			</a>
+		</div>
+
+		<div class="rtbar-tab rtbar-asset">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/assets/balance"><i class="fa fa-money fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">我的资产</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-focus-goods">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/goods/index.html"><i class="fa fa-heart-o fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">关注的商品</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-focus-shop">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/store/index.html"><i class="fa fa-star-o fa-lg" style="font-size:18px;"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">关注的店铺</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-history">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/history/index.html"><i class="fa fa-eye fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">历史记录</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-suggestion">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/feedback/index.html"><i class="fa fa-edit fa-lg"> </i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">我的意见</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-suggestion">
+			<div class="rtbar-icon hkl_user">
+				<a><i class="fa fa-user fa-lg" style="font-size:18px;"> </i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">客服</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="https://cs.ecqun.com/?id=1623872" charset="utf-8"></script>
+		<div class="rtbar-tab rtbar-rocket">
+			<div class="rtbar-icon">
+				<a href="#header"> <i class="fa fa-eject fa-lg"></i> </a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">返回顶部</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+	</div>
+</div>

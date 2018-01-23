@@ -1,0 +1,42 @@
+html,body{
+    width:100%;
+ }
+.lcy_lead{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+    background:#f1f1f1;
+}
+.lcy_lead ul li{
+    list-style:none;    
+}
+.lcy_lead a{
+    text-decoration: none;    
+}
+.lcy_lead ul,li,div,p{
+    margin:0;
+    padding:0;
+}
+/*广告*/
+.lcy_lead .money_ad{
+    width:100%;
+}
+.lcy_lead .money_ad .ad{
+    width:100%;
+}
+.lcy_lead .money_ad .ad img{
+    width:100%;
+    display: block;
+}
+.lcy_lead .money_ad .ad4{
+ position: relative;
+}
+.lcy_lead .money_ad .ad .btn_go{
+    position: absolute;
+    width: 50%;
+    height: 49%;
+    top: 0px;
+    margin-left: 25%;
+}

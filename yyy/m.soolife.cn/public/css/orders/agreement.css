@@ -1,0 +1,79 @@
+.agreement{
+	width: 100%;
+	font-size: 0.256rem;
+	font-weight: normal;
+	color: #333;
+}
+.prof-con {
+	text-align: center;
+}
+.prof-con h3{
+	font-size: 0.384rem;
+	font-weight: bolder;
+	margin: 0.426667rem 0;
+}
+.prof-con h2{
+	font-size: 0.426667rem;
+	font-weight: bolder;
+	margin: 0.426667rem 0;
+}
+.prof-con p{
+	text-align: left;
+}
+.title{
+	font-weight: bolder;
+	width: 100%;
+	margin: 0.426667rem 0;
+/*	color: #333;*/
+}
+.agreement ul li span{
+	font-weight: bolder;
+	color: #333;
+}
+.overstriking{
+	/*color: #333;*/
+	font-weight: bolder;
+}
+.retract{
+	text-indent: 2em;	
+}
+.last{
+	margin-bottom: 0.426667rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

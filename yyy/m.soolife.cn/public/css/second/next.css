@@ -1,0 +1,155 @@
+#nextlimit{
+	background-color: #f1f0f0;
+}
+#nextlimit .clear-f{
+	clear:both;
+	overflow: hidden;
+}
+#nextlimit .float-l{
+	float: left;
+}
+#nextlimit .float-r{
+	float: right;
+}
+#nextlimit .margin-b{
+	margin-bottom:10px;
+}
+img{
+	width:100%;
+	display: block;
+} 
+#nextlimit #head{
+	width:100%;
+	height:44px;
+	background-color: #e6e6e6;
+	position: fixed;
+	z-index: 2;
+}
+#nextlimit #head #head-left{
+	float:left;
+}
+#nextlimit #head #head-center{
+	font-size: 18px;
+	color:#333; 
+	text-align: center;
+	line-height: 44px;
+}
+#nextlimit #head #head-left img{
+	margin-top: 12px;
+	margin-left:15px;
+	width:11px;
+}
+.border_l{
+	border-right: solid #ddd 1px;
+    height: 30px;
+    margin-top: 10px;
+}
+#nextlimit #head #head-right{
+	margin-top: 11px;
+	margin-right:15px; 
+	float: right; 
+}
+#nextlimit #head #head-right img{
+	width:21px;
+}
+#nextlimit #top_place{
+	height:54px;
+	width:100%; 
+}  
+.inlinestyle .item {
+	margin:0 2.5%;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.inlinestyle .item .img_box{
+ 	width:33.7%;
+ 	height: 6.0rem;
+	border-radius: 3px;
+ 	overflow: hidden;
+ 	position: relative;
+}
+.inlinestyle .item .img_box .tag{
+	padding: 0 2px;
+	height:1.0rem;
+	line-height: 1rem;
+	text-align:center;
+	border-radius: 3px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left:0;
+	background-color: #1E3042;
+	color: #fff;
+	font-size: 0.55rem;
+}
+.inlinestyle .item .wen_box{
+    width: 57.5%;
+    padding-left: 2.5%;
+    padding-top: 0.45rem;
+    height: 5.55rem;
+    position: relative;
+}
+.inlinestyle .item .wen_box .smalltag span{
+	border: 1px solid #EC6D65;
+    color: #EC6D65;
+    font-size: 0.55rem;
+    border-radius: 3px;
+    padding: 0 2px;
+}
+.inlinestyle .item .wen_box .name{
+	font-size: 0.7rem;
+    color: #333;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+} 
+.inlinestyle .item .wen_box .sales{
+ 	font-size: 0.6rem;
+ 	line-height: 0.6rem;
+ 	color:#333;
+ 	position: absolute;
+ 	bottom: 1.3rem;
+ 	margin-bottom: 5px;
+} 
+.inlinestyle .item .wen_box .piece{
+ 	font-size: 0.8rem;
+ 	line-height: 0.8rem;
+ 	color:#EC6D65;
+ 	position: absolute;
+ 	bottom: 0.5rem;
+} 
+#sentiment{
+	overflow:hidden;
+}
+#sentiment img{
+	height: 100%;
+}
+#alltitle{
+	height:32px;
+	line-height: 32px;
+	color:#666;
+	text-align: center;
+	font-size: 12px;
+    margin-top: -2.5%;
+}
+.alltitle{
+	height:32px;
+	line-height: 32px;
+	color:#EC6D65;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -2.5%;
+}
+.inlinestyle .imgbox{
+	position: absolute;
+	top: 36%;
+	right:0;
+	width:23px;
+}
+.oldpiece{
+	font-size: 12px;
+	color:#999;
+}
+

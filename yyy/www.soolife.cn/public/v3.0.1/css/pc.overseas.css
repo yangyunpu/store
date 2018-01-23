@@ -1,0 +1,73 @@
+.overseas_banner,
+.country,
+.global_brands,
+.overseas_recommend,
+.floor{margin: 0px auto;position: relative;left: -18px;}
+
+/* Banner */
+.overseas_banner {width: 1920px;}
+.overseas_banner .carousel .carousel-inner{height: 480px;}
+.overseas_banner .carousel .carousel-inner .item {overflow: hidden;}
+.overseas_banner .carousel .carousel-inner .carousel-images {z-index: 0;margin-left:240px; width: 850px;height: 510px;overflow: hidden;}
+
+.overseas_banner .carousel .carousel-inner .carousel-floated {z-index: 5; opacity: 0.95;position: absolute;right: 0;top: 0;width: 180px;overflow: hidden;}
+.overseas_banner .carousel .carousel-inner .carousel-floated .picture{z-index: 5;width: 170px;	height: 240px;}
+
+.overseas_recommend {height: 160px;margin-top: 20px;margin-bottom: 10px;}
+.overseas_recommend ul>li {width: 232px;height: 160px;margin-right: 10px;overflow: hidden;float: left;}
+.overseas_recommend ul>li.right {margin: 0px;float: right;}
+
+/* 全球大牌 */
+.global_brands {}
+.global_brands .global_brands_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/overseas/global_horizontal.gif') no-repeat center center;}
+.global_brands .global_brands_title span{ display: none;}
+.global_brands .global_brands_content { height: 59px; }
+.global_brands .global_brands_content .leftside { width: 480px;float: left;}
+.global_brands .global_brands_content .leftside ul>li {width: 480px;height: 190px;border: 1px solid #EFEFEF;display: block;margin-bottom: 10px; overflow: hidden;}
+.global_brands .global_brands_content .rightside { width: 720px; float: right;}
+.global_brands .global_brands_content .rightside ul>li {width: 350px;height: 140px;border: 1px solid #EFEFEF;display: block;float: left;margin-bottom: 10px;margin-left: 10px;overflow: hidden;}
+
+/* 国家馆*/
+.country {}
+.country .country_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/overseas/country_horizontal.gif') no-repeat center center;}
+.country .country_title span{ display: none;}
+.country .country_content ul>li{height:248px; width: 595px;border: 1px solid #EFEFEF; float: left; margin-bottom: 10px;overflow: hidden;}
+.country .country_content ul>li.left{margin-right: 10px;}
+
+/* 各楼层的样式*/
+.floor {}
+.floor .floor_title_01,
+.floor .floor_title_02,
+.floor .floor_title_03,
+.floor .floor_title_04,
+.floor .floor_title_05,
+.floor .floor_title_06{margin-top:10px;height: 40px;;display: block;border-bottom: 2px solid #c00688;}
+.floor .floor_title_01 {background: #FFFFFF url('../img/overseas/floor01_horizontal.gif') no-repeat center center;}/* 洗护 */
+.floor .floor_title_02 {background: #FFFFFF url('../img/overseas/floor02_horizontal.gif') no-repeat center center;}/* 母婴 */
+.floor .floor_title_03 {background: #FFFFFF url('../img/overseas/floor03_horizontal.gif') no-repeat center center;}/* 食物 */
+.floor .floor_title_04 {background: #FFFFFF url('../img/overseas/floor04_horizontal.gif') no-repeat center center;}/* 电器 */
+.floor .floor_title_05 {background: #FFFFFF url('../img/overseas/floor05_horizontal.gif') no-repeat center center;}/* 保健 */
+.floor .floor_title_06 {background: #FFFFFF url('../img/overseas/floor06_horizontal.gif') no-repeat center center;}/* 服饰 */
+.floor .floor_title_01 span,
+.floor .floor_title_02 span,
+.floor .floor_title_03 span,
+.floor .floor_title_04 span,
+.floor .floor_title_05 span,
+.floor .floor_title_06 span{ display: none;}
+.floor .floor_model_first {}
+.floor .floor_model_first .leftside { width: 480px;float: left;border-left: 1px solid #EFEFEF;border-top: 1px solid #EFEFEF;}
+.floor .floor_model_first .leftside ul>li {width: 480px;height: 192px;display: block;overflow: hidden;border-bottom: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;}
+.floor .floor_model_first .rightside { width: 720px; float: right;border-top: 1px solid #EFEFEF;}
+.floor .floor_model_first .rightside ul>li {width: 360px;height: 144px;display: block;float: left;overflow: hidden;border-bottom: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;}
+
+.floor .floor_model_second {}
+.floor .floor_model_second .leftside { width: 320px;height:500px; float: left; overflow: hidden;display: block;border: 1px solid #EFEFEF;}
+.floor .floor_model_second .rightside { width: 880px; float: right;}
+.floor .floor_model_second .rightside ul>li {width: 220px;height: 250px;display: block;float: left;overflow: hidden;border-bottom: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;}
+.floor .floor_model_second .rightside ul>li.wide{width: 440px;}
+
+.floor .floor_model_third {}
+.floor .floor_model_third .leftside { width: 320px;height:500px; float: left; overflow: hidden;display: block;border: 1px solid #EFEFEF;}
+.floor .floor_model_third .center {float: left; width: 660px;}
+.floor .floor_model_third .center ul>li {width: 220px;height: 250px;display: block;float: left;overflow: hidden;border-bottom: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;}
+.floor .floor_model_third .rightside { width: 220px;height:500px; float: left; overflow: hidden;display: block;border-bottom: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;}

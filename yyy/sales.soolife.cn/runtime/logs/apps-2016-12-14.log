@@ -1,0 +1,424 @@
+Wed 14 16:57:02 [INFO] array (
+  'S_ID' => '170',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410039',
+)
+Wed 14 16:57:17 [INFO] array (
+  'S_ID' => '172',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410043',
+)
+Wed 14 16:57:22 [INFO] array (
+  'S_ID' => '173',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410045',
+)
+Wed 14 16:57:37 [INFO] array (
+  'S_ID' => '175',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410049',
+)
+Wed 14 16:57:53 [INFO] array (
+  'S_ID' => '171',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410041',
+)
+Wed 14 16:57:58 [INFO] array (
+  'S_ID' => '174',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410047',
+)
+Wed 14 16:58:04 [INFO] array (
+  'S_ID' => '176',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410051',
+)
+Wed 14 16:58:04 [INFO] array (
+  'S_ID' => '176',
+  'S_PackageNo' => 'cf58c64c281364855b9b5847dfdba846',
+  'S_BuyersPhone' => '18238326201',
+  'S_OrderNo' => '6010992016121410051',
+)
+Wed 14 17:42:30 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => NULL,
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => NULL,
+  ),
+)
+Wed 14 17:42:40 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => '["18238326201","18238326201","18238326201"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => '["18238326201"]',
+  ),
+)
+Wed 14 17:42:40 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => '["18238326201","18238326201","18238326201"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => '["18238326201"]',
+  ),
+)
+Wed 14 17:42:41 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => '["18238326201","18238326201","18238326201"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => '["18238326201"]',
+  ),
+)
+Wed 14 17:42:41 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:41 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => '["18238326201","18238326201","18238326201"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => '["18238326201"]',
+  ),
+)
+Wed 14 17:42:41 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:41 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '82',
+    'S_PrizeName' => '一等奖',
+    'S_Winners' => '["18238326201","18238326201","18238326201"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '83',
+    'S_PrizeName' => '二等奖',
+    'S_Winners' => '["18238326201"]',
+  ),
+)
+Wed 14 17:42:41 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:41 [INFO] 82
+Wed 14 17:42:41 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:41 [INFO] /sms/win/18238326201/二等奖/m.soolife.cn
+Wed 14 17:42:41 [INFO] 83
+Wed 14 17:42:45 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:45 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:46 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:46 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:50 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:51 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:51 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:55 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:55 [INFO] 82
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/二等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] 83
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] 82
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/一等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] 82
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/二等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] 83
+Wed 14 17:42:56 [INFO] /sms/win/18238326201/二等奖/m.soolife.cn
+Wed 14 17:42:56 [INFO] 83
+Wed 14 17:43:05 [INFO] /sms/win/18238326201/二等奖/m.soolife.cn
+Wed 14 17:43:11 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '84',
+    'S_PrizeName' => '折耳猫猫嘻嘻嘻',
+    'S_Winners' => NULL,
+  ),
+)
+Wed 14 17:43:12 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '84',
+    'S_PrizeName' => '折耳猫猫嘻嘻嘻',
+    'S_Winners' => NULL,
+  ),
+)
+Wed 14 17:43:55 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '84',
+    'S_PrizeName' => '折耳猫猫嘻嘻嘻',
+    'S_Winners' => NULL,
+  ),
+)
+Wed 14 17:52:47 [INFO] array (
+  'S_ID' => '177',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15000371595',
+  'S_OrderNo' => '6010992016121410061',
+)
+Wed 14 17:52:52 [INFO] array (
+  'S_ID' => '178',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15000371595',
+  'S_OrderNo' => '6010992016121410063',
+)
+Wed 14 18:00:37 [INFO] array (
+  'S_ID' => '179',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18896717435',
+  'S_OrderNo' => '6010992016121410067',
+)
+Wed 14 18:00:42 [INFO] array (
+  'S_ID' => '180',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18896717435',
+  'S_OrderNo' => '6010992016121410069',
+)
+Wed 14 18:00:42 [INFO] array (
+  'S_ID' => '181',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18896717435',
+  'S_OrderNo' => '6010992016121410071',
+)
+Wed 14 18:00:47 [INFO] array (
+  'S_ID' => '182',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18896717435',
+  'S_OrderNo' => '6010992016121410073',
+)
+Wed 14 18:07:08 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '84',
+    'S_PrizeName' => '折耳猫猫嘻嘻嘻',
+    'S_Winners' => '["15000371595","18896717435","18896717435"]',
+  ),
+)
+Wed 14 18:07:08 [INFO] /sms/win/15000371595/折耳猫猫嘻嘻嘻/m.soolife.cn
+Wed 14 18:07:08 [INFO] /sms/win/18896717435/折耳猫猫嘻嘻嘻/m.soolife.cn
+Wed 14 18:07:08 [INFO] /sms/win/18896717435/折耳猫猫嘻嘻嘻/m.soolife.cn
+Wed 14 18:07:08 [INFO] 84
+Wed 14 18:19:23 [INFO] array (
+)
+Wed 14 18:19:24 [INFO] array (
+  'S_ID' => '183',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18712347899',
+  'S_OrderNo' => '0',
+)
+Wed 14 18:19:25 [INFO] array (
+  'S_ID' => '184',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15012342343',
+  'S_OrderNo' => '0',
+)
+Wed 14 18:19:25 [INFO] array (
+)
+Wed 14 18:19:25 [INFO] array (
+)
+Wed 14 18:19:25 [INFO] array (
+)
+Wed 14 18:19:28 [INFO] array (
+  'S_ID' => '183',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18712347899',
+  'S_OrderNo' => '0',
+)
+Wed 14 18:19:29 [INFO] array (
+  'S_ID' => '184',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15012342343',
+  'S_OrderNo' => '0',
+)
+Wed 14 18:19:29 [INFO] array (
+)
+Wed 14 18:19:33 [INFO] array (
+  'S_ID' => '184',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15012342343',
+  'S_OrderNo' => '0',
+)
+Wed 14 18:24:01 [INFO] array (
+)
+Wed 14 18:45:13 [INFO] array (
+  'S_ID' => '185',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18896717435',
+  'S_OrderNo' => '6010992016121410079',
+)
+Wed 14 19:08:58 [INFO] array (
+  'S_ID' => '186',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '15000371595',
+  'S_OrderNo' => '6010992016121410083',
+)
+Wed 14 19:11:50 [INFO] array (
+  'S_ID' => '187',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18516092657',
+  'S_OrderNo' => '6010992016121410085',
+)
+Wed 14 19:12:15 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '78',
+    'S_PrizeName' => '新用户一等奖',
+    'S_Winners' => '["18896717435"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '79',
+    'S_PrizeName' => '新用户二等奖',
+    'S_Winners' => '["15000371595","18516092657"]',
+  ),
+  2 => 
+  array (
+    'S_PrizeID' => '80',
+    'S_PrizeName' => '新用户三等奖',
+    'S_Winners' => '["15938992340","15938992340"]',
+  ),
+  3 => 
+  array (
+    'S_PrizeID' => '81',
+    'S_PrizeName' => '阳光普照',
+    'S_Winners' => 'null',
+  ),
+)
+Wed 14 19:12:21 [INFO] /sms/win/18896717435/新用户一等奖/m.soolife.cn
+Wed 14 19:12:21 [INFO] 78
+Wed 14 19:12:29 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '79',
+    'S_PrizeName' => '新用户二等奖',
+    'S_Winners' => '["15000371595","18516092657"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '80',
+    'S_PrizeName' => '新用户三等奖',
+    'S_Winners' => '["15938992340","15938992340"]',
+  ),
+  2 => 
+  array (
+    'S_PrizeID' => '81',
+    'S_PrizeName' => '阳光普照',
+    'S_Winners' => 'null',
+  ),
+)
+Wed 14 19:12:29 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '79',
+    'S_PrizeName' => '新用户二等奖',
+    'S_Winners' => '["15000371595","18516092657"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '80',
+    'S_PrizeName' => '新用户三等奖',
+    'S_Winners' => '["15938992340","15938992340"]',
+  ),
+  2 => 
+  array (
+    'S_PrizeID' => '81',
+    'S_PrizeName' => '阳光普照',
+    'S_Winners' => 'null',
+  ),
+)
+Wed 14 19:12:29 [INFO] array (
+  0 => 
+  array (
+    'S_PrizeID' => '79',
+    'S_PrizeName' => '新用户二等奖',
+    'S_Winners' => '["15000371595","18516092657"]',
+  ),
+  1 => 
+  array (
+    'S_PrizeID' => '80',
+    'S_PrizeName' => '新用户三等奖',
+    'S_Winners' => '["15938992340","15938992340"]',
+  ),
+  2 => 
+  array (
+    'S_PrizeID' => '81',
+    'S_PrizeName' => '阳光普照',
+    'S_Winners' => 'null',
+  ),
+)
+Wed 14 19:12:31 [INFO] /sms/win/15000371595/新用户二等奖/m.soolife.cn
+Wed 14 19:12:34 [INFO] /sms/win/15000371595/新用户二等奖/m.soolife.cn
+Wed 14 19:12:39 [INFO] /sms/win/15000371595/新用户二等奖/m.soolife.cn
+Wed 14 19:12:39 [INFO] /sms/win/15000371595/新用户二等奖/m.soolife.cn
+Wed 14 19:12:39 [INFO] /sms/win/18516092657/新用户二等奖/m.soolife.cn
+Wed 14 19:12:39 [INFO] 79
+Wed 14 19:12:41 [INFO] /sms/win/18516092657/新用户二等奖/m.soolife.cn
+Wed 14 19:12:44 [INFO] /sms/win/18516092657/新用户二等奖/m.soolife.cn
+Wed 14 19:12:44 [INFO] 79
+Wed 14 19:12:44 [INFO] /sms/win/18516092657/新用户二等奖/m.soolife.cn
+Wed 14 19:12:44 [INFO] 79
+Wed 14 19:12:44 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:46 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:49 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:54 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:54 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:56 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:59 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:59 [INFO] /sms/win/15938992340/新用户三等奖/m.soolife.cn
+Wed 14 19:12:59 [INFO] 80
+Wed 14 19:13:07 [INFO] array (
+)
+Wed 14 19:14:24 [INFO] array (
+)
+Wed 14 19:27:02 [INFO] array (
+)
+Wed 14 19:45:55 [INFO] array (
+  'S_ID' => '190',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '13412346578',
+  'S_OrderNo' => '0',
+)
+Wed 14 19:46:00 [INFO] array (
+  'S_ID' => '191',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18212346201',
+  'S_OrderNo' => '0',
+)
+Wed 14 19:47:01 [INFO] array (
+  'S_ID' => '192',
+  'S_PackageNo' => 'c81fb3db1f325f638f915850e3bf3243',
+  'S_BuyersPhone' => '18812341111',
+  'S_OrderNo' => '0',
+)

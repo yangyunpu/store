@@ -1,0 +1,78 @@
+*{margin:0 auto;padding:0;}
+ul li{list-style: none;}
+a{text-decoration: none;font-family: "微软雅黑";}
+.f_pc_reunion{width:100%;background:#F5ECDB;}
+.f_pc_reunion img{width:100%;border:none;}
+.f_pc_reunion .f_reunion_size{width:1200px;margin:0 auto;}
+.f_pc_reunion .f_reunion_size .f_size{width:99%;margin-top:30px;}
+.f_pc_reunion .f_reunion_size .f_size img{100%;}
+.f_pc_reunion .f_reunion_size .f_nine{text-align: center;width:50%;margin-top:3%;margin-bottom:3%; margin-left:20%;}
+.f_background{min-width: 1200px;padding-bottom:15%;background: url("../img/nine_prefecture/nine_prefecture_banner.png") no-repeat;width:99%;overflow:hidden;clear:both;background-size:100% 100%; ;}
+.f_reunion_size .f_background div{clear: both;}
+.f_pc_reunion .f_background .f_product{ margin-left:5%;position: relative;overflow: hidden;}
+.f_pc_reunion .f_background .f_product ul li{width:20%;float:left;margin-left:3%;margin-top: 8%;}
+.f_background .f_product .typeface{width:100%;margin-top:4%;}
+.f_background .f_product .typeface .disinfect{color:white;font-size:20px;text-align: center;line-height:28px;}
+.f_background .f_product .typeface .bg_white{width: 100%; height: 28px;background: white; border-radius: 10px;position: relative;margin-top:5%;}
+.typeface .bg_white .seckill{font-size:14px;color:#ec6751;font-weight: 600;margin-left:5%;margin-top:10%;line-height:28px;}
+.typeface .bg_white .nine_yuan{font-size:20px;color:#ec6751;font-weight: 600;}
+.typeface .bg_white .immediately{width: 40%;height: 28px; position: absolute; top: 5%;left: 61%; font-size: 18px;color:white;}
+.typeface .bg_white .wbg_white{    width: 46%;height: 26px;background: #ec6751; float: right;border-radius: 10px;margin-top: 1px;margin-right: 1px;}
+.f_reunion_size .f_half{overflow:hidden ;margin-top:3%;position: relative;}
+.f_reunion_size .f_nine_two{margin-left:2%;}
+.f_reunion_size .f_half ul li{width:32%;float:left;}
+.half_size{width:100%;margin-top:1%;position: relative;margin-left:5%;}
+.f_half .half_size .jiangshu{color:#ec6751;font-size: 20px;font-weight:600;text-align: center;line-height:36px;}
+.f_half .half_size .nutrition{color:#ec6751;font-size: 20px;font-weight: 400;text-align: center;}
+.f_layout{width:70%;height:32px;border:2px solid #ec6751;border-radius: 16px;background:white;line-height:30px;margin-top:5%;margin-left:15%;}
+.f_layout .bg_white {    width: 40%; height: 28px;background: #ec6751;border-radius: 16px; margin-top: -12%; margin-left: 60%;line-height:23px;}
+.buy{color:white;font-size:18px;    position: absolute;top: 62%;left: 62%;}
+.f_layout .activity{color:#ec6751;font-size:14px;font-weight: 600;margin:5%;}
+.f_layout .rmb{color:#EC6751;font-size:18px;font-weight: 600;}
+.bazaar{color:#EC6751;font-size:16px;text-decoration: line-through; margin-top: 1%;}
+.sell_like{position:relative;margin-top:3%;background: url("../img/moldbaby/moldbaby_banner.png") no-repeat;    min-width: 1200px;padding-bottom: 15%;width: 99%;overflow: hidden; clear: both; background-size: 100% 100%;}
+.sell_like ul li{width:20%;float:left;margin-left:3%;margin-top:9%;position: relative;}
+.sell_like ul .first_sell{margin-left:5.4%;}
+.sell_like ul li #entirety{width:100%;position: absolute;bottom: 10%;margin: 0% 10% -6%;}
+.sell_like ul li #entirety .first_line .olive_oil{color:#EC6751;font-size:18px;font-weight: 600;}
+.buy_Now{margin-top:5%;margin-right:14%; width: 23%;height: 58px; background: #EC6751;border-radius: 12px; text-align: center; float: right; line-height: 16px; padding-top: 5%;}
+.buy_Now span{color:white;font-size: 18px;}
+.price{width:100%;float:left;height:65px;}
+.first_line{height:50px;line-height:25px;}
+.price .marketplace{width:61%;height:40px;float:left;margin-top:5%;}
+.marketplace .activity{color:#EC6751;font-size: 15px;font-weight: 600;}
+.marketplace .element{color:#EC6751;font-size:24px;font-weight: 600;}
+.marketplace .bazaar{text-decoration: line-through;color:#EC6751;font-size: 15px;font-weight: 600;float:left;}
+.half_size .bazaar{margin-left:20%;}
+.new_product{overflow: hidden;margin-top:5%;margin-left:4%;position: relative;}
+.new_product ul li{width:21%;float: left;}
+.new_product ul .red_dates{margin-left:4%;}
+.f_nine_cate{    text-align: center;width: 78%;margin-top: 3%;margin-left:5%;}
+.f_cate{overflow: hidden;margin-top:3%;position: relative;}
+.f_cate ul li{width:50%;float: left;}
+.currant{width:60%;height:38px;background:white;border:2px solid #EC6751;border-radius: 20px;line-height:35px;margin-left:33%;margin-top:1%;}
+.currant .f_activity{color:#EC6751;font-size:18px;font-weight: 600;margin-left:-10%;}
+.currant .forty{color:#EC6751;font-size:28px;font-weight: 600;}
+.f_buy{width:40%;height:34px;line-height:35px;color:white;font-size:18px;float:right;border-radius: 20px;background:#EC6751;text-align: center;}
+.appetizing{text-align: center;}
+.appetizing p{color:#EC6751;font-size:16px;text-decoration:line-through;margin-right:12%;margin-top:1%;font-weight: 600;}
+.cranberry{width:60%;height:38px;background:white;border:2px solid #EC6751;border-radius: 20px;line-height:35px;margin-left:22%;margin-top:1%;}
+.appetizing .twenty_nine{color:#EC6751;font-size:16px;text-decoration:line-through;margin-right:34%;margin-top:1%;font-weight: 600;}
+.new_product ul li{position: relative;}
+.new_product ul li #entirety{width:100%;position: absolute;bottom:10%;}
+.new_product #entirety .first_line {height: 56px;line-height: 18px;margin-left:8%;margin-bottom:-3%;}
+.new_product #entirety .first_line .olive_oil{color: #EC6751;font-size: 18px;font-weight: 600;}
+.new_product ul li #entirety .price{margin-left:8%;margin-bottom:-5%; }
+.f_product ul li a .purchase_one {position: absolute; width: 10%;height: 6%; z-index: 1; overflow: hidden;bottom: 0%;left: 13%;}
+.f_product ul li a .purchase_two {position: absolute; width: 10%;height: 6%; z-index: 1; overflow: hidden;bottom: 0%;left: 36%;}
+.f_product ul li a .purchase_three {position: absolute; width: 10%;height: 6%; z-index: 1; overflow: hidden;bottom: 0%;left: 59%;}
+.f_product ul li a .purchase_four {position: absolute; width: 10%;height: 6%; z-index: 1; overflow: hidden;bottom: 0%;left: 82%;}
+.f_half ul li a .purchase_one {position: absolute; width: 10%;height: 8%; z-index: 1; overflow: hidden;bottom: 5%;left: 18%;}
+.f_half ul li a .purchase_two {position: absolute; width: 10%;height: 8%; z-index: 1; overflow: hidden;bottom: 5%;left: 52%;}
+.f_half ul li a .purchase_three {position: absolute; width: 10%;height: 8%; z-index: 1; overflow: hidden;bottom: 5%;left: 86%;}
+.sell_like ul li a .purchase_one {position: absolute; width: 25%;height: 15%; z-index: 1; overflow: hidden;bottom: 5%;left: 72%;}
+.f_half ul li a .purchase_two{position: absolute; width: 10%;height: 8%; z-index: 1; overflow: hidden;bottom: 5%;left: 52%;}
+.f_half ul li a .purchase_three{position: absolute; width: 10%;height: 8%; z-index: 1; overflow: hidden;bottom: 5%;left: 86%;}
+.new_product ul li a .purchase_one{position: absolute; width: 25%;height: 15%; z-index: 1; overflow: hidden;bottom: 5%;left: 70%;}
+.f_cate ul li a .purchase_one{position: absolute; width: 13%;height: 10%; z-index: 1; overflow: hidden;bottom: 6%;left: 34%;}
+.f_cate ul li a .purchase_two{position: absolute; width: 13%;height: 10%; z-index: 1; overflow: hidden;bottom: 6%;left: 79%;}

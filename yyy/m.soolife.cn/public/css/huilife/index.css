@@ -1,0 +1,351 @@
+body{
+	background-color: #fff;
+	min-width:320px;
+}
+.lcy_getcoin{
+	padding:44px 10px 0;
+}
+.lcy_getcoin>#soo-header{
+	margin-bottom: 10px;
+}
+.lcy_getcoin>.message{
+	margin-top:10px ;
+	padding:10px 10px 0 10px;
+	height:120px;
+	border-radius: 4px 4px 0 0 ;
+	font-size:11px;
+	color:#fff;
+	background:#ec6d65 url(/public/img/huilife/bg_red.png) bottom center no-repeat;
+}
+.lcy_getcoin>.message>.title{
+	margin-bottom: 25px;
+	color:#fff;
+}
+.lcy_getcoin>.message>.title a{
+	color:#fff;
+}
+.lcy_getcoin>.message>.main>.no_login{
+	line-height: 40px;
+    margin-left: 10px;
+}
+.lcy_getcoin>.message>.main img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.lcy_getcoin>.message>.main .words{
+	padding-left:10px;
+}
+.lcy_getcoin>.message>.main .words span{
+	font-size: 24px;
+}
+.lcy_getcoin>.message>.main .sign{
+	width:80px;
+	height:40px;
+	color:#ec6d65;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 0.682667rem;
+}
+.lcy_getcoin>.message>.main .sign .login{
+	color:#ec6d65; 
+}
+.lcy_getcoin>.message>.b_san{
+	width:100%;    
+	margin-top: 11px;
+}
+.lcy_getcoin>.message>.b_san>img{
+	display: block;
+	margin:0 auto;
+}
+.lcy_getcoin>.buttom{ 
+	border-radius:0 0 4px 4px;   
+	padding:17px 10px;
+	margin-bottom: 10px;
+	font-size: 11px;
+	height: 40px;
+	color:#fff;
+	background-color:#f1f0f0;	
+}
+.lcy_getcoin>.buttom>.float-l{
+	width:14.25%;
+}
+.lcy_getcoin>.buttom>.float-l>p{
+	width:25px;
+	height:25px;
+	background-color:#999;
+	border-radius: 50%;
+	margin:0 auto;
+	line-height: 25px;
+	text-align: center;
+}
+.lcy_getcoin>.buttom>.float-l.geted>p{
+	background-color:#ec6d65;
+}
+.lcy_getcoin>.buttom>.float-l>div{
+	color:#999;
+	text-align: center;
+}
+.lcy_getcoin>.buttom>.float-l.geted>div{
+	color:#000;
+	text-align: center;
+}
+.lcy_getcoin>.more{
+	margin:10px auto;
+	width:60px;
+	font-size: 0.512rem;
+	color:#999;
+} 
+.lcy_getcoin>.more>a{
+	display: block;
+	width:4rem;
+} 
+.lcy_getcoin>.more img{
+	display: inline-block;
+	width:0.2rem;
+}
+.lcy_getcoin>.more span{
+	margin-right:0.213333rem;
+	color:#999;
+}
+.lcy_getcoin>.route{
+    position: relative;
+    height: 5.12rem;
+    overflow: hidden;
+}
+.lcy_getcoin>.route .content{
+    position: absolute;
+    top: 0;
+    width: 38%;
+    height: 74%;
+    margin: 5.5% 31%;
+}
+.lcy_getcoin>.route .content{
+    text-align: center;
+}
+.lcy_getcoin>.route .content .title{
+    font-size:0.512rem;
+    color:#515151;
+    padding-top:7%;
+}
+.lcy_getcoin>.route .content .word{
+    font-size:0.597333rem;
+    color:#313131;
+    margin: 4% 0;
+}
+.lcy_getcoin>.route .content button{
+    font-size:0.597333rem;
+    background-color: #333;
+    border:0;
+    padding:4px 6px;
+    font-size: 0.512rem;
+    border-radius: 4px;
+    margin:0 auto;
+}
+.lcy_getcoin>.route .content button>a{
+    color:#fff;
+}
+.lcy_getcoin>.route .content .title.title_color{
+    color:#5d4c3f;
+}
+.lcy_getcoin>.route .content .word.word_color{
+    color:#5d4c3f;
+}
+.lcy_getcoin>.route .content button.btn_color{
+    background-color: #5e4d40;
+    color:#fff;
+}
+.lcy_getcoin>.route .content button.btn_color>a{
+    color:#daccbe;
+}
+.lcy_getcoin>.goods{
+	background-color: #f1f0f0;    
+    padding: 10px;
+}
+.lcy_getcoin>.goods .hei1{
+	height:7.381333rem;
+	overflow: hidden;
+}
+.lcy_getcoin>.goods .hei2{
+	height: 17.152rem;
+	overflow: hidden;
+}
+.lcy_getcoin>.goods .hei3{
+	height:8.576rem;
+	overflow: hidden;
+}
+.lcy_getcoin>.goods .good1{
+	border-bottom:1px #e6e6e6 solid;
+}
+.lcy_getcoin>.goods .good2{
+	border-right:0.5px #e6e6e6 solid;
+}
+.lcy_getcoin>.goods .good3{
+	border-left:1px #e6e6e6 solid;
+}
+
+.lcy_getcoin>.goods .timer{
+	padding-top:15px;
+	width: 100%;
+    margin: 15px auto;
+    color:#ec6d65;
+    text-align: center;
+}
+.lcy_getcoin>.goods .timer>div>span{
+	padding:4px;
+	background-color:#ec6d65;
+	border-radius: 2px; 
+    color:#fff;
+}
+.lcy_getcoin>.goods img{
+    width:100%;
+}
+.lcy_getcoin .mark{
+	padding-top: 80px;
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-color: rgba(0, 0 ,0 ,0.3);
+}
+.lcy_getcoin .mark{
+	display: none;
+}
+.lcy_getcoin .mark img{
+    width: 100%;
+}
+.lcy_getcoin .mark #delete_getcoin{
+	width: 22px;
+    float: right;
+    margin-right: 28px;
+}
+.lcy_getcoin .mark p{
+	text-align: center;
+	width:100%;
+	font-size: 14px;
+	color: #fff;
+	margin-top: -40px;
+}
+
+
+/*底部*/
+.foot_bottom a{
+	color:#8f8f94;
+}
+.foot_bottom{
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 2;
+    width: 100%;
+    height: 45px;
+}
+
+.foot_bottom ul{
+	margin:0;
+	padding:0;
+}
+.foot_bottom ul li{
+	list-style: none;
+	float:left;
+	width:20%;
+	height:50px;
+}
+
+.foot_bottom ul li a img {
+	margin: 0 auto;
+    display: block;
+    width: 26px;
+}
+.foot_bottom ul li a p {
+	font-size:12px;
+	margin:0 auto;
+	width:100%;
+	height: 21px;
+	line-height: 21px;
+	text-align:center;
+}
+.foot_bottom ul a .shopcar_n_box{
+    margin: 0 auto;
+    width: 28px;
+    height: 26px;
+    position: relative;
+}
+.foot_bottom ul li a .shopcar_n_box .shopcar_n{
+    position: absolute;
+    right: -9px;
+    margin-right: 26%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: red;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: "simsun";
+    text-align: center;
+    color: white;
+}
+.foot_bottom ul li a .footer_bottom_color{
+	color:#0068B6;
+}
+/*底部导航*/
+.navigation{
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 99;
+    width: 100%;
+    height: 50px;
+}
+.navigation ul{
+    margin: 0;
+    padding:0;
+    background: #fff; 
+}
+.navigation ul li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 50px;
+    padding-top: 6px;
+    position: relative;
+}
+.shopping_car{
+    position: absolute;
+    top: 0;
+    right: 24%;
+    display: inline-block;
+    background: red;
+    border-radius: 50%;
+    padding: 0px 4px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+}
+.navigation ul li a{
+    text-decoration: none;
+}
+.navigation ul li a img{
+    margin: 0 auto;
+    display: block;
+    width: 23px;
+}
+.navigation ul li a p{
+    font-size: 12px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #999;
+}
+
+.footer_bottom_color{
+    color: #EC6D65 !important;
+}
+/*搜索页面---------

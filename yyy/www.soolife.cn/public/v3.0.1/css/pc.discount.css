@@ -1,0 +1,23 @@
+.discount_banner{height: 480px;}
+.discount_banner .discount_banner_carousel .carousel-inner{height: 480px;}
+.discount_banner .discount_banner_carousel .carousel-inner .item {overflow: hidden;}
+.discount_banner .discount_banner_carousel .carousel-inner .carousel-images {z-index: 0;margin-left:240px; width: 960px;height: 510px;overflow: hidden;}
+
+
+.coupons {
+	margin: 0px auto;
+	position: relative;
+	left: -18px;
+}
+.coupons ul > li {
+	overflow:hidden;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 450px;
+	width: 1200px;
+	-moz-box-shadow: 3px 3px 4px #ababab;
+	-webkit-box-shadow: 3px 3px 4px #ababab;
+	box-shadow: 3px 3px 4px #ababab;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababab')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababab');
+}

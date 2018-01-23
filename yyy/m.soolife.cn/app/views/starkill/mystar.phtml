@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星星杀</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starkill/common.css"/>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<a onclick="window.history.go(-1)"><img class="arrow"  src="/public/img/starkill/icon/Group 36.png " ></a>
+		<span class="head_title">星星杀</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+    <div class="mystar_con">
+	    <div class="mystar_classfy">
+	    	<span class="exchange" id="classfy_go">继续杀</span>
+	    	<span id="classfy_buy">购买</span>
+	    </div>
+	    <!--*******************继续杀价*******************-->
+	    
+        {% if con %}
+	    <div class="go_wrap">
+	    
+	    <?php  if(!empty($con['data'])) { ?>
+	    {% for i,d in con['data'] %}
+		<div class="start_active">
+			<a href="/starkill/state.html?starkill_id={{d['starkill_id']}}">
+			<div class="active_img">
+				<img  src="{{d['details_pictures']}}">
+			</div>
+			</a>	
+			<p class="active_title">{{d['name']}}</p>
+			<div class="active_txt">
+			    <input type = "hidden" name = "time" class="stamp" data-index="{{i}}" value = "{{d['pre_end_date']}}" />
+				<span class="differ_txt">距杀价结束还有:</span>
+				<span class="differ_time timestamp{{i}}"></span>
+			</div>
+			<div class="active_progress">
+			    <input type="hidden" id="rule" value="{{d['rule']}}" name="" />
+			    <input type="hidden" id="pre" value="{{d['percentage']}}" name="" />
+				<div class="progress"></div>
+			</div>
+			<ul class="active_num">
+				<li>
+					<p><span>￥</span><span id="life_price">{{d['life_price']}}</span></p>
+				</li>
+				<li class="price_sec">
+					<p id="price_now">￥{{d['now_price']}}</p>
+				</li>
+				<li>
+					<p><span>￥</span><span id="floor_price">{{d['floor_price']}}</span></p>
+				</li>
+			</ul>
+			<ul class="active_price">
+				<li>
+					<p>原价</p>
+				</li>
+				<li>
+					<p>现价</p>
+				</li>
+				<li>
+					<p>最低</p>
+				</li>
+			</ul>
+			<div class="active_btn">
+				<div class="active_target">
+					<p>已参加<span id="qtyCount">{{d['qty']}}</span>人</p>
+					<p class="target_go">再杀{{d['surplus_qty']}}次即可到达低价</p>
+					<p class="target_suc hide"><a href="/starkill/state.html?starkill_id={{d['starkill_id']}}">已杀到底价,继续抢!</a></p>
+				</div>
+                <a class="active_like" href="/starkill/state.html?starkill_id={{d['starkill_id']}}">继续杀价</a>
+			</div>
+		</div>
+		{% endfor %}
+	    <?php } else { ?>
+		<div id="com_bg" class="go_wrap">
+		</div>
+		<?php  } ?>
+	    </div>
+        {% endif %}
+        
+		<!--*******************立即购买*******************-->
+		<div class="buy_wrap hide">
+		   <?php  if(!empty($buy['data'])) { ?>
+				{% for k,res in buy['data'] %}
+				<div class="mystar_buy">
+					<a href="/starkill/buy.html?starkill_id={{res['starkill_id']}}">
+						<div class="active_img">
+						    <img  src="{{res['details_pictures']}}">
+						</div>
+					</a>	
+					<p class="active_title">{{res['name']}}</p>
+					<div class="active_txt">
+					    <input type="hidden" name="" class="buystamp" value="{{res['selling_end_date']}}" data-index="{{k}}" />
+						<span class="differ_txt">距活动结束还有:</span>
+						<span class="differ_time buystamp{{k}}"></span>
+					</div>
+					<p class="mystar_low">￥{{res['now_price']}}</p>
+					<p class="mystar_price">￥{{res['life_price']}}</p>
+					<p class="mystar_txt">已参加{{res['qty']}}人</p>
+					<div class="active_mystar">
+	                {% if res['status'] == 3 %}
+	                <a class="active_like" href="/starkill/buy.html?starkill_id={{res['starkill_id']}}">立即购买</a>
+					{% else %}
+					 <a id="active_end" class="active_like" href="/starkill/buy.html?starkill_id={{res['starkill_id']}}">已售罄</a>
+					{% endif %}
+					</div>
+				</div>
+				{% endfor %}
+			<?php } else { ?>
+				<div id="com_bg" class="buy_wrap hide">
+				</div>
+			<?php  } ?> 
+		</div>
+      
+     
+    </div>
+    <div class="start_btom">
+	{% if con['startpage'] %}
+	    <a disabled="disabled" id="no_active">正在进行</a>
+	{% else %}
+    	<a href="/starkill/start.html">正在进行</a>
+    {% endif %}
+    {% if con['nopage'] %}
+    <a  disabled="disabled" id="no_active">即将开始</a>
+    {% else %}
+    	<a href="/starkill/nostart.html">即将开始</a>
+    {% endif %}
+    	{% if is_login %}
+    	<a class="btom_change" href="/starkill/mystar.html">我的星星杀</a>
+    	{% else %}
+    	<a class="btom_change" href="{{url_m}}/logins/login.html?return_url={{ return_url }}">我的星星杀</a>
+    	{% endif %}
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script src="/public/js/starkill/mystar.js"></script>

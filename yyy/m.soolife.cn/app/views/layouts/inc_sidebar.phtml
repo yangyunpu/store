@@ -1,0 +1,217 @@
+<!-- 侧边栏 -->
+<div class="sidebar">
+	<!-- 查看购物车 -->
+	<div class="sidebar-carts">
+		<div class="tright">
+			<i id="removecart" class="fa fa-remove fa-lg"></i>
+		</div>
+		<div class="toolbar-hd-title">购物车</div>
+		<div class="toolbar-bd">
+			<div id="rtbar_cart" class="mini-cart-list">
+				<div class="mini-cart-empty">哎呦，来都来了，不买点什么吗？</div>
+			</div>
+		</div>
+		<!-- 有商品的样式  -->
+		<div class="toolbar-bd">
+			<div id="rtbar_cart" class="mini-cart-list">
+				<div class="mini-cart-list-hd">
+					<div class="mini-cart-list-title">最新加入的宝贝
+					</div><a target="_blank" href="http://www.soolife.cn/cart/index.html">查看全部</a>
+				</div>
+				<div class="mini-cart-list-bd">
+					<ul class="mini-cart-items-list">
+						<li>
+							<div class="mini-cart-item clearfix">
+								<div class="mini-cart-item-pic">
+									<a target="_blank" href="/goods/29429.html" title="思高车  儿童款（蓝色）"> <img alt="思高车  儿童款（蓝色）" src="http://img.soolife.cn/shop/d41d8cd98f00b204e9800998ecf8427e/201601/thumb/200X20056a5bf5a9a96a.jpg"></a>
+								</div>
+								<div class="mini-cart-item-info">
+									<div class="mini-cart-item-title">
+										<a target="_blank" href="/goods/29429.html">思高车  儿童款（蓝色）</a>
+									</div>
+									<div class="mini-cart-item-num">
+										数量为<label>3</label>件
+									</div>
+									<div class="mini-cart-item-price">
+										<div title="¥1268.00" class="mini-cart-item-price-c">
+											¥<em>1268.00</em>
+										</div>
+									</div>
+
+								</div>
+								<i style="cursor: pointer;" data-value="29429" class="icon-remove icon-large"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<a target="_blank" class="mini-cart-submit" href="http://www.soolife.cn/cart/index.html"><i class="icon-shopping-cart icon-large"></i>去购物车结算</a>
+			</div>
+		</div>
+		<!-- end 有商品的样式 -->
+	</div>
+
+	<!-- 加入购物车成功 -->
+	<div class="rtbar-success">
+		<div style="color: #fff;opacity: 1;right: 27px;display:none" class="rtbar-arrow rtbar-arrowbuy">◆</div>
+		<div class="rtbar-cart-recommend">
+			<div class="rtbar-cart-recommend-arr">◆</div>
+			<div class="rtbar-cart-recommend-close">
+				<i id="removerecomcart" class="fa fa-remove fa-lg"></i>
+			</div>
+			<div class="rtbar-cart-recommend-con">
+				<div class="rtbar-cart-recommend-hd">
+					<span class="rtbar-cart-recommend-hd-logo"><i class="icon-ok-circle icon-large"></i></span>
+					<div class="rtbar-cart-recommend-hd-p">
+						<p class="rtbar-cart-recommend-hd-hint">
+							成功加入购物车！
+						</p>
+						<p class="rtbar-cart-recommend-hd-other">
+							您可以<a target="_blank" href="http://orders.soolife.cn/index.html">去购物车结算</a>
+						</p>
+					</div>
+				</div>
+				<div class="rtbar-cart-recommend-bd">
+					<p class="rtbar-cart-recommend-bd-p">
+						达人的购物车里都有啥 <a href="http://orders.soolife.cn/index.html" target="_blank">查看更多</a>
+					</p>
+					<!--购物车里的热销推荐-->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="rtbar">
+		<div class="rtbar-tab rtbar-avatar">
+			<div class="rtbar-icon">
+				<img alt="头像" src="/public/v3.0.1/img/s.gif" class="avatar-female" style="width: 26px;">
+			</div>
+			<div class="rtbar-mbrcenter">
+				{% if m_id>0 %}
+				<div class="rtbar-mbrcenter-info" >
+					<div class="rtbar-mbrcenter-info-hd left">
+						<img alt="头像" src="/public/v3.0.1/img/icon/avatar-male.png" class="mui-mbarp-prof-icon">
+						<div class="rtbar-mbrcenter-info-hd-edit">
+							<a onclick="" href="#" target="_blank">编辑</a>
+						</div>
+					</div>
+					<div class="rtbar-mbrcenter-info-bd left">
+						<p class="name">汪家大少 <small>个人</small></p>
+						<p><i class="fa icon-coin"></i> 星币数量 <span class="red">{{m_coin}}</span></p>
+						<p><i class="fa icon-coupon"></i> 优惠券数 <span class="blue">34</span></p>
+						<p><i class="fa icon-wallet"></i> 钱包余额 <span class="price">&yen; 203.00</span></p>
+					</div>
+				</div>
+				{% else %}
+				<div class="rtbar-mbrcenter-login">
+					<form id="rtbar_form_login" action="{{url_member}}/login.html" method="post">
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-user blue"></i>
+								</div>
+								<input type="text" name="username" class="form-control" placeholder="请输入手机号码">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon">
+									<i class="fa fa-key blue"></i>
+								</div>
+								<input type="password" name="password" class="form-control" placeholder="请输入密码" />
+							</div>
+						</div>
+						<div class="form-group" style="text-align: center;">
+							<button type="submit" class="btn btn-primary">
+								登录
+							</button>
+						</div>
+					</form>
+				</div>
+				{% endif %}
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-mycart">
+			<div class="rtbar-icon">
+				<a href="{{url_orders}}"><i class="fa fa-shopping-cart fa-lg fa-spin"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">我的购物</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+			<div class="rtbar-title">购物车</div>
+			<div id="amount" class="rtbar-amount">0</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-asset">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/assets/balance"><i class="fa fa-money fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">我的资产</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-focus-goods">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/goods/index.html"><i class="fa fa-heart-o fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">关注的商品</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-focus-shop">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/store/index.html"><i class="fa fa-star-o fa-lg" style="font-size:18px;"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">关注的店铺</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-history">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/focus/history/index.html"><i class="fa fa-eye fa-lg"></i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">历史记录</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-suggestion">
+			<div class="rtbar-icon">
+				<a href="{{url_member}}/feedback/index.html"><i class="fa fa-edit fa-lg"> </i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">我的意见</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+
+		<div class="rtbar-tab rtbar-suggestion">
+			<div class="rtbar-icon hkl_user">
+				<a><i class="fa fa-user fa-lg" style="font-size:18px;"> </i></a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">客服</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="http://cs.ecqun.com/?id=1623872" charset="utf-8"></script>
+		<div class="rtbar-tab rtbar-rocket">
+			<div class="rtbar-icon">
+				<a href="#header"> <i class="fa fa-eject fa-lg"></i> </a>
+			</div>
+			<div class="rtbar-hint">
+				<div class="rtbar-tips">返回顶部</div>
+				<div class="rtbar-arrow">◆</div>
+			</div>
+		</div>
+	</div>
+</div>

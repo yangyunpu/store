@@ -1,0 +1,89 @@
+body { 
+	background: #fbf1e5;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    display:block;
+}
+
+a {
+    text-decoration: none;
+}
+.card{
+	width: 100%;
+}
+.card img{
+	width: 100%;
+}
+.lj_shop{
+	width: 100%;
+	text-align: center;
+}
+.shopss{
+	width: 24%;
+	height: 1.450667rem;
+	margin: 0.32rem auto 0;
+}
+.nine{
+	width: 48%;
+	height: 0.981333rem;
+	margin: 0.32rem auto 0;
+}
+.share_one{
+	width: 66%;
+	height: 1.706667rem;
+	margin: 1.386667rem auto 1.066667rem;
+}
+.foods{
+	width: 1.322667rem;
+	margin: 0 auto;
+}
+.diy{
+	width: 84%; 
+	margin: 0.426667rem auto 0;
+}
+.diys{
+	width: 44%; 
+	margin: 0.426667rem auto 0;
+}
+.food{
+	width: 88%;
+	margin: 0.426667rem auto 0;
+}
+.jing{
+	font-size: 0.904rem;
+	text-align: center;
+	margin: 1.173333rem auto 1.48rem;
+	color: #75574d;
+	font-weight: bold;
+}
+.lj_store{
+	width: 100%;
+}
+.lj_store img{
+	width: 100%;
+	display: block;
+}

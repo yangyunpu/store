@@ -1,0 +1,222 @@
+<?php
+	require_once ROOT_PATH . "/apps/librarys/weixinshare/jssdk.php";
+	$jssdk = new JSSDK("wx6fe7550ec5625a23", "57bdd0bbe290a22b6844673509db0b61");
+	$signPackage = $jssdk->GetSignPackage();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="black" name=" apple-mobile-web-app-status-bar-style"   />
+	<link rel="stylesheet" type="text/css" href="/public/mobile/css/investment/view.brand.css">
+	<title>品牌招商</title>
+</head>
+<body>
+<!-- 微信分享 -->
+	<input type="hidden" name="appId" value="{{ signPackage['appId'] }}" />
+	<input type="hidden" name="timestamp" value="{{ signPackage['timestamp'] }}" />
+	<input type="hidden" name="nonceStr" value="{{ signPackage['nonceStr'] }}" />
+	<input type="hidden" name="signature" value="{{ signPackage['signature'] }}" />
+	<div class="layer"></div>
+	<div class="wrap">
+		<div class="lj_head"><img src="/public/mobile/img/investment/head.jpg"></div>
+		<div class="model">如此生活  全新OAO模式</div>
+		<div class="scheme">全渠道一站式解决方案</div>
+		<div class="ways"><img src="/public/mobile/img/investment/app.png"></div>
+		<div class="lj_ipad"><img src="/public/mobile/img/investment/ipad.png"></div>
+		<div class="lj_good">
+			<p class="lj_shop">让商家盈利&nbsp;&nbsp;&nbsp;让消费者受益</p>
+			<p>打通线上线下&nbsp;&nbsp;&nbsp;实现商品互通&nbsp;&nbsp;&nbsp;打通左右渠道&nbsp;&nbsp;&nbsp;实现人群互联</p>
+		</div>
+		<div class="lj_pin">
+		  <div class="channel">
+		  <p class="channel-t">零售渠道及中小企业现状</p>
+		  <p>线上渠道、线下渠道、直销渠道</p>
+		  </div>
+		  <div class="exhibition">
+		  	<img src="/public/mobile/img/brand/qudao_1.jpg">
+		  	<img src="/public/mobile/img/brand/qudao_2.jpg">
+		  	<img src="/public/mobile/img/brand/qudao_3.jpg">
+		  </div>
+		</div>
+		<div class="exper">
+			<p class="exp_shop">如此生活&nbsp;&nbsp; 全新O2O模式</p>
+			<p>解决线上线下入口单一运营成本过高问题,</p>
+			<p><span>体验店</span>、<span>移动端</span>、<span>仓储服务</span>一站式服务</p>
+			<p>轻松解决卖货难问题</p>
+		</div>
+		<div class="iphone">
+			<img src="/public/mobile/img/brand/zhanshi.jpg">
+			
+		</div>
+		<div class="experapp">
+			<p class="exp_shop">·&nbsp;&nbsp;体验店端&nbsp;&nbsp;·</p>
+			<p>免费线下体验店品牌展示</p>
+			<p>去除中间环节</p>
+			<p>商家商品直达消费者</p>
+		</div>
+		<div class="mac">
+			<img class="bg" src="/public/mobile/img/brand/bg-1.jpg">
+			<div class="experience_s">
+				<p class="experience_s_t">体验店亮点</p>
+				<div class="highlights">
+					<img src="/public/mobile/img/brand/yizhan_1.jpg">
+					<img src="/public/mobile/img/brand/yizhan_2.jpg">
+					<img src="/public/mobile/img/brand/yizhan_3.jpg">
+					<img src="/public/mobile/img/brand/yizhan_4.jpg">
+				</div>
+				<div class="experience_s_f">
+					<img src="/public/mobile/img/brand/pinpaizhaoshang17.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="increment">
+			<img class="bg" src="/public/mobile/img/brand/bg-3.jpg">
+			<div class="experience_s">
+				<p class="experience_s_t">体验店VIP星卡增值服务</p>
+				<div class="highlights">
+					<img src="/public/mobile/img/brand/zhengzhi_1.png">
+					<img src="/public/mobile/img/brand/zhengzhi_2.png">
+					<img src="/public/mobile/img/brand/zhengzhi_3.png">
+					<img src="/public/mobile/img/brand/zhengzhi_4.png">
+				</div>
+			</div>
+		</div>
+		<div class="boutique">
+			<p class="boutique_s_t" >精品商品特色</p>
+			<div class="highlights">
+					<img src="/public/mobile/img/brand/jingpin_1.jpg">
+					<img src="/public/mobile/img/brand/jingpin_2.jpg">
+					<img src="/public/mobile/img/brand/jingpin_3.jpg">
+					<img src="/public/mobile/img/brand/jingpin_4.jpg">
+			</div>
+	  </div>
+	  <div class="characteristic">
+			<p class="boutique_s_t">体验店特色活动</p>
+			<p class="boutique_s_r">特色活动&nbsp;&nbsp;人气爆棚&nbsp;&nbsp;引发消费狂潮</p>
+			<div class="highlights">
+					<img src="/public/mobile/img/brand/tese_1.jpg">
+					<img src="/public/mobile/img/brand/tese_2.jpg">
+					<img src="/public/mobile/img/brand/tese_3.jpg">
+					<img src="/public/mobile/img/brand/tese_4.jpg">
+			</div>
+	  </div>
+	   <div class="optional">
+			<p class="boutique_s_t">线下体验店可选铺位</p>
+			<div class="scroll">
+			<div class="shops">
+			        <img class="songjiangwanda" src="/public/mobile/img/brand/shop_1.jpg">
+					<img class="baolong" src="/public/mobile/img/brand/shop_2.jpg">
+					<img class="zhenjiangbaolpng" src="/public/mobile/img/brand/shop_3.jpg">
+					<img class="guofadasha" src="/public/mobile/img/brand/shop_4.jpg">
+					<img class="jimeiwanda" src="/public/mobile/img/brand/shop_5.jpg">
+					<img class="beijing" src="/public/mobile/img/brand/shop_6.jpg">
+			</div>
+			</div>
+	  </div>
+	  <div class="app">
+	  	<img src="/public/mobile/img/brand/gongneng.jpg">
+	  </div>
+	  <div class="exper">
+			<p class="exp_shop">·&nbsp;&nbsp;APP端&nbsp;&nbsp;·</p>
+			<p>免费APP运营推广服务</p>
+			<p>多种营销工具</p>
+			<p>全网会员分销</p>
+		</div>
+	   <div class="collar">
+			<img src="/public/mobile/img/brand/zhaoshang_1.jpg">
+			<img src="/public/mobile/img/brand/zhaoshang_2.jpg">
+			<img src="/public/mobile/img/brand/zhaoshang_3.jpg">
+			<img src="/public/mobile/img/brand/zhaoshang_4.jpg">
+			<img src="/public/mobile/img/brand/zhaoshang_5.jpg">
+	  </div>
+	  <div class="exper">
+			<p class="exp_shop">如此生活</p>
+			<p>已拥有</p>
+			<p><span>百万级</span>星卖家</p>
+			<p><span>千万级</span>星粉数</p>
+			<p><span>亿级</span>星币发放量</p>
+		</div>
+		<div class="collar">
+			<img src="/public/mobile/img/brand/cangchu.jpg">
+	  </div>
+	   <div class="exper">
+			<p class="exp_shop">·&nbsp;&nbsp;仓储端&nbsp;&nbsp;·</p>
+			<p>免费仓储，管家式服务</p>
+			<p>代存 &nbsp;&nbsp;代管&nbsp;&nbsp; 代发</p>
+		</div>
+		<div class="storage">
+			<!-- <img class="bg" src="/public/mobile/img/brand/bg-2.jpg"> -->
+			<div class="experience_s">
+				<div class="highlights">
+					<img src="/public/mobile/img/brand/cangchu_1.jpg">
+					<img src="/public/mobile/img/brand/cangchu_2.jpg">
+					<img src="/public/mobile/img/brand/cangchu_3.jpg">
+				</div>
+			</div>
+		</div>
+		 <div class="exper">
+			<p class="exp_shop">现代化集成大仓</p>
+			<p>货物代存、代管、代发</p>
+			<p>节省成本，安心可靠</p>
+		</div>
+		<div class="iphone">
+			<img src="/public/mobile/img/brand/zu_1.jpg">
+	  </div>
+	  <div class="exper">
+			
+			<p class="exp_shop">招商合作政策</p>
+			<p class="exp_shop">·品牌商户合作政策·</p>
+		</div>
+		<div class="zhaoshang" style="padding: 1.5rem;">
+		<div class="iphone">
+			<img src="/public/mobile/img/brand/zhengce_1.jpg">
+	  </div>
+	  <div class="iphone">
+			<img src="/public/mobile/img/brand/zhengce_2.jpg">
+	  </div>
+	  <!--  <div class="exper">
+	  			<p class="exp_shop">·广告位星币使用政策·</p>
+	  		</div> -->
+	  <div class="iphone">
+			<img src="/public/mobile/img/brand/zhengce_3.jpg">
+	  </div>
+	  <div class="iphone">
+			<img src="/public/mobile/img/brand/zhengce_4.jpg">
+	  </div>
+	  <div class="iphone">
+			<img src="/public/mobile/img/brand/zhengce_5.jpg">
+	  </div>
+	   <div class="iphone">
+	   	<img src="/public/mobile/img/brand/zhengce_7.jpg">
+	    <img src="/public/mobile/img/brand/zhengce_6.jpg">
+	   </div>
+        </div>
+         <div class="cooperation">
+			<img src="/public/mobile/img/brand/liucheng.jpg">
+	  </div>
+	   <div class="exper">
+			<p class="exp_shop">招商品类</p>
+		</div>
+		 <div class="category">
+			<img src="/public/mobile/img/brand/zhaoshangpinlei.jpg">
+	  </div>
+	   <div class="cooperation">
+			<img src="/public/mobile/img/brand/pinpai.jpg">
+	  </div>
+	  <div class="exper">
+			<p >复制网址&nbsp;&nbsp;<span class="copy" id="copy" data-clipboard-text="www.soolife.com.cn">www.soolife.com.cn</span></p>
+			<p>至PC端进入&nbsp;&nbsp;<span>“商家入驻”</span></p>
+		</div>
+   </div>
+</body>
+<script type="text/javascript" src="/public/mobile/js/investment/rem.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/jquery.-1.8.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/tooltips.js"></script>
+<script type="text/javascript" src="/public/mobile/js/weixin/jssdk.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/brand.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/view.brand.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/wxshare.js"></script>
+</html>

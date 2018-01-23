@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>邮件内容</title>
+	</head>
+	<style type="text/css">
+		.lj_wrap{
+			width: 100%;
+			font-family: "黑体";
+		}
+		.lj_wrap p{
+			margin:5px 0 7px;
+			padding: 0;
+		}
+		.lj_leave{
+			width: 380px;
+		    margin-left: 20px;
+		}
+		.lj_leavesd{
+			display: block;
+			margin-left: 20px;
+		}
+		.lj_details{
+			width: 330px;
+			margin-right: 65px;
+			margin-top: 10px;
+			display: block;
+			text-indent: 18px;
+		}
+		.lj_striping{
+			width: 100%;
+			border-top: 2px solid #4DA8DF;
+		}
+	</style>
+	<body>
+		<div class="lj_wrap" >
+			<div class="word" >
+			<p><strong>鸿惠集团(如此生活)：</strong></p>
+			<p class="lj_leave" >
+				<span class="lj_leavesd" >留言：</span>
+				<span class="lj_details" >{{message}}</span> </p>
+			</p>
+			<p class="lj_striping"></p>
+			<div style="margin-left: 15px ;">
+				<p >姓名：<span>{{name}}</span> </p>
+				<p>职位：<span>{{work}}</span></p>
+				<p>公司：<span>{{company}}</span></p>
+				<p>电话：<span>{{tel}}</span> </p>
+				<p>城市：<span>{{address}}</span></p>
+			</div>
+		</div>
+	</body>
+</html>

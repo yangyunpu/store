@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|商探收入</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<link rel="stylesheet" type="text/css" href="/public/css/shopseek/shopincome.css ">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+			<span onclick="window.history.go(-1)">
+				<img src="/public/img/setting/xingfaner_back@2x.png" class="lefter">
+			</span>
+			<span class="lj_srt">商探收入</span> 
+		</div>
+		<div class="void" id="void"></div>
+		<div class="first_head">
+			<div class="leftshop">
+				<div class="shopbao">商家报备</div>
+				<div class="red"></div>
+			</div>
+			<div class="rightshop">
+				<div class="shopyue">商家签约</div>
+				<div class="red2"></div>
+			</div>
+		</div>
+		<div class="codes"></div>
+		<!-- 商家报备 -->
+		{% if data%}
+		{% for  k in data['data'] %}
+		<div class="leftcontent">
+				<p class="soo_life">{{ k['name'] }}</p>
+				<div class="plan">
+				<hr> 
+				<ul class="all_play">
+					<li class="noyet">
+						<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">
+					</li>
+
+					{% if k['status'] < 1 %}
+							<li class="noyet">
+								<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--洽谈中灰色-->
+							</li>
+
+							{% elseif k['status'] > 0 and k['status'] < 3 %}
+								<li class="noyet">
+									<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">    <!--洽谈中亮色-->
+								</li>
+							{% elseif k['status'] == 9 %}
+								<li class="noyet">
+									<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--洽谈中灰色-->
+								</li>
+							{% elseif k['status'] == 2 %}
+								<li class="noyet">
+									<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--洽谈中灰色-->
+								</li>
+						{% else %}
+							<li class="noyet">
+								<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--洽谈中亮色-->
+							</li>
+
+					{% endif %}
+
+
+
+					{% if k['status'] < 3 %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">  <!--资料审核灰色-->
+						</li>
+
+					{% elseif k['status'] > 2 and k['status'] < 5 %}
+						<li class="noyet">
+								<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">     <!--资料审核亮色-->
+							</li>
+						{% elseif k['status'] == 9%}
+							<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   	<!--资料审核灰色-->
+						</li>
+						{% elseif k['status'] == 2%}
+							<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   	<!--资料审核灰色-->
+						</li>
+						{% else %}
+							<li class="noyet">
+								<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--资料审核亮色-->
+							</li>
+
+					{% endif %}
+
+
+					{% if k['status'] < 5 %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--签约中灰色-->
+						</li>
+					{% elseif k['status'] > 4 and k['status'] <7 %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">  <!--签约中亮色-->
+						</li>
+						{% elseif k['status'] == 9 %}
+							<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--签约中灰色-->
+						</li>
+						{% elseif k['status'] == 2%}
+							<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--签约中灰色-->
+						</li>
+						{% else %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--签约中亮色-->
+						</li>
+
+					{% endif %}
+
+					{% if k['status'] == 10 or k['status'] == 11 %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">
+						</li>
+						{% elseif k['status'] == 2 or k['status'] == 9 %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">
+						</li>
+						{% else %}
+						<li class="noyet">
+							<img class="nohat2" src="/public/img/shopseek/mine_zhifu_yuan@2x.png">
+						</li>
+					{% endif %}
+				</ul>
+				<ul class="play">
+					<li>已提交</li>
+					<li>洽谈中</li>
+					<li>资料审核</li>
+					<li>签约中</li>
+					<li>已返现</li>
+				</ul> 
+				</div>
+				<ul class="cond"> 
+					{% for s in k['list_log']%}
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div>
+							<div class="rightstatusd">
+							 	<p class="textd1">{{s['result']}}</p>
+							 	<p class="textd1_time">{{date("Y-m-d H:i:s",s['time'])}}</p>
+							</div> 
+						</div>
+					</li>
+					{% endfor %}
+				</ul> 
+		</div>
+		{% endfor %}
+		{% endif %}	 
+		<!-- 商家签约 -->
+		{% if result  %}
+		{% for d in result['data'] %}
+		<div class="rightcontent">
+			<p class="soo_life">{{d['name']}} </p>
+				<div class="planer"> 
+					<hr> 
+					<ul class="all_player">
+						<li class="noyeter">
+							<img src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--已提交高亮-->
+						</li>
+
+						{% if d['status'] < 1 %}
+							<li class="noyeter">
+								<img src="/public/img/shopseek/mine_zhifu_yuan@2x.png">  <!--资料审核灰色-->
+							</li>
+							{% elseif (d['status'] > 0) and (d['status'] < 7 ) %}
+								{% if d['status'] == 2 %}
+									<li class="noyeter">
+										<img src="/public/img/shopseek/mine_zhifu_yuan@2x.png">  <!--资料审核灰色-->
+									</li>
+								{% else %}
+									<li class="noyeter">
+										<img src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--资料审核高亮-->
+									</li>
+								{% endif %}
+						{% else %}
+							<li class="noyeter">
+								<img src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">   <!--资料审核高亮-->
+							</li>
+						{% endif %}
+
+
+
+						{% if d['status'] <= 7  %}
+							<li class="noyeter">
+								<img src="/public/img/shopseek/mine_zhifu_yuan@2x.png">     <!--已返现灰色-->
+							</li>
+							{% elseif (d['status'] == 11) or (d['status'] == 10) %}
+								{% if d['status'] == 2 %}
+									<li class="noyeter">
+										<img src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--已返现灰色-->
+									</li>
+								{% elseif d['status'] == 11 %}
+									<li class="noyeter">
+										<img src="/public/img/shopseek/mine_zhifu_d_yuan@2x.png">    <!--已返现高亮-->
+									</li>
+							{% else %}
+								<li class="noyeter">
+									<img src="/public/img/shopseek/mine_zhifu_yuan@2x.png">   <!--已返现灰色-->
+								</li>
+							{% endif %}
+						{% endif %}
+					</ul>
+					<ul class="player">
+						<li>已提交</li> 
+						<li>资料审核</li> 
+						<li>已返现</li>
+					</ul> 
+				</div>
+
+				<!-- 正在审核 -->
+				<ul class="cond"> 
+					{% for v in d['list_log']%}
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div> 
+							<div class="rightstatusd">
+							 	<p class="textd1">{{v['result']}}</p>
+							 	<p class="textd1_time">{{date("Y-m-d H:i:s",v['time'])}}</p>
+							</div> 
+						</div>
+					</li>
+					{% endfor %}
+				</ul> 
+				<!-- 审核终止 -->
+				<!-- <ul class="cond2">
+					<li>
+						<div class="statuserf">
+							 <div class="statuser2">
+							 	<img class="lastdianer" src="/public/img/shopseek/Group 16@2x.png"> 
+							 </div>
+							 <div class="rightstatuserf">
+							 	<p class="texter1">运营部小方正在对该公司的相关的资料进行审核</p>
+							 	<p class="texter1_time">2017-03-24  15:11:43</p>
+							 </div> 
+						</div>
+					</li> 
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div>
+							<div class="rightstatusd">
+							 	<p class="textd1">你已成功进行商家报备</p>
+							 	<p class="textd1_time">2017-03-24  15:11:43</p>
+							</div> 
+						</div>
+					</li>
+				</ul>  -->
+				<!-- 已返现 -->
+				<!-- <ul class="cond3">
+					<li>
+						<div class="statuserf">
+							 <div class="statuser2">
+							 	<img class="lastdianer" src="/public/img/shopseek/6@2x.png"> 
+							 </div>
+							 <div class="rightstatuserf">
+							 	<p class="texter1">已返3000元到您现金账户，将于每月28日将钱款打入到您绑定的帐号中</p>
+							 	<p class="texter1_time">2017-03-24  15:11:43</p>
+							 </div> 
+						</div>
+					</li> 
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div>
+							<div class="rightstatusd">
+							 	<p class="textd1">资料审核完成，该商家已成功签约为如此生活平台供应商</p>
+							 	<p class="textd1_time">2017-03-24  15:11:43</p>
+							</div> 
+						</div>
+					</li>
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div>
+							<div class="rightstatusd">
+							 	<p class="textd1">运营部小方正在对该公司的相关资料进行审核</p>
+							 	<p class="textd1_time">2017-03-24  15:11:43</p>
+							</div> 
+						</div>
+					</li>
+					<li>
+						<div class="statusd">
+							<div class="statusd2">
+							 	<img class="lastdiand" src="/public/img/shopseek/2@2x.png"> 
+							</div>
+							<div class="rightstatusd">
+							 	<p class="textd1">你已成功进行商家报备</p>
+							 	<p class="textd1_time">2017-03-24  15:11:43</p>
+							</div> 
+						</div>
+					</li>
+				</ul>  -->
+		</div>
+		{% endfor%}	
+		{% endif%}
+	</div>
+</body>
+<script>
+	var isApp = /SoolifeApp/i.test(navigator.userAgent);
+	if(isApp){
+		document.getElementById('header').style.display = "none";
+		document.getElementById('void').style.display = "none";
+		document.getElementById('download-nav').style.display = "none";
+	};
+</script> 
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script> 
+<script src="/public/js/shopseek/shopincome.js"></script>
+</html>

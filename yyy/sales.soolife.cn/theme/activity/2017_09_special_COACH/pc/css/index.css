@@ -1,0 +1,138 @@
+body {
+    color: #5D5E5F;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.main {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.d_one {
+    position: absolute;
+    left: 2%;
+    top: 23%;
+    width: 5%;
+}
+
+banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+banner img {
+    width: 100%;
+}
+
+
+/* h1 {
+    text-align: center;
+    padding-top: 25px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+} */
+
+.one_f {
+    width: 100%;
+    background: #ffffff;
+    padding-bottom: 6%;
+}
+
+.y_one {
+    width: 1200px !important;
+    margin: 0 auto;
+}
+
+.one_f li {
+    width: 100%;
+    /* padding-bottom: 20px; */
+}
+
+.one_f li img {
+    width: 100%;
+}
+
+.one_f ul {
+    width: 97%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one_f .y_c {
+    padding: 60px 0 60px 0;
+}
+
+.one_f .y_e {
+    padding: 60px 0 60px 0;
+}
+
+.one_f .y_h {
+    padding: 60px 0 60px 0;
+}
+
+.one_f ._two {
+    width: 49%;
+}
+
+.one_f ._only {
+    width: 72.5%
+}
+
+.one_f ._bottom {
+    padding-bottom: 80px;
+}

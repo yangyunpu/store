@@ -1,0 +1,39 @@
+<?php
+    $css = $this -> assets -> get('header');
+    $css -> addCss("/public/css/profile/shopdatum.css");
+
+    $js = $this -> assets -> get('footer');
+    $js -> addJs("http://libs.baidu.com/jquery/2.1.1/jquery.min.js");
+    $js -> addJs("public/js/rem.js");
+    $js -> addJs("public/js/profile/iscroll-zoom.js");
+    $js -> addJs("public/js/hammer.js");
+    $js -> addJs("public/js/bundle.js");
+    $js -> addJs("public/js/profile/jquery.photoClip.min.js");
+    $js -> addJs("public/js/profile/profile.js");
+?>
+<body class="lcy_shopdatum">
+    <header class="head">
+        <div class="back"></div>
+        <div class="title">星店铺资料</div>
+        <div class="back2"></div>
+    </header>
+    <div class="contain">
+    	<div class="word">店铺logo</div>
+    	<div class="logo">
+    		<img src="/public/img/detalia_t.png" alt="">
+    	</div>
+    </div>
+    <div class="contain">
+    	<div class="word">店铺名称</div>
+    	<div class="name">
+    		<input type="text" value="回家的孩子">
+    	</div>
+    </div>
+    <div class="mark">
+        <div id="clipArea"></div>
+        <input type="file" id="file">
+        <button id="clipBtn">截取</button>
+        <div id="view"></div>
+        <div class="success">完成</div>
+    </div>
+

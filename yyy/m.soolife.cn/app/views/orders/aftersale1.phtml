@@ -1,0 +1,75 @@
+<div class="header">
+	<span class="headleft" onclick="window.history.go(-1)">
+		<a class="back">
+		    <img src="/public/mobile/img/mylife/qleft_03.png"/>
+		</a>
+	</span>
+	<span class="headTitle">售后/退款</span>
+	<a class="backed">
+		<img src="/public/mobile/img/refund/plus49.png" width="40px" />
+	</a>
+</div>
+
+<div class="top-re">
+	<ul class="re-top">
+		<li class="navActive">全部</li>
+		<li>进行中</li>
+		<li>已完成</li>
+	</ul>
+</div>
+{% if result.data %}
+{% for vo in result.data %}
+<div class="baner">
+	<div class="banertop">
+		<span>服务单号:{{vo.order_no}}</span>
+		<div class="banerimg"><img src="/public/mobile/img/refund/myorder_return.png" /></div>
+
+	</div>
+	<div class="picture">
+		<div class="logo">
+			<img src="{{vo.logo}}" width="60px" height="120px">
+		</div>
+		<div class="title">
+			<p class="name">
+				{{vo.good_name}}
+			</p>
+			<p>
+				{{vo.good_spec}}
+			</p>
+		</div>
+		<div class="qty">
+			<p>
+				¥8000.00
+			</p>
+			<p class="price">
+				x1
+			</p>
+		</div>
+	</div>
+	<div class="apply">
+		<span>状态: 新申请</span>
+	</div>
+	<div class="applytime">
+		<span>申请时间: 2016-05-17 08:45:37</span>
+	</div>
+	<div class="problem">
+		<span class="bottomem">问题描述: 5ZOlpu05aW95aW95aW95aW9</span>
+		<br />
+		<span class="botom">取消申请</span>
+	</div>
+</div>
+{% endfor %}
+{% else %}
+	<div class="searchno">
+		<img src="/public/mobile/img/sss_03.png" width="100"/>
+		<br />
+		<br />
+		<b>暂无订单</b>
+	</div>
+{% endif %}
+
+<div class="bottom"></div>
+<?php
+$css = $this -> assets -> get('header');
+$js = $this -> assets -> get('footer');
+?>

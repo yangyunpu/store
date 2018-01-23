@@ -1,0 +1,115 @@
+<?php
+	require_once ROOT_PATH . "/apps/librarys/weixinshare/jssdk.php";
+	$jssdk = new JSSDK("wx6fe7550ec5625a23", "57bdd0bbe290a22b6844673509db0b61");
+	$signPackage = $jssdk->GetSignPackage();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="black" name=" apple-mobile-web-app-status-bar-style"   />
+	<link rel="stylesheet" type="text/css" href="/public/mobile/css/investment/view.ads.css">
+	<link rel="stylesheet" type="text/css" href="/public/mobile/css/investment/generalize.css">
+	<title>体验店加盟</title>
+</head>
+<body>
+<!-- 微信分享 -->
+	<input type="hidden" name="appId" value="{{ signPackage['appId'] }}" />
+	<input type="hidden" name="timestamp" value="{{ signPackage['timestamp'] }}" />
+	<input type="hidden" name="nonceStr" value="{{ signPackage['nonceStr'] }}" />
+	<input type="hidden" name="signature" value="{{ signPackage['signature'] }}" />
+	<div class="wrap">
+		<div class="lj_head">
+			<img src="/public/mobile/img/generalize/one/a.jpg">
+			<img src="/public/mobile/img/generalize/one/b.jpg">
+			<img src="/public/mobile/img/generalize/one/c.jpg">
+			<img src="/public/mobile/img/generalize/one/d.jpg">
+			<img src="/public/mobile/img/generalize/one/e.jpg">
+
+			<img src="/public/mobile/img/generalize/one/f.jpg">
+			<img src="/public/mobile/img/generalize/one/g.jpg">
+			<img src="/public/mobile/img/generalize/one/h.jpg">
+			<img src="/public/mobile/img/generalize/one/i.jpg">
+			<img src="/public/mobile/img/generalize/one/j.jpg">
+
+			<img src="/public/mobile/img/generalize/one/k.jpg">
+			<img src="/public/mobile/img/generalize/one/l.jpg">
+			<img src="/public/mobile/img/generalize/one/m.jpg">
+			<img src="/public/mobile/img/generalize/one/n.jpg">
+			<img src="/public/mobile/img/generalize/one/o.jpg">
+
+			<img src="/public/mobile/img/generalize/one/p.jpg">
+			<img src="/public/mobile/img/generalize/one/q.jpg">
+			<img src="/public/mobile/img/generalize/one/r.jpg">
+			<img src="/public/mobile/img/generalize/one/s.jpg">
+			<img src="/public/mobile/img/generalize/one/t.jpg">
+
+
+			<!-- two -->
+			<img src="/public/mobile/img/generalize/four/a.jpg">
+			<img src="/public/mobile/img/generalize/four/b.jpg">
+			<img src="/public/mobile/img/generalize/four/c.jpg">
+			<img src="/public/mobile/img/generalize/four/d.jpg">
+			<img src="/public/mobile/img/generalize/four/e.jpg">
+
+			<img src="/public/mobile/img/generalize/four/f.jpg">
+			<img src="/public/mobile/img/generalize/four/g.jpg">
+			<img src="/public/mobile/img/generalize/four/h.jpg">
+			<img src="/public/mobile/img/generalize/four/i.jpg">
+
+		</div>
+
+
+        <div class="lj_three_geng">
+			<img src="/public/mobile/img/generalize/two/a.jpg">
+			<img src="/public/mobile/img/generalize/two/b.jpg">
+			<img src="/public/mobile/img/generalize/two/c.jpg">
+			<img src="/public/mobile/img/generalize/two/d.jpg">
+			<img src="/public/mobile/img/generalize/two/e.jpg">
+
+			<img src="/public/mobile/img/generalize/two/f.jpg">
+			<img src="/public/mobile/img/generalize/two/g.jpg">
+			<img src="/public/mobile/img/generalize/two/h.jpg">
+			<img src="/public/mobile/img/generalize/two/i.jpg">
+			<img src="/public/mobile/img/generalize/two/j.jpg">
+
+			<img src="/public/mobile/img/generalize/two/k.jpg">
+			<img src="/public/mobile/img/generalize/two/l.jpg">
+			<img src="/public/mobile/img/generalize/two/m.jpg">
+			<img src="/public/mobile/img/generalize/two/n.jpg">
+			<img src="/public/mobile/img/generalize/two/o.jpg">
+
+			<!-- three -->
+			<img src="/public/mobile/img/generalize/three/s.jpg">
+			<img src="/public/mobile/img/generalize/three/a.jpg">
+			<img src="/public/mobile/img/generalize/three/b.jpg">
+			<img src="/public/mobile/img/generalize/three/c.jpg">
+			<img src="/public/mobile/img/generalize/three/d.jpg">
+			<img src="/public/mobile/img/generalize/three/e.jpg">
+
+			<img src="/public/mobile/img/generalize/three/f.jpg">
+			<img src="/public/mobile/img/generalize/three/g.jpg">
+			<img src="/public/mobile/img/generalize/three/h.jpg">
+			<img src="/public/mobile/img/generalize/three/i.jpg">
+			<img src="/public/mobile/img/generalize/three/j.jpg">
+
+			<img src="/public/mobile/img/generalize/three/k.jpg">
+			<img src="/public/mobile/img/generalize/three/l.jpg">
+			<img src="/public/mobile/img/generalize/three/m.jpg">
+			<img src="/public/mobile/img/generalize/three/n.jpg">
+			<img src="/public/mobile/img/generalize/three/o.jpg">
+
+			<img src="/public/mobile/img/generalize/three/p.jpg">
+			<img src="/public/mobile/img/generalize/three/q.jpg">
+			<img src="/public/mobile/img/generalize/three/r.jpg">
+		</div>
+
+
+</body>
+<script type="text/javascript" src="/public/mobile/js/investment/rem.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/jquery.-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/weixin/jssdk.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/brand.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/wxshare.js"></script>
+</html>

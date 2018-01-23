@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|现金账号绑定</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/setting/cash.css"/>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+			<a onclick="window.history.go(-1)">
+				<img src="/public/img/brandhui/xingxingsha_back@2x.png " class="lefter">
+			</a>
+			<span class="lj_srt">绑定银行卡</span> 
+		</div>
+		<div class="void"></div>
+		<div class="bigiphone"> 
+			<div class="iphone">
+				<div class="iphones"  > 
+				    <span class="iphones_title">姓名</span>
+				    <span>{{ banklist['data']['bank_account'] }}</span>
+				</div>
+				<div class="iphones2">
+					<p>姓名</p>
+					<p> <input id="bank_name" type="text" name="iphone" maxlength="11"  value="" /></p>
+				</div>
+			</div>
+			<div class="iphone">
+				<div class="iphones"> 
+					<span class="iphones_title">开户行</span>
+					<span>{{ banklist['data']['bank_name'] }}</span>
+				</div>
+				<div class="iphones2">
+					<p>开户行</p>
+					<p> <input id="bank_account" type="text" name="iphone"  value="" /></p>
+				</div>
+			</div>
+			<div class="iphone">
+				<div class="iphones"> 
+					<span class="iphones_title">银行账号</span>
+					<span>{{ banklist['data']['bank_no'] }}</span>
+				</div>
+				<div class="iphones2">
+					<p>银行账号</p>
+					<p> <input id="bank_no" type="text" name="iphone"  value="" /></p>
+				</div>
+			</div>
+			<input type="hidden" value="{{ phone }}" id="mobile" />
+			<div class="iphone">  
+				<div class="iphones3">
+					<input id="code" type="text" name="vcode" maxlength="6" placeholder="验证码" autoComplete='off' value="" />
+					<div id="btn" name="" >获取验证码</div>
+					<div id="s_box" ></div>
+				</div>
+			</div>
+			<p class="sure">温馨提示：请仔细确认您绑定的银行账号，如果绑定错误，将会导致现金额转出有误，无法转账！</p>
+			<div class="text">绑定</div>
+		</div> 
+	</div>
+	<div id="alert_mark"></div>
+	<div id="title"></div>
+</body>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/js/setting/cash.js"></script>
+</html>

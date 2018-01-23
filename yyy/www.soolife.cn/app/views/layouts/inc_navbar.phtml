@@ -1,0 +1,89 @@
+<!-- begin 导航栏 -->
+<div class="navbar">
+	<div class="nav">
+		<div class="category left">
+			<h4>全部商品分类<i class="fa fa-angle-down fa-lg"></i></h4>
+			<div class="category-dropdown">
+				<div class="category-menus">
+					<ul>
+						{% for d in category %}
+						<li>
+							<a href="/search/{{d['code']|lower}}.html">{{d['name']}}</a>
+							<i class="fa fa-angle-right fa-lg"></i>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="category-pannel">
+					{% for d in category %}
+					<div class="pannel">
+						<div class="content" {% if d['code']|lower=='j' %} style="height: 840px;" {% endif %}>
+							{% for d2 in d['children'] %}
+							<div class="tags-bd">
+								<h5><a href="/search/{{d2['code']|lower}}.html">{{d2['name']}}</a></h5>
+								<p>
+									{% for d3 in d2['children'] %}
+									<a href="/search/{{d3['code']|lower}}.html">{{d3['name']}}</a>
+									{% endfor %}
+								</p>
+							</div>
+							{% endfor %}
+						</div>
+						<div class="adverts clearfix">
+							<!-- 品牌与广告 -->
+							<div class="clearfix">
+								<div class="box-120x50 left" style="background-color: red;">
+									1
+								</div>
+								<div class="box-120x50 left" style="background-color: blue;">
+									2
+								</div>
+								<div class="box-120x50 left" style="background-color: green;">
+									3
+								</div>
+								<div class="box-120x50 left" style="background-color: #f6ab00;">
+									4
+								</div>
+								<div class="box-120x50 left" style="background-color: red;">
+									5
+								</div>
+								<div class="box-120x50 left" style="background-color: blue;">
+									6
+								</div>
+							</div>
+							<div class="hr-20"></div>
+							<div class="clearfix">
+								<div class="box-250x120"  style="background-color: blue;"></div>
+								<div class="box-250x120" style="background-color: red;"></div>
+							</div>
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+		<div class="lists left">
+			<ul>
+				<li>
+					<a href="/index.html" class="active" target="_blank">首  页</a>
+				</li>
+				<li>
+					<a href="/market.html" target="_blank">星超市</a>
+				</li>
+				<li>
+					<a href="/mall.html" target="_blank">星商城</a>
+				</li>
+				<li>
+					<a href="/clothes.html" target="_blank">服饰鞋包</a>
+				</li>
+				<li>
+					<a href="/discount.html" target="_blank">品牌特惠</a>
+				</li>
+				<li>
+					<a href="/zone.html" target="_blank">星粉专区</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end 导航栏 -->

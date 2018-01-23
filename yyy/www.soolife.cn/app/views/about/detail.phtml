@@ -1,0 +1,362 @@
+
+{{ partial("job/inc_nav") }}
+
+<div class="content">
+	<div class="mainBox1000">
+		{{ partial("job/inc_search") }}
+		<div id="job-pos-con" class="clearfix">
+			<div class="job-pos-left">
+				<div class="job-pos-block">
+					<h3 class="job-pos-tit jobs_name" data-value="{{ res_job_d['name'] }}">{{ res_job_d['name'] }}</h3>
+					<div class="job-pos-lists">
+						<div class="job_content">
+							<div class="job-desc">
+								<p>
+									&nbsp;
+								</p>
+								<table class="receivetab">
+									<tbody>
+										<tr class="first">
+											<td width="15%" class="text-right">发布时间：</td>
+											<td width="30%"><?php echo $common->g_time($res_job_d['create_time']);?></td>
+											<td width="15%" class="text-right">工作地点：</td>
+											<td width="15%">{{ res_job_d['address'] }}</td>
+											<td width="15%" class="text-right">工作性质：</td>
+											<td width="10%">{{ res_job_d['work_time'] }}</td>
+										</tr>
+										<tr>
+											<td class="text-right">所属部门：</td>
+											<td>{{ res_job_d['department'] }}</td>
+											<td class="text-right">学 &nbsp;&nbsp;历：</td>
+											<td>{{ res_job_d['education'] }}</td>
+											<td class="text-right">招聘人数：</td>
+											<td>{{ res_job_d['number'] }}</td>
+										</tr>
+									</tbody>
+								</table>
+								<div>
+									<p>
+										&nbsp;
+									</p><span class="job-desc-tit">职位描述:</span>
+									{{ res_job_d['description'] }}
+									<p>
+										&nbsp;
+									</p>
+									<span class="job-desc-tit">职位要求:</span>
+
+									{{ res_job_d['requirement'] }}
+								</div>
+								<!-- <div class="email_header">申请职位请发送简历至:</div> -->
+								<div class="email_share">
+									<!-- <div class="email">zhaopin@meilishuo.com</div> -->
+									<div class="share">
+										<div class="share bshare-custom" >
+								           <div class="bsPromo bsPromo2"></div>
+									<a id="bshare-shareto" class="share-more bshare-more" href="https://www.bShare.cn/" title="分享到">分享到</a>
+									<a class="share-qzone bshare-qzone " title="分享到QQ空间"></a>
+									<a class="share-sina bshare-sinaminiblog" title="分享到新浪微博"></a>
+									<a class="share-qqmb bshare-qqmb " title="分享到腾讯微博"></a>
+									<script src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh" charset="utf-8" type="text/javascript"></script><script src="http://static.bshare.cn/b/bshareC0.js" charset="utf-8" type="text/javascript"></script>
+						                </div>
+									</div>
+									<div class="apply">
+										<a class="apply-btn" data-toggle="modal" data-target="#job-app">职位申请</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="modal fade" id="job-app">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" >职位申请</h4>
+								</div>
+								<div class="modal-body">
+
+									<form>
+										<table class="app-table">
+											<tbody>
+												<tr>
+													<td class="app-table-name"><label>姓名:</label>
+													<input type="text" name="real_name">
+													</td>
+													<td ><label>性别:</label>
+													<select name="sex">
+														<option value="男">男</option>
+														<option value="女">女</option>
+													</select></td>
+													<td><label>状态:</label>
+													<select name="status">
+														<option value="已离职">已离职</option>
+														<option value="在职">在职</option>
+													</select></td>
+												</tr>
+												<tr>
+													<td class="app-table-tel"><label>电话:</label>
+													<input type="text" name="phone">
+													</td>
+													<td class="app-table-mail" colspan="2"><label>邮箱:</label>
+													<input type="text" name="email">
+													</td>
+
+												</tr>
+												<tr>
+													<td colspan="3" class="app-table-address"><label>住址:</label>
+													<input type="text" name="address">
+													</td>
+
+												</tr>
+
+											</tbody>
+										</table>
+									</form>
+									<h6>请输入简历信息:</h6>
+									<div class="editor">
+										<form>
+											<textarea name="content" class="content" style="width:700px;height:200px;visibility:hidden;"></textarea>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+
+									<a class="submit_btn"> 发送 </a>
+									<a class="cancel_btn" data-dismiss="modal"> 关闭 </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="job-pos-block">
+
+					<h3 class="job-pos-tit">热门岗位</h3>
+					<div class="job-pos-lists">
+						<div class="job_header">
+							<ul>
+								<li class="job_name">
+									职位名称
+								</li>
+								<li class="job_type">
+									职位类别
+								</li>
+								<li class="job_place">
+									工作地点
+								</li>
+								<li class="job_num">
+									招聘人数
+								</li>
+								<li class="job_updaTime">
+									更新时间
+								</li>
+								<li class="job-tu"></li>
+							</ul>
+						</div>
+						<div class="job_content">
+						      {% if host_job %}
+                                {% for i,item in host_job %}
+							 {% if i+1 is even %}
+                            <ul class="list_ul even">
+                                {% else %}
+                              <ul class="list_ul">  
+                                {% endif %}
+								<li class="job_name">
+									<a>{{item['name']}}</a>
+								</li>
+								<li class="job_type">
+									{{item['department']}}
+								</li>
+								<li class="job_place">
+									{{item['address']}}
+								</li>
+								<li class="job_num">
+									{{item['number']}}
+								</li>
+								<li class="job_updaTime">
+									<?php echo $common->g_time($item['create_time']);?>
+								</li>
+								<li class="job-tu">
+									<i class=" icon-circle-arrow-down icon-2x"></i>
+								</li>
+							</ul>
+							<div class="job-desc hide">
+								<p>
+									&nbsp;
+								</p>
+								<table class="receivetab">
+									<tbody>
+										<tr class="first">
+											<td width="15%" class="text-right">发布时间：</td>
+											<td width="30%"><?php echo $common->g_time($item['create_time']);?></td>
+											<td width="15%" class="text-right">工作地点：</td>
+											<td width="15%">{{item['address']}}</td>
+											<td width="15%" class="text-right">工作性质：</td>
+											<td width="10%">{{item['work_time']}}</td>
+										</tr>
+										<tr>
+											<td class="text-right">所属部门：</td>
+											<td>{{item['department']}}</td>
+											<td class="text-right">学 &nbsp;&nbsp;历：</td>
+											<td>{{item['education']}}</td>
+											<td class="text-right">招聘人数：</td>
+											<td>{{item['number']}}</td>
+										</tr>
+									</tbody>
+								</table>
+								<div>
+									<p>
+										&nbsp;
+									</p><span class="job-desc-tit">职位描述:</span>
+									{{item['description']}}
+									<p>
+										&nbsp;
+									</p>
+									<span class="job-desc-tit">职位要求:</span>
+
+									 {{item['requirement']}}
+								</div>
+								<!-- <div class="email_header">申请职位请发送简历至:</div> -->
+								<div class="email_share">
+									<!-- <div class="email">zhaopin@meilishuo.com</div> -->
+									<div class="share">
+									<div class="share bshare-custom" >
+								<div class="bsPromo bsPromo2"></div>
+									<a id="bshare-shareto" class="share-more bshare-more" href="https://www.bShare.cn/" title="分享到">分享到</a>
+									<a class="share-qzone bshare-qzone " title="分享到QQ空间"></a>
+									<a class="share-sina bshare-sinaminiblog" title="分享到新浪微博"></a>
+									<a class="share-qqmb bshare-qqmb " title="分享到腾讯微博"></a>
+									<script src="https://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh" charset="utf-8" type="text/javascript"></script>
+									<script src="https://static.bshare.cn/b/bshareC0.js" charset="utf-8" type="text/javascript"></script>
+						    </div>
+									</div>
+									<div class="apply">
+										<a class="apply-btn" data-toggle="modal" data-target="#job-app">职位申请</a>
+									</div>
+								</div>
+							</div>
+{% endfor %}
+                    {% endif %}
+
+						</div>
+					</div>
+					<div class="pager clearfix">
+						<!-- <a class="lastPage" href="javascript:void(0)">首页</a>
+						<a class="prepage" href="javascript:void(0)">&lt;</a>
+						<a href="/lend/12_s0_p1" class="currentpage">1</a>
+						<a href="/lend/12_s0_p2">2</a>
+						<a href="/lend/12_s0_p3">3</a>
+						<a href="/lend/12_s0_p4">4</a>
+						<a href="/lend/12_s0_p5">5</a>
+						<a href="/lend/12_s0_p2">6</a>
+						<a class="nextpage" href="/lend/12_s0_p2">&gt;</a>
+						<a class="" href="/lend/12_s0_p45">尾页</a>
+						<span class="pagerstatus">共45页</span> -->
+					</div>
+
+					<div class="modal fade" id="job-app">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="modal-title" >职位申请</h4>
+								</div>
+								<div class="modal-body">
+
+									<form>
+										<table class="app-table">
+											<tbody>
+												<tr>
+													<td class="app-table-name"><label>姓名:</label>
+													<input type="text" name="real_name" class="real_name">
+													</td>
+													<td ><label>性别:</label>
+													<select name="sex" class="sex">
+														<option value="男">男</option>
+														<option value="女">女</option>
+													</select></td>
+													<td><label>状态:</label>
+													<select name="status" class="status">
+														<option value="已离职">已离职</option>
+														<option value="在职">在职</option>
+													</select></td>
+												</tr>
+												<tr>
+													<td class="app-table-tel"><label>电话:</label>
+													<input type="text" name="phone" class="phone">
+													</td>
+													<td class="app-table-mail" colspan="2"><label>邮箱:</label>
+													<input type="text" name="email" class="email">
+													</td>
+
+												</tr>
+												<tr>
+													<td colspan="3" class="app-table-address"><label>住址:</label>
+													<input type="text" name="address" class="address">
+													</td>
+
+												</tr>
+
+											</tbody>
+										</table>									
+									<h6>请输入简历信息:</h6>
+									<div class="editor">
+											<textarea name="content"  id=" content" class="t" style="width:700px;height:200px;visibility:hidden;"></textarea>
+										
+									</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+
+									<a class="submit_btn"> 发送 </a>
+									<a class="cancel_btn" data-dismiss="modal"> 关闭 </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="job-pos-right">
+				<div class="job-pos-right-block">
+					<div class="job-pos-nav">
+						<h4><span>最新职位</span></h4>
+						<ul>
+						  {% if new_job %}
+                               {% for item in new_job %}
+							<li>
+								<a title="{{ item['name'] }}" href="/job/detail/{{ item['join_id'] }}.html?id={{ item['join_id'] }}">{{ item['name'] }}</a>
+							</li>
+							{% endfor %}
+                        {% endif %}
+						</ul>
+					</div>
+					<div class="job-pos-nav">
+						<h4><span>热门职位 </span></h4>
+						<ul>
+							 {% if host_job %}
+                               {% for items in host_job %}
+                            <li>
+                                <a title="{{ items['name'] }}" href="/job/detail/{{ items['join_id'] }}.html?id={{ items['join_id'] }}">{{ items['name'] }}</a>
+                            </li>
+                            {% endfor %}
+                        {% endif %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php
+$css = $this -> assets -> get('header');
+ $css -> addCss("https://static.soolife.cn/asset/cssmin/jobsearch$version.min.css");
+$js = $this->assets->get('footer');
+$js -> addJs("https://static.soolife.cn/asset/jsmin/jobsearch$version.min.js");
+$js->addJs("public/js/search_job/apply_job.js");
+?>

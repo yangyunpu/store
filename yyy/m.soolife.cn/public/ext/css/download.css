@@ -1,0 +1,43 @@
+/*下载提示框*/
+.download_box{
+    width: 94%;
+    height: 44px;
+    padding: 1px 3%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position:fixed;
+	overflow:hidden;
+	top:44px;
+	color:#fff;
+	z-index: 9999;
+	font-size: 14px;
+}
+.download_box .remove{
+	float:left;
+	margin-top: 15px;
+	width:14px;
+}
+.download_box img{
+	width:100%;
+}
+.download_box .logo{
+	margin: 9px 15px;
+	width:26px;
+	float:left;
+}
+.download_box .word{
+	float:left;
+	line-height:44px;
+}
+.download_box .sure{
+	margin-top:6px;
+	float:right;
+}
+.download_box .sure div{
+	text-align: center;
+	line-height: 32px;
+	border:0;
+	width:60px;
+	height:32px;
+	border-radius: 2px;
+	background-color:#ec6d65;
+}

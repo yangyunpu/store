@@ -1,0 +1,13 @@
+.main{
+	margin:20px 0 100px 0 !important;
+	padding:0 !important;
+}
+.main .model{
+	border-left: 6px solid #36a0da;
+	padding-left:20px
+}
+.text{
+	font-size: 24px;
+	color:#36a0da;
+	padding:30px 0;
+}

@@ -1,0 +1,117 @@
+body{
+	background-color: #fff;
+	min-width:320px;
+}
+.lcy_getcoin{
+	padding:0 10px;
+}
+.lcy_getcoin .float-l{
+	float:left;
+}
+.lcy_getcoin .float-r{
+	float:right;
+}
+.lcy_getcoin .clear-f{
+	overflow: hidden;
+	clear:both;
+}
+.lcy_getcoin>#soo-header{
+	margin-bottom: 10px;
+}
+.lcy_getcoin>.message{
+	background-color:#ec6d65;
+	margin:54px 0 10px 0;
+	padding:10px 10px 0 10px;
+	height:120px;
+	border-radius: 4px 4px 0 0 ;
+	font-size:11px;
+	color:#fff;
+}
+.lcy_getcoin>.message>.title{
+	margin-bottom: 25px;
+}
+.lcy_getcoin>.message>.main img{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-left: 10px;
+}
+.lcy_getcoin>.message>.main .words{
+	padding-left:10px;
+}
+.lcy_getcoin>.message>.main .words span{
+	font-size: 24px;
+}
+.lcy_getcoin>.message>.main .sign{
+	width:80px;
+	height:40px;
+	color:#ec6d65;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 2px;
+}
+.lcy_getcoin>.message>.b_san{
+	width:100%;    
+	margin-top: 11px;
+}
+.lcy_getcoin>.message>.b_san>img{
+	display: block;
+	margin:0 auto;
+}
+.lcy_getcoin>.buttom{ 
+	border-radius:0 0 4px 4px;   
+	padding:17px 10px;
+	margin-bottom: 10px;
+	font-size: 11px;
+	color:#fff;
+	background-color:#f1f0f0;	
+}
+.lcy_getcoin>.buttom>.float-l{
+	width:14.25%;
+}
+.lcy_getcoin>.buttom>.float-l>p{
+	width:25px;
+	height:25px;
+	background-color:#999;
+	border-radius: 50%;
+	margin:0 auto;
+	line-height: 25px;
+	text-align: center;
+}
+.lcy_getcoin>.buttom>.float-l.geted>p{
+	background-color:#ec6d65;
+}
+.lcy_getcoin>.buttom>.float-l>div{
+	color:#999;
+	text-align: center;
+}
+.lcy_getcoin>.buttom>.float-l.geted>div{
+	color:#000;
+	text-align: center;
+}
+.lcy_getcoin>.task>.item{
+	padding:10px;
+}
+.lcy_getcoin>.task>.item>.img_box{
+	padding-right:10px;
+	width:19.4%;
+}
+.lcy_getcoin>.task>.item>.img_box>img{
+	width:100%;
+}
+.lcy_getcoin>.task>.item>.word{
+	font-size: 12px;
+}
+.lcy_getcoin>.task>.item>.word>.title{
+	font-size: 14px;
+	font-weight: bold;
+}
+.lcy_getcoin>.task>.item>.word>.mess{
+	font-size: 12px;
+	color:#999;
+}
+.lcy_getcoin>.task>.item>.word>.coin{
+	font-size: 12px;
+	color:#ed766e;
+}

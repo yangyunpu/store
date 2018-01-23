@@ -1,0 +1,543 @@
+.nav .catalog {
+	width: 1200px; height: 40px; line-height:40px ; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.nav .catalog >div{
+	float: left; 
+}
+
+.navbar .nav .category h4{
+	width: 250px; height: 40px; line-height: 40px; font-size: 18px; background: #bb038b; color: #fff;
+}
+.navbar .nav .category h4 i {
+	color: #fff;
+	margin: 5px 15px;
+}
+.nav .catalog .biaot{
+	width: 250px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; background: #bb038b;
+}
+.nav .catalog .lists{
+	width: 600px; height: 40px;  margin: 0 auto; padding: 0; overflow: hidden;
+}
+.nav .catalog .lists ul li{
+	float: left; width: 150px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; text-align: center; 
+}
+.nav .catalog .lists ul li a{
+	width: 150px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; color: #000; font-size: 16px;
+}
+
+.bigbanner {
+	background: url("../img/banner_two.jpg");
+	height: 480px;
+	width: 100%;
+	border-top: 3px solid #fb5c5c;
+	background-size: cover;
+}
+
+
+
+.navbar .catalogmenu ul li {
+    width: 230px;height: 60px;line-height: 60px;cursor: pointer; padding-left: 20px;margin: 0 auto;background: #bb038b; color: #fff;
+    border-bottom: 1px dashed #ccc;position: relative;
+}
+
+
+.navbar .catalogmenu ul li a {
+	width: 220px; height: 60px; line-height: 60px; text-decoration: none; font-size: 14px; color: #fff;
+}
+.navbar .catalogmenu ul li span {
+	width: 20px; height: 60px; line-height: 60px; display: inline-block; margin-right: 0px; position: absolute; right: 10px;color: #fff; 
+}
+.navbar .catalogmenu {
+	height: 483px;
+	width: 250px;
+	
+	float: left;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, .4);
+}
+.navbar .catalogmenu ul li .catalog-icon-clothes {
+	padding-left: 23px; 
+}
+.navbar .catalogpannel {
+	float: left;
+	background: #FFF;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, .4);
+}
+.catalogshow {
+	width: 1200px; height: 483px;overflow: hidden; position: absolute; left: 18px;  top: 43px; 
+}
+.navbar .catalogmenu ul .selected{
+	background: white; color: #fff;
+}
+.navbar .catalogmenu ul .selected a {
+	color: #bb038b;
+	width: 230px;
+	height: 60px;
+	line-height: 60px;
+	
+}
+.navbar .catalogmenu ul .selected span{
+	width: 20px; padding-left: 10px; height: 60px; line-height: 60px; color: #bb038b;
+}
+.navbar .catalogpannel .pannel {
+	padding: 0px;
+	width: 950px;
+	min-height: 480px;
+	display: none;
+}
+
+.navbar .catalogpannel {
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.4);
+	float: left;
+	width: 950px;
+}
+
+.navbar .catalogpannel .pannel .tags-bd {
+	clear: both;
+	margin: 0px 0px;
+	width: 680px;
+	float: left;
+}
+.catalogmenu .selected{
+	background: #fff; color: #bb038b;
+}
+
+.catalogshow .classify{
+	width: 150px; height: 79px; border: 1px solid #bb038b; background: white; position: absolute;  top: -3px; left: 700px;
+}
+.catalogshow .classify p{
+	width: 150px; height: 39px; line-height: 39px; border-bottom: 1px dashed #bb038b ; font-size: 16px; text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.haiwai_body{
+	width:1200px; margin: 0 auto; padding: 0;
+}
+.advertisement_a{
+	width:1200px; height: 200px; margin: auto; padding: 0; overflow: hidden;
+}
+.advertisement_a ul li{
+	float: left; width: 232px; height:160px; margin: 20px 0 20px 10px; padding: 0px;
+}
+.advertisement_a ul .frame{
+	width: 232px; height:180px; margin:0 auto; margin-left: 10px; padding: 0px;
+}
+
+/*广告位*/
+.placename{
+	width:1200px; height: 140px; margin: 0 auto; padding: 0;
+}
+
+/*每个楼层title*/
+.title_hwg{
+	width: 1200px; height: 50px; margin: 0 auto; margin-top: 10px; padding: 0px;
+}
+
+.title_hwg h3{
+	float: left; width: 105px; height: 45px; line-height: 45px; margin: 0 auto; padding: 0px; padding-top: 5px; color: #bb038b;
+}
+.title_hwg .thumb{
+	float: left; width: 1095px; height: 50px; line-height: 50px; margin: 0 auto; padding: 0px;
+}
+.title_hwg .thumb img{
+	 width: 1095px; height: 25px; line-height: 25px; margin: 0 auto; padding: 12.5px 0; 
+}
+/*全球大牌*/
+.global_brands{
+	width:1200px; height: 655px; margin: 0 auto; padding: 0px;
+}
+.global_brands .title_hwg h3{
+	 color: #bb038b;
+}
+.cover_good{
+	width: 1200px; height: 590px; margin: 0 auto; padding: 0px; border-top: 3px solid #bb038b ;
+}
+.cover_good .left_cover div{
+	width: 480px; height: 190px; margin: 0 auto; margin-top: 10px;
+}
+.cover_good .left_cover .frame{
+	width: 480px; height: 190px; margin-top: 0px;
+}
+.cover_good .right_cover{
+	width: 720px; height: 590px; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.cover_good .right_cover ul li{
+	float: left; width: 350px; height: 140px; margin: 8px 0 0 8px; border:1px solid #bcbcbc; position: relative;
+}
+.cover_good .right_cover ul li img{
+	padding: 5px;
+}
+.cover_good .right_cover ul .frame{
+	width: 350px; height: 139px; margin: 0 0 0 8px; border-top: none;
+}
+.right_cover ul li .details{
+	width: 320px; height: 125px; margin:0 auto; margin-top: 15px; padding: 0 15px;
+}
+.details .left_xq{
+	width: 170px; height: 120px; margin: 0 auto; padding: 0;
+}
+.details .left_xq h4{
+	width: 170px; height: 30px; line-height: 30px; color: #000; margin: 0 auto; padding: 0; 
+}
+.details .left_xq .introduce{
+	width: 170px; height: 25px; line-height: 25px; font-size:14px; color: #bcbcbc;white-space:nowrap; overflow: hidden;text-overflow: ellipsis; 
+}
+.details .left_xq .price_dp{
+	width: 170px; height: 25px; line-height: 25px; overflow: hidden;
+}
+.details .left_xq .price_dp .p-price i{
+	 font-size: 12px;padding-right: 5px; color: #ff0000;
+}
+.details .left_xq .price_dp .money_xian{
+	font-size: 20px; color: #ff0000;
+}
+.details .left_xq .ljgo{
+	width: 44px; height: 18px; padding-top:5px;
+}
+.price_dp div{
+	float: left;
+}
+.price_dp .p-price{
+	width: 60px; height: 30px; color: #ff0000; font-size: 22px; font-weight: 700;
+}
+.price_bazaar{
+	width: 90px; height: 20px; font-size: 14px; text-decoration : line-through ;
+}
+.details .right_xq{
+	width: 126px; height: 112px; margin: 0 auto; padding: 10px 10px 0 0;  text-align: center;
+}
+
+
+
+
+/*国家馆*/
+.national_pavilion{
+	width: 1200px; height: 320px; margin: 0 auto; padding: 0;
+}
+.national_pavilion .title_hwg h3{
+	color: #ff9900;
+}
+.mansion{
+	width: 1200px; height: 260px; margin: 0 auto; padding: 0; border-top:3px solid #bb038b;
+}
+.national_pavilion .mansion .left_gjg{
+	width: 755px; height: 250px;margin: 0 auto; padding: 0; margin-top:10px ;
+}
+.national_pavilion .mansion .left_gjg >div{
+	float: left; 
+}
+.national_pavilion .mansion .right_gjg{
+	width: 445px; height: 260px; margin: 0 auto; padding: 0; margin-top:10px ;
+}
+.national_pavilion .mansion .right_gjg >div{
+	float: left;
+}
+.national_pavilion .mansion .details{
+	width: 255px; height: 260px; margin: 0 auto; padding: 0;
+}
+.national_pavilion .mansion .details .matter{
+	width: 200px; height: 260px; margin: 0 auto; padding: 0; 
+}
+.mansion .details .matter .nationality{
+	width: 200px; height: 30px; margin: 0 auto; padding: 0; text-align: center; padding-top: 20px;
+}
+.mansion .details .matter h4{
+	width: 200px; height: 35px; line-height: 35px; margin: 0 auto; padding: 0; text-align: center; 
+}
+.mansion .details .matter .introduction{
+	width: 200px; height: 24px; line-height: 24px; margin: 0 auto; padding: 0; font-size: 14px; color: #000;
+}
+.mansion .details .matter  .qukk{
+	width: 90px; height: 30px; line-height: 30px; margin: 0 auto; background: #b83196; color: #fff; text-align: center; margin-top: 15px;
+}
+
+.cleaning{
+	width: 1200px; height: 670px; margin: 0 auto; padding: 0;
+}
+.cleaning .title_hwg h3{
+	color: #ff2a75;
+}
+.toiletries{
+	width: 1200px; height: 600px; margin: 0 auto; padding: 0; border-top:3px solid #bb038b;
+}
+.toiletries .left_xh{
+	width: 480px; height: 600px; margin: 0 auto; padding: 0; 
+}
+.toiletries .left_xh div{
+	width: 480px; height: 200px; margin: 0 auto; padding: 0;
+}
+.toiletries .right_xh{
+	width: 720px; height:600px; margin: 0 auto; padding: 0;
+}
+.toiletries .right_xh .l_xh,.toiletries .right_xh .r_xh{
+	width: 359px; height:600px; margin: 0 auto; padding: 0; overflow: hidden;border-right: 1px solid #bcbcbc;
+}
+.toiletries .right_xh .l_xh >div,.toiletries .right_xh .r_xh >div{
+	width: 359px; height: 149px; margin: 0 auto; padding: 0; border-bottom: 1px solid #bcbcbc;position: relative;
+}
+.toiletries .right_xh ul li .crzy_beside_box{
+	position: relative;
+}
+.toiletries .right_xh ul li img{
+	padding: 5px;
+}
+.toiletries ul li .details {
+    width: 330px;height: 130px;margin: 0 auto;margin-top: 15px;padding: 0 15px;
+}
+.toiletries ul li .details .right_xq{
+	    width: 126px; height: 112px;margin: 0 auto;padding: 0 10px 0 0;text-align: center;
+}
+
+/*母婴*/
+.fransnana_dp{
+	width: 1200px; height: 580px; margin: 0 auto; padding: 0;
+}
+.fransnana_dp .title_hwg h3{
+	color: #29d5ff;
+}
+.floor-content{
+	width: 1200px; height: 500px; margin: 0 auto; padding: 0;border-top:3px solid #bb038b;
+}
+.floor-content .left_my {
+	width: 320px; height: 500px; margin: 0 auto; padding: 0; position: relative; 
+}
+.floor-content .left_my  .youhui_a{
+	display: block; width: 295px; height:188px; position: absolute; bottom: 0px;left: 0;
+}
+.floor-content .right_my {
+	width: 880px; height: 500px; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.floor-content  .right_my .substance_qq{
+	width: 880px; height: 249px; border-bottom: 1px solid #bcbcbc ;
+}
+.floor-content  .right_my .substance_qq ul li{
+	float: left; width: 219px; height: 249px; margin: 0 auto; padding: 0; border-right: 1px solid #bcbcbc ; position: relative;
+}
+.floor-content .right_my .substance_qq .sales{
+	width: 439px; height: 249px; margin: 0 auto; padding: 0;
+}
+.floor-content .right_my .substance_qq .sales img{
+	width: 438px; height: 248px; margin: 0 auto; padding: 0;
+}
+.floor-content .right_my ul li .good_img{
+	width:220px; height: 135px; padding-top: 20px; vertical-align:middle;text-align: center; margin: 0 auto;
+}
+.right_my ul li .good_img img{
+	vertical-align: middle;
+}
+.right_my .particulars{
+	width: 200px; height: 87px; margin: 0 auto; padding: 0; padding-top: 5px; border-top: 1px solid #f03fbf;
+}
+.right_my .particulars .introduce{
+	width: 200px; height: 20px; line-height: 20px; font-size: 16px; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.right_my .particulars .price_bazaar{
+	width: 200px; height: 18px; line-height:18px; font-size: 12px; text-decoration: line-through; color: #747474;
+}
+.particulars .price_dp {
+	width: 200px; height: 20px; margin: 0 auto; padding: 0;
+}
+.particulars .price_dp .left_price{
+	width: 150px; height: 22px;  margin: 0 auto; padding: 0;
+}
+.particulars .price_dp .left_price .discount{
+    font-size: 12px; color:#ff0000 ;
+}
+.particulars .price_dp .left_price .soolife_j{
+	font-size: 12px; color:#DCDCDC ; padding-left: 5px;
+}
+.price_dp .left_price .price_p{
+	 font-size: 20px; color:#ff0000 ; font-weight: 700;
+}
+.particulars .price_dp .left_price i{
+	font-size: 12px; color:#ff0000 ;
+}
+.particulars .price_dp .ljgo{
+	width: 44px; height: 20px; margin: 0 auto; padding: 0; margin-top:4px ;
+}
+
+
+/*食物*/
+.comestible{
+	width: 1200px; height: 660px; margin: 0 auto; padding: 0;
+}
+.comestible .title_hwg h3{
+	color: #13ba48;
+} 
+.natural_zc{
+	width: 1200px; height: 590px; margin: 0 auto; padding: 0; border-top:3px solid #bb038b;
+}
+.natural_zc .left_cw{
+	width: 480px; height: 590px; margin: 0 auto; padding: 0;
+}
+.natural_zc .left_cw div{
+	width: 480px; height: 194px; margin: 0 auto; padding: 0; border-top: 1px solid #bcbcbc;border-bottom: 1px solid #bcbcbc;
+}
+.natural_zc .right_cw{
+	width: 720px; height: 590px; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.natural_zc .right_cw  .l_cw{
+     width: 359px; height: 590px; border-right: 1px solid #bcbcbc; position: relative;
+}
+.natural_zc .right_cw  .l_cw >div,.natural_zc .right_cw  .r_cw >div{
+	border-bottom: 1px solid #bcbcbc;
+}
+.natural_zc .right_cw  .r_cw{
+     width: 359px; height: 590px; border-right: 1px solid #bcbcbc; position: relative;
+}
+.natural_zc .right_cw img{
+	padding: 8px;
+}
+.right_cw ul li .details{
+	width: 330px; height: 135px; margin: 0 auto; margin-top:10px ;
+}
+
+
+
+/*电器*/
+.electrical{
+	width: 1200px; height: 580px; margin: 0 auto; padding: 0;
+}
+.electrical .title_hwg h3{
+	color: #ff94b6;
+}
+.electrical .appliance{
+	width: 1200px; height: 520px; margin: 0 auto; padding: 0; border-top: 3px solid #bb038b;
+}
+.appliance .left_dq{
+	width: 320px; height: 500px; margin: 0 auto; padding: 0; position: relative;
+}
+.appliance .left_dq .youhui_a{
+	width: 270px; height: 170px; margin: 0 auto; padding: 0; position: absolute; bottom: 15px; left: 25px;
+}
+.appliance .right_dq{
+	width: 879px; height: 500px; margin: 0 auto; padding: 0; overflow: hidden;border-left: 1px solid #bcbcbc;
+}
+.appliance .right_dq .r_dq{
+	width: 880px; height: 249px; margin: 0 auto; padding: 0; overflow: hidden;border-bottom: 1px solid #bcbcbc;
+}
+.appliance .right_dq .r_dq ul li{
+	width:219px; height: 249px; float: left; margin: 0 auto; padding: 0;  border-right: 1px solid #bcbcbc; position: relative;
+}
+.appliance .right_dq .r_dq ul .sales{
+	width: 438px; height: 249px; margin: 0 auto; padding: 0;
+}
+.appliance .right_dq .r_dq ul li .good_img{
+	width: 219px; height: 138px; margin: 0 auto; padding: 0 ; text-align: center; padding-top: 17px;
+}
+.particulars{
+	width: 200px; height: 87px; margin: 0 auto; padding: 0; padding-top: 5px; border-top: 1px solid #f03fbf;
+}
+ .particulars .introduce{
+	width: 200px; height: 20px; line-height: 20px; font-size: 16px; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.particulars .price_bazaar{
+	width: 200px; height: 18px; line-height:18px; font-size: 12px; text-decoration: line-through; color: #747474;
+}
+.particulars .price_dp {
+	width: 200px; height: 20px; margin: 0 auto; padding: 0;
+}
+.crzy_besideone .crzy_beside_box .good_img{
+	width: 100%; overflow: hidden; position: relative;
+}
+/*保健*/
+.health_care{
+	width: 1200px; height: 670px; margin: 0 auto; padding: 0;
+}
+.health_care .title_hwg h3{
+	color: #433836;
+}
+.health_care .products{
+	width: 1200px; height: 610px; margin: 0 auto; padding: 0;border-top: 3px solid #bb038b;
+}
+.products .left_dq{
+	width: 480px; height: 600px; margin: 0 auto; padding: 0; 
+}
+.products .left_dq div{
+	width: 478px; height: 198px; margin: 0 auto; padding: 0; border: 1px solid #bcbcbc;
+}
+.products .right_dq{
+	width: 720px; height: 600px; margin: 0 auto; padding: 0; overflow: hidden; 
+}
+.products .right_dq .l_dq,.products .right_dq .r_dq{
+     width: 359px; height: 600px; margin: 0 auto; padding: 0; border-right: 1px solid #bcbcbc;position: relative;
+}
+.products .right_dq .l_dq .sliding_a,.products .right_dq .r_dq .sliding_a{
+     width: 359px; height: 149px; margin: 0 auto; padding: 0; border-bottom: 1px solid #bcbcbc; overflow: hidden;
+}
+.products .right_dq .l_dq .crzy_beside_box{
+	position: relative; width: 359px; height: 149px;
+}
+.products .right_dq img{
+	padding: 10px;
+}
+
+/*服饰*/
+.clothes{
+	width: 1200px; height: 580px; margin: 0 auto; padding: 0;
+}
+.clothes .title_hwg h3{
+	color: #f990a6;
+}
+.clothes .costume{
+	width: 1200px; height: 520px; margin: 0 auto; padding: 0; border-top: 3px solid #bb038b; 
+}
+.clothes .costume >div{
+	float: left;
+}
+.clothes .costume .left_fs{
+	width: 320px; height: 500px; margin: 0 auto; padding: 0; position: relative;
+}
+.clothes .costume .left_fs .youhui_a{
+	width: 270px; height: 170px; margin: 0 auto; padding: 0; position: absolute; bottom:20px; left: 25px;
+}
+.clothes .costume .medimiddle{
+	width: 659px; height: 500px; margin: 0 auto; padding: 0; border-left: 1px solid #bcbcbc; 
+}
+.clothes .costume .medimiddle .werty{
+	width: 660px; height: 249px; margin: 0 auto; padding: 0; border-bottom: 1px solid #bcbcbc; overflow: hidden;
+}
+.clothes .costume .medimiddle .werty ul li{
+	float: left; width: 219px; height: 249px; margin: 0 auto; padding: 0;  border-right: 1px solid #bcbcbc;position: relative;
+}
+.clothes .costume .medimiddle .werty ul li .good_img{
+	width: 218px; height: 135px; margin: 0 auto; padding: 0 ; text-align: center; padding-top: 20px;
+}
+.clothes .costume .right_fs{
+	width: 220px; height: 500px; margin: 0 auto; padding: 0;
+}
+
+
+
+
+
+.sliding_a{
+	width: 100%; overflow: hidden;
+}
+.sliding_a .crzy_beside_box{
+	position: relative; 
+}

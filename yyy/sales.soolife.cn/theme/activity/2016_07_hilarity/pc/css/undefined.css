@@ -1,0 +1,170 @@
+body{color: #5D5E5F; font-family: "Arial","Microsoft YaHei";font-style: normal;}
+body, html, p, span, img, a, div, ul, li{margin: 0 auto; padding: 0;}
+ul,ol,li{ list-style: none;}
+img{ border: none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.flagship_d{
+	width: 100%; margin: 0 auto; padding: 0; min-width: 1200px; background: white;
+}
+.undefined{
+	width: 100%; margin: 0 auto; padding: 0; min-width: 1200px; position: relative;
+}
+.undefined >img{
+	width: 100%; margin: 0 auto;
+}
+.deseno{
+	width: 1200px; height: 1107px; margin: 0 auto;
+}
+.hotsell{
+	width: 1200px; height: 1550px; margin: 0 auto;
+}
+.overseas{
+	width: 1200px; height: 734px; margin: 0 auto;
+}
+.beijing_a{
+    width: 100% margin: 0 auto; background-image: url("../img/beijing_1.jpg");
+}
+
+.review{
+	width: 100%; margin: 0 auto; background-image: url("../img/beijing_2.jpg");
+}
+.overseas_qwer{
+	width: 100%; margin: 0 auto; background-image: url("../img/beijing_3.jpg");
+}
+.unitary_go{
+	width: 1200px; height: 820px; margin: 0 auto; padding-top: 50px;
+}
+.unitary_go ul li{
+	width: 300px; height:375px ;   float: left;margin: 0 auto; margin-left: 98px;
+}
+.unitary_go .dgpjiu{
+	width: 900px;  margin: 0 auto; 
+}
+.unitary_go .dgpjiu >div{
+	width: 300px; height: 390px;
+}
+.xiangqing_rx{
+	width: 270px; height: 50px; font-size: 16px; line-height: 25px; margin: 0 auto; margin:20px 0 0 50px; color: #000000;
+}
+.xiangqing_rx .red{
+	color: #c02815; font-weight: 600; font-size: 18px;
+}
+.deseno .sears{
+	width: 1130px; margin-left:70px ;
+}
+.deseno .sears ul li{
+	float: left;  height: 330px;
+}
+.deseno .sears_s{
+	width: 1200px;
+}
+.deseno .sears_s ul li{
+	float: left;  width: 390px; height: 500px; 
+}
+.deseno .sears_s ul li a{
+	 width: 390px; height: 500px;  display: block;
+}
+.deseno .sears ul .food{
+	width: 535px; margin: 0 auto; overflow: hidden; margin-bottom: 10px;
+}
+.food .rigth_jia{
+	width: 220px; height: 75px; margin-top: 220px;
+}
+.deseno .sears ul .food .left_img{
+	margin-left: 20px;
+}
+/*.deseno .sears ul .food .right_img{
+	margin-left: 20px;
+}*/
+
+.deseno .sears ul .cleanser{
+	width: 365px; margin: 0 auto;
+}
+.overseas .cleanser_hw ul li{
+	float: left; width: 390px; height: 400px; margin: 5px; background: #fff;
+}
+.overseas .cleanser_hw ul li a{
+	 width: 390px; height: 400px; display: block;
+}
+.hotsell .commodity ul li{
+	width: 290px; height: 400px; margin: 5px; float: left; background: #fff;
+}
+.title_khg{
+	width: 890px; margin:10px 0 30px 155px ; padding-top: 10px;
+}
+.lijigoum_khg{
+	width: 240px; height: 30px; line-height: 30px; margin: 0 auto; color: #fff; background: #ba1e08; text-align: center;
+}
+.xiahuaxian{
+	width: 250px; margin: 0 auto; height: 28px; color: #333333; font-size: 16px; font-weight: 600; border-bottom: 1px solid #333333;
+}
+.xiahuaxian_a{
+	width: 215px; margin: 0 auto; height: 28px; color: #333333; font-size: 16px; font-weight: 600; border-bottom: 1px solid #333333;
+}
+.specifics{
+	width: 156px; height: 25px; line-height: 25px; margin: 0 auto; font-size: 16px; color: #c02815; font-weight: 600; 
+}
+.specifics_a{
+    height: 25px; line-height: 25px; font-size: 16px; color: #c02815; font-weight: 600; 
+}
+.jiage_khg{
+	margin: 0 auto; font-size: 14px; height: 25px; line-height: 25px;
+}
+.jiage_khg >span{
+	color: #c02815; 
+}
+.jiage_khg .xianjia{
+	font-size: 20px; color: #c02815; font-weight: 600;
+}
+.jiage_khg .shanchu{
+	text-decoration:line-through; color: #333;
+}
+.jiage_khg_aa{
+	width: 156px; margin: 0 auto; font-size: 14px; height: 25px; line-height: 25px;
+}
+.jiage_khg_aa >span{
+	color: #c02815; 
+}
+.jiage_khg_aa .xianjia{
+	font-size: 20px; color: #c02815; font-weight: 600;
+}
+.jiage_khg_aa .shanchu{
+	text-decoration:line-through; color: #333;
+}
+.bottom_xq{
+	width: 250px; height: 85px; margin: 0 auto; margin-top: 10px;
+}
+.cleanser img{
+	width: 319px; height: 380px; display: block; margin: 0 auto;
+}
+.described_below{
+	width: 300px; height: 90px;
+}
+.described_below_a{
+	width: 390px; height: 90px;
+}
+.referral{
+	width: 230px; height: 18px; margin: 0 auto; text-align: center; font-size: 14px; color: #6e6e6e; line-height: 18px;
+}
+.price_so{
+	width: 160px; height: 26px; margin: 0 auto; line-height: 26px; text-align: center;
+}
+.price_so >span{
+	color: #040712; font-size: 14px; 
+}
+.price_so .shanchux{
+	text-decoration:line-through;
+}
+.price_so .ruling_price{
+	font-size: 22px; font-weight: 600px; color: #b91d07;
+}
+.cleanser_hw{
+	margin-top: 10px;
+}
+.ss{margin-top:-10px ;}

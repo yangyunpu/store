@@ -1,0 +1,827 @@
+Wed 27 11:34:18 [INFO] 304640
+Wed 27 11:56:14 [INFO] 304641
+Wed 27 11:57:14 [INFO] 304642
+Wed 27 12:01:14 [INFO] 304643
+Wed 27 13:49:09 [INFO] 304644
+Wed 27 13:51:25 [INFO] 304645
+Wed 27 14:03:13 [INFO] 304647
+Wed 27 14:21:57 [INFO] 304650
+Wed 27 14:22:42 [INFO] 304651
+Wed 27 14:24:21 [INFO] 304652
+Wed 27 14:26:23 [INFO] 304653
+Wed 27 14:27:21 [INFO] 304654
+Wed 27 14:28:20 [INFO] 304655
+Wed 27 16:39:11 [INFO] 304656
+Wed 27 16:43:15 [INFO] member_id：
+Wed 27 16:43:15 [INFO] 30001209
+Wed 27 16:43:15 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001209',
+   'login_id' => '17317227519',
+   'nickName' => '',
+   'token' => '6cb2373e897ceb1c2a0d80d7e00b5f31',
+   'type' => '1',
+   'visit' => '429',
+   'last_time' => 1506501482,
+   'ip' => '103.214.84.243',
+))
+Wed 27 16:44:07 [INFO] member_id：
+Wed 27 16:44:07 [INFO] 30001209
+Wed 27 16:44:07 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001209',
+   'login_id' => '17317227519',
+   'nickName' => '',
+   'token' => '6cb2373e897ceb1c2a0d80d7e00b5f31',
+   'type' => '1',
+   'visit' => '429',
+   'last_time' => 1506501482,
+   'ip' => '103.214.84.243',
+))
+Wed 27 16:47:10 [INFO] 304657
+Wed 27 16:48:06 [INFO] 304658
+Wed 27 16:52:33 [INFO] 304659
+Wed 27 16:54:03 [INFO] member_id：
+Wed 27 16:54:03 [INFO] 30341264
+Wed 27 16:54:03 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341264',
+   'login_id' => '15000623709',
+   'nickName' => '150****3709',
+   'token' => '3d4714aac7cb9093bb47668e5d3e175f',
+   'type' => '1',
+   'visit' => '1',
+   'last_time' => 1506502425,
+   'ip' => '103.214.84.243',
+))
+Wed 27 16:55:44 [INFO] 304661
+Wed 27 16:58:40 [INFO] member_id：
+Wed 27 16:58:40 [INFO] 30341264
+Wed 27 16:58:40 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341264',
+   'login_id' => '15000623709',
+   'nickName' => '150****3709',
+   'token' => '3d4714aac7cb9093bb47668e5d3e175f',
+   'type' => '1',
+   'visit' => '3',
+   'last_time' => 1506502590,
+   'ip' => '103.214.84.243',
+))
+Wed 27 16:59:26 [INFO] member_id：
+Wed 27 16:59:26 [INFO] 30341264
+Wed 27 16:59:26 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341264',
+   'login_id' => '15000623709',
+   'nickName' => '150****3709',
+   'token' => '3d4714aac7cb9093bb47668e5d3e175f',
+   'type' => '1',
+   'visit' => '3',
+   'last_time' => 1506502590,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:00:18 [INFO] 304665
+Wed 27 17:02:21 [INFO] 304666
+Wed 27 17:24:15 [INFO] 304667
+Wed 27 17:26:13 [INFO] 304668
+Wed 27 17:28:53 [INFO] 304669
+Wed 27 17:31:17 [INFO] 304670
+Wed 27 17:34:37 [INFO] 304671
+Wed 27 17:34:53 [INFO] 304672
+Wed 27 17:38:31 [INFO] 304673
+Wed 27 17:44:23 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:44:23 [INFO] 304674
+Wed 27 17:47:37 [INFO] token：
+Wed 27 17:47:37 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:47:37 [INFO] member：
+Wed 27 17:47:37 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:53 [INFO] token：
+Wed 27 17:47:53 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:47:53 [INFO] member：
+Wed 27 17:47:53 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:53 [INFO] token：
+Wed 27 17:47:53 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:47:53 [INFO] member：
+Wed 27 17:47:53 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:54 [INFO] token：
+Wed 27 17:47:54 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:47:54 [INFO] member：
+Wed 27 17:47:54 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:58 [INFO] token：
+Wed 27 17:47:58 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:47:58 [INFO] member：
+Wed 27 17:47:58 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:58 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:47:58 [INFO] 304675
+Wed 27 17:48:55 [INFO] token：
+Wed 27 17:48:55 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:48:55 [INFO] member：
+Wed 27 17:48:55 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:16 [INFO] token：
+Wed 27 17:49:16 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:49:16 [INFO] member：
+Wed 27 17:49:16 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:17 [INFO] token：
+Wed 27 17:49:17 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:49:17 [INFO] member：
+Wed 27 17:49:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:17 [INFO] token：
+Wed 27 17:49:17 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:49:17 [INFO] member：
+Wed 27 17:49:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:22 [INFO] token：
+Wed 27 17:49:22 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:49:22 [INFO] member：
+Wed 27 17:49:22 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:22 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:49:22 [INFO] 304676
+Wed 27 17:51:44 [INFO] token：
+Wed 27 17:51:44 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:51:44 [INFO] member：
+Wed 27 17:51:44 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:51:56 [INFO] token：
+Wed 27 17:51:56 [INFO] 
+Wed 27 17:51:56 [INFO] member：
+Wed 27 17:51:56 [INFO] NULL
+Wed 27 17:52:45 [INFO] token：
+Wed 27 17:52:45 [INFO] 
+Wed 27 17:52:45 [INFO] member：
+Wed 27 17:52:45 [INFO] NULL
+Wed 27 17:53:37 [INFO] token：
+Wed 27 17:53:37 [INFO] 
+Wed 27 17:53:37 [INFO] member：
+Wed 27 17:53:37 [INFO] NULL
+Wed 27 17:53:53 [INFO] token：
+Wed 27 17:53:53 [INFO] a5e93b736e54eea2a4a81f1af7c75a14
+Wed 27 17:53:53 [INFO] member：
+Wed 27 17:53:53 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '270',
+   'last_time' => 1506505177,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:54:17 [INFO] token：
+Wed 27 17:54:17 [INFO] 9224db60b385cc526f7eef8500d84def
+Wed 27 17:54:17 [INFO] member：
+Wed 27 17:54:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:54:18 [INFO] token：
+Wed 27 17:54:18 [INFO] 9224db60b385cc526f7eef8500d84def
+Wed 27 17:54:18 [INFO] member：
+Wed 27 17:54:18 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:54:19 [INFO] token：
+Wed 27 17:54:19 [INFO] 9224db60b385cc526f7eef8500d84def
+Wed 27 17:54:19 [INFO] member：
+Wed 27 17:54:19 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:54:20 [INFO] token：
+Wed 27 17:54:20 [INFO] 
+Wed 27 17:54:20 [INFO] member：
+Wed 27 17:54:20 [INFO] NULL
+Wed 27 17:54:22 [INFO] token：
+Wed 27 17:54:22 [INFO] 9224db60b385cc526f7eef8500d84def
+Wed 27 17:54:22 [INFO] member：
+Wed 27 17:54:22 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:54:36 [INFO] token：
+Wed 27 17:54:36 [INFO] 9224db60b385cc526f7eef8500d84def
+Wed 27 17:54:36 [INFO] member：
+Wed 27 17:54:36 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:55:09 [INFO] token：
+Wed 27 17:55:09 [INFO] 
+Wed 27 17:55:09 [INFO] member：
+Wed 27 17:55:09 [INFO] NULL
+Wed 27 17:57:35 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:57:35 [INFO] 304679
+Wed 27 17:59:21 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '470',
+   'last_time' => 1506505362,
+   'ip' => '103.214.84.243',
+))
+Wed 27 17:59:21 [INFO] 304680
+Wed 27 18:00:33 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:00:33 [INFO] 304683
+Wed 27 18:01:34 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:01:34 [INFO] 304684
+Wed 27 18:02:42 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:02:42 [INFO] 304685
+Wed 27 18:04:23 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:04:24 [INFO] 304686
+Wed 27 18:08:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:08:17 [INFO] 304687
+Wed 27 18:12:10 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:12:11 [INFO] 304688
+Wed 27 18:13:42 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:13:42 [INFO] 304689
+Wed 27 18:14:37 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:14:37 [INFO] 304690
+Wed 27 18:18:27 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:18:27 [INFO] 304691
+Wed 27 18:24:51 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:24:51 [INFO] 304692
+Wed 27 18:32:23 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:32:24 [INFO] 304693
+Wed 27 18:34:48 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:34:48 [INFO] 304694
+Wed 27 18:36:06 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:36:06 [INFO] 304695
+Wed 27 18:39:24 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:39:24 [INFO] 304696
+Wed 27 18:40:45 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:40:45 [INFO] 304697
+Wed 27 18:42:07 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => 'cb5472fcfaba050082d2c15844161185',
+   'type' => '1',
+   'visit' => '471',
+   'last_time' => 1506505411,
+   'ip' => '106.15.45.24',
+))
+Wed 27 18:42:07 [INFO] 304698
+Wed 27 18:46:13 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:46:14 [INFO] 304699
+Wed 27 18:48:53 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '271',
+   'last_time' => 1506509195,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:48:53 [INFO] 304700
+Wed 27 18:49:21 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '271',
+   'last_time' => 1506509195,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:49:21 [INFO] 304701
+Wed 27 18:51:06 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '472',
+   'last_time' => 1506509384,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:51:06 [INFO] 304702
+Wed 27 18:53:52 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:53:52 [INFO] 304703
+Wed 27 18:54:28 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:54:28 [INFO] 304704
+Wed 27 18:57:57 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '617',
+   'last_time' => 1506506325,
+   'ip' => '103.214.84.243',
+))
+Wed 27 18:57:57 [INFO] 304705
+Wed 27 18:59:54 [INFO] NULL
+Wed 27 19:02:55 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => '1879ac762bee3825f1d22a1b3433b03f',
+   'type' => '1',
+   'visit' => '273',
+   'last_time' => 1506510139,
+   'ip' => '106.15.45.24',
+))
+Wed 27 19:02:55 [INFO] 304706
+Wed 27 19:03:49 [INFO] NULL
+Wed 27 19:04:54 [INFO] NULL
+Wed 27 19:06:06 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340957',
+   'login_id' => '15026405253',
+   'nickName' => '1122',
+   'token' => 'ccfc76205044423bcfcc9ddabe0ee5f5',
+   'type' => '1',
+   'visit' => '14',
+   'last_time' => 1506509720,
+   'ip' => '103.214.84.243',
+))
+Wed 27 19:06:06 [INFO] 304711
+Wed 27 19:07:39 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340957',
+   'login_id' => '15026405253',
+   'nickName' => '1122',
+   'token' => 'ccfc76205044423bcfcc9ddabe0ee5f5',
+   'type' => '1',
+   'visit' => '14',
+   'last_time' => 1506509720,
+   'ip' => '103.214.84.243',
+))
+Wed 27 19:07:40 [INFO] 304712
+Wed 27 19:10:22 [INFO] NULL
+Wed 27 19:10:36 [INFO] NULL
+Wed 27 19:11:33 [INFO] NULL
+Wed 27 19:11:36 [INFO] NULL
+Wed 27 19:12:56 [INFO] NULL
+Wed 27 19:13:33 [INFO] NULL
+Wed 27 19:17:49 [INFO] NULL
+Wed 27 19:17:52 [INFO] NULL
+Wed 27 19:20:57 [INFO] NULL
+Wed 27 19:21:45 [INFO] NULL
+Wed 27 19:23:54 [INFO] NULL
+Wed 27 19:25:08 [INFO] NULL
+Wed 27 19:25:57 [INFO] NULL
+Wed 27 19:40:03 [INFO] NULL
+Wed 27 19:42:20 [INFO] NULL
+Wed 27 19:42:26 [INFO] NULL
+Wed 27 19:43:17 [INFO] NULL
+Wed 27 19:44:20 [INFO] NULL
+Wed 27 19:44:45 [INFO] NULL
+Wed 27 19:46:04 [INFO] NULL
+Wed 27 19:46:42 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '472',
+   'last_time' => 1506509384,
+   'ip' => '103.214.84.243',
+))
+Wed 27 19:46:42 [INFO] 304715
+Wed 27 19:47:40 [INFO] NULL
+Wed 27 19:54:15 [INFO] NULL
+Wed 27 19:56:57 [INFO] NULL
+Wed 27 19:58:13 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '274',
+   'last_time' => 1506513396,
+   'ip' => '103.214.84.243',
+))
+Wed 27 19:58:13 [INFO] 304718
+Wed 27 19:59:45 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '275',
+   'last_time' => 1506513567,
+   'ip' => '103.214.84.243',
+))
+Wed 27 19:59:45 [INFO] 304719
+Wed 27 20:00:40 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '275',
+   'last_time' => 1506513567,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:00:40 [INFO] 304720
+Wed 27 20:01:18 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '275',
+   'last_time' => 1506513567,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:01:18 [INFO] 304721
+Wed 27 20:06:00 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '275',
+   'last_time' => 1506513567,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:06:00 [INFO] 304722
+Wed 27 20:13:34 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001089',
+   'login_id' => '15221983096',
+   'nickName' => '152****3096',
+   'token' => '64e097d09ca35fed729b06e5541914b8',
+   'type' => '1',
+   'visit' => '618',
+   'last_time' => 1506513874,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:13:34 [INFO] 304723
+Wed 27 20:15:04 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '474',
+   'last_time' => 1506514488,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:15:04 [INFO] 304724
+Wed 27 20:15:44 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '474',
+   'last_time' => 1506514488,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:15:44 [INFO] 304725
+Wed 27 20:17:26 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341264',
+   'login_id' => '15000623709',
+   'nickName' => '150****3709',
+   'token' => '3d4714aac7cb9093bb47668e5d3e175f',
+   'type' => '1',
+   'visit' => '6',
+   'last_time' => 1506514632,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:17:26 [INFO] 304726
+Wed 27 20:18:02 [INFO] stdClass::__set_state(array(
+   'member_id' => '30053609',
+   'login_id' => '15299330508',
+   'nickName' => 'Mr_喵先生',
+   'token' => '9224db60b385cc526f7eef8500d84def',
+   'type' => '1',
+   'visit' => '474',
+   'last_time' => 1506514488,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:18:02 [INFO] 304727
+Wed 27 20:19:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '276',
+   'last_time' => 1506514738,
+   'ip' => '103.214.84.243',
+))
+Wed 27 20:19:17 [INFO] 304728

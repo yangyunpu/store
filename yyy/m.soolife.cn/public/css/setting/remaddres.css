@@ -1,0 +1,209 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #f1f0f0;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	/*display: block;*/
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+ul{
+	padding:0;
+	margin: 0;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#f1f0f0;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 0.981333rem;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:12px; 
+}
+ 
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.34562963rem; 
+}
+.void{
+	width: 100%;
+	height: 44px;
+}
+.contet{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.take{
+	width: 95%;
+	height: 50px;
+	background: #fff;
+	margin: 0 auto; 
+	/*border: 1px solid #F1F0F0;*/
+}
+.takes{
+	width: 95%;
+	height: 49px;
+	border-bottom: 1px solid #F1F0F0;
+	margin: 0 auto; 
+	line-height: 40px;
+}
+.head{
+	width: 100%;
+	position: relative;
+	display: none;
+}
+.head span:first-child{
+	color: #EC6D65;
+	/*font-size: 12px;*/
+	position: absolute;
+	top: 8px;
+}
+.head span:last-child{
+	font-size: 14px ;
+	color: #333;
+	margin-left: 34px;
+	position: absolute;
+    top: 5px;
+}
+/*.head span:last-child input{
+	width: 80%;
+	height: 40px; 
+	border:none;
+	color: #333 !important;
+
+}*/
+.head2{
+	/*display: none;*/
+}
+.head3{
+	/*display: none;*/
+}
+.head2 input{
+	width: 100%;
+	height: 40px;
+	border: none;
+}
+.head3 input{
+	width: 80%;
+	height: 40px;
+	border: none;
+}
+.person{
+	font-size: 14px ;
+	color: #333;
+	margin-left: 34px;
+	position: absolute;
+    top: 5px;
+}
+ .tou{
+ 	width: 20px;
+ 	height: 40px;
+ 	float: right;
+ }
+ .tou img{
+ 	width: 8px;
+ 	height: 13px;
+ }
+ .btn_sure{
+ 	width: 95%;
+ 	height: 33px;
+ 	background:#EC6D65;
+ 	font-size: 14px;
+ 	text-align: center;
+ 	line-height: 33px;
+ 	margin: 20px auto; 
+ 	color: #fff;
+ 	border-radius: 3px;
+ }
+ #mark{
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 12;
+}
+#mark #main{
+	height: 20.0rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;	
+	background-color: #fff;
+}
+#mark #main #title{
+	text-align: center;
+	font-size: 14px;
+	color:#333;	
+	font-weight: 600;
+	margin: 17px 0;
+	position: relative;
+}
+#mark #main #title img{
+    width: 22px;
+    position: absolute;
+    right: 15px;
+    top: -1px;
+}
+#mark #site_text {
+	width:100%;
+}
+#mark #site_text #text_box p{
+	width:24%;
+	color:#ec6d65;
+	text-align: center;
+	border:0; 
+	display: inline-block;
+}
+#mark #site_text #site_box ul{
+	height:17.0rem;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+#mark #site_text #site_box ul li{
+	font-size: 14px;
+	color:#333;
+    margin-top: 20px;
+	padding-left: 6.5%;
+}
+#mark #site_text #text_box{
+	border-bottom: 1px #ddd solid;
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 6px;
+    font-size: 16px;
+}

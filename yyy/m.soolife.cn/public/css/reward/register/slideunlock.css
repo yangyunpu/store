@@ -1,0 +1,45 @@
+
+.slideunlock-wrapper{
+    width: 360px;
+    position: relative;
+}
+.slideunlock-slider{
+    padding:20px;
+    position: relative;
+    border-radius: 2px;
+    background-color: #FDEB9C;
+    overflow: hidden;
+    text-align: center;
+}
+.slideunlock-slider.success{
+    background-color: #E5EE9F;
+}
+.slideunlock-label{
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #d0d2ce;
+    z-index: 999;
+    border-radius: 2px;
+    cursor: pointer;
+    line-height: 350%;
+}
+.slideunlock-label-tip{
+    z-index: 9;
+}
+@media screen and (max-width: 640px) {
+    .slideunlock-wrapper{
+        width: 64%;
+    }
+}
+
+#reset-btn{
+    margin: 20px 0 10px 0;
+}
+
+/*p{
+    padding: 0 10px;
+    word-wrap: break-word;
+}*/

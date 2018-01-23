@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|激活礼品卡</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/setting/coupon.css"/>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+			<span onclick="window.history.go(-1)">
+				<img src="/public/img/brandhui/xingxingsha_back@2x.png " class="lefter">
+			</span>
+			<span class="lj_srt">激活礼品卡</span> 
+		</div>
+		<div class="void"></div>
+		<div class="bigiphone">
+			<!-- <div class="iphone">  
+				<div class="iphones">
+					<input id="code" type="text" name="vcode" maxlength="6" placeholder="验证码" autoComplete='off'>
+					<div id="btn" name="" >获取验证码</div>
+					<div id="s_box" ></div>
+				</div>
+			</div> -->
+			<div class="iphone">
+				<div class="iphones"> 
+				    <span>卡号</span>
+					<input id="number1" type="text" name="iphone" autoComplete='off'value="" />
+				</div>
+			</div>
+			<div class="iphone">
+				
+				<div class="iphones"> 
+					<span>密码</span>
+					<input id="number2" type="password" name="iphone"  value="" />
+				</div>
+			</div>
+		</div> 
+		<div class="text" id="activing">激活</div>
+
+		<div class="text2"><a href="/i/money/cashrecharge.html?cashTotal=<?php echo "$cash"; ?>" >现金余额充值钱包</a></div>
+
+	</div>
+	<div id="title">
+		
+	</div>
+</body>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/js/setting/coupon.js"></script>
+</html>

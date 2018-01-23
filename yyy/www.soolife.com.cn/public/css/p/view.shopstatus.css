@@ -1,0 +1,162 @@
+body{margin: 0;padding: 0;background: #fff !important;}
+.lj_wrap{
+	width: 1200px;
+	/*height: 1000px;*/
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.banner{
+	width: 100%; 
+}
+.banner img{
+	width: 100%; 
+}
+.lj_sub{
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	color: #666666; 
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.lj_subser{
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	color: #666666; 
+	margin-top: 80px;
+}
+.lj_subs{
+	width: 100%;
+	text-align: center;
+	font-size: 34px;lj_symbol
+	color: #666666; 
+}
+.lj_return{
+	width: 200px;
+	height: 40px;
+	border-radius: 4px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	background: #EC6D65;
+	margin: 0 auto;
+	margin-bottom: 110px;
+}
+.cell{
+	width: 100%;
+	text-align:center;
+	color: #999;
+	font-size: 12px;
+}
+.high{
+	margin-bottom: 80px;
+}
+.amend{
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	border-radius: 4px;
+	background: #EC6D65;
+	margin: 0 auto;
+	margin-top: 90px;
+	margin-bottom: 110px;
+}
+.pass{
+	width: 100%;
+	text-align: center;
+	font-size: 34px;
+	color: #EC6D65;
+	margin-top: 110px;
+	margin-bottom: 110px;
+}
+.lj_toll{
+	width: 60%;
+	margin-left: 140px;
+	font-weight: bold;
+}
+.lj_head{
+	background: #EC6D65;
+	color: #fff;
+}
+.lj_radio{
+	background: #F1F0F0;
+}
+.bank_card{
+	width: 800px;
+	height: 300px; 
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.bank_left{
+	float: left;
+	width: 200px;
+	height: 300px; 
+	text-align: center; 
+}
+.bank_img{
+	margin-top: 133px;
+}
+.bank_right{
+	float: right;
+	width: 500px;
+	height: 300px; 
+}
+.lj_money{
+	width: 500px;
+	height: 150px;
+}
+.lj_money ul{
+	margin: 0;
+	padding: 0;
+}
+.lj_money ul li{
+	float: left;
+}
+.lj_assure{
+	margin-top: 50px;
+	font-weight: bold;
+}
+.lj_symbol{
+	margin-top: 42px;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+.lj_openbank{
+	margin-top: 34px;
+}
+.bank_lj{
+	margin-bottom: 20px;
+}
+.lj_scod{
+	width: 120px;
+	height: 120px;
+	/*border: 1px solid #333;*/
+	margin-top: 20px;
+	overflow: hidden;
+}
+.lj_scod img{
+	width: 100%;
+}
+.online_pay{
+	overflow: hidden;
+	margin-top: 80px;
+}
+.wecat{
+	width: 120px;
+	height: 160px;
+	text-align: center;
+	float: left;
+	margin-right: 230px;
+}
+.apliy{
+	width: 120px;
+	height: 160px;
+	text-align: center;
+	float: left;
+}

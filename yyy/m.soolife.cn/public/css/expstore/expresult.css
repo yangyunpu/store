@@ -1,0 +1,159 @@
+ 
+#filter .clear-f{
+	clear:both;
+	overflow: hidden;
+}
+#filter .float-l{
+	float: left;
+}
+#filter .float-r{
+	float: right;
+}
+#filter .margin-b{
+	margin-bottom:10px;
+}
+img{
+	width:100%;
+	display: block;
+} 
+#filter #head{
+	width:100%;
+	height:44px;
+	background-color: #e6e6e6;
+	position: fixed;
+	z-index: 2;
+}
+#filter #head #head-left{
+	float:left;
+}
+#filter #head #head-center{
+	font-size: 18px;
+	color:#333; 
+	text-align: center;
+	line-height: 44px;
+}
+#filter #head #head-left img{
+	margin-top: 12px;
+	margin-left:15px;
+	width:11px;
+}
+#filter #head #head-right{
+	margin-top: 11px;
+	margin-right:15px; 
+	float: right; 
+}
+#filter #head #head-right img{
+	width:21px;
+}
+#filter #top_place{
+	height:44px;
+	width:100%; 
+} 
+.title{
+	font-size:0.7rem;
+	text-align: center;
+	margin:1.5rem 0;
+}
+.state{
+	font-size: 0.95rem;
+	text-align: center;
+	margin:1.6rem 0 0.5rem 0;
+	color: #EC6D65;
+
+}
+.imghead{
+	width:83%;
+	margin: 0 auto;
+}
+.message{
+	text-align: center;
+}
+/*猜你喜欢*/  
+.recommend{
+	margin-top: 40px;
+	margin-bottom: 18px;
+}
+.recommend .rtitle {
+    text-align: center;
+    font-weight: 500;
+}
+.recommend .rtitle span {
+    display: block;
+    font-size:0.8rem;
+    color: #333;
+    position: relative;
+}
+.recommend .rtitle span:before {
+    content: '';
+    position: absolute; 
+    top: 52%;
+    background: #333; 
+    width: 32%;
+    height: 1px;
+    left: 7%;
+}
+.recommend .rtitle span:after {
+    content: '';
+    position: absolute; 
+    top: 52%;
+    background: #333; 
+    width: 32%;
+    height: 1px;
+    right: 7%;
+} 
+.blockstyle .item{
+	width:46.25%;
+	margin-left: 2.5%;
+	float: left;
+	border-radius: 3px;
+	overflow:hidden;
+}
+.blockstyle .item .img_box{
+	width:100%;
+	height:8.65rem;
+	border-radius: 3px;
+	overflow: hidden;
+	position: relative;
+}
+.blockstyle .item .img_box .tag{
+	     padding: 0 2px;
+	height:1.0rem;
+	line-height: 1rem;
+	text-align:center;
+	border-radius: 3px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left:0;
+	background-color: #1E3042;
+	color: #fff;
+	font-size: 0.55rem;
+}
+.blockstyle .item .wen_box .smalltag {
+	display:none;
+}
+.blockstyle .item .wen_box{
+	text-align: center;
+	padding-top:0.65rem;
+	width: 100%;
+}
+.blockstyle .item .wen_box .name{
+	font-size: 0.7rem;
+	line-height: 0.7rem;
+	text-overflow: ellipsis;
+	width:90%;
+	margin:0 auto;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+.blockstyle .item .wen_box .sales{
+	display: none;
+}
+.blockstyle .item .wen_box .piece{
+	font-size: 0.8rem;
+	line-height: 0.8rem;
+	color:#EC6D65;
+	margin-top:0.25rem;
+	margin-bottom: 0.6rem;
+}

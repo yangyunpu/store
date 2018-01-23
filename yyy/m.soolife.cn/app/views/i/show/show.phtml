@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|会员中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/i/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/i/show/index.css"/>
+</head>
+<body>
+<div class="index_wrap">
+	<div class="header">
+	    <a onclick="window.history.go(-1)"><img class="arrow"  src="/public/img/common/shop_back_black@1x.png " ></a>
+		<span class="head_title">我的星粉秀</span>
+        <a href="/i/show/download.html?msg_txt=3"><span class="head_show">发布</span></a> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+	<div id="wrap">
+        {% if show %}
+        <input type="hidden" id="hidden" value="{{ show['skip'] }}" name="" />
+        {% if show['data'] %}
+        <ul id="showlist">
+        {% for d in show['data']  %}
+        	<li>
+        		<img class="show_img" src="{{ d['photo'] }}">
+        		<div class="show_con" data-id = "{{ d['id'] }}">
+        			<p class="show_date">{{ d['create_time'] }}</p>
+        			<p class="show_txt">{{ d['memo'] }}</p>
+        			<div class="show_bottom">
+                        {% if d['audit_status'] == 0 %}
+                        <p class="show_check">待审核</p>
+                        {% elseif d['audit_status'] == 1 %}
+                        <p class="check">已审核发布</p>
+                        {% else %}
+                        <p class="show_check">审核未通过</p>
+        			    <a class="show_btn" data-item="{{ d['audit_status_text'] }}">查看原因</a>
+                        {% endif %}
+        			</div>
+        		</div>
+        	</li>
+        {% endfor %}
+        </ul>
+        <p id="none" style="text-align:center;display:none;">没有更多了...</p>
+        <div id="show_mask" class="hide">
+            <div class="mask_con">
+                <p></p>
+                <a class="a_tel" href="tel:400—068—5151">400—068—5151</a>
+            </div>
+        </div>
+        {% endif %}
+        {% endif %}
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/i/show/showindex.js"></script> 

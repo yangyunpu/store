@@ -1,0 +1,108 @@
+a{
+	color:#000;
+}
+.model_title{
+	overflow: hidden;
+	clear:both;
+	margin:40px 0 14px 0;
+}
+.model_title h3{
+	width:100px;
+	float:left;
+}
+.model_title p{
+	float:right;
+}
+.model_title p a{
+	color:#666;
+}
+.model_title p a:hover{
+	color:#f6aa00;
+}
+.model{
+	height:120px;
+	font-size: 12px;
+}
+.model .year{
+	font-size: 16px;
+	line-height: 52px;
+	text-align: center;
+
+}
+.model .day{
+	font-size: 18px;
+	color:#f6aa00;
+	text-align: center;
+}
+.model .border-l{
+	border-left:1px solid #f2f2f2;
+}
+.model h4{
+	margin: 18px 0;
+}
+.model .text{
+	width:250px;
+	color:#a1a1a1;
+}
+.wen{
+	height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.shop{
+	overflow:hidden;
+	clear:both;
+	margin-bottom: 100px;
+}
+.shop img{
+	display: block;
+}
+.shop .marg.marl_no{
+	margin-left:0;
+}
+.shop .marg.marr_no{
+	margin-right:0;
+}
+.shop .marg{
+	margin:0 12px;
+	float:left;
+}
+.shop .marg p{
+	text-align:center;
+	padding-top:5px;
+}
+.circularbead{
+	border-radius: 6px;
+}
+
+
+/*体验店投资加盟*/
+.lj_share{text-align: left ; padding-top: 120px; line-height: 36px;}
+.lj_policy{margin-top: 30px; width: 540px;height: 60px;margin-bottom: 30px;}
+.lj_bule{width: 6px;height: 60px; background: #0068b6;float: left;}
+.lj_bule2{width: 300px;height: 60px;  float: left;margin-left: 20px;}
+.lj_bule2 p{line-height: 40px;}
+.lj_hed{height: 60px; }
+.lj_hed td{width: 150px; font-size: 18px; }
+.lj_hed2{height: 300px;}
+.lj_hed2 td{width: 150px; padding-top: 30px !important;}
+.lj_heds{line-height: 30px;font-size: 15px; }
+.lj_jia{width: 250px !important;}
+.lj_part{width: 80px !important;}
+.lj_hedser{width: 200px; margin: 0 auto;line-height: 30px;font-size: 15px;}
+.lj_hedsd{text-align: center;}
+.lj_ramark{height: 80px;}
+.lj_res{margin-left: 30px; }
+.lj_res p:first-child{font-size: 16px;font-weight: bold;}
+.lj_selet{padding-top: 10px;}
+.lj_resd{margin-left: 30px; line-height: 60px; }
+.lj_resd p:first-child{font-size: 16px;font-weight: bold;}
+.lj_inve{margin-top: 48px;}
+.lj_investor{font-weight: bold; margin-bottom: 20px;}
+.lj_good li{line-height: 26px;}
+.lj_wo{margin-top: 64px;margin-bottom: 90px;}
+.lj_zon p{font-size: 16px;}
+.lj_now{font-weight: bold;margin-top: 24px;}
+.lj_shop li{line-height: 30px;}
+
+/*newcityagent*/

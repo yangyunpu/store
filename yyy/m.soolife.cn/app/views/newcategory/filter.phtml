@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|筛选</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/newcategory/filter.css"/>
+	<script src="/public/js/rem2.js"></script>
+
+</head>
+<body>
+<div id="filter">
+	 <!-- 头部 -->
+	<div id="head">
+		<div id="head-left" class="sure" onclick="history.go(-1)"><img src="/public/img/newcategory/Group22Copy2.png" alt=""></div>
+		<div id="head-right" > </div>
+		<div id="head-center" class="between">筛选</div>
+	</div>
+	<input type="hidden" id="firstcode" value="{{firstcode}}">
+	<input type="hidden" id="twocode" value="{{twocode}}">
+	<input type="hidden" id="threecode" value="{{threecode}}">
+	<input type="hidden" id="keyword" value="{{keyword}}">
+	<div id="top_place"></div>
+	<div id="main">
+		<div id="main_left">
+			<ul><!-- class="active" li -->
+				{% for key,item in catedata %}
+					{#% if key %#}
+						<li data-btn="{{key}}" {% if key==='品牌' %} class="active" {% endif %}><img src="/public/img/newcategory/Oval@3x.png" alt="">{{key}}</li>
+					{#% endif %#}
+				{% endfor %}
+						<li><img src="/public/img/newcategory/Oval@3x.png" alt="">价格</li>
+			</ul>
+		</div>
+		<div id="main_right">
+			{% for key,items in catedata %}
+			<div class="item" data-text="{{key}}" {% if key!=='品牌' %} style="display:none" {% endif %}>
+				<ul>
+				{% for item in items %}
+					<?php if(array_key_exists('value', $item)):?>
+						{% if item['value'] %}
+
+							<li data-lival="{{key}}:{{item['value']}}" {% for jtem in span_arr %}{% if item['value']===jtem %} class="active" {% endif %}{% endfor %}>
+							<p>{{item['value']}}</p><img src="/public/img/newcategory/y.png" alt=""></li>
+
+						{% endif %}
+					<?php elseif(array_key_exists('name', $item)):?>
+						<?php if(array_key_exists('band_id', $item)):?>
+							{% if item['name'] %}
+
+								<li data-librand="{{item['name']}}" <?php if(isset($brand_id)){ ?> {% if brand_id == item['name'] %} class="active" {% endif %} <?php }?> >
+								<p>{{item['name']}}</p><img src="/public/img/newcategory/y.png" alt=""></li>
+
+							{% endif %}
+						<?php elseif(array_key_exists('shop_id', $item)):?>
+							{% if item['name'] %}
+
+								<li data-lishop="{{item['id']}}" <?php if(isset($shop_id)){ ?> {% if item['id'] == shop_id %} class="active" {% endif %} <?php }?>>
+								<p>{{item['name']}}</p><img src="/public/img/newcategory/y.png" alt=""></li>
+
+							{% endif %}
+						<?php elseif(array_key_exists('code', $item)):?>
+							{% if item['name'] %}
+
+								<li data-licode="{{item['code']}}" <?php if(isset($countries)){ ?> {% if item['code'] == countries %} class="active" {% endif %} <?php }?> >
+								<p>{{item['name']}}</p><img src="/public/img/newcategory/y.png" alt=""></li>
+
+							{% endif %}
+						<?php endif?>
+					<?php endif?>
+				{% endfor %}
+				</ul>
+			</div>
+			{% endfor %}
+			<div class="item" style="display:none" id="piecebox">
+				<input type="text" placeholder="起始价格" id="kai">
+				<p class="xian"></p>
+				<input type="text" placeholder="终止价格" id="jie">
+				<ul>
+<!--				{% for j in pieceArea %}-->
+<!--					<li data-min={{j['min']}} data-max={{j['max']}} class="piecearea"><div>{{j['min']}}--{{j['max']}}</div><img src="/public/img/newcategory/y.png" alt=""></li>-->
+<!--				{% endfor %}-->
+					<li data-min="0" data-max="500" class="piecearea"><div>0-500元</div><img src="/public/img/newcategory/y.png" alt=""></li>
+					<li data-min="500" data-max="1000" class="piecearea"><div>500-1000元</div><img src="/public/img/newcategory/y.png" alt=""></li>
+					<li data-min="1000" data-max="3000" class="piecearea"><div>1000-3000元</div><img src="/public/img/newcategory/y.png" alt=""></li>
+					<li data-min="3000" data-max="5000" class="piecearea"><div>3000-5000元</div><img src="/public/img/newcategory/y.png" alt=""></li>
+					<li data-min="5000" data-max="" class="piecearea"><div>5000以上</div><img src="/public/img/newcategory/y.png" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="sure">
+		<div id="remove">重置</div>
+		<div class="surebtn" id="surebtn">确定</div>
+	</div>
+</div>
+
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/newcategory/filter.js"></script>

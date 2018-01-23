@@ -1,0 +1,67 @@
+.invitation {width: 100%;overflow: hidden;height: 27.5em;}
+.bg {width:88%;margin: 0 auto;text-align: center;}
+.bg img{width:100%;}
+.i-content {position: relative;top:-26em;width: 100%;overflow: hidden;}
+.i-content img{width: 26%;margin: 0 auto;text-align: center;}
+.inv-font {font-size: 0.7em;font-weight: bold;width: 100%;text-align: center;margin-top: 1em;}
+.inv-font p{font-size: 1.6em;font-weight: bold;display: inline-block;color: rgb(67,67,67);letter-spacing:0.2em;}
+.inv-name {text-align: center;}
+.inv-name p{font-size: 0.6em;color: rgb(80,80,80);display: inline-block;}
+.underground span {
+            display: block;     /*设置为块级元素会独占一行形成上下居中的效果*/
+            font-size: 0.5em;
+            color: rgb(98,98,98);
+            position: relative;   /*定位横线（当横线的父元素）*/
+            top:0.5em;
+            text-align: center; }
+.underground span:before, .underground span:after {
+            content: '';                 /*CSS伪类用法*/
+            position: absolute;         /*定位背景横线的位置*/
+            top: 10px;
+            background: rgb(0,160,233);   /*宽和高做出来的背景横线*/
+            width: 10%;
+            height: 1px;  }
+.underground span:before{left: 25%;  }
+.underground span:after {right: 25%;  }
+.tech-process img{width: 79%;margin-top: 1.3em;}
+.address {margin-top: 5.2em;}
+.address p{font-size: 0.5em;text-align: center;color: #fff;letter-spacing:-0.07em;}
+.guessr {
+    padding: 0.64rem 0;
+}
+.liker {
+    text-align: center;
+    font-weight: 500;
+}
+.liker p {
+    display: block;
+    font-size: 0.55rem;
+    color: #666;
+    position: relative;
+}
+.liker p:before {
+    content: '';
+    position: absolute;
+    top: 41%;
+    background: #CECECE;
+    width: 15%;
+    /* height: 1px; */
+    border-bottom: 0.5px solid #CECECE;
+    left: 18%;
+} 
+.liker p:after {
+    content: '';
+    position: absolute;
+    top: 41%;
+    background: #CECECE;
+    width: 15%;
+    /* height: 1px; */
+    border-bottom: 0.5px solid #CECECE;
+    right: 18%;
+}
+.lj_three_geng {
+    width: 100%;
+}
+.lj_three_geng img{
+    width: 100%;
+}

@@ -1,0 +1,109 @@
+body,html,p,span,ul,ol,li,a,img{ margin: 0 auto; padding: 0;}
+body{
+	    font-family: "Microsoft YaHei","Arial";
+}
+em, i, u {
+    font-style: normal;
+}   
+img{border: none;}
+ul,li,ol{ list-style: none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.opening_body{
+	width: 100%; padding: 0; margin: 0; background: #5e1d93; padding: 50px 0;
+}
+.opening_body .banner_a{
+	width: 100%; 
+}
+.opening_body .banner_a img{
+	width: 100%; 
+}
+.middle{
+	width: 1120px; margin: 0 auto; background: #fff5c9; padding: 15px 30px; margin-top: -15px; border-radius: 15px;
+}
+.activevolume{
+	width: 950px; padding: 40px 0 20px; margin: 0 auto; overflow: hidden;
+}
+.activevolume ul li{
+	float: left; width: 275px; height: 161px; margin:0 20px;
+} 
+.blast{
+	width: 1100px; margin: 0 auto; padding: 0;
+}
+.title{
+	width: 1100px; margin: 0; padding: 50px 0 30px; text-align: center;
+}
+.entirety{
+	width: 1000px; margin: 0 auto; padding: 0;
+}
+.entirety_a .commodity{
+	width: 545px; height: 332px; 
+}
+.entirety .commodity {
+	width: 545px; height: 320px;
+}
+.particulars{
+	width: 440px; padding: 70px 0 60px ;
+}
+.particulars a{
+	width: 440px; height: 337px; *display: inline; zoom: 1; cursor: pointer;text-decoration:none;
+}
+.particulars .name{
+	color: #fb435d; width: 400px; height: 55px; line-height: 55px; font-weight: 700; font-size: 30px; margin: 0 auto; 
+	border-top: 1px solid #fb435d;border-bottom: 1px solid #fb435d;
+}
+.operation{
+	width: 400px; height: 35px; line-height: 35px; color:#fb435d; font-size: 20px; font-weight: 500;
+}
+.price_y{
+	width: 400px; height: 35px; line-height: 35px; color: #b3b3b3; font-size: 18px; text-decoration:line-through;
+}
+.price_x{
+	width: 400px; height: 50px; color: #fb435d; font-size: 20px; font-weight: 500;
+}
+.price_x span{
+	 font-size: 30px; font-weight: 700;
+}
+.djgo{
+	width: 400px;margin: 0 auto;
+}
+
+.price_x img{
+	padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

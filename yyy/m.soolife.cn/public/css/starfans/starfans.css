@@ -1,0 +1,172 @@
+html,
+body {
+	width: 100%;
+	background-color: #FFFFFF;
+}
+
+/*头部*/
+
+.Ljj_Invite .head {
+	position: fixed;
+	z-index: 9;
+    width: 100%;
+    height: 44px;
+    background: white;
+}
+
+.Ljj_Invite .head .back {
+	width: 10%;
+	height: 25px;
+	background: url(/public/img/starfans/img1/back1.png) 10px center no-repeat;
+	background-size: contain;
+	float: left;
+	margin-top: 9px;
+}
+
+.Ljj_Invite .head .back2 {
+	width: 70px;
+	height: 25px;
+}
+
+.Ljj_Invite .head p {
+    width: 80%;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    float: left;
+}
+
+.Ljj_Invite {
+	width: 100%;
+	font-family: "Microsoft YaHei", "arial";
+	min-width: 300px;
+	margin: 0;
+	padding: 0;
+	background: #f1f1f1;
+}
+
+.Ljj_Invite ul li {
+	list-style: none;
+}
+
+.Ljj_Invite a {
+	text-decoration: none;
+}
+
+.Ljj_Invite ul,
+li,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.Ljj_banner {
+	width: 100%;
+	padding-top: 44px;
+}
+
+.Ljj_banner img {
+	width: 100%;
+}
+
+.Ljj_center {
+	width: 100%;
+	height: 8.681481rem;
+	text-align: center;
+	font-size: 0.62rem;
+	background-color: #FFFFFF;
+	background-image: url(/public/img/starfans/img1/myinvite.png) ;
+	background-size: 100% 100%;
+	color: #949494;
+}
+
+.share {
+	margin-top: 0.148148rem;
+	padding-top: 0.548148rem;
+	font-weight: bold;
+	color: #333333;
+}
+.Ljj_share{
+	width: 100%;
+	height:6.481481rem; 
+	background-color:#FFFFFF; 
+	border-bottom: 1px solid #DDDDDD;
+}
+.Ljj_shareleft{
+	width: 54%;
+	height:6.481481rem; 
+	border-right: 1px solid #DDDDDD;
+	float: left;
+	text-align: center;
+	line-height: 7.481481rem;
+}
+.Ljj_shareleft a{
+	display: block;
+	width: 3.222222rem;
+	height:1.222222rem;
+	margin: 5px auto; 
+}
+.Ljj_shareleft img{
+    width: 3.222222rem; 
+    margin: 5px auto;
+}
+.Ljj_shareleft span {
+	display: block;
+	margin-bottom: 0.148148rem;
+	font-weight: bold;
+	font-size: 0.42rem;
+	color: #333333;
+	text-align: center;
+}
+
+.Ljj_shareright{
+	width: 45%;
+	height:6.481481rem; 
+	float: left;
+	text-align: center;
+	line-height:7.481481rem;
+}
+.Ljj_shareright a{
+	display: block;
+	width: 3.222222rem;
+	height:1.222222rem;
+	margin: 5px auto; 
+}
+
+.Ljj_shareright img{
+    width: 3.222222rem; 
+    margin: 5px auto;
+}
+.Ljj_shareright span {
+	display: block;
+	margin-bottom: 0.148148rem;
+	font-weight: bold;
+	font-size: 0.42rem;
+	color: #333333;
+	text-align: center;
+}
+.Ljj_check a {
+	width: 100%;
+	height: 1.481481rem;
+	display: block;
+    line-height: 1.481481rem;
+	text-align: center;
+	font-size: 0.696296rem;
+	color: #fd987b;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #DDDDDD;
+}
+.Ljj_foot {
+	width: 100%;
+	height: 4.192593rem;
+	margin: 10px 0;
+}
+.Ljj_foot img{
+	width: 100%;
+}
+
+
+
+

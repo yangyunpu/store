@@ -1,0 +1,323 @@
+#news{
+	width: 100%;
+	height: 2.730667rem;
+	background: #FFF;
+	margin-top: 0.426667rem;
+}
+#news .head{
+	font-size: 0.597333rem;
+	color: #EC6D65;
+	line-height: 0.597333rem;
+	margin:0 0.426667rem;
+	float: left;
+	line-height: 2.730667rem;
+}
+#news .item{
+	height: 2.730667rem;
+	overflow: hidden;
+	position: relative;
+}
+#news .item_list{
+    position: absolute;
+    top: 0;
+    // left: 0;
+}
+#news .item .item_list li{
+	vertical-align:middle;
+	height: 1.365333rem;
+	overflow: hidden;
+	font-size: 0.512rem;
+	color: #4C4B4C;
+	/*float: left;*/
+	line-height: 1.365333rem;
+    text-overflow: ellipsis;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -moz-box;
+    display: -o-box;
+    -webkit-line-clamp: 1;
+    -ms-line-clamp: 1;
+    -moz-line-clamp: 1;
+    -o-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+#news .item .item_list li:nth-child(2n){
+	line-height: 1.365333rem !important;
+}
+#exlist{
+	overflow: hidden;
+	width: 100%;
+	margin: 0 2.5%; 
+}
+#exlist li{
+	width: 46%;
+	height: 10.496rem;
+	float: left;
+	background: #fff;
+	text-align: center;
+	margin-top: 0.426667rem;
+	border-radius: 3px;
+	font-size: 0;
+}
+#exlist li img{
+	width: 100%;
+	height: 7.381333rem;
+    border-radius:  3px 3px 0 0;
+}
+#exlist li p{
+	padding: 0 0.32rem;
+	height: 1.536rem;
+	line-height: 1.536rem;
+	font-size: 0.682667rem;
+    color: #333333;
+    overflow: hidden;
+	text-overflow: ellipsis;
+    display: inline-block;
+    display: -webkit-box;
+    display: -ms-box;
+    display: -moz-box;
+    display: -o-box;
+    -webkit-line-clamp: 1;
+    -ms-line-clamp: 1;
+    -moz-line-clamp: 1;
+    -o-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -ms-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+}
+#exlist li .buy{
+	display: inline-block;
+	width: 53.75%;
+    line-height: 1.152rem;
+	margin-bottom: 0.426667rem;
+	background: #EC6D65;
+    border-radius: 3px;
+    font-size: 0.512rem;
+    color: #FFFFFF;
+}
+#exlist li:nth-child(2n){
+	margin-left: 3%;
+}
+#store{
+	width: 95%;
+	overflow: hidden;
+	padding-bottom: 0.426667rem;
+	margin: 0.426667rem 2.5%;
+	background: #fff;
+	border-radius: 3px;
+	position: relative;	
+}
+#store img{
+	width: 100%;
+	height: 3.84rem;
+	border-radius:  3px 3px 0 0;
+}
+#store .logo{
+    height: 6.378667rem;
+}
+#triangle-up{
+	width: 0;
+	height: 0;
+	border-left: 0.426667rem solid transparent;
+	border-right: 0.426667rem solid transparent;
+	border-bottom: 0.64rem solid #fff;
+	position: absolute;
+	left: 50%;
+	top: 5.838667rem;
+	transform: translateX(-50%);
+	-ms-transform:translateX(-50%); 	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* FirefoX */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 
+}
+#classify{
+	padding-top: 0.256rem;
+    overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+	background: #fff;
+}
+#classify li{
+	display: inline-block;
+    width: 3.84rem;
+    margin-left: 0.426667rem;
+}
+#classify li:last-child{
+	margin-right: 0.426667rem;
+}
+#classify li p{
+	text-align: center;
+	margin-top: 0.256rem;
+	font-size: 0.512rem;
+    color: #4C4B4C;
+}
+#search{
+	width: 95%;
+	margin: 0 auto;
+	height: 1.877333rem;
+	background: #fff;
+	margin-top: 0.426667rem;
+	line-height: 1.877333rem;
+	position: relative;
+	font-size: 0;
+}
+#search a{
+	display: inline-block;
+	height: 1.877333rem;
+	line-height: 1.877333rem;
+}
+#search .left{
+    width: 0.490667rem;
+    display: inline-block;
+    margin-left: 0.426667rem;
+}
+#search  p{
+	display: inline-block;
+	font-size: 0.597333rem;
+    color: #4C4B4C;
+    margin-left: 0.256rem;
+}
+#search .right{
+	width:0.256rem;
+	position: absolute;
+	right: 0.426667rem;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform:translateY(-50%); 	/* IE 9 */
+	-moz-transform:translateY(-50%); 	/* FirefoY */
+	-webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+	-o-transform:translateY(-50%); 
+}
+#show{
+	text-align: center;
+	font-weight: 500;
+	margin-top: 0.768rem;
+}
+#show span{
+	display: block;
+    font-size: 0.682667rem;
+    color: #4C4B4C;
+    position: relative;
+}
+#show span:before{
+	content: '';
+    position: absolute;
+    top: 52%;
+    background: #D9D9D9;
+    width: 15%;
+    border-bottom: 1px solid #D9D9D9;
+    left: 26%;
+}
+#show span:after{
+	content: '';
+    position: absolute;
+    top: 52%;
+    background: #D9D9D9;
+    width: 15%;
+    border-bottom: 1px solid #D9D9D9; 
+    right: 26%;
+}
+#pic{
+	width: 95%;
+	margin: 0 2.5%;
+	margin-top: 0.768rem;
+	background: #fff;
+	margin-bottom: 2.133333rem;
+}
+#pic .piclist img{
+	width: 100%;
+}
+#pic .piclist{
+	width: 100%;
+	overflow: hidden;
+}
+#pic .left{
+	float: left;
+	width: 49%;
+	height: 7.466667rem;
+	position: relative;
+}
+#pic .left img{
+	width: 100%;
+	height: 100%;
+}
+#pic .left .txt{
+	width: 100%;
+	height: 1.28rem;
+	line-height: 1.28rem;
+	background: #000;
+	background: rgba(0,0,0,0.6);
+	position: absolute;
+	bottom: 0px;
+	color: #fff;
+	font-size: 0.512rem;
+	text-align: center;
+}
+#pic .right{
+	width: 51%;
+	float: right;
+}
+#pic .right li{
+	float: left;
+	width: 47%;
+	height: 3.626667rem;
+	margin-left:3%;
+}
+#pic .right li:nth-child(3){
+	margin-top: 0.213333rem;
+}
+#pic .right li:nth-child(4){
+	margin-top: 0.213333rem;
+}
+#pic .right li img{
+     width: 100%;
+     height: 100%;
+}
+#pic .more{
+	height: 0.512rem;
+	line-height: 0.512rem;
+	margin-top:0.768rem;
+	padding-bottom: 0.746667rem;
+    text-align: center;
+}
+#pic .more a{
+    font-size: 0.597333rem;
+    color: #666666;
+}
+#pic .more img{
+	width: 0.256rem;
+	margin-left: 0.213333rem;
+}
+#swiper-container1 .swiper-wrapper .swiper-slide {
+	width: 100%;
+	height: 1.365333rem;
+}
+/*体验店名称*/
+#mask_name{
+	width: 100%;
+	height: 6.378667rem;
+	line-height: 6.378667rem;
+	text-align: center;
+	background:rgba(0,0,0,0.4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 0;
+}
+.mask_title{
+	display: inline-block;
+	font-size: 0.682667rem;
+	color: #fff;
+	padding: 0 0.213333rem;
+}
+.mask_line{
+	display: inline-block;
+	width: 2.133333rem;
+	height: 1px;
+	background: #fff;
+}

@@ -1,0 +1,386 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+li{ list-style:none }
+ul{padding: 0;margin: 0;}
+.wrap{
+	width: 100%;
+	background-color:#f1f0f0;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+	/*display: none;*/
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 0.981333rem;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:12px; 
+}
+.story{
+	width: 94.5%;
+	margin: 0 auto 15px !important;
+	/*margin-bottom: 10px;*/
+
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	padding-top: 15px;
+}
+.story a{
+	color: #333 !important;
+}
+.story img{
+	width: 100%;
+}
+.story div{
+	width: 100%;
+	margin: 0 auto !important;
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	font-size: 14px !important;
+	line-height: 25px !important;
+}
+.story span{
+	width: 100%;
+	margin: 0 auto !important;
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	font-size: 14px !important;
+	line-height: 25px !important;
+}
+.story p{
+	width: 100%;
+	margin: 0 auto !important;
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	font-size: 14px !important;
+	line-height: 25px !important;
+}
+.story h1{
+	width: 100%;
+	margin: 0 auto !important;
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	font-size: 14px !important;
+	line-height: 25px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.story h2{
+	width: 100%;
+	margin: 0 auto !important;
+	background: #f1f0f0 !important;
+	color: #333 !important;
+	font-size: 14px !important;
+	line-height: 25px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.share{
+	float: right;
+	width:20px;
+	height: 20px;  
+	display: block;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.share img{
+	width: 100%;
+}
+.void{
+	width: 100%;
+	height: 44px;
+}
+.title{
+	margin: 0;
+	padding-left: 0.426667rem;
+	/*padding-top: 0.426667rem;*/
+	margin-top: 26px;
+	/*font-size: 0.810667rem;*/
+	font-size: 19px;
+	line-height: 24px;
+}
+.look{
+	width: 80%;
+	padding-left: 0.426667rem;
+	/*padding-top: 0.597333rem;*/
+	margin-top: 6px;
+}
+.eyes{
+	width: 0.682667rem;
+	height: 0.469333rem;
+	overflow: hidden;
+	display: block;
+	float: left;
+	padding-top: 5px;
+}
+.eyes img{
+	width: 100%;
+}
+.num{
+	font-size: 14px;
+	color: #666;
+	margin-left: 4px;
+}
+.banner{
+	width: 100%;
+	height: 9.6rem;
+	overflow: hidden;
+	margin-top:18px; 
+}
+.banner img{
+	width: 100%;
+}
+.artice{
+	width: 94%;
+	margin: 0 auto;
+	font-size:0.597333rem;
+	color: #333; 
+	line-height: 24px;
+	margin-bottom: 0.64rem;
+}
+.explain{
+	width: 94%;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+.shops{
+	width: 100%;
+	height: 6.4rem;
+	overflow: hidden;
+	border-right: 0 0 6px 6px;
+}
+.shops img{
+	width: 100%;
+}
+.price{
+	text-align: center;
+	color: #EC6D65;
+    font-size: 0.682667rem;
+    margin: 10px 0;
+}
+.lj_tile{
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.597333rem;
+	color: #4C4B4C;
+	text-align: center;
+}
+.footshop{
+	width: 20%;
+	height: 1.28rem;
+	margin: 0.64rem auto 0;
+	/*border:1px solid green;*/
+	padding-bottom: 0.64rem;
+
+}
+.collect {
+	width: 1.194667rem;
+	height: 1.194667rem;
+	float: left;
+	/*display: none;*/
+}
+.collect img{
+	width: 100%;
+}
+.collects {
+	width: 1.194667rem;
+	height: 1.194667rem;
+	float: left;
+	display: none;
+
+}
+.collects img{
+	width: 100%;
+}
+.shop{
+	width: 3.072rem;
+	height: 1.152rem;
+	border-radius: 3px;
+	background: #EC6D65;
+	color: #fff; 
+	font-size: 12px;
+	float: right;
+	text-align: center;
+	line-height: 1.152rem;
+}
+.guess{
+	padding:0 0 0.64rem;
+}
+.like{
+	text-align: center;
+	font-weight: 500;
+}
+.like span{
+	display: block;
+    font-size: 0.682667rem;
+    /*color: #666;*/
+    position: relative;
+}
+.like span:before{
+	content: '';
+    position: absolute;
+    top: 52%;
+    background: #D9D9D9;
+    width: 15%;
+    height: 1px;
+    left: 26%;
+}
+.like span:after{
+	content: '';
+    position: absolute;
+    top: 52%;
+    background: #D9D9D9;
+    width: 15%;
+    height: 1px;
+    right: 26%;
+}
+.lj_like{
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+.lj_like ul{
+	overflow: hidden;
+}
+.items{
+	width: 47%;
+	float: left;
+	overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #f1f0f0;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+.items a{
+	color: #333;
+}
+.items:nth-child(2n){
+	margin-bottom: 2.5%;
+}
+.items:nth-child(2n+1){
+	margin:0 2% 2.5%;
+
+}
+.imgs{
+	width: 100%;
+	height: 7.381333rem;
+	overflow: hidden;
+}
+.imgs img{
+	width: 100%;
+}
+.words{
+	width: 100%;
+	background: #fff;
+	height: 2.40rem
+}
+.words p:first-child{
+	text-align: center;
+    width: 86%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding-top: 12px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 14px;
+}
+.words p:last-child{
+	font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    color: #EC6D65;
+    text-align: center;
+    padding-bottom: 0.23333rem;
+}
+/*星主题购买样式变更*/
+.explain2{
+	width: 95%;
+    height: 120px;
+    background: #fff !important;
+    overflow: hidden;
+    z-index: 3;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+.shops2{
+	width: 33.8%;
+	height: 120px;
+	overflow: hidden;
+	float: left;
+}
+.shops2 img{
+	width: 100%;
+}
+.shops3{
+	width: 66%;
+	float: left;
+}
+.shops3 p{
+  width:91%;
+  margin: 0 auto;
+  height: 36px ;
+  font-size: 14px;
+  color: #333;
+  line-height: 18px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-top: 10px;
+}
+.price2{
+	font-size: 16px;
+	color: #EC6D65;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.shops4{
+	width: 3.413333rem;
+	height: 27px;
+	line-height: 27px;
+	font-size: 13px;
+	border-radius: 3px;
+	text-align: center;
+	color: #fff;
+	background: #EC6D65;
+	margin-top: 10px;
+	margin-left: 10px;
+}

@@ -1,0 +1,107 @@
+<div id="nav">
+	<div class="mainBox clearfix">
+		<div class="logo">
+			<a href="{{url_member}}" class="logoIcon"></a>
+			<a href="{{url_member}}" class="mylife">我的生活</a>
+			<a href="{{url_website}}" class="soolifeIndex">返回网站首页</a>
+		</div>
+		<div class="navitems">
+			<ul>
+				<li style="padding-right: 11px;"><a href="{{url_member}}">我的生活首页</a></li>
+				<li>
+					<div class="dl">
+						<div class="dt">
+							<span>账户设置</span>
+							<i class="glyphicon glyphicon-chevron-down"></i>
+						</div>
+						<div class="dd">
+							<a href="{{url_member}}/settings/edit.html">个人资料</a>
+							<a href="{{url_member}}/settings/avatar.html">头像上传</a>
+							<a href="{{url_member}}/settings/address.html">收货地址</a>
+							<a href="{{url_member}}/settings/safety/phone.html">绑定手机号</a>
+							<a href="{{url_member}}/settings/safety/email.html">绑定电子邮箱</a>
+							<a href="{{url_member}}/settings/safety/passwd.html">修改密码</a>
+							<a href="{{url_member}}/settings/safety/bank.html">绑定银行卡</a>
+							<a href="{{url_member}}/assets/gift/index.html">激活礼品卡</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="dl">
+						<div class="dt">
+							<span>特色</span>
+							<i class="glyphicon glyphicon-chevron-down"></i>
+						</div>
+						<div class="dd">
+							<a href="{{url_member}}/mkt/explore/index.html">全民商探</a>
+							<a href="{{url_member}}/mkt/league/index.html">星粉联</a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<a href="{{url_member}}/assets/coin/index.html">星币</a>
+					<i class="starNum">{{m_coin}}</i>
+				</li>
+			</ul>
+		</div>
+		<div class="nav-r">
+			<div class="cartBox">
+				<div class="cw-icon">
+					<i class="ci-left fa fa-shopping-cart"></i>
+					<i class="ci-right">></i>
+					<i class="ci-count">{{ carts|length}}</i>
+					<a href="{{url_order}}/cart.html" style="line-height: 30px;">我的购物车</a>
+				</div>
+				<div class="drop-layer">
+					{% if !carts %}
+					<!--购物车没有商品-->
+					<div class="noGoods">
+						<b></b>
+						购物车中没有商品，赶紧选购吧！
+					</div>
+					{% else %}
+					<!--购物车有商品-->
+					<div class="hasGoods">
+						<div class="drop-layer-header">
+							<h4>加入的商品</h4>
+						</div>
+						<div class="drop-layer-content">
+							<ul>
+								{% for d in carts %}
+								<li class="cartgoods_{$vo.sku_id}">
+									<div class="goodsImg">
+										<img src="{{d.logo}}"/>
+									</div>
+									<div class="goodsBrief">
+										<p>
+											{{d.art_no}}
+										</p>
+										<p>
+											{{d.name}}
+										</p>
+									</div>
+									<div class="goodsPrice">
+										<p class="salePrice">
+											￥{{d.act_price}}*{{d.qty}}
+										</p>
+										<p>
+											<a href="javascript:void(0);" onclick="" data-id='{{d.sku_id}}' data-qty="{{d.qty}}" data-price="{{d.act_price}}">删除</a>
+										</p>
+									</div>
+								</li>
+								{% endfor %}
+							</ul>
+						</div>
+						<div class="drop-layer-foot">
+							<div class="goodsAmount">
+								共<b class="cartnum">{{ carts|length}}</b>件商品，共计<strong>￥<b class="new_price">{{ d.qty*d.act_price }}</b></strong>元
+							</div>
+							<a href="{{url_order}}/cart.html">去购物车</a>
+						</div>
+					</div>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

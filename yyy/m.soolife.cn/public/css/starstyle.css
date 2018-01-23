@@ -1,0 +1,136 @@
+.lcy_starstyle {
+    width:100%;
+    min-width: 300px;
+    padding:0;
+    margin:0;
+    font-family:"Microsoft YaHei","arial"; 
+    background: #f1f1f1;
+}
+.lcy_starstyle ul li{
+    list-style: none;
+}
+.lcy_starstyle ul,li,p{
+    padding:0;
+    margin:0;
+}
+/*头部*/
+.lcy_starstyle .head{
+    height:44px;
+    background: white;   
+    position: fixed;
+    width: 100%;
+}
+.lcy_starstyle .head .head_box{
+    width:100%;
+    height:44px;  
+}
+.lcy_starstyle .head .head_box .back_img{
+    float:left;
+    width: 10%;
+    height: 25px;
+    background: url(/public/img/back1.png) no-repeat 10px center;
+    background-size: contain;
+    margin-top:9px;
+}
+.lcy_starstyle .head .head_box span{
+    float: left;
+    width: 80%;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #000;
+}
+
+/*nav*/
+.lcy_starstyle .nav{
+    background:white;
+    width:100%;
+    height:44px;
+    line-height: 44px;
+}
+.lcy_starstyle .nav ul{
+    font-size: 12px;
+    background: #f1f1f1;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap; 
+}
+.lcy_starstyle .nav ul li{
+    display: inline-block;
+}
+.lcy_starstyle .nav ul li a{
+    margin-left:10px;
+    color:#000;
+    text-decoration: none;
+}
+/*banner*/
+.lcy_starstyle .banner{
+    width:100%;   
+    /* padding-top: 44px; */
+}
+.lcy_starstyle .banner img{
+    width:100%;    
+    display: block;
+}
+/*快速分类*/
+
+.lcy_starstyle .classify_box{
+    overflow: hidden;
+    flex-wrap:wrap;
+    padding:0 10px; 
+    margin-bottom:10px;   
+    background: white;
+}
+.lcy_starstyle .classify_box .classify{
+    width:20%;
+    float:left;
+
+}
+.lcy_starstyle .classify_box .classify img{
+    width:100%;
+}
+.lcy_starstyle .classify_box .classify p{
+    width:100%;
+    font-size: 12px;
+    text-align:center;
+}
+ /*第一商品集 */
+.lcy_starstyle .goods1_box{
+    width:100%;
+    overflow:hidden;
+    clear:both;
+    margin-bottom: 10px;
+}
+.lcy_starstyle .goods1_box .goods1{
+    width:48%;
+    height:8.7rem;
+    overflow:hidden;
+    float:left;
+    margin-right:2%;
+    margin-top:2%;
+}
+.lcy_starstyle .goods1_box .goods1 img{
+    width:100%;
+    display: block;
+}
+.lcy_starstyle .goods1_box .goods2{
+    width:50%;
+    height:4.2rem;
+    overflow:hidden;
+    float:left;
+    margin-top:2%;
+}
+.lcy_starstyle .goods1_box .goods2 img{
+    width:100%;
+    display: block;
+}
+/*第二商品集*/
+.lcy_starstyle .goods2_box {
+    width:100%;
+    margin-bottom: 10px;
+}
+.lcy_starstyle .goods2_box img{
+    width:100%;
+    display:block;
+}

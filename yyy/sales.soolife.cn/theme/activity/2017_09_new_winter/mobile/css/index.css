@@ -1,0 +1,106 @@
+body {
+    color: #5D5E5F;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.profusion {
+    /*padding-bottom: 15%;*/
+    overflow: hidden;
+    background: #ffe5d5;
+}
+
+.profusion img {
+    width: 100%;
+}
+
+._name {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.possess {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.possess ul {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.possess ul li {
+    width: 49%;
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.possess ul .juice_extractor {
+    width: 100%;
+}
+
+.two_name {
+    width: 58%;
+    margin: 10% auto 40px;
+}
+
+._base {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%
+}

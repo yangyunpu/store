@@ -1,0 +1,239 @@
+body{
+	width:100%;
+}
+.lcy_hui_detail{
+	min-width:300px;
+	max-width:1024px;
+	width:100%;
+	margin:0 auto;
+    font-family:"Microsoft YaHei","arial"; 
+    background: white;
+    padding-bottom: 20px;
+}
+.lcy_hui_detail ul li{
+	list-style: none;
+}
+.lcy_hui_detail ul,li,p{
+	padding:0;
+	margin:0;
+}
+/*头部*/
+.lcy_hui_detail .nav{
+	padding: 0 10px;
+    background: white;
+    height: 44px;
+}
+.lcy_hui_detail .nav p{
+    width: 100%;
+    line-height: 44px; 
+    height: 44px;   
+    font-size: 16px;
+    color: #000;
+}
+.lcy_hui_detail .nav p span{
+	display:block;
+    width: 92%;
+    line-height: 44px; 
+    height: 44px;   
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    float:left;
+}
+.lcy_hui_detail .nav .back_l{
+    width: 4%;
+    height: 22px;
+    margin-top: 11px;
+    float:left;
+}
+.lcy_hui_detail .nav .back_r{
+    width: 20px;
+    height: 18px;
+    margin: auto 0;
+}
+/*分享的主题部分*/
+.lcy_hui_detail .mui-content .share_box{
+	width:100%;
+	overflow:hidden;
+	background: #fff;
+}
+.lcy_hui_detail .share_box .mui-table-view.mui-grid-view,.mui-table-view-cell>a:not(.mui-btn){
+	padding:0;
+}
+
+.lcy_hui_detail .share_box .mui-slider-indicator .mui-number{
+    line-height: 23px;
+    display: inline-block;
+    width: 36px;   
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 16px;
+    font-family: "SimSun";
+}
+.lcy_hui_detail .share_box .mui-slider-indicator .mui-number span{
+	color:#fff;
+    font-family:"Microsoft YaHei","arial"; 
+}
+.lcy_hui_detail .share_box .share_bm{
+	padding:0 10px;
+}
+.lcy_hui_detail .share_box .share_bm .share_word {
+	width:100%;
+	color:#000;
+	padding-bottom: 10px;
+	border-bottom: 1px #f3f3f3 solid;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson {
+	width:100%;
+	display: -webkit-flex; 
+	display: flex;
+	padding:10px 0;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson div{
+	float:left;
+	width:17%;
+	height:1rem;
+	line-height: 1rem;	
+    margin: auto 0;
+    font-size: 0.6rem;
+    background: #f3f3f3;
+	display: -webkit-flex; 
+	display: flex;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson div .no_img{
+    margin: auto 0;
+    margin-left: 21%;
+    margin-right: 4%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(/public/img/zan_black.png) center no-repeat;
+    background-size: contain;
+}
+/*点赞变色*/
+.lcy_hui_detail .share_box .share_bm .share_preson div .yes_img{
+    margin: auto 0;
+    margin-left: 21%;
+    margin-right: 4%;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(/public/img/zan_orange.png) center no-repeat;
+    background-size: contain;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson ul{
+	float:left;
+	width:73%;
+	height:1.722222rem;
+	overflow:hidden;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson ul li{
+    float: right;
+    width: 1.72rem;
+    height: 1.72rem;
+    border-radius: 50%;
+    margin: 0 1%;
+    overflow: hidden;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson ul li img{
+	display: block;
+	width:100%;
+}
+.lcy_hui_detail .share_box .share_bm .share_preson p{
+	float:left;
+	width:10%;
+    font-size: 0.6rem;
+    margin: auto 0;
+    text-align: right;
+}
+/*评论部分*/
+.lcy_hui_detail .comment{
+	margin-top: 10px;
+	width:100%;
+	background: white;
+}
+.lcy_hui_detail .comment .comment_top{
+	padding:10px;
+	border-top:1px #f3f3f3 solid;
+	border-bottom: 1px #f3f3f3 solid;
+}
+.lcy_hui_detail .comment .comment_top .comment_num{
+	color:#524f4f;
+}
+.lcy_hui_detail .comment .comment_main{
+	width:100%;
+	padding:0 10px;
+    overflow-y: auto;
+    max-height: 325px;
+}
+
+.lcy_hui_detail .comment .comment_main ul li{
+	width:100%;
+	padding-top:10px;
+	overflow: hidden;
+	clear:both;
+	border-bottom: 1px #f3f3f3 solid;
+}
+.lcy_hui_detail .comment .comment_main ul li .user{
+	width:100%;
+	height:1.866667rem;
+	display: -webkit-flex; 
+	display: flex;
+}
+.lcy_hui_detail .comment .comment_main ul li .user .img{
+    width: 1.72rem;
+    height: 1.72rem;
+    border-radius: 50%;
+	float:left;
+	overflow:hidden;
+	margin:auto 0;
+}
+.lcy_hui_detail .comment .comment_main ul li .user .img .userimg{
+	width:100%;
+}
+.lcy_hui_detail .comment .comment_main ul li .user .username{
+	width:54%;
+	float:left;
+	margin:auto 0;
+	padding:3%;
+	font-size: 13px;
+	color:#000;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lcy_hui_detail .comment .comment_main ul li .user .usertime{
+	width:35%;
+	float:right;
+	text-align: right;
+	margin:auto 0;
+	font-size: 12px;
+}
+
+.lcy_hui_detail .comment .comment_main ul li .says{
+	margin-left:14%;
+	width:86%;
+	font-size: 12px;
+    margin-bottom: 3%;
+}
+/*评论框的提交*/
+.lcy_hui_detail .comment .says_submit_box{
+	width:100%;
+	padding:0 10px;
+	background: white;
+	overflow:hidden;
+	clear:both;
+    border-top: 1px #f3f3f3 solid;
+    padding-top: 10px;
+}
+.lcy_hui_detail .comment .says_submit_box .says_text{
+    font-family:"Microsoft YaHei","arial";
+    font-size:12px;
+}
+.lcy_hui_detail .comment .says_submit_box .says_btn{
+	display: block;
+	width:20%;
+	margin: 0 auto;
+    font-family:"Microsoft YaHei","arial";
+    height: 32px;
+    padding:0;
+}
+

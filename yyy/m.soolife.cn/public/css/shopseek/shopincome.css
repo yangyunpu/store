@@ -1,0 +1,440 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #f0f1f1;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	/*display: block;*/
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+ul{
+	padding:0;
+	margin: 0;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#f0f1f1;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+	position: relative;
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 24px;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:10px; 
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.562963rem;
+	 
+}
+.void{
+	width: 100%;
+	height: 44px;
+	z-index: 2;
+}
+.first_head{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 44px;
+	z-index: 2;
+}
+.leftshop{
+	width: 50%;
+	height: 100%;
+	/*background: red;*/
+	float: left;
+}
+.rightshop{
+	width: 50%;
+	height: 100%;
+	/*background: pink;*/
+	float: left;
+}
+.shopbao{
+	width: 53%;
+	height: 48px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	color: #EC6D65;
+	margin: 0 auto;
+	/*border: 1px solid #333;*/
+	/*border-bottom: 2px solid #EC6D65;*/
+}
+.red{
+	width: 53%;
+	margin: 0 auto;
+	border-bottom: 2px solid #EC6D65;
+}
+.red2{
+	width: 53%;
+	margin: 0 auto;
+	border-bottom: 2px solid #EC6D65;
+	display: none;
+}
+.shopyue{
+	width: 53%;
+	height: 48px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 16px;
+	color: #333;
+	margin: 0 auto;
+	/*border-bottom: 2px solid #EC6D65;*/
+}
+.codes{
+	width: 100%;
+	height: 50px;
+}
+.leftcontent{
+	width: 95%;
+	border-radius: 3px;
+	background: #fff;
+	/*height: 500px;*/
+	margin: 10px auto;
+}
+.rightcontent{
+	width: 95%;
+	border-radius: 3px;
+	background: #fff;
+	/*height: 500px;*/
+	margin: 10px auto;
+	display: none;
+}
+.soo_life{
+	width: 95%;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #333;
+	font-weight: bold;
+	line-height: 50px;
+	border-bottom:  1px solid #DDDDDD;
+}
+.plan{
+    width: 84%;
+    margin: 30px auto 0;
+    position: relative;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+ 
+}
+.plan hr{
+	border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    width: 92%;
+    margin: 0;
+    left: 50%;
+    margin-left: -45%;
+    padding: 0;
+
+}
+/*白圈*/
+.all_play{
+    width: 118%;
+    float: left;
+    position: absolute;
+    top: -8px;
+    left: -24px;
+    height: 16px; 
+    /*display: none;*/
+} 
+.noyet{
+	width: 20%;
+	text-align: center;
+	float: left;
+	height: 16px;
+    line-height: 16px;
+}
+.nohat{
+	width: 16px;
+	height: 16px;
+	background: #fff;
+}
+/*对号红圈*/
+.all_play2{
+    width: 120%;
+    float: left;
+    position: absolute;
+    top: -8px;
+    left: -24px;
+    height: 16px;
+} 
+.noyet2{
+	width: 20%;
+	text-align: center;
+	float: left;
+	height: 16px;
+    line-height: 16px;
+}
+.nohat2{
+	width: 16px;
+	height: 16px;
+	background: #fff;
+}
+.play{
+	width: 120%;
+	height: 12px;
+	line-height: 12px;
+	position: absolute;
+    top: 16px;
+    left: -24px
+}
+.play li{
+	width: 20%;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	float: left;
+
+}
+/*第一种布局*/
+.status{
+	width: 100%;
+	height: 70px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.status2{
+	width: 14%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.lastdian{
+	width: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+}
+.rightstatus{
+	width: 82%;
+	float: left;
+	height: 100%;
+	color: #333;
+	border-bottom: 1px solid #f0f1f1;
+}
+.text1{ 
+	font-size: 14px; 
+	margin-top:0.597333rem;
+}
+.text1_time{
+	font-size: 12px; 
+} 
+/*第二种布局*/
+.statusd{
+	width: 100%;
+	height: 70px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.statusd2{
+	width: 14%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.lastdiand{
+	height: 100%;
+	width: 10px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+.rightstatusd{
+	width: 82%;
+	float: left;
+	height: 100%;
+	color: #999;
+	border-bottom: 1px solid #f0f1f1;
+}
+.textd1{ 
+	font-size: 14px; 
+	margin-top:0.597333rem;
+}
+.textd1_time{
+	font-size: 12px;
+
+}
+/*红色驳回*/
+.statuser{
+	width: 100%;
+	height: 120px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.statuser2{
+	width: 14%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	position: relative;
+}
+.lastdianer{
+	width: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -10px;
+}
+.rightstatuser{
+	width: 82%;
+	float: left;
+	height: 100%;
+	color: #EC6D65;
+	border-bottom: 1px solid #f0f1f1;
+}
+.texter1{ 
+	font-size: 14px; 
+	margin-top:0.597333rem;
+}
+.texter1_time{
+	font-size: 12px; 
+} 
+/*商家签约*/
+
+.planer{
+    width: 84%;
+    margin: 30px auto 0;
+    position: relative;
+    height: 55px;
+    border-bottom: 1px solid #ddd;
+ 
+}
+.planer hr{
+	border: 1px solid #ddd;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    margin: 0;
+    left: 50%;
+    margin-left: -40%;
+    padding: 0;
+
+}
+/*白圈*/
+.all_player{
+    width: 114%;
+    float: left;
+    position: absolute;
+    top: -8px;
+    left: -32px;
+    height: 16px; 
+    /*display: none;*/
+} 
+.noyeter{
+	width: 33.33%;
+	text-align: center;
+	float: left;
+	height: 16px;
+    line-height: 16px;
+}
+.noyeter img{
+	position: absolute;
+	width: 18px;
+    background: #fff;
+}
+.nohater{
+	width: 16px;
+	height: 16px;
+	background: #fff;
+}
+/*对号红圈*/
+.all_play2er{
+    width: 120%;
+    float: left;
+    position: absolute;
+    top: -8px;
+    left: -24px;
+    height: 16px;
+} 
+.noyet2er{
+	width: 33.33%;
+	text-align: center;
+	float: left;
+	height: 16px;
+    line-height: 16px;
+}
+.nohat2er{
+	width: 16px;
+	height: 16px;
+}
+.player{
+	width: 115%;
+	height: 12px;
+	line-height: 12px;
+	position: absolute;
+    top: 16px;
+    left: -24px
+}
+.player li{
+	width: 33.33%;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	float: left;
+
+}
+/*商家签约正在审核*/
+.cond2{
+	
+}
+.statuserf{
+	width: 100%;
+	height: 86px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.statuserfg{
+	width: 100%;
+	height: 86px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.rightstatuserf{
+	color: #333;
+	width: 82%;
+	float: left;
+	height: 100%; 
+	border-bottom: 1px solid #f0f1f1;
+}

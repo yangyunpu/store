@@ -1,0 +1,15 @@
+body{margin:0px;padding:0px;}
+.f_possessions {background:#e4eeff;}
+.f_possessions img{width:100%;border:none;}
+.f_possessions ul li{list-style: none;}
+.f_banner_up ul .f_photograph{width:75%;margin:0 auto;margin-left:11%;}
+.f_banner_up ul .f_photograph img{margin-top:5%;}
+.f_banner_up ul .f_photograph_one{width:80.5%;margin:0 auto;margin-left:8%;}
+.f_banner_up ul .f_photograph_one img{margin-left:-3.5%;margin-top:4%;}
+.first_picture{width:98%;overflow: hidden;margin-left:-2.5%;}
+.first_picture ul li{width:41%;float:left;margin-left:9%;margin-top:3%;}
+.first_picture ul .right{margin-left:2%;}
+.f_new_product{margin:0 auto;width:50%;}
+.f_bottom{width:70%;margin: 0 auto;}
+.f_bottom a img{margin-top:5%;}
+.bottom{margin-top:5%;}

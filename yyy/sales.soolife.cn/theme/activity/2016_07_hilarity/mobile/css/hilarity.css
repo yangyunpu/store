@@ -1,0 +1,139 @@
+html{overflow-x: hidden; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, button, textarea, p, th, td {
+    padding: 0;
+    margin: 0;
+}
+body{
+	width: 100%;
+	overflow-x: hidden;
+    font-family: "microsoft yahei";
+	font-size: 12px;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    /*background:#0a043d;*/
+	 }
+ul,li{
+	list-style:none;
+	}
+a{
+	text-decoration:none;
+	} 
+.banner{
+	width:100%;
+}
+.banner img{
+	width:100%;
+}
+.member{
+	width: 99%;
+    padding: 0 0.5%;
+    background:#6516b0;
+}
+.picture-one {
+    width: 75%;
+    overflow: hidden;
+    padding-top: 1em;
+    padding:0 12.5%;
+    line-height: 25px;
+}
+.picture-one img{
+	width:100%;
+}
+.member ul {
+    width: 99%;
+    overflow: hidden;
+    line-height: 5px;
+    padding: 0 1%;
+}
+.member ul li {
+    width: 48.5%;
+    float: left;
+    margin: 0.4em 1% 0.1em 0.5%;
+}
+.member ul li img {
+    width: 100%;
+}
+.foodstuff{
+	width:100%;
+	background:#6617b1;
+}
+.delicious {
+    width: 100%;
+}
+.delicious img{
+   width:100%;
+}
+.foodstuff ul {
+    width: 98.8%;
+    overflow: hidden;
+    font-size: 1em;
+    padding: 0 1.1%;
+}
+.foodstuff ul li {
+    width: 48.2%;
+    float: left;
+    background-color: #fff;
+    margin: 0.4em 1% 0.1em 0.5%;
+}
+.foodstuff ul li img{
+width:100%;
+}
+.picture {
+    width: 84%;
+    line-height: 20px;
+    padding-left:10px;
+}
+.name {
+    font-size: 16PX;
+    font-family: "微软雅黑";
+    color: #fc3343;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.nemw{
+	font-size:14px;
+	font-family: "微软雅黑";
+    color: #020200;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.picture  .original{
+	color:#777;
+	text-decoration:line-through;
+	font-size:13px;
+}
+.picture .fl span{
+	font-size:13px;
+	color:#fc3343;
+	
+}
+.fewn{
+	
+}
+.picture .fl >span img{
+	width:8%;
+}
+.price_x{
+	color:#fc3343;
+	font-size:13px;
+	float:left;
+}
+.price_y {
+    color: #fc3343;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    float:left;
+    
+}
+.picture .fr img{
+	width:30%;
+	float:right;
+	    margin-top: -25px;
+    margin-right: -8px;
+}
+.fewn .f1 span img{
+	width:8%;
+}

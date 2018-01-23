@@ -1,0 +1,61 @@
+.float-l{
+	float:left;
+}
+.img-w{
+	width:100%;
+}
+.float-r{
+	float:right;
+}
+.clear-f{
+	overflow: hidden;
+	clear:both;
+}
+.lcy_hui img{
+	display: block;
+}
+.lcy_hui>.task{    
+	border-radius: 4px;
+	padding: 0 10px;
+	background-color: #f1f0f0;
+}
+.lcy_hui>.task>.item{
+	border-radius: 4px;
+	font-size: 0.512rem;
+	padding: 10px 0;
+	border-bottom:1px #fff solid;
+}
+.lcy_hui>.task>.item>.img_box{
+	padding-right:10px;
+	width:19.4%;
+}
+.lcy_hui>.task>.item>.img_box>img{
+	width:100%;
+}
+.lcy_hui>.task>.item>.word{
+	padding-top: 7px;
+}
+.lcy_hui>.task>.item>.word>.title{
+	font-size: 0.597333rem;
+	font-weight: bold;
+}
+.lcy_hui>.task>.item>.word>.mess{
+	color:#999;
+}
+.lcy_hui>.task>.item>.word>.coin{
+	color:#ed766e;
+}
+.lcy_hui>.task>.item>.signbtn{
+	 padding-top: 6%;
+}
+.signbtn p{   
+	padding:6px 9px; 
+	text-align: center;
+	color:#999;
+	border-radius: 2px;
+}
+.signbtn  p.bg_retived{   
+	background-color: #ec6d65;
+	color:#fff;
+}
+

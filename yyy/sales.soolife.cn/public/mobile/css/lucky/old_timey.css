@@ -1,0 +1,96 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	min-width: 300px;
+}
+body::-webkit-scrollbar{
+width:0;
+height:0;
+background: #f0f0f0;
+}
+p {
+	padding:0;
+	margin: 0;
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#ffffff;
+	overflow: hidden;
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+}
+.header{
+	width: 100%;
+	height:1.877333rem;
+	background: #f0f0f0;
+    text-align: center;
+    line-height:1.877333rem;
+    position: relative;
+    top: 0;
+}
+.lj_srt{font-size:0.810667rem;color:#333; }
+.lefter{
+	width: 0.64rem;
+	height: 0.981333rem;
+	position: absolute;
+	left: 0.444444rem;
+	bottom:0.34562963rem;
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.34562963rem;
+}
+.lj_acte{
+	width: 94%;
+	height: 5.12rem;
+	overflow: hidden;
+	margin: 3% ;
+	position: relative;
+}
+.lj_acte img{
+	width: 100%;
+	/*height: 5.12rem;*/
+}
+.lj_fis{
+	position: absolute;
+	font-size: 0.810667rem;
+	color: #fff;
+	top: 1.28rem;
+	left: 32%
+}
+.lj_clik{
+	width: 3.2rem;
+	height: 1.152rem;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 1.152rem;
+	position: absolute;
+	bottom: 1.194667rem;
+	left: 39%;
+	background: #fff;
+	font-size: 0.512rem;
+}
+.lj_clik a{
+	color: #666;
+
+}
+.last{
+	width: 100%;
+	height: 0.426667rem;
+}

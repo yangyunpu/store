@@ -1,0 +1,18 @@
+<div>
+购物车详细内容
+</div>
+
+<?php
+$css = $this -> assets -> get('header');
+$css -> addCss("http://cdn.bootcss.com/font-awesome/3.2.1/css/font-awesome.min.css");
+$css -> addCss("public/pc/css/common.css");
+$css -> addCss("public/pc/css/cart.css");
+
+$js = $this -> assets -> get('footer');
+$js -> addJs('public/pc/js/global.start.js');
+$js -> addJs('public/pc/js/jquery.base64.js');
+$js -> addJs('public/pc/js/common.js');
+$js -> addJs('public/pc/js/search.js');
+$js -> addJs('public/pc/js/view.cart.js');
+$js -> addJs('public/pc/js/modcatalog.js');
+?>

@@ -1,0 +1,272 @@
+<?php
+	$css = $this->assets->get('header');
+	$css -> addCss("public/css/p/view.experience.css");
+	$js  = $this->assets->get('footer');
+    $js -> addJs("public/js/p/newcityagent.js");
+?>
+<div class="banner">
+	<img alt="如此生活" src="/public/img/experience/banner1.png">
+	<img alt="如此生活" src="/public/img/experience/banner2.png">
+	<img alt="如此生活" src="/public/img/experience/banner3.png">
+	<img alt="如此生活" src="/public/img/experience/banner4.png">
+</div>
+<div class="lj_centent">
+	<!-- 轮播 -->
+	<div class="lj_roll"> 
+		<div id="demo" class="qimo8">
+		  <div class="qimo">
+		    <div id="demo1">
+		      <ul>
+		      {% for d in data  %}
+				<li>
+					 {{ d['time']}}   {{d['addr']}}   {{d['name']}}来电垂询  {{d['phone']}}  
+				</li> 
+				{% endfor %}
+		      </ul>
+		    </div>
+		    <div id="demo2"></div>
+		  </div>
+		</div>
+	</div>
+	<div class="monsy"><img alt="如此生活" src="/public/img/experience/person.png"></div>
+	<div class="new_life">
+		<img alt="如此生活" src="/public/img/experience/newlife (1).png">
+		<img alt="如此生活" src="/public/img/experience/newlife (2).png">
+		<img alt="如此生活" src="/public/img/experience/newlife (3).png">
+		<img alt="如此生活" src="/public/img/experience/newlife (4).png">
+	</div>
+	<div class="bright">
+		<img alt="如此生活" src="/public/img/experience/bright (1).png">
+		<img alt="如此生活" src="/public/img/experience/bright (2).png">
+		<img alt="如此生活" src="/public/img/experience/bright (3).png">
+		<img alt="如此生活" src="/public/img/experience/bright (4).png">
+		<img alt="如此生活" src="/public/img/experience/bright (5).png">
+		<img alt="如此生活" src="/public/img/experience/bright (6).png">
+		<img alt="如此生活" src="/public/img/experience/bright (7).png">
+		<img alt="如此生活" src="/public/img/experience/bright (8).png">
+		<img alt="如此生活" src="/public/img/experience/bright (9).png">
+		<img alt="如此生活" src="/public/img/experience/bright (10).png">
+		<img alt="如此生活" src="/public/img/experience/bright (11).png">
+		<img alt="如此生活" src="/public/img/experience/bright (12).png">
+	</div>
+	<div class="spend">
+		<img alt="如此生活" src="/public/img/experience/spend (1).png">
+		<img alt="如此生活" src="/public/img/experience/spend (2).png">
+		<img alt="如此生活" src="/public/img/experience/spend (3).png">
+		<img alt="如此生活" src="/public/img/experience/spend (4).png">
+		<img alt="如此生活" src="/public/img/experience/spend (5).png">
+		<img alt="如此生活" src="/public/img/experience/spend (6).png">
+		<img alt="如此生活" src="/public/img/experience/spend (7).png">
+		<img alt="如此生活" src="/public/img/experience/spend (8).png">
+	</div>
+	<div class="revenue">
+		<img alt="如此生活" src="/public/img/experience/revenue (1).png">
+		<img alt="如此生活" src="/public/img/experience/revenue (2).png">
+		<img alt="如此生活" src="/public/img/experience/revenue (3).png">
+		<img alt="如此生活" src="/public/img/experience/revenue (4).png">
+	</div>
+	<div class="stock">
+		<p>Experience store equity premium</p>
+		<div class="prem"><span></span><span>股权溢价</span><span></span></div>
+		<div class="stat">
+			<img alt="如此生活" src="/public/img/experience/stat.png">
+		</div>
+	</div>
+	<div class="status">
+		<p>Company status</p>
+		<div class="now_life"><img alt="如此生活" src="/public/img/experience/now_life.png"></div>
+		<div class="shop_men">
+			已有5家大型连锁实体门店，未来三年将达到500家 <br>如此生活区域代理商已超过30个地区，未来三年将覆盖全国
+		</div>
+		<ul class="square">
+			<li><img alt="如此生活" src="/public/img/experience/city_three.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/city_two.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/city_four.png"></li>
+		</ul>
+		<ul class="floor">
+			<li><img alt="如此生活" src="/public/img/experience/city_five.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/city_one.png"></li>
+		</ul>
+	</div>
+	<div class="support">
+		<p>COOPERATION PROCESS</p>
+		<div class="sup"><img alt="如此生活" src="/public/img/experience/policy.png"></div>
+		<ul class="phone_one">
+			<li><img alt="如此生活" src="/public/img/experience/manage.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/shoper.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/ad.png"></li>
+		</ul>
+		<ul class="phone_two">
+			<li><img alt="如此生活" src="/public/img/experience/system.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/store.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/bazaar.png"></li>
+		</ul>
+		<ul class="phone_two vicod">
+			<li><img alt="如此生活" src="/public/img/experience/area.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/risk.png"></li>
+			<li><img alt="如此生活" src="/public/img/experience/arrange.png"></li>
+		</ul>
+	</div>
+</div>
+<!-- 留言框 -->
+<div class="lj_foot"> 
+	<div class="foot_center">
+		<p class="link">感兴趣请留言，我们会在24小时内为您发送免费资料和画册</p>
+		<div class="lj_word">
+			<div class="leave_left"> 
+	            <div class="lj_line"  >
+	                <div class="name"  >姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名:</div>
+	                <input type="text" placeholder="请填入姓名" name="name" class="lj_input"  /> 
+	            </div>
+	            <div class="lj_line" >
+	                <div class="name"  >电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话:</div>
+	                <input type="text" placeholder="请填入电话" name="phone" class="lj_input" maxlength="11" />
+	                        
+	            </div>
+	            <div class="lj_line" >
+	                <div class="name"  >所在城市:</div>
+	                <input type="text" placeholder="如:上海市长宁区" name="region" class="lj_input" />
+	                        
+	            </div>
+	            <div class="lj_line">
+	                <div class="name" >邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:</div>
+	                <input type="text" placeholder="请填入邮箱" name="email" class="lj_input"/>
+	                       
+	            </div>
+	            <div  style="margin-bottom:86px; ">
+	        		<div class="name" style="position: absolute; ">业务板块:</div>
+	                <select id="seclectp">
+	                          
+	                <option value="1">我对品牌入驻感兴趣</option>
+	                <option value="2">我对城市代理感兴趣</option>   
+	                <option value="3">我对体验店加盟感兴趣</option>
+	                </select>
+	                <select class="twoselect1">
+	                        
+	                    <option value="1">我是品牌商</option>
+	                    <option value="2">我是厂商</option>
+	                    <option value="3">我是代理商</option>
+	                    <option value="4">我是经销商</option>
+	                </select>
+	                <div class="twoselect2" >
+	                    <span class="sec_wen">有销售团队</span>
+	                    <select class="twoselectbtn"> 
+	                        <option value="0">否</option>
+	                        <option value="1">是</option>
+	                    </select>
+	                    <select class="twoselect21"> 
+	                        <option value="1">10人以下</option>
+	                        <option value="2">10~20人</option>
+	                        <option value="3">20人以上</option>
+	                    </select>
+	                </div>
+	            </div>
+	            <div style="margin-bottom:30px;">
+			        <div class="name" >留&nbsp; 言 &nbsp; 框:</div>
+			        <textarea rows="5" name="content" placeholder="您要说的话..." class="speek"   "=""></textarea>
+			    </div>
+	            <div style="padding-left:142px;padding-top: 12px;padding-bottom: 50px;">
+	                <button class="submit"> 
+	                    提交
+	                </button>
+	            </div>
+	        </div>
+	        <div class="leave"> 
+	        	<div class="can">您可以根据意向选择下列【快捷留言】</div>
+	        	<ul class="quiz">
+	        		<li>给<span >如此生活</span>留过言，未收到资料，请给我来电。</li>
+	        		<li>请问<span>如此生活</span>哪里有样板店或直营店？</li>
+	        		<li>想了解<span>如此生活</span>加盟细节，请尽快寄一份资料。</li>
+	        		<li>对<span>如此生活</span>很感兴趣，想知道加盟细节。</li>
+	        		<li>做为<span>如此生活</span>的代理加盟商能得到哪些支持。</li>
+	        		<li>我想加盟<span>如此生活</span>请寄资料给我，谢谢！</li>
+	        		<li>请问我所在的地区<span>如此生活</span>有加盟商了吗？</li>
+	        		<li>我加盟<span>如此生活</span>后，您们还会提供哪些服务？</li>
+	        		<li><span>如此生活</span>的加盟费是多少，有什么加盟条件？</li>
+	        		<li><span>如此生活</span>市场前景怎么样？多久盈利？</li>
+	        	</ul>
+	        </div>
+		</div> 
+        <div style="border-top: 1px solid #fff;width: 100%;"> 
+            <p style="font-size: 18px;text-align: center;padding-top:16px;color: #fff;">咨询联系:<span style="padding-left:10px; ">15221711405</span></p>
+        </div>
+	</div> 
+</div>
+<!-- 侧框QQ悬浮菜单 -->
+<div class="slide">
+	<ul class="icon">
+		<li class="up" title="上一页" align="center"><img alt="如此生活" src="/public/img/city/up.png"></li>
+		<li class="qq" align="center"><img alt="如此生活" src="/public/img/city/qq.png"></li>
+		<li class="tel" align="center"><img alt="如此生活" src="/public/img/city/iphoneer.png"></li>
+		<li class="wx" align="center"><img alt="如此生活" src="/public/img/city/app.png"></li>
+		<li class="down" title="下一页" align="center"><img alt="如此生活" src="/public/img/city/down.png"></li>
+	</ul>
+	<ul class="info">
+		<li class="qq" align="center">
+			<p align="center">城市代理<a title="如此生活" href="http://wpa.qq.com/msgrd?v=3&uin=3329706260&site=qq&menu=yes" target="_blank">在线咨询</a>
+			品牌入驻<a title="如此生活" href="http://wpa.qq.com/msgrd?v=3&uin=2531296377&site=qq&menu=yes" target="_blank">在线咨询</a>
+			体验店加盟<a title="如此生活" href="http://wpa.qq.com/msgrd?v=3&uin=2205967867&site=qq&menu=yes" target="_blank">在线咨询</a> 
+			</p>
+		</li>
+		<li class="tel">
+			<p>
+				<div class="blue">城市代理热线：</div> 
+				<div class="lj_shu">15221641902</div> 
+				<div class="blue">品牌入驻热线：</div> 
+				<div class="lj_shu">15221700246</div>  
+				<div class="blue">体验店加盟热线:</div> 
+				<div class="lj_shu">15221711405</div>	
+			</p>
+		</li>
+		<li class="wx">
+			<div class="img">
+			<img alt="如此生活" src="/public/img/city/loadapp.png">
+			</div>
+			<p class="app">扫描二维码，下载APP</p>
+		</li>
+	</ul>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

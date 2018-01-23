@@ -1,0 +1,18 @@
+document.write('<ul class="items" style="width: {{ (skus|length) * 170 }}px;">');
+	{% for d in skus %}
+document.write('	<li>');
+document.write('    <a href="http://item.soolife.cn/{{d['sku_id']}}.html">');
+document.write('		<div class="picture">');
+document.write('			<img src="<?php echo $this->utility->get_goods_picture($d['logo']); ?>" />');
+document.write('		</div>');
+document.write('		<div class="explain">');
+document.write('			<span>{{d['name']}}</span>');
+document.write('		</div>');
+document.write('		<div class="quoted">');
+document.write('			<i class="fa icon-coin fa-lg"></i>');
+document.write('			<label class="orange">{{d['coin']}}</label> + <label class="red">&yen;{{d['act_price']}}</label>');
+document.write('		</div>');
+document.write('    </a>');
+document.write('	</li>');
+	{% endfor %}
+document.write('</ul>');

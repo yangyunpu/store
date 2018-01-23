@@ -1,0 +1,81 @@
+<html lang="en">
+    <!-- <head>
+        <meta charset="UTF-8">
+        <title>Document</title> -->
+        <link rel="stylesheet" type="text/css" href="/public/pc/css/activity/swiper.css">
+        <link rel="stylesheet" type="text/css" href="/public/pc/css/activity/activity.css">
+    <!-- </head> -->
+    <body>
+        <div class="wrap" style="background-color:{{data['backgroudcolor']}} !important; ">
+            <div class="head" id="top">
+                <!-- 轮播 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for d in data['banner'] %}
+                        <?php $num = count($data['banner']); if($num>1){?>
+                        <div class="swiper-slide">
+                            <img src="{{d}}">
+                        </div>
+                        <?php }else { ?>
+                         <div>
+                            <img src="{{d}}">
+                        </div>
+                        <?php } ?>
+                        {% endfor %}
+                    </div>
+                    <!-- 分页效果 -->
+                    <div class="pagination"></div>
+                </div>
+            </div>
+
+            <div class="lj_content">
+                {% for k,d in data['floor'] %}
+                <div class="lj_culod" id="floor{{k}}">
+                    <div class="sku_one">
+                        <div class="sku_img"><a href="{{d['link']}}"><img src="{{d['banner']}}"></a></div>
+                    </div>
+                    <div class="shop">
+                        <ul>
+                            {% for s in d['sku']%}
+                            <li>
+                                <a href="{{url}}/{{s['sku']}}.html"><img class="shop_img" src="{{s['logo']}}"></a>
+                                <p class="shop_name">{{s['name']}}</p>
+                                <div class="price">
+                                    <P>{% if s['shop_price'] != 0 %}￥{{s['shop_price']}}{% endif %}{% if s['coin'] != 0 %}{% if s['shop_price'] != 0 %} <span style="font-size: 4px;">+ {% endif %}{{s['coin']}}星币 {% endif %}</span></p>
+                                    <p>￥{{s['market_price']}}</p>
+                                </div>
+                                <div class="goods">
+                                    <a href="{{url}}/{{s['sku']}}.html">立即抢购</a>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- 右边楼层 -->
+        {% if data['floorname'] %}
+        <div class="floor" style="background:{{data['floatingbottomcolor']}};opacity:0.6;">
+            <ul>
+<!--                <a href="">
+                    <li>
+                        <img  style='vertical-align:middle;' src="/public/mobile/img/lucky/car.png" class="shop_goods">&nbsp;&nbsp;购物车
+                    </li>
+                </a>-->
+                {% for n,d in data['floorname'] %}
+                <a href="#floor{{n}}"><li style="color: {{data['floatcolumnfontcolor']}};">{{d}}</li></a>
+                {% endfor %}
+                <a href="#top"><li style="color: {{data['floatcolumnfontcolor']}};">《TOP》</li></a>
+            </ul>
+            <!-- 储存颜色的地方 -->
+            <input type="hidden" name="floatbarclickcolor" value="{{data['floatbarclickcolor']}}">
+            <input type="hidden" name="floatingbottomcolor" value="{{data['floatingbottomcolor']}}">
+        </div>
+        {% endif %}
+    </body>
+</html>
+<script type="text/javascript" src="/public/pc/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/public/pc/js/activity/swiper.min.js"></script>
+<script type="text/javascript" src="/public/pc/js/activity/activity.js"></script>

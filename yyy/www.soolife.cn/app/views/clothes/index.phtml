@@ -1,0 +1,645 @@
+<?php
+$css = $this -> assets -> get('header');
+$css -> addCss("public/v3.0.1/css/pc.clothes.css");
+
+$js = $this -> assets -> get('footer');
+$js -> addJs("public/v3.0.1/js/pc.clothes.js");
+
+$style = '';
+if (!empty($banner))
+{
+	$item = current($banner);
+	$style = @"background: {$item['bgcolor']} url('{$this->utility->get_advert_picture($item['bgimage'])}') no-repeat top center;";
+}
+?>
+<div id="banner" class="banner" style="{{ style }}">
+	<div class="clothes_banner main-container">
+		<div class="clothes_banner_carousel">
+			<!-- begin carousel -->
+			<div id="carousel-index"  class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{% if banner %}
+						{% for d in banner %}
+							<li data-target="#carousel-index" data-slide-to="{{loop.index0}}" {% if loop.first %} class="active" {% endif %}></li>
+						{% endfor %}
+					{% endif %}
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					{% if banner %}
+						{% for d in banner %}
+						<div class="item  {% if loop.first %} active {% endif %}" 
+							data-bgcolor="{{d['bgcolor']}}" 
+							data-bgimage="<?php echo $this->utility->get_advert_picture($d['bgimage']); ?>"
+							data-link="{{d['link']}}" 
+							data-id="{{d['id']}}">
+							<a href="{{d['link']}}" target="_blank">
+								<img class="carousel-images" src="<?php echo $this->utility->get_advert_picture($d['picture']); ?>" alt="{{d['title']}}">
+							</a>
+						</div>
+						{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+			<!-- end carousel -->
+			<div class="main-container">
+				<div class="clothes_banner_recommend ">
+					<div class="title"></div>
+					<ul>
+						<li class="frame">
+							<div class="move">
+								<?php echo $this->utility->get_advert_html('pc.clothes.banner.002',$ads); ?>
+							</div>
+						</li>
+						<li class="frame">
+							<div class="move">
+								<?php echo $this->utility->get_advert_html('pc.clothes.banner.003',$ads); ?>
+							</div>
+						</li>
+						<li class="frame">
+							<div class="move">
+								<?php echo $this->utility->get_advert_html('pc.clothes.banner.004',$ads); ?>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="full-column main-container clearfix">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.banner.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 设计馆 -->
+<div id="design" class="row-container clearfix">
+	<div class="design main-container">
+		<div class="design_title">
+			<span>设计馆</span>
+		</div>
+		<div class="design_content">
+			<div class="side">
+				<div class="frame">
+					<div class="move">
+						<?php echo $this->utility->get_advert_html('pc.clothes.design.001',$ads); ?>
+					</div>
+				</div>
+			</div>
+			<div class="center">
+				<div class="frame">
+					<div class="move">
+						<?php echo $this->utility->get_advert_html('pc.clothes.design.002',$ads); ?>
+					</div>
+				</div>
+			</div>
+			<div class="side">
+				<div class="frame">
+					<div class="move">
+						<?php echo $this->utility->get_advert_html('pc.clothes.design.003',$ads); ?>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+
+
+<!-- 你最IN -->
+<div id="mostin" class="row-container clearfix">
+	<div class="mostin main-container">
+		<div class="mostin_title">
+			<span>你最IN</span>
+		</div>
+		<div class="mostin_content">
+			<ul>
+				<li><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.001',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.002',$ads); ?></li>
+				<li class="right"><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.003',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.004',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.005',$ads); ?></li>
+				<li class="right"><?php echo $this->utility->get_advert_direct('pc.clothes.mostin.006',$ads); ?></li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.mostin.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 新品速递 -->
+<div id="new" class="row-container clearfix">
+	<div class="new main-container">
+		<div class="new_title">
+			<span>新品速递</span>
+		</div>
+		<div class="new_content">
+			<div class="leftside frame">
+				<div class="move">
+					<?php echo $this->utility->get_advert_direct('pc.clothes.new.001',$ads); ?>
+				</div>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move"><?php echo $this->utility->get_advert_direct('pc.clothes.new.002',$ads); ?></div>						
+					</li>
+					<li class="frame"><div class="move"><?php echo $this->utility->get_advert_direct('pc.clothes.new.004',$ads); ?></div>	</li>
+					<li class="frame"><div class="move"><?php echo $this->utility->get_advert_direct('pc.clothes.new.005',$ads); ?></div>	</li>
+					<li class="frame"><div class="move"><?php echo $this->utility->get_advert_direct('pc.clothes.new.007',$ads); ?></div>	</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.new.column',$ads); ?>
+	</div>
+</div>
+
+<!-- HI 潮范 -->
+<div id="fashion" class="row-container clearfix">
+	<div class="fashion main-container">
+		<div class="fashion_title">
+			<span>HI 潮范</span>
+		</div>
+		<div class="fashion_content">
+			<div class="leftside frame">
+				<div class="move">
+					<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.001',$ads); ?>
+				</div>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.002',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.003',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.004',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.005',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.006',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.007',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.008',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.fashion.009',$ads); ?>
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.new.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 星口味 -->
+<div id="taste" class="row-container clearfix">
+	<div class="taste main-container">
+		<div class="taste_title">
+			<span>星口味</span>
+		</div>
+		<div class="taste_content">
+			<ul>
+				<li class="frame left">
+					<div class="move">
+						<?php echo $this->utility->get_advert_direct('pc.clothes.taste.001',$ads); ?>
+					</div>						
+				</li>
+				<li class="frame">
+					<div class="move">
+						<?php echo $this->utility->get_advert_direct('pc.clothes.taste.002',$ads); ?>
+					</div>						
+				</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.taste.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 精选大牔 -->
+<div id="brands" class="row-container clearfix">
+	<div class="brands main-container">
+		<div class="brands_title">
+			<span>精选大牔</span>
+		</div>
+		<div class="brands_content">
+			<div class="leftside frame">
+				<div class="move">
+					<?php echo $this->utility->get_advert_direct('pc.clothes.brands.001',$ads); ?>
+				</div>
+			</div>
+			<div class="rightside">
+				<div class="upper">
+					<ul>
+						<li class="frame">
+							<div class="move">
+								<?php echo $this->utility->get_advert_direct('pc.clothes.brands.002',$ads); ?>
+							</div>						
+						</li>
+						<li class="frame">
+							<div class="move">
+								<?php echo $this->utility->get_advert_direct('pc.clothes.brands.003',$ads); ?>
+							</div>						
+						</li>
+					</ul>
+				</div>
+				<div class="under frame">
+					<div class="move">
+						<?php echo $this->utility->get_advert_direct('pc.clothes.brands.004',$ads); ?>
+					</div>		
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.brands.column',$ads); ?>
+	</div>
+</div>
+
+
+<!-- 1F 服饰鞋帽 -->
+<div id="floor01" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title clothing">
+			<span>服饰鞋帽</span>
+		</div>
+		<div class="floor_content">
+			<div class="leftside">
+				<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods01',$ads); ?>
+                            <div class="bag">
+                                <?php 
+					if (array_key_exists('服饰鞋帽',$floor_words ))
+					{ 
+
+					?>
+                                            {% for key,value in floor_words['服饰鞋帽'] %}
+                                               <?php 
+                                                      if ($key <= 4){                                                     
+                                               ?>
+							<div class="size_left">
+								<span class="color_red"><li><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li></span>
+							</div>
+                                                      <?php }else {  
+                                                
+                                                ?>
+                                                         <div class="size_right">
+								<span class="color_red"><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li</span>
+							</div>
+                                                <?php       }  ?>
+
+                                        {% endfor %}
+                                <?php                                                      
+					}
+					?>
+			    </div>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods02',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods03',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods04',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods05',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods06',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods07',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods08',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.goods09',$ads); ?>
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.floor.001.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 2F 个护化妆 -->
+<div id="floor02" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title cosmetics">
+			<span>个护化妆</span>
+		</div>
+		<div class="floor_content">
+			<div class="leftside gehu_footer">
+				<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods01',$ads); ?>
+                            <div class="bag">
+                                <?php 
+					if (array_key_exists('个护化妆',$floor_words ))
+					{ 
+
+					?>
+                                            {% for key,value in floor_words['个护化妆'] %}
+                                               <?php 
+                                                      if ($key <= 4){                                                     
+                                               ?>
+							<div class="size_left">
+								<span class="color_red"><li><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li></span>
+							</div>
+                                                      <?php }else {  
+                                                
+                                                ?>
+                                                         <div class="size_right">
+								<span class="color_red"><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li</span>
+							</div>
+                                                <?php       }  ?>
+
+                                        {% endfor %}
+                                <?php                                                      
+					}
+					?>
+			    </div>
+			</div>
+                    
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods02',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods03',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods04',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods05',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods06',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods07',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods08',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.goods09',$ads); ?>
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.floor.002.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 3F 箱包饰品 -->
+<div id="floor03" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title accessories">
+			<span>箱包饰品</span>
+		</div>
+		<div class="floor_content">
+			<div class="leftside xiangbao_footer">
+				<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods01',$ads); ?>
+                            <div class="bag">
+                                <?php 
+					if (array_key_exists('箱包饰品',$floor_words ))
+					{ 
+
+					?>
+                                            {% for key,value in floor_words['箱包饰品'] %}
+                                               <?php 
+                                                      if ($key <= 4){                                                     
+                                               ?>
+							<div class="size_left">
+								<span class="color_red"><li><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li></span>
+							</div>
+                                                      <?php }else {  
+                                                
+                                                ?>
+                                                         <div class="size_right">
+								<span class="color_red"><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li</span>
+							</div>
+                                                <?php       }  ?>
+
+                                        {% endfor %}
+                                <?php                                                      
+					}
+					?>
+			    </div>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods02',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods03',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods04',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods05',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods06',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods07',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods08',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.goods09',$ads); ?>
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.floor.003.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 4F 户外运动 -->
+<div id="floor04" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title outdoor">
+			<span>户外运动</span>
+		</div>
+		<div class="floor_content">
+			<div class="leftside huwai_footer">
+				<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods01',$ads); ?>
+                            <div class="bag">
+                                <?php 
+					if (array_key_exists('户外运动',$floor_words ))
+					{ 
+
+					?>
+                                            {% for key,value in floor_words['户外运动'] %}
+                                               <?php 
+                                                      if ($key <= 4){                                                     
+                                               ?>
+							<div class="size_left">
+								<span class="color_red"><li><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li></span>
+							</div>
+                                                      <?php }else {  
+                                                
+                                                ?>
+                                                         <div class="size_right">
+								<span class="color_red"><a href="" {{value['style']==1?'class="weight"':''}} target="_blank">{{value['name']}}</a></li</span>
+							</div>
+                                                <?php       }  ?>
+
+                                        {% endfor %}
+                                <?php                                                      
+					}
+					?>
+			    </div>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods02',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods03',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods04',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods05',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods06',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods07',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods08',$ads); ?>
+						</div>						
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.goods09',$ads); ?>
+						</div>						
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.clothes.floor.004.column',$ads); ?>
+	</div>
+</div>

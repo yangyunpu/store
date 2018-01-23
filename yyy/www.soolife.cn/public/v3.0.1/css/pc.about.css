@@ -1,0 +1,226 @@
+.aboutus {margin-top: 10px;left: -18px;position:relative;}
+.aboutus .prof-left {
+    background-color: #fff;
+    border-bottom-color: #eee;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    float: left;
+    margin-bottom: 5px;
+    width: 200px;
+}
+.aboutus .prof-left .prof-left-tit h2 {
+    background-color: #37a0db;
+    color: #fff;
+    font: 16px/48px "Microsoft Yahei";
+    height: 48px;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.aboutus .prof-left .prof-left-con li {
+    border-bottom: 1px dotted #ccc;
+    height: 42px;
+    line-height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 181px;
+}
+.aboutus .prof-left .prof-left-con li a {
+    font-size: 12px;
+}
+.aboutus .prof-left .prof-left-con li.cur a {
+    color: #f6ab00;
+}
+.aboutus .prof-left .prof-left-footer {
+    background: rgba(0, 0, 0, 0) url("https://static.soolife.cn/asset/img/profile/left-bg.png") no-repeat scroll left bottom;
+    color: #333;
+    margin-right: 10px;
+    padding-bottom: 160px;
+    width: 198px;
+}
+.aboutus .prof-right {
+    background-color: #fff;
+    border-bottom-color: #eee;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    float: right;
+    margin-bottom: 5px;
+    min-height: 504px;
+    padding: 0 20px 20px;
+    width: 990px;
+}
+.aboutus .prof-right .prof-right-tit {
+    border-bottom: 1px solid #f5f5f5;
+    color: #666;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    margin: 0;
+    padding: 0;
+}
+.aboutus .prof-right .prof-right-para {
+    color: #5b5b5b;
+    line-height: 20px;
+    margin: 10px 0;
+    text-indent: 20px;
+}
+.aboutus .prof-right h5 {
+    color: #333;
+    margin: 20px 20px 10px;
+}
+
+/* 标题 */
+.aboutus .aboutus-title {border-bottom: 1px dashed #dcdcdc;height: 90px;width: 920px;}
+.aboutus .aboutus-title h2 {
+	line-height:110px; 
+	padding-left: 40px; 
+	font-family: '微软雅黑'; 
+    color: #1f8dc2;
+    font-size: 24px;
+    display: inline;
+}
+.aboutus .aboutus-title span {
+    color: #1f8dc2;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+/** 引导面包屑 **/
+.aboutus  .bcrumb {margin: 0 auto;padding: 6px 0px;vertical-align: middle;}
+.aboutus  .bcrumb li {color: #37a0db;display: inline-block;font-size: 14px;line-height: 30px;}
+.aboutus  .bcrumb li a {color: #37a0db;}
+.aboutus  .bcrumb li .divider {color: #999999;margin-left: 10px;margin-right: 10px;}
+
+
+
+/** 品牌介绍 **/
+.aboutus .brand {color: #777777;}
+.aboutus .brand .title { width: 920px;height: 90px;border-bottom: 1px #dcdcdc dashed;margin: 0 auto;margin-left: 10px;}
+.aboutus .brand .title h2{color: #1f8dc2;font-size: 24px;float: left;margin-top: 30px;margin-left: 15px;}
+.aboutus .brand .title p{font-size: 14px;color: #1f8dc2;margin-top: 40px;float: left;margin-left: 10px;}
+.aboutus .brand .content .info{font-size: 14px;width: 442px;float: left;margin-top: 56px;}
+.aboutus .brand .content .info h3 {color: #777777;font-size: 18px;font-weight: bolder;}
+.aboutus .brand .content .info ul li{margin-top: 16px;}
+.aboutus .brand .content .business{float: left;width: 575px;height: 301px;margin-left: 10px;}
+.aboutus .brand .content .business div {width: 222px;float: left;}
+.aboutus .brand .content .business h3{color: #777777;font-size: 18px;font-weight: bolder;margin-top: 155px;}
+.aboutus .brand .content .business p{font-size: 14px;color: #777777;margin-top: 20px;}
+.aboutus .brand .valeur div {width: 474px;height: 205px;float: left;margin-top: 80px;margin-left: -405px;text-align: right;}
+.aboutus .brand .valeur h3 {color: #777777;font-size: 18px;font-weight: bolder;}
+.aboutus .brand .content .business .hkl_business {width: 222px;float: left;}
+.aboutus .brand .valeur p {font-size: 14px;color: #777777;}
+
+.aboutus .brand .bottom div {float: left;}
+.aboutus .brand .bottom h3 {color: #777777;font-size: 18px;font-weight: bolder;margin-top: 114px;}
+.aboutus .brand .bottom p {font-size: 14px;color: #777777;margin-top: 22px;}
+.aboutus .top2{height: 635px;}
+.aboutus .top2 .top2_b1 {width: 447px;font-size: 15px;color: #777777;float: left;margin-top: 127px;}
+
+/*公司文化*/
+.aboutus .top3 {width: 920px;height: 50px;border-bottom: 1px dashed #dcdcdc;}
+.aboutus .top3 h2 {color: #1f8dc2;font-size: 24px;float: left;margin-top: 14px;margin-left: 16px;}
+.aboutus .top3 span {margin-left: 10px;float: left;margin-top: 22px;color: #1f8dc2;font-size: 13px;}
+.aboutus .top4 {height: 265px;margin-top: 70px;width: 920px;}
+.aboutus .top4 img, .top4 div {float: left;}
+.aboutus .top4 li {font-size: 14px;color: #777777;}
+.aboutus .top4 .top4_l1 {margin-top: 8px;}
+.aboutus .top4 .top4_l2 {margin-top: 60px;}
+.aboutus .top4 .top4_l3 {margin-top: 56px;}
+.aboutus .top4 .top4_l1 strong, .top4_l2 strong, .top4_l3 strong {font-size: 17px; color: black;}
+
+/*公司模式*/
+.aboutus .mid1 {width: 920px;height: 134px;border-bottom: 1px dashed #dcdcdc;}
+.aboutus .mid1 h2 {color: #1f8dc2;font-size: 24px;float: left;margin-top: 97px;margin-left: 16px;}
+.aboutus .mid1 span {margin-left: 10px;float: left;margin-top: 105px;color: #1f8dc2;font-size: 13px;}
+.aboutus .mid2 {height: 451px;}
+.aboutus .mid2 .mid2_div1 {width: 393px;height: 451px;float: left;font-size: 15px;}
+.aboutus .mid2 .mid2_div1 h3 {margin-top: 175px;}
+.aboutus .mid2 .mid2_div1 p {margin: 8px 1px;color: #777777;}
+.aboutus .mid3 {width: 920px;height: 309px;}
+.aboutus .mid3 .mid3_left {width: 470px;padding-right: 84px;text-align: right;float: left;}
+.aboutus .mid3 .mid3_left ul li {height: 24px;font-size: 16px;}
+.aboutus .mid3 .mid3_l1 h3 {color: black;margin-top: 40px;}
+.aboutus .mid3 .mid3_l2 {font-weight: bolder;margin-top: 5px;color: #0d6fb8;}
+.aboutus .mid3 .mid3_l3, .mid3_l4, .mid3_l5, .mid3_l6 {font-weight: bolder;color: #777777;}
+.aboutus .mid4 {width: 920px;height: 450px;} 
+.aboutus .mid4 .mid4_right {float: left;padding-left: 31px;}
+.aboutus .mid4 .mid4_right ul li {height: 24px;font-size: 16px;}
+.aboutus .mid4 .mid4_l1 h3 {color: black;margin-top: 103px;}
+.aboutus .mid4 .mid4_l2 {font-weight: bolder;margin-top: 5px;color: #0d6fb8;}
+.aboutus .mid4 .mid4_l3, .mid4_l4, .mid4_l5, .mid4_l6 {font-weight: bolder;color: #777777;}
+.aboutus .mid5 {width: 920px;height: 133px;padding-left: 112px;} 
+.aboutus .mid5 p {font-size: 15px;color: #777777;}
+.aboutus .mid6 {width: 920px;height: 653px;} 
+.aboutus .mid6 .mid6_div {width: 680px;height: 653px;margin-left: 112px;}
+.aboutus .mid7 {width: 920px;height: 107px;border-bottom: 1px dashed #dcdcdc;} 
+.aboutus .mid7 h2 {color: #1f8dc2;font-size: 24px;float: left;margin-top: 71px;margin-left: 16px;} 
+.aboutus .mid7 span {margin-left: 10px;float: left;margin-top: 81px;color: #1f8dc2;font-size: 13px;} 
+.aboutus .bot {width: 920px;height: 480px;border-bottom: 1px dashed #dcdcdc;}
+.aboutus .bot_div1 {width: 470px;height: 256px;padding-left: 35px;padding-top: 71px;font-size: 14px;color: #777777;float: left;}
+.aboutus .bot_div1 p {margin: 3px 0px;}
+.aboutus .bot_right {height: 256px;width: 413px;float: left;}
+.aboutus .bot_bot {margin-top: 35px;margin-left: 34px;}
+.aboutus .bot_bot img {float: left;margin-left: 20px;}
+/**关于我们end**/
+
+/*友情链接*/
+.prof-right-link {padding-top: 35px;padding-left: 0;margin-left: 15px;}
+.prof-right-link .prof-right-link-line label {width: 100px;text-align: right;float: left;line-height: 30px;}
+.prof-right-link ul li {border-bottom: 1px dotted #ccc;float: left;height: 32px;line-height: 32px;overflow: hidden;padding-left: 28px;width: 150px;}
+.prof-right-link .prof-right-link-line div {width: 480px;text-align: left;float: left;}
+input[type=password], input[type=text] {height: 30px;text-indent: 2px;width: 300px;background-color: #fff;background-image: none;font-size: 12px;border: 1px solid #eee;}
+.prof-right-link .prof-right-link-line .sub {background: #f6ab00;color: #fff;text-align: center;padding: 5px;font-size: 14px;display: inline-block;margin-left: 100px;}
+.prof-right-link ul li i.fa-external-link {color: #F6AB00;}
+/*友情链接end*/
+
+/**企业创始人**/
+
+.prof-right .top1 {width: 950px;height: 90px;border-bottom: 1px dashed #dcdcdc;color: #1f8dc2;}
+.prof-right .top1 h2 {font-size: 25px;float: left;margin-top: 50px;}
+.prof-right .top1 p {float: left;margin-left: 10px;font-size: 14px;margin-top: 60px;}
+.prof-right .top2_left {width: 493px;margin-left: -260px;float: left;}
+.prof-right .top2_right {font-size: 14px;color: #777777;width: 366px;height: 535px;float: left;margin-top: 71px;}
+.prof-right .top2_right h3 {float: left;font-size: 18px;color: #777777;font-weight: bolder;}
+.prof-right .top3 {width: 882px;height: 90px;line-height: 90px;color: #777777;font-size: 14px;}
+.prof-right .top4 {width: 882px;height: 303px;padding-left: 16px;margin-left: 64px;}
+.prof-right .top4 h3 {font-size: 20px;font-weight: bolder;margin-top: 12px;}
+.prof-right .top4 p {width: 364px;font-size: 15px;color: #777777;margin-top: 36px;float: left;}
+.prof-right .top5 {width: 882px;height: 131px;padding-left: 16px;margin-left: 64px;}
+.prof-right .top5 p {width: 740px;font-size: 15px;color: #777777;}
+.prof-right .top6 {width: 882px;padding-left: 64px;}
+.prof-right .top6 p {width: 378px;float: left;font-size: 15px;color: #777777;}
+.prof-right .top7 p {width: 400px;margin-left: 76px;margin-top: 50px;font-size: 15px;color: #777777;float: left;}
+
+/**企业创始人end**/
+
+/**自提点**/
+._home{margin-top: 40px;}
+._home h3{font-size: 20px;font-weight: bolder;margin-bottom: 10px;}
+._home p{font-weight:700;}
+
+/**自提点end**/
+
+/**关于我们**/
+
+.prof-right-con .about {color: #666;margin: 10px;}
+.prof-right-con .about table {width: 100%;}
+.prof-right-con .about th {background: #F1F1F1;font-weight: 400;text-align: center;height: 32px;line-height: 32px;color: #555;}
+.prof-right-con .about td {border: 1px dotted #DEDEDE;text-align: center;height: 32px;line-height: 32px;}
+
+/**关于我们end**/
+
+
+
+
+/** 服务协议 **/
+.aboutus .agreement {
+	color: #5b5b5b;
+    line-height: 25px;
+    margin: 10px 0;
+    text-indent: 20px;
+}
+.aboutus .agreement .title{text-align: center;margin-bottom: 20px; font-size: 20px;}
+.aboutus .agreement ul {
+	margin-left:40px;
+}

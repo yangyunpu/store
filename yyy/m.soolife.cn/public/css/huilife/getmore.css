@@ -1,0 +1,74 @@
+.lcy_getmore img{
+	display: block;
+}
+.lcy_getmore{
+	padding-top:44px;
+}
+.lcy_getmore .img-w{
+	width:100%;
+}
+.lcy_getmore>.route{
+    height:9.6rem;
+	position: relative;
+	margin-bottom: 10px;
+    overflow: hidden;
+}
+.lcy_getmore>.route>.content{
+    position: absolute;
+    top: 0;
+    width: 52%;
+    height: 58%;
+    margin: 13.5% 24%;
+}
+.lcy_getmore>.route>.content{
+    text-align: center;
+}
+.lcy_getmore>.route>.content>.title{
+    font-size:0.597333rem;
+    color:#515151;
+    padding-top:14%;
+}
+.lcy_getmore>.route>.content>.word{
+    font-size:0.981333rem;
+    color:#313131;
+    margin: 4% 0;
+}
+.lcy_getmore>.route>.content>button{
+    font-size:0.597333rem;
+    background-color: #333;
+    border:0;
+    padding:4px 6px;
+    font-size: 0.512rem;
+    border-radius: 4px;
+    margin:0 auto;
+}
+.lcy_getmore>.margin-two{
+    margin:0 10px;
+}
+
+.lcy_getmore .mark{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background-color: rgba(0, 0 ,0 ,0.3);
+}
+.lcy_getmore .mark{
+    display: none;
+}
+.lcy_getmore .mark img{
+    margin-top: 30%;
+    width: 100%;
+}
+.lcy_getmore .mark #delete_getcoin{
+    width: 22px;
+    float: right;
+    margin-right: 28px;
+}
+.lcy_getmore .mark p{
+    text-align: center;
+    width:100%;
+    font-size: 14px;
+    color:#fff;
+}

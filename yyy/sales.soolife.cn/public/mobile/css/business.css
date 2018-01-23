@@ -1,0 +1,508 @@
+html,body{
+    width:100%;
+    min-width:300px;   
+    margin:0;
+    padding:0;
+ }
+.lcy_business{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";    
+    min-width:300px; 
+    margin:0;
+    padding:44px 0 0 0;
+}
+.lcy_business ul li{
+    list-style:none;    
+}
+.lcy_business a{
+    text-decoration: none;    
+}
+.lcy_business ul,li,div,p,input{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_business .head{
+    width:100%;
+    height:44px;
+    background:white;
+    border-bottom: 1px solid #ddd;
+    box-sizing:border-box;
+    position: fixed;
+    top:0;
+    z-index: 10;
+} 
+.lcy_business .head div{
+    float:left;
+} 
+.lcy_business .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url("../img/business/back1.png") 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_business .head .title{
+    width:80%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.lcy_business .head .back2{
+    width: 10%;
+    height: 44px;
+}
+/*头部logo*/
+.lcy_business .logo_box{
+    width:16rem;
+    height:1.944444rem;
+    padding-top:0.518519rem;
+
+}
+.lcy_business .logo_box .logo{
+    width:3.748148rem;
+    height:1.333333rem;
+    float:left;
+    margin-left:0.666667rem;
+}
+.lcy_business .logo_box .phone{
+    float:right;
+    font-size: 0.5rem;
+    line-height: 1.3rem;
+    margin-right:0.592593rem;
+}
+.lcy_business .logo_box .phone span{
+    color:#ec3e32;
+}
+/*头部banner*/
+.lcy_business .t_banner{
+    width:16rem;
+    height:5.925926rem;
+    overflow: hidden;
+    position: relative; 
+}
+.lcy_business .t_banner img{
+    width:100%;
+    height:5.925926rem; 
+    display: block;  
+}
+/*banner里的文字*/
+.lcy_business .t_banner .word{
+    padding-top: 6%;
+    width: 16rem;
+    height: 5.025926rem; 
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+}
+.lcy_business .t_banner .word .word_t{
+    font-size: 20px;
+    font-family: "SimHei";
+}
+.lcy_business .t_banner .word .word_c{
+    margin:0.592593rem 0;
+    font-size: 13px;
+}
+.lcy_business .t_banner .word .word_b{
+    font-size: 18px;
+    font-family: "SimHei";
+}
+/*four_box*/
+.lcy_business .four_box {
+    padding-top:0.444444rem;
+    width:16rem;
+    overflow:hidden;
+    clear:both;
+    margin-bottom: 0.4rem;
+}
+.lcy_business .four_box .box{
+    padding: 0.6rem 0;
+    width: 6.518519rem;
+    margin: 0 0.592593rem 0.444444rem 0.592593rem;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+.lcy_business .four_box .four_l{
+    background: url("../img/business/four_l.jpg") center no-repeat;
+    background-size: contain;
+    float: left;
+}
+.lcy_business .four_box .four_r{
+    background: url("../img/business/four_r.jpg") center no-repeat;
+    background-size: contain;
+    float: right;
+}
+/*小人*/
+.lcy_business .men_box{
+    width:16rem;
+    position: relative;
+    margin-bottom: 1.037037rem;
+}
+.lcy_business .men_box img{
+    position: absolute;
+    width: 1.511111rem;
+    height: 1.674074rem;
+    top: -0.4rem;
+    left: 0.4rem;
+}
+.lcy_business .men_box .word{
+    text-align: center;
+    width:13.111111rem;
+    height:1.62963rem;
+    line-height: 1.62963rem;
+    border:2px #efd3a3 solid;
+    background-color: #fbf5e7;
+    margin:0 auto;
+    font-size: 0.592593rem;
+}
+/*如此生活的服务*/
+.lcy_business .service{
+    width:16rem;
+    height:0.962963rem;
+    background: url("../img/business/shardow.jpg") center no-repeat;
+    text-align: center;
+    line-height: 0.962963rem;
+    font-size: 0.814815rem;
+    font-weight: 500;
+    background-size: 150% 110%;
+    margin-bottom: 0.740741rem;
+    margin-top: 1rem;
+}
+
+.lcy_business .service_box{
+   width:16rem;
+   overflow: hidden;
+   clear:both;
+}
+.lcy_business .service_box .serivce_l{
+    width: 7.2rem;
+    float: left;
+    padding:0 0.4rem;
+
+}
+.lcy_business .service_box .serivce_l p{
+    color:#304293;
+    font-size: 0.414815rem;
+
+}
+.lcy_business .service_box .serivce_l .title{
+    width:2.962963rem;
+    height:0.814815rem;
+    font-size: 0.518519rem;
+    text-align: center;
+    line-height: 0.814815rem;
+    background-color: #ecad2f;
+    color:white;
+    margin-bottom: 0.444444rem;
+}
+.lcy_business .item{
+    margin:0.4rem 0;
+    width:16rem;
+}
+.lcy_business .item img{
+    width:100%;
+    display: block;
+}
+.lcy_business .shops {
+    position: relative;
+}
+.lcy_business .shops .word{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    width:16rem;
+    height:3.111111rem;
+    font-size: 0.5rem;
+}
+.lcy_business .shops .word p{
+    text-align: center;
+    margin: 4px 0;
+}
+.lcy_business .shops .word p.title{
+    font-size: 0.696296rem;
+}
+/*体验店图片*/
+.lcy_business .img_box{
+    width:16rem;
+}
+.lcy_business .img_box img{
+    width:100%;
+    display: block;
+}
+/*多个体验店图片*/
+.lcy_business .swiper-container {
+  width : 16rem;
+  height: 7.333333rem;
+}
+.lcy_business .swiper-container img{
+  width: 16rem;
+}
+.lcy_business .content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.lcy_business .pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.lcy_business .swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #999;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.lcy_business .swiper-active-switch {
+  background: #e6ac39;
+}
+/*title*/
+.lcy_business .address_title{
+    height:1.2rem;
+    background:url("../img/business/title.png") center no-repeat;
+    background-size: contain;
+    font-size: 0.592593rem;
+    color:white;
+    padding:0.4rem;
+    line-height: 1.2rem;
+}
+.lcy_business .address{
+    margin-top:0.4rem;
+}
+.lcy_business .address p{
+    font-size: 0.5rem;
+    color:#818181;
+    margin:4px 0.4rem;
+}
+.lcy_business .address .big_w{
+    font-size: 0.6rem;
+    color:#000;
+}
+.lcy_business .relation .message{
+    width:15rem;
+    font-size: 0.5rem;
+    padding-left: 0.4rem;
+}
+.lcy_business .relation .message p{
+    padding-left: 0.8rem;
+    margin: 4px 0;
+
+}
+.lcy_business .relation .message p .red_w{
+    color:#ec3e32;
+}
+.lcy_business .relation .message .phone{
+    background:url("../img/business/icon_phone.png") left center no-repeat;
+    background-size: contain;
+}
+.lcy_business .relation .message .home{
+    background:url("../img/business/icon_home.png") left center no-repeat;
+    background-size: contain;
+}
+.lcy_business .relation .message .adress{
+    background:url("../img/business/icon_adress.png") left center no-repeat;
+    background-size: contain;
+}
+/*输入框*/
+.lcy_business .inp_box{
+    padding-left:0.4rem;
+    margin:0.4rem 0;
+}
+.lcy_business .inp_box p{
+    width:2.074074rem;
+    display: inline-block;
+    font-size: 0.518519rem;
+}
+.lcy_business .inp_box p span{
+    color:#ce362c;
+}
+.lcy_business .inp_box .w_box{
+    width: 11rem;
+    height: 36px;
+    border:#c9c9c9 solid 1px;
+    font-family: "Microsoft YaHei","arial";
+    text-indent: 8px;
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0; 
+}
+.lcy_business .inp_dress{
+    overflow: hidden;
+    clear:both;
+}
+.lcy_business .inp_dress .text_top{
+    vertical-align: top;
+}
+.lcy_business .inp_dress p{
+    position: relative;
+    top:0rem;
+}
+
+.lcy_business .inp_box .w_adress{
+    display: inline-block;
+    width: 11rem;
+    height: 36px;
+    border: #c9c9c9 solid 1px;
+    font-size: 0.518519rem;
+    color: #a59f9f;
+    line-height: 36px;
+    text-align: left;
+    text-indent: 8px;
+}
+.lcy_business .inp_dress textarea{
+    width:11rem; 
+    padding:0;
+    border:#c9c9c9 solid 1px;  
+    text-indent: 8px; 
+    outline: none;
+    -webkit-appearance: none;
+    border-radius: 0; 
+    font-family:"Microsoft YaHei","arial"; 
+}
+.lcy_business .rela_top p{
+    top:0;
+}
+.lcy_business .btn_box{
+    padding-left:2.5rem;
+    margin-bottom: 1rem;
+}
+.lcy_business .btn_box button{
+    width:4.444444rem;
+    height:1.485185rem;
+    font-size: 0.592593rem;
+    border-radius: 2px;
+    border:0;
+    font-family:"Microsoft YaHei","arial"; 
+}
+.lcy_business .btn_box .rest{
+    background-color: #e6e6e6;
+}
+.lcy_business .btn_box .submit{
+    background-color: #f08200;
+    color:#fff;
+    margin-left:1.9rem;
+}
+.lcy_business .call{
+    width:16rem;
+    height:1.777778rem;
+    background-color: #f08200;
+    font-size: 0.592593rem;
+    border:0;
+    color:#fff;
+    font-family:"Microsoft YaHei","arial";
+}
+.lcy_business .call img{
+    width:0.933333rem;
+    height:0.548148rem;
+    position: relative;
+    top:1px;
+}
+
+  /*城市选择遮罩*/
+.lcy_business .mark_css{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background:rgba(0, 0, 0, 0.3);
+    padding-top:45%;
+    font-family:"Microsoft YaHei","arial";
+    font-size: 15px;
+    z-index: 99;
+}
+.lcy_business .mark_css p,ul,li{
+    margin:0;
+    padding:0;
+}
+.lcy_business .mark_css ul,li{
+    list-style: none;
+}
+
+.lcy_business .mark_css .box{
+    width: 80%;
+    background: white;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding-bottom: 4%;
+    padding-top: 10px;
+}
+.lcy_business .mark_css .box .select_cell{
+    width: 205px;
+    margin: 0 auto;
+    position: relative;
+    margin-top:10px;
+}
+.lcy_business .mark_css .box .select_cell div{
+    height:20px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px 0;
+    vertical-align: bottom;
+}
+.lcy_business .mark_css .box .select_cell select{
+    font-family: "Microsoft YaHei","arial";   
+}
+.lcy_business .mark_css .box .select_cell .cell{
+    width: 180px;
+    border: 1px solid #ccc;
+    text-indent: 10px;
+}
+.lcy_business .mark_css .box .select_cell .selected{
+    display: none;
+    position: absolute;
+    top: 22px;
+    width: 180px;
+    background: #fff;
+    z-index: 9;
+    border: 1px solid #ccc;
+    overflow-y: scroll;
+    height: 180px;
+}
+.lcy_business .mark_css .sure{
+    height: 36px;
+    width: 80%;
+    background: orange;
+    color: #fff;
+    border: 0;
+    display: block;
+    font-family: "Microsoft YaHei","arial";
+    margin: 10% auto;
+    font-size: 18px;
+}
+.lcy_business .error {
+    color: #f08200;
+    padding-bottom: 10px;
+    padding-left: 2.5rem;
+    font-size: 12px;
+}
+.lcy_business .mark_css.mark_alert .alert{
+    width: 80%;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 2px;
+    font-size: 12px;
+    text-align: center;
+}
+.lcy_business .mark_css.mark_alert .alert p{
+    padding: 35px 25px;
+}
+.lcy_business .mark_css.mark_alert .alert .btn{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px #ddd solid;
+    font-weight: bolder;
+}
+
+

@@ -1,0 +1,327 @@
+<?php
+	require_once ROOT_PATH . "/apps/librarys/weixinshare/jssdk.php";
+	$jssdk = new JSSDK("wx6fe7550ec5625a23", "57bdd0bbe290a22b6844673509db0b61");
+	$signPackage = $jssdk->GetSignPackage();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="black" name=" apple-mobile-web-app-status-bar-style"   />
+	<meta itemprop="name" content="城代招商"/>
+	<meta itemprop="image" content="https://sales.soolife.cn/public/mobile/img/policy.jpg" />
+	<meta name="description" itemprop="description" content="拿下属于你的城!互联网+产业野蛮生长,城市代理渠道如何走上可持续发展之路,亟待解决,如此生活邀您共谋解决之道。" />
+	<link rel="stylesheet" type="text/css" href="/public/mobile/css/investment/view.cityagent.css">
+	<title>城代招商</title>
+</head>
+<body>
+
+	<input type="hidden" name="appId" value="{{ signPackage['appId'] }}" />
+	<input type="hidden" name="timestamp" value="{{ signPackage['timestamp'] }}" />
+	<input type="hidden" name="nonceStr" value="{{ signPackage['nonceStr'] }}" />
+	<input type="hidden" name="signature" value="{{ signPackage['signature'] }}" />
+
+	<div class="wrap">
+		<div class="banner">
+			<img src="/public/mobile/img/cityagent/banner/one.jpg">
+			<img src="/public/mobile/img/cityagent/banner/two.jpg">
+			<img src="/public/mobile/img/cityagent/banner/three.jpg">
+			<img src="/public/mobile/img/cityagent/banner/four.jpg">
+			<img src="/public/mobile/img/cityagent/banner/five.jpg">
+			<img src="/public/mobile/img/cityagent/banner/six.jpg">
+			<img src="/public/mobile/img/cityagent/banner/seven.jpg">
+			<img src="/public/mobile/img/cityagent/banner/eight.jpg">
+			<img src="/public/mobile/img/cityagent/banner/nine.jpg">
+			<img src="/public/mobile/img/cityagent/banner/ten.jpg">
+		</div>
+		<div class="top">
+			<div class="center">
+				<div class="head one">
+					<img src="/public/mobile/img/cityagent/center/cen_head.jpg">
+				</div>
+				<img src="/public/mobile/img/cityagent/center/cen_one.jpg">
+				<img src="/public/mobile/img/cityagent/center/cen_two.jpg">
+				<img src="/public/mobile/img/cityagent/center/cen_three.jpg">
+			</div>
+			<div class="support">
+				<div class="head one">
+					<img src="/public/mobile/img/cityagent/support/sup_head.jpg">
+				</div>
+				<img src="/public/mobile/img/cityagent/support/one.jpg">
+				<img class="sup" src="/public/mobile/img/cityagent/support/two.jpg">
+				<img src="/public/mobile/img/cityagent/support/three.jpg">
+				<img class="sup" src="/public/mobile/img/cityagent/support/four.jpg">
+				<img src="/public/mobile/img/cityagent/support/five.jpg">
+				<img src="/public/mobile/img/cityagent/support/six.jpg">
+			</div>
+			<div class="create">
+				<div class="head one">
+					<img src="/public/mobile/img/cityagent/create/cre_head.jpg">
+				</div>
+				<img src="/public/mobile/img/cityagent/create/cre_one.jpg">
+				<img src="/public/mobile/img/cityagent/create/cre_two.jpg">
+				<img src="/public/mobile/img/cityagent/create/cre_three.jpg">
+				<img src="/public/mobile/img/cityagent/create/cre_four.jpg">
+				<img src="/public/mobile/img/cityagent/create/cre_five.jpg">
+				<img src="/public/mobile/img/cityagent/create/cre_six.jpg">
+				<img class="title" src="/public/mobile/img/cityagent/create/cre_title.jpg">
+			</div>
+			<div class="classify">
+				<div class="head one">
+					<img src="/public/mobile/img/cityagent/classify/cla_head.jpg">
+				</div>
+				<div class="cla_con">
+					<img src="/public/mobile/img/cityagent/classify/cla_one.jpg">
+					<img src="/public/mobile/img/cityagent/classify/cla_two.jpg">
+					<img class="cla_top" src="/public/mobile/img/cityagent/classify/cla_three.jpg">
+					<img class="cla_top" src="/public/mobile/img/cityagent/classify/cla_four.jpg">
+					<img class="cla_top" src="/public/mobile/img/cityagent/classify/cla_five.jpg">
+					<img class="cla_top" src="/public/mobile/img/cityagent/classify/cla_six.jpg">
+				</div>
+					<img class="cla_top_pic cla_con" src="/public/mobile/img/cityagent/classify/cla_seven.jpg">
+					<img class="cla_con" src="/public/mobile/img/cityagent/classify/cla_eight.jpg">
+			</div>
+			<div class="feature">
+				<div class="head one">
+					<img src="/public/mobile/img/cityagent/feature/fea_head.jpg">
+				</div>
+				<div class="fea_con">
+					<img src="/public/mobile/img/cityagent/feature/fea_one.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_two.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_three.jpg">
+					<img class="fea_top" src="/public/mobile/img/cityagent/feature/fea_four.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_five.jpg">
+					<img class="fea_top_txt" src="/public/mobile/img/cityagent/feature/fea_six.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_seven.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_eight.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_nine.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_ten.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_ele.jpg">
+					<img class="fea_top" src="/public/mobile/img/cityagent/feature/fea_twe.jpg">
+					<img src="/public/mobile/img/cityagent/feature/fea_thir.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<div class="one">
+				<div class="one_head">
+					<img class="one_top" src="/public/mobile/img/cityagent/one/one_one.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/one/one_two.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_three.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_four.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_five.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_six.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_seven.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_eight.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_nine.jpg">
+				</div>
+				<div class="one_txt1">
+					<img src="/public/mobile/img/cityagent/one/one_txt1.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/one/one_ten.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_ele.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_twe.jpg">
+				</div>
+				<div class="one_txt2">
+					<img src="/public/mobile/img/cityagent/one/one_txt2.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/one/one_thir.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_fourteen.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_fifteen.jpg">
+				</div>
+				<div class="one_txt3">
+					<img src="/public/mobile/img/cityagent/one/one_txt3.jpg">
+				</div>
+				<div class="con_img">	
+					<img src="/public/mobile/img/cityagent/one/one_sixteen.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_seventeen.jpg">
+					<img src="/public/mobile/img/cityagent/one/one_eighteen.jpg">
+				</div>
+			</div>
+			<div class="two">
+				<div class="two_head">
+					<img class="two_top" src="/public/mobile/img/cityagent/two/two_head.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/two/two_one.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_two.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_three.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_four.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_five.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_six.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_seven.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_eight.jpg">
+				</div>
+				<div class="two_txt1">
+					<img src="/public/mobile/img/cityagent/two/two_txt1.jpg">
+				</div>
+				<div class="con_img con_img_mar">
+					<img src="/public/mobile/img/cityagent/two/two_nine.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_ten.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_ele.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_twe.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_thir.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_fourteen.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/two/two_fifteen.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_sixteen.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_seventeen.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_eighteen.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_nineteen.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_nineteenone.jpg">
+				</div>
+				<div class="two_txt3 ">
+					<img src="/public/mobile/img/cityagent/two/two_txt3.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/two/two_twenty.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_twentyone.jpg">
+					<img src="/public/mobile/img/cityagent/two/two_twentytwo.jpg">
+				</div>
+			</div>
+			<div class="three">
+				<div class="one_head">
+					<img src="/public/mobile/img/cityagent/three/three_head.jpg">
+				</div>
+				<div class="con_img">		
+					<img src="/public/mobile/img/cityagent/three/three_one.jpg">
+					<img src="/public/mobile/img/cityagent/three/three_two.jpg">
+					<img src="/public/mobile/img/cityagent/three/three_three.jpg">
+					<img src="/public/mobile/img/cityagent/three/three_four.jpg">
+				</div>
+			</div>
+			<div class="four">
+				<img src="/public/mobile/img/cityagent/four/four_one.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_two.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_three.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_four.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_five.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_six.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_seven.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_eight.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_nine.jpg">
+				<img src="/public/mobile/img/cityagent/four/four_ten.jpg">
+			</div>
+			<div class="five">
+				<div class="one_head">
+					<img src="/public/mobile/img/cityagent/five/five_head.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/five/five_one.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_two.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_three.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_four.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_five.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_six.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_seven.jpg">
+				</div>
+				<div class="con_img con_img_mar">	
+					<img src="/public/mobile/img/cityagent/five/five_eight.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_nine.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_ten.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_ele.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_twe.jpg">
+				</div>
+				<div class="con_txt">
+					<img src="/public/mobile/img/cityagent/five/five_txt.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/five/five_thri.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_fourteen.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_fifteen.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_sixteen.jpg">
+					<img src="/public/mobile/img/cityagent/five/five_seventeen.jpg">
+				</div>
+			</div>
+			<div class="six">
+				<img src="/public/mobile/img/cityagent/six/six_one.jpg">
+				<img src="/public/mobile/img/cityagent/six/six_two.jpg">
+				<img src="/public/mobile/img/cityagent/six/six_three.jpg">
+				<img src="/public/mobile/img/cityagent/six/six_four.jpg">
+				<img src="/public/mobile/img/cityagent/six/six_five.jpg">
+				<img src="/public/mobile/img/cityagent/six/six_six.jpg">
+			</div>
+			<div class="seven">
+				<div class="one_head">
+					<img src="/public/mobile/img/cityagent/seven/seven_head.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/seven/seven_one.jpg">
+					<img src="/public/mobile/img/cityagent/seven/seven_two.jpg">
+					<img src="/public/mobile/img/cityagent/seven/seven_three.jpg">
+					<img src="/public/mobile/img/cityagent/seven/seven_four.jpg">
+					<img src="/public/mobile/img/cityagent/seven/seven_five.jpg">
+					<img src="/public/mobile/img/cityagent/seven/seven_six.jpg">
+				</div>
+			</div>
+			<div class="eight">
+				<img src="/public/mobile/img/cityagent/eight/eight_one.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_two.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_three.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_four.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_five.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_six.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_seven.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_eight.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_nine.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_ten.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_ele.jpg">
+				<img src="/public/mobile/img/cityagent/eight/eight_twe.jpg">
+			</div>
+			<div class="nine">
+				<div class="one_head">
+					<img src="/public/mobile/img/cityagent/nine/nine_one.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/nine/nine_two.jpg">
+				</div>
+				<div class="con_img">
+					<img src="/public/mobile/img/cityagent/nine/nine_three.jpg">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+		<input type="hidden" name="types" value="3" />
+                <input type="hidden" name="tid" value="<?php  if(isset($_GET['tid'])){ print_r($_GET['tid']); }else{ echo '0'; }?>" />
+			<input type="" name="name" placeholder="如何称呼您">
+			<input type="" name="iphone" placeholder="如何联系您">
+			<input type="" name="compny" placeholder="贵公司名称">
+			<button class="open">开启属于你的时代</button>
+		</div>
+		<div class="consult">
+			<span>在您之前,已有
+			{% if num %}
+			<b> {{ num }} </b>
+			{% else %}
+			<b> 25698 </b>
+			{% endif %}
+			位提交咨询</span>
+		</div>
+		<div class="tel">
+			<p>您的资料我们会给予保密,敬请放心!</p>
+			<p>稍后会有客服人员回电,给您提供优质的服务!</p>
+		</div>
+		<p class="adress">www.soolife.cn</p>
+	</div>
+	<div id="alert_mark"> </div>
+	<div class="success">
+		<div id="alert_success">
+			<h4>提交成功</h4>
+			<p>属于你的时代即将开启</p>
+			<div class="gondss">好的</div>
+		</div>
+	</div>
+	<div class="lj_iphones"><a href="tel:{{ res['mobile'] }}"><img src="/public/mobile/img/investment/iphones.png"></a></div>
+</body>
+<script type="text/javascript" src="/public/mobile/js/investment/jquery.-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/rem.js"></script>
+<script type="text/javascript" src="/public/mobile/js/weixin/jssdk.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/wxcityagent.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/view.cityagent.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<style>
+    .hkl {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 11111;
+        background: rgba(0,0,0,0.6);
+        display: none;
+        text-align: center;
+    }
+    .hkl img {
+        margin: 150px auto;
+    }
+    .hkl span {
+        font-size: 18px;
+        color: #fff;
+        margin: -208px auto 0;
+        display: block;
+        width: 146px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #ff7902;
+        line-height: 40px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+    }
+    .hkl .h-del {
+        width: 25px;
+        position: absolute;
+        cursor: pointer;
+        margin-left: -68px;
+        margin-top: 172px;
+    }
+</style>
+<body>
+    <div class="hkl">
+        <img src="img/ruci.png" alt="">
+        <img class="h-del h-delete" src="img/xxxx.png" alt="">
+        <span class="h-delete">朕知道了</span>
+    </div>
+    <button class="h-lxb">遮罩</button>
+</body>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function() {
+        $('.h-lxb').click(function(){
+                $('.hkl').css('display','block');
+        })
+            $('.h-delete').click(function(){
+                $('.hkl').css('display','none');
+        })
+    })
+
+    </script>
+</html>

@@ -1,0 +1,94 @@
+<div id="nav3">
+	<div class="mainBox">
+		<div class="leftflo nav1">
+			<a href="/" class="logo"></a>
+		</div>
+		<div class="rightflo nav3">
+			<div class="flowstep">
+				<ol>
+					<li class="step-first">
+						<div class="step-done">
+							<div class="step-name">
+								<a href="javascript:void(0)">我的购物车</a>
+							</div><div class="step-no"></div>
+						</div>
+					</li>
+					<li>
+						<div class="step-name">
+							<a href="javascript:void(0)">确认订单信息</a>
+						</div>
+						<div class="step-no {% if step>=2 %} step-ok {% endif %}">
+							{% if step<2 %}2{% endif %}
+						</div>
+					</li>
+					{% if step==6 %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">结束</a>
+						</div><div class="step-no step-ok"></div>
+					</li>
+					{% else %}
+					<li>
+						<div class="step-name">
+							<a href="javascript:void(0)">付款</a>
+						</div>
+						<div class="step-no {% if step>=3 %} step-ok {% endif %}">
+							{% if step<3 %}3{% endif %}
+						</div>
+					</li>
+					{% if step==7 %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">退款中</a>
+						</div>
+						<div class="step-no">
+							4
+						</div>
+					</li>
+					{% elseif step==8 %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">退款成功</a>
+						</div><div class="step-no step-ok"></div>
+					</li>
+					{% elseif step==9 %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">退款失败</a>
+						</div><div class="step-no step-ok"></div>
+					</li>
+					{% else %}
+					<li>
+						<div class="step-name">
+							<a href="javascript:void(0)">确认收货</a>
+						</div>
+						<div class="step-no {% if step>=4 %} step-ok {% endif %}">
+							{% if step<4 %}4{% endif %}
+						</div>
+					</li>
+					{% if step==10 %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">完成</a>
+						</div><div class="step-no {% if step>=5 %} step-ok {% endif %}"></div>
+					</li>
+					{% else %}
+					<li class="step-last">
+						<div class="step-name">
+							<a href="javascript:void(0)">评价</a>
+						</div>
+						<div class="step-no">
+							5
+						</div>
+					</li>
+					{% endif %}
+
+					{% endif %}
+					{% endif %}
+
+				</ol>
+			</div>
+		</div>
+	</div>
+</div>
+

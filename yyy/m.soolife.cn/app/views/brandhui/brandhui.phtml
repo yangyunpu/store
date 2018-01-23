@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>如此生活|品牌特惠</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		
+		<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+		<link rel="stylesheet" href="/public/ext/css/download.css">
+		<link rel="stylesheet" type="text/css" href="/public/css/brandhui/brandhui.css"/>
+
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="header" id="header">
+				<span onclick="window.history.go(-1)">
+					<img src="/public/img/brandhui/xingxingsha_back@2x.png " class="lefter">
+				</span>
+				<span class="lj_srt">品牌特惠</span> 
+			</div>
+			<!-- 下载框 -->
+			<div class="download_box" id="download-nav">
+				<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+				<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+				<div class="word">下载如此生活客户端</div>
+				<div class="sure" id="download-nav-sure"><div>下载</div></div>
+			</div>
+			<!-- 空隙 -->
+			<div class="void" id="void"></div>
+			<!-- 上部广告位 -->
+		{% if bigbanner['items'] %}
+		{% for k,i in bigbanner['items'] %}
+			<div class="content">
+				<div class="lj_ban">
+					 <img class="open-advs" data-adv-href="{{ i['mobile_link'] }}" src="{{ i['picture'] }}">  
+				</div>
+				<div class="lj_sale">
+					<ul>
+						<?php if(isset($lslide['items'][$k])){ ?>                                             
+						<li>
+						     <img class="open-advs" data-adv-href="{{ lslide['items'][k]['mobile_link'] }}" src="{{ lslide['items'][k]['picture'] }}"> 
+						</li>
+						<?php } ?>
+                                                <?php if(isset($mslide['items'][$k])) { ?>
+						<li>						 
+						     <img class="open-advs" data-adv-href="{{ mslide['items'][k]['mobile_link'] }}" src="{{ mslide['items'][k]['picture'] }}">						
+						</li>
+                                                <?php } ?>
+                                                <?php if(isset($rslide['items'][$k])) { ?>
+						<li>				 
+						     <img class="open-advs" data-adv-href="{{ rslide['items'][k]['mobile_link'] }}" src="{{ rslide['items'][k]['picture'] }}"> 				
+						</li>
+                                                <?php } ?>
+					</ul>
+				</div>
+				<div class="session"><span class="lj_titles">{{ i['title'] }}</span></div>
+			</div>
+		{% endfor%}
+		{% endif %}
+			<!-- 中部广告位 -->
+	</body>
+</html>
+<script>
+		var isApp = /SoolifeApp/i.test(navigator.userAgent);
+		if(isApp){
+			document.getElementById('header').style.display = "none";
+			document.getElementById('void').style.display = "none";
+			document.getElementById('download-nav').style.display = "none";
+		};
+</script>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

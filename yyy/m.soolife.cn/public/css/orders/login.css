@@ -1,0 +1,103 @@
+.header{
+	border-bottom: 1px solid #DCDCDC;
+}
+.main{
+	background: #fff;
+}
+.login-box{
+	width: 90%;
+	margin: 60px auto;
+}
+.login-content-box{
+	border-bottom: 1px solid #DCDCDC;
+	margin: 20px 0;
+}
+.login-input{
+	border: 0 none;
+	width: 100%;
+	padding: 5px 0;
+	font-size: 1.6rem;
+}
+.btnLogin{
+	background-color: #ababab;
+	width: 100%;
+	display: inline-block;
+	-webkit-appearance:none;
+}
+.login-subinfo{
+	margin-top: 10px;
+	font-size: 1.3rem;
+	color: #787878;
+}
+.login-subinfo span{
+	width: 49%;
+	display: inline-block;
+}
+.register-box a,.findpwd-box a{
+	color: #f08200;
+}
+.findpwd-box{
+	text-align: right;
+}
+.third-party-box{
+	margin-top: 60px;
+}
+.third-party-title-box{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.third-party-title-box div {
+    display: inline-block;
+}
+.third-party-title {
+    font-size: 1.5rem;
+    color: #787878;
+    margin: 0 5px;
+}
+.line{
+    width: 30%;
+    height: 1px;
+    padding: 0px;
+    background-color: #D5D5D5;
+    vertical-align: middle;
+}
+.third-party-content-box{
+	text-align: center;
+	margin-top: 10px;
+}
+.third-party-content-box img{
+	width: 20%;
+	margin-right: 20px;
+}
+.btnSendCode{
+	background: #f08200;
+	padding: 5px 0;
+	font-size: 1.3rem;
+	width:10rem;
+}
+.registerResult{
+	background: #fef0da;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0;
+	border: 1px solid #DCDCDC;
+}
+.registerResult i{
+	font-size: 6rem;
+}
+.registerResult .registerSuccess{
+	color: #1abc9c;
+}
+.registerResult p{
+	line-height: 28px;
+}
+.btnSubmit{
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+}
+.btnSubmit a{
+	display: inline-block;
+}
+.error{padding-bottom:10px;color:#f08200;}

@@ -1,0 +1,79 @@
+/*公共样式*/
+body{margin: 0;padding: 0;}
+.f_infant_mom{background: #ffc105;overflow: hidden;padding-bottom:3%;}
+.f_infant_mom img{border: none;width: 100%;}
+.f_entirety{width:1200px;margin: 0 auto;}
+.f_infant_mom ul{margin: 0;list-style: none;padding: 0;}
+.f_infant_mom a{text-decoration: none;}
+.subject{width:1000px;margin: 0 auto;}
+/*超值1元*/
+.f_unitary{width:48%;margin: 0 auto;}
+.f_unitary img{margin:6% 0;}
+/*成长爆款 宝妈必备*/
+.grow_up{width:50%;margin: 0 auto;}
+.grow_up img{margin:5% 0%;}
+.cart ul li a .car{margin-left:1.5%;}
+.mongolian_yurt ul li a .environmental .pink{margin-left:4%}
+.mongolian_yurt{width:100%;height:500px;}
+.f_grow_up{width:1000px;height:1100px;background: white;border-radius: 25px;margin:0 auto;}
+.mongolian_yurt ul li{width:48%;float: left;margin-top:4%;margin-left:1% ;}
+.mongolian_yurt ul li a .environmental{width:465px;height:300px;}
+.four_seasons{width:100%;height:130px;margin-top:2%;}
+.four_seasons .camera{font-size: 20px;font-family: "微软雅黑";color:#666666;text-align: center;margin: 0;}
+.four_seasons .comfortable{font-size: 28px;font-family: "微软雅黑";color:#5d5e5f;margin: 0;text-align: center;}
+.four_seasons .original_cost{color:#ccc;font-size: 20px;text-decoration: line-through;font-family: "微软雅黑";text-align: center;}
+.four_seasons .activity{color:#ff2e2e;font-size: 14px;font-family: "微软雅黑";text-align: center;}
+.four_seasons .price{color:#FF2E2E;font-size: 28px;font-weight: 600;font-family: "微软雅黑";text-align: center;}
+.juzhong{text-align: center;}
+.mongolian_yurt ul li a .four_seasons .purchase{text-align: center;margin: 1% 0%;}
+.mongolian_yurt ul li a .four_seasons .purchase img{width:25%}
+.cart ul li{width:33%;float: left;margin-left:0.2%;}
+.cart ul li a .four_seasons .purchase img{width:36%;}
+.cart ul li a .four_seasons .purchase{text-align: center;}
+.cart{width:100%;height:600px;}
+/*品质典范*/
+/*.measure{height:565px;}*/
+.character{width:50%;margin:0 auto;}
+.character img{margin:5% 0;}
+.quality{width:1000px;margin: 0 auto;height:100%;}
+.trait{width: 49%; height: 585px;float: left;background: white;border-radius: 10px;}
+.trait ul{height:385px}
+.gauze{width: 49%;height: 585px;float: left; background: white; border-radius: 10px;margin-left:2%;}
+.trait ul li a .shell_fabric .protection{margin-top:13%;margin-left:7%;width:90%;}
+.quality .trait ul li a .four_seasons .purchase img{width:23%;}
+.quality .gauze ul li a .four_seasons .purchase img{width:23%;}
+.quality .gauze ul li a .four_seasons .purchase{text-align: center;}
+.quality .trait ul li a .four_seasons .purchase{text-align: center;}
+.shell_fabric{width:100%;height:420px;}
+.natural ul li {width:32%;float: left;background: white;height:520px;border-radius: 10px;}
+.outside{margin-left:2%;}
+.quality .natural ul li{margin-top:2% ;}
+.natural ul li a .antisepsis .maoj{width:65%;margin-top:3%;margin-left:15%;}
+.natural ul li a .four_seasons .purchase img{width:36%;}
+.natural ul li a .four_seasons .purchase{text-align: center;}
+/*宝宝智慧*/
+.trait ul li a .shell_fabric .contaminate{margin-top: 12.8%; margin-left: 21%; width: 60%;}
+.bonus_point{width:50%;margin: 0 auto;}
+.bonus_point img{margin: 5% 0%;}
+.adjacency{margin-left:2%;}
+.lambkin .trait ul li a .shell_fabric .purchase img{width:24%;}
+.lambkin .trait ul li a .shell_fabric .purchase {text-align: center;}
+.trait ul li a .shell_fabric .knickknack { margin-top: 10%; margin-left: 21%; width: 60%;}
+.one_piece ul li {width:32%;float: left;background: white;height:535px;border-radius: 10px;margin-top:2%;}
+.one_piece ul li a .antisepsis .lyq{width:63%;margin-left: 20%;;}
+.one_piece ul li a .antisepsis .diapers{width:92%;    margin-top: 28%;
+    margin-left: 4%;}
+.one_piece ul li a .antisepsis .protection{width:95%;margin-top:18.5% ;}
+.lambkin{width:100%;height:1100px;}
+/*早教学习*/
+.education{width:50%;margin: 0 auto;}
+.education img{margin:5% 0%;}
+.snatch_up{width:1000px;margin:0 auto;background: white;border-radius: 10px;height:980px;}
+.sureness ul li{width: 33%;float: left; }
+.sureness ul li a .first{margin-top:28.8%;}
+.sureness{width:1000px;height:800px;}
+.sureness ul li a .second{margin-top:10.3%;}
+.sureness ul li a .purchase{width:35%;margin: 0 auto;}
+.modelling ul li {width:50%;float: left;}
+.sureness ul li a .three{margin-left:20%;}
+.sureness ul li a .first{margin-left:-20%;}

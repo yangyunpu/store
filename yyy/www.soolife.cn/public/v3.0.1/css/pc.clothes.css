@@ -1,0 +1,110 @@
+.navbar .category-menus {
+    height: 672px;
+}
+.clothes_banner,
+.design,
+.mostin,
+.new,
+.fashion,
+.taste,
+.brands,
+.floor{margin: 0px auto;position: relative;left: -18px;}
+
+/* Banner */
+.clothes_banner{height: 480px;display: block;}
+.clothes_banner .clothes_banner_carousel .carousel-inner{height: 480px;}
+.clothes_banner .clothes_banner_carousel .carousel-inner .item {overflow: hidden;}
+.clothes_banner .clothes_banner_carousel .carousel-inner .carousel-images {z-index: 0;margin-left:240px; width: 960px;height: 510px;overflow: hidden;}
+
+.clothes_banner .clothes_banner_recommend {width: 960px;height:170px; margin-left: 240px;margin-bottom: 10px;}
+.clothes_banner .clothes_banner_recommend .title{
+	margin-top: 20px;
+	height:30px;
+	background: #FFFFFF url('../img/clothes/recommend_horizontal.jpg') no-repeat center center;
+}
+.clothes_banner .clothes_banner_recommend ul>li {width: 300px;height: 140px;margin-left: 20px;overflow: hidden;float: left;}
+
+/* 设计馆 */
+.design {}
+.design .design_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/design_horizontal.jpg') no-repeat center center;}
+.design .design_title span{ display: none;}
+.design .design_content{height: 760px;background: #FFFFFF url('../img/clothes/design_bg.jpg') repeat-x center center;}
+.design .design_content .side,
+.design .design_content .center {float: left;height: 760px;overflow: hidden; }
+.design .design_content .side {width: 360px;}
+.design .design_content .center {width: 480px;padding-left: 10px;padding-right:10px;background-color: #FFFFFF}
+
+/* 你最IN */
+.mostin {}
+.mostin .mostin_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/mostin_horizontal.jpg') no-repeat center center;}
+.mostin .mostin_title span{ display: none;}
+.mostin .mostin_content{}
+.mostin .mostin_content ul>li{width: 394px;height: 370px;float: left; margin-right: 9px; overflow: hidden;}
+.mostin .mostin_content ul>li.right{margin-right: 0px;}
+
+/* 全球大牌 */
+.new {}
+.new .new_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/new_horizontal.jpg') no-repeat center center;}
+.new .new_title span{ display: none;}
+.new .new_content { height: 500px; }
+.new .new_content .leftside { width: 320px;float: left;overflow: hidden;}
+.new .new_content .rightside { width: 880px; float: right;}
+.new .new_content .rightside ul>li {width: 440px;height: 250px;display: block;float: left;overflow: hidden;}
+
+/* HI 潮范 */
+.fashion {}
+.fashion .fashion_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/fashion_horizontal.jpg') no-repeat center center;}
+.fashion .fashion_title span{ display: none;}
+.fashion .fashion_content { height: 580px; }
+.fashion .fashion_content .leftside { width: 310px;float: left;overflow: hidden;}
+.fashion .fashion_content .rightside { width: 888px; float: right;}
+.fashion .fashion_content .rightside ul>li {width: 210px;height: 290px;display: block;float: left;overflow: hidden;margin-left: 12px;}
+
+/* 星口味 */
+.taste {}
+.taste .taste_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/taste_horizontal.jpg') no-repeat center center;}
+.taste .taste_title span{ display: none;}
+.taste .taste_content { height: 460px; overflow: hidden;}
+.taste .taste_content ul>li { width: 595px;height: 460px;float: left;overflow: hidden;}
+.taste .taste_content ul>li.left {margin-right: 10px;}
+
+/* 星品牌 */
+.brands {}
+.brands .brands_title {margin-top:10px;height: 40px;background: #FFFFFF url('../img/clothes/brands_horizontal.jpg') no-repeat center center;}
+.brands .brands_title span{ display: none;}
+.brands .brands_content { height: 540px; }
+.brands .brands_content .leftside { width: 400px;float: left;overflow: hidden;}
+.brands .brands_content .rightside { width: 800px; float: right;}
+.brands .brands_content .rightside .upper ul>li {width: 400px;height: 360px;float: left;overflow: hidden;}
+.brands .brands_content .rightside .under{width: 800px;height: 180px;overflow: hidden;}
+
+.floor {}
+.floor .floor_title {margin-top:10px;height: 40px;}
+.floor .floor_title.clothing{background: #FFFFFF url('../img/clothes/clothing_horizontal.jpg') no-repeat center center;}
+.floor .floor_title.cosmetics{background: #FFFFFF url('../img/clothes/cosmetics_horizontal.jpg') no-repeat center center;}
+.floor .floor_title.accessories{background: #FFFFFF url('../img/clothes/accessories_horizontal.jpg') no-repeat center center;}
+.floor .floor_title.outdoor{background: #FFFFFF url('../img/clothes/outdoor_horizontal.jpg') no-repeat center center;}
+.floor .floor_title span{ display: none;}
+.floor .floor_content { height: 500px; }
+.floor .floor_content .leftside { width: 320px;height: 500px;float: left;overflow: hidden;border-right:1px solid #EFEFEF;}
+.floor .floor_content .rightside { width: 880px; float: right;}
+.floor .floor_content .rightside ul>li {width: 220px;height: 250px;display: block;float: left;overflow: hidden;border-right:1px solid #EFEFEF;border-bottom:1px solid #EFEFEF; }
+.floor .floor_content .leftside .bag {
+    width:320px;height:200px;
+}
+.leftside {background:#F9D6EC;}
+.bag .size_left .color_red li{height:32px;line-height:32px;}
+.bag .size_left .color_red li a{color:#5d5e5f;font-size:14px;}
+.bag .size_right span a{color:#5d5e5f;font-size:14px;}
+.bag .size_right span{height:32px;line-height:32px;}
+/*.bag .size_right{float:right;width:20%;text-align: center;}*/
+.size_left span{width:15%;}
+.bag .size_left{float:left;width:45%;margin-left:20%;}
+.bag {margin-top:6%}
+.bag li{list-style:none;}
+.bag .size_left .color_red li .weight{color:#ce676a;}
+.bag .size_right span .weight{color:#ce676a;}
+.huwai_footer{background: #F2F4E7;}
+.xiangbao_footer{background: #CFECFC;}
+.gehu_footer{background:#F4FEE5;}
+

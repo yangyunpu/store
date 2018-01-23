@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>领取更多|如此生活</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/css/huilife/common.css">
+    <link rel="stylesheet" href="/public/css/huilife/getmore.css">
+</head>
+<body>
+
+<div id="soo-header">
+	<div id="header-left"><a onclick="window.history.go(-1)"> <img src="../public/img/common/shop_back_black@2x.png" alt=""></a></div>
+	<div id="header-center">领取更多</div>
+	<div id="header-right"></div>
+</div>
+<!-- 下载提示框 -->
+<div class="download_box" id="download-nav">
+	<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+	<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+	<div class="word">下载如此生活客户端</div>
+	<div class="sure" id="download-nav-sure"><div>下载</div></div>
+</div>
+<div class="lcy_getmore lcy_hui" data-url-m = {{url_m}} data-is-login="{{ is_login}}" data-isget="{{ is_get}}">
+<!-- banner -->
+<div class="route">
+	{% if coinTaskAd_banner %}
+	<img src="{{ coinTaskAd_banner }}" class="img-w">
+	{% else %}
+	<img src="../public/img/huilife/getstar_xdhbanner@2x.png" class="img-w">
+	{% endif %}
+</div>
+<div class="task margin-two">
+    {% if coinTask['data'] %}
+    {% for i,d in coinTask['data'] %}
+	<div class="item clear-f go_complete{{ i }}" data-status="{{ d['status'] }}">
+		<div class="img_box float-l"><img src="{{d['image']}}" alt=""></div>
+		<div class="float-l word">
+			<p class="title">{{d['title']}}</p>
+			<p class="mess">{{d['content']}}</p>
+			<p class="coin">{{d['reward']}}</p>
+		</div>
+		<div class="float-r signbtn">
+		    {% if d['status'] == true %}
+			<p class="bg-white">已完成</p>
+			{% else %}
+			<p class="bg-white bg_retived ">去完成</p>
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+	{% endif %}	
+
+</div>
+<!-- 领星币的遮罩层 -->
+<div class="mark">
+	<img src="../public/img/huilife/delete_white@3x.png" alt="" id="delete_getcoin">
+	<img src="../public/img/huilife/mylife.gif" alt="">
+	{% if get_state %}
+		<p>今天领取{{ get_state[0]['coin'] }}个星币，明天可领取{{ get_state[1]['coin'] }}个星币</p>
+	{% endif %}
+</div>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?826cba0598fb59fb393282dd20e7d118";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+</div><!-- end -->
+	<script src="/public/ext/js/rem.js"></script>
+	<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+	<script src="/public/ext/js/download.js"></script>
+	<script src="/public/ext/js/soo.m.ui.js"></script>
+	<script src="/public/ext/js/jquery.base64.js"></script>
+	<script src="/public/js/huilife/getmore.js"></script>
+</body>
+</html>

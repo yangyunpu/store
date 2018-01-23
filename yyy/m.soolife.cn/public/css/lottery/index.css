@@ -1,0 +1,323 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei","PingFang SC","Heiti SC","SF UI Text","Helvetica Neue",Roboto,"Droid Sans Fallback",arial,sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style:none;
+}
+/*定位头部*/
+#soo-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:44px;
+    box-sizing: border-box;
+    padding:0 2%;
+    line-height:44px;
+    overflow: hidden;
+    background-color:#f1f0f0;
+    z-index: 9;
+}
+#soo-header>#header-left,#header-center,#header-right{
+    float:left;
+}
+#soo-header>#header-left{
+    font-family: "SimSun";
+    text-align:left;
+    width:20%;
+}
+#soo-header>#header-left img{
+    margin-top: 10px;
+    width:10px;
+}
+#soo-header>#header-center{
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    color:#333333;
+}
+#soo-header>#header-right{
+    text-align:right;
+    width:20%;
+}
+/*抽奖卡片*/
+
+#lottery li {
+    background: #fff;
+    margin-left: 0.192rem;
+    margin-top: 0.192rem;
+    float: left;
+    width: 4.266667rem;
+    height:5.546667rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.128rem;
+}
+.hl-btn {
+    background: none !important;
+}
+#lottery li .mask{
+    display: none;
+}
+#lottery li .hl-img img{
+    width: 100%;
+    height: 4.26rem;
+}
+#lottery li span{
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: 0.597333rem;
+    line-height: 0.897333rem;
+    overflow: hidden;
+    height: 0.897333rem;
+    margin-bottom: 0;
+    padding: 0 0.426667rem;
+}
+#lottery li .mask img{
+    width: 100%;
+    height:5.546667rem;
+}
+#lottery{
+    width:90%;
+    height:17.253333rem;
+    margin: 0.8966rem auto;
+    margin-left: 0.768rem;
+    position: absolute;
+    border-radius: 0.128rem;
+}
+.hkl-none{
+    display: none;
+}
+.hl-img{
+    border-radius: 0.128rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.hl-img p {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    font-size: 0.597333rem;
+    overflow: hidden;
+    padding: 0 0.426667rem;
+    word-wrap:break-word;
+}
+.in {
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 350ms;
+    animation-timing-function: ease-out;
+    animation-duration: 350ms;
+}
+.out {
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 225ms;
+    animation-timing-function: ease-in;
+    animation-duration: 225ms;
+}
+.viewport-flip {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    position: absolute;
+}
+.flip {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateX(0); 
+    backface-visibility: hidden;
+    transform: translateX(0);
+}
+.flip.out {
+    -webkit-transform: rotateY(-90deg) scale(.9);
+    -webkit-animation-name: flipouttoleft;
+    -webkit-animation-duration: 175ms;
+    transform: rotateY(-90deg) scale(.9);
+    animation-name: flipouttoleft;
+    animation-duration: 175ms;
+}
+.flip.in {
+    -webkit-animation-name: flipintoright;
+    -webkit-animation-duration: 225ms;
+    animation-name: flipintoright;
+    animation-duration: 225ms;
+}
+@-webkit-keyframes flipouttoleft {
+    from { -webkit-transform: rotateY(0); }
+    to { -webkit-transform: rotateY(-90deg) scale(.9); }
+}
+@keyframes flipouttoleft {
+    from { transform: rotateY(0); }
+    to { transform: rotateY(-90deg) scale(.9); }
+}
+@-webkit-keyframes flipintoright {
+    from { -webkit-transform: rotateY(90deg) scale(.9); }
+    to { -webkit-transform: rotateY(0); }
+}
+@keyframes flipintoright {
+    from { transform: rotateY(90deg) scale(.9); }
+    to { transform: rotateY(0); }
+}
+.list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/*#lottery table .mask img{
+    height: 100%;
+}*/
+#lottery #box img{
+    width: 3.84rem;
+    height: 3.84rem;
+    line-height: 5.546667rem;
+    margin: 0.853333rem auto;
+}
+.hl-backimg {
+    background-image: url(../../img/lottery/fulldraw_dial.png); 
+    background-size:100% 100%;   
+    width: 94.2222222%;
+    height: 19.2rem;
+    margin: 2.64rem auto;
+    position: relative;
+}
+.hkl-fex {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    background-color: #000;
+    opacity: .6;
+}
+.hkl-neir{
+    display: none;
+    background-color: #fff;
+    width: 12.8rem;
+    height: 16.384rem;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin-top: 5.12rem;
+    margin-left: 1.578667rem;
+    text-align: center;
+}
+.hkl-head {
+    font-size: 1.024rem;
+    font-family: '.PingFangSC-Medium';
+    color: #333333;
+    margin-top: 1.6rem;
+    display: inline-block;
+}
+.neir-img{
+    width: 0.64rem;
+    height: 0.64rem;
+    position: absolute;
+    margin-top: 0.426667rem;
+    margin-left: 1.657333rem;
+}
+
+.neri-shop {
+    width: 7.189333rem;
+    height: 5.504rem;
+    margin: 2.133333rem auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+.neri-shop img{
+    width: 5.504rem;
+    height: 5.504rem;
+}
+.neir-name {
+    font-size: 0.597333rem;
+    color: #333;
+    margin-top: 0.938667rem;
+    margin-bottom: 0;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0 0.426667rem;
+    word-wrap:break-word;
+}
+.neir-red {
+    font-size: 0.682667rem;
+    color: #EC6D65;
+}
+.neir-btn{
+    margin-top:0.853333rem;
+    padding-bottom: 20px;
+}
+.btn-gray{
+    display: inline-block;
+    width: 3.413333rem;
+    height: 1.408rem;
+    line-height: 1.408rem;
+    background: #F1F0F0;
+    border-radius: 4px;
+    font-size: 0.597333rem;
+    color: #EC6D65;
+}
+.btn-pink{
+    display: inline-block;
+    width: 3.413333rem;
+    height: 1.408rem;
+    line-height: 1.408rem;
+    background: #EC6D65;
+    border-radius: 4px;
+    font-size: 0.597333rem;
+    color: #fff;
+    margin-left: 0.426667rem;
+}
+.neir-backimg{
+    background-image: url(../../img/lottery/fulldraw_end@2x.png); 
+    background-size:100% 100%; 
+    height: 11.626667rem;
+}
+/*活动已结束*/
+.active_end{
+    margin-top: 5.546667rem;
+    width: 100%;
+    text-align: center;
+}
+.active_later{
+    font-size: 0.810667rem;
+    color: #999999;
+    letter-spacing: 1px;
+    line-height: 0.810667rem;
+    margin-top: 1.386667rem;
+}
+.end_later{
+    font-size:1.024rem;
+    color: #EC6D65;
+    letter-spacing: 1px;
+    line-height: 0.810667rem;
+    margin-top: 0.64rem;
+}
+/*弹框*/
+#alert_img{
+    width: 6.4rem;
+    line-height: 1.066667rem;
+    background: #000;
+    opacity: 0.6;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform:translateX(-50%);
+    z-index: 20;
+    display: none;
+}

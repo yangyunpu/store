@@ -1,0 +1,27 @@
+*{margin:0 auto;padding:0;}
+ul li{list-style: none;}
+a{text-decoration: none;}
+p,span{font-family: "微软雅黑";}
+.f_water{width:100%;background:#ffcdcd;overflow: hidden;}
+.f_water .f_banner{width:100%;margin:0 auto;}
+.f_water .f_banner img{width:100%;}
+/*爆款*/
+.f_water .f_moldbaby .descend{width:100%;text-align: center;}
+.f_water .f_moldbaby .discount{width:90%;margin:0 auto;}
+.f_water .f_moldbaby .discount img{width:100%;margin-top:20px;}
+/*五折*/
+.f_water .five_discount .five_dis{width:100%;text-align: center;}
+.f_water .five_discount .five_dis img{margin-top:20px;margin-bottom: 20px;}
+.f_water .five_discount .f_product{width:100%;background:white;margin:0 2%;}
+.f_water .five_discount .f_product ul li{float:left;width:46%;margin:10px 1%;background:white;border-radius: 30px;}
+.f_water .five_discount .f_product ul li img{width:100%;}
+.f_water .five_discount .f_product .character{margin-left:20px;line-height:60px;margin-top:15px;height:120px;}
+.f_water .five_discount .f_product .character .cat{font-size:38px;color:#000;font-weight: 600;}
+.f_water .five_discount .f_product .character .livelihood{font-size:30px;color:#949494;font-weight: 600;}
+.f_water .five_discount .f_product .down_content{width:98%;height:240px;}
+.f_water .five_discount .f_product .cost{margin-left:15px;height:60px;}
+.f_water .five_discount .f_product .cost .scalping{font-size: 28px;color:#fe6565;}
+.f_water .five_discount .f_product .cost .much{font-size: 38px;font-weight: 600;color:#fe6565;}
+.f_water .five_discount .f_product .cost .original_cost{margin-left:15px;color:#949494;font-size:30px;text-decoration: line-through;}
+.f_water .five_discount .f_product .down_content .instantbuy{width:98%;margin:0 auto;}
+.f_water .five_discount .f_product .down_content .instantbuy img{width:100%;}

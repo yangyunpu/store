@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>如此生活|星店铺统计</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <!--  <link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/> -->
+    <link rel="stylesheet" type="text/css" href="/public/css/money/statistics.css"/>
+</head>
+<body class="lcy_statistics">
+    <header class="head">
+        <div class="back"></div>
+        <div class="title">星店铺统计</div>
+        <div class="back2"></div>
+    </header>
+    <!-- nav -->
+    <div class="nav">
+    	<ul class="nav_list">
+    		<li class="active">访问量</li>
+    		<li>销售情况</li>
+    	</ul>
+    </div>
+    <!-- main -->
+    <div class="stat_main">
+    	<p class="visit_num">店铺访问量&nbsp;<span>123456</span></p>
+    	<canvas id="chart"></canvas>
+    	<div class="visitors"></div>
+    </div>
+    <div class="stat_sale">
+		<div class="stat_sale_box">
+			<p class="sale">店铺销售量&nbsp;<span>654321</span></p>
+	    	<p class="sale sale_n">店铺销售额&nbsp;<span>￥654321.00</span></p>
+	    	<canvas id="chart_sale"></canvas>
+	    	<div class="sale_box"></div>
+		</div>
+		<div class="sale_detail">
+			<div class="title"><p class="d_btn vv">详情</p></div>
+			<div class="goods_big_box">
+				<!-- 循环 -->
+				<div class="goods_box">
+					<div class="goods_img"><img src="/public/img/stat_goods.png" alt=""></div>
+					<p class="goods_word">烦死了快解放路上看到姐夫看到姐夫看到姐夫快放假啊是；姐夫快放假啊是；姐夫快放假啊是；离开房间开了房间</p>
+					<div class="goods_num">x50</div>
+				</div>
+				<!-- 循环结束 -->
+				<!-- 循环 -->
+				<div class="goods_box">
+					<div class="goods_img"><img src="/public/img/stat_goods.png" alt=""></div>
+					<p class="goods_word">烦死了快解放路上看到姐夫看到姐夫看到姐夫快放假啊是；姐夫快放假啊是；姐夫快放假啊是；离开房间开了房间</p>
+					<div class="goods_num">x50</div>
+				</div>
+				<!-- 循环结束 -->
+				<!-- 循环 -->
+				<div class="goods_box">
+					<div class="goods_img"><img src="/public/img/stat_goods.png" alt=""></div>
+					<p class="goods_word">烦死了快解放路上看到姐夫看到姐夫看到姐夫快放假啊是；姐夫快放假啊是；姐夫快放假啊是；离开房间开了房间</p>
+					<div class="goods_num">x50</div>
+				</div>
+				<!-- 循环结束 -->	
+			</div>
+		</div>
+    </div>
+
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/money/chart.js"></script>
+<script src="/public/js/money/statistics.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

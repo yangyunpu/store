@@ -1,0 +1,44 @@
+*{margin:0 auto;padding:0;}
+ul li{list-style:none;text-decoration: none;}
+.f_reunion{width:100%;border:none;background:#f5ecdb;}
+.f_reunion img{width:100%;}
+.f_nine_prefecture{overflow: hidden;}
+.f_nine_prefecture ul li{width:50%;float: left;}
+.half_price .f_half{text-align: center;width:80%;position: relative;margin-left:10%;}
+.half_price .f_half img{margin-top:10px;} 
+.product_first{text-align: center;width:75%;margin-top:6%;margin-left:10%;}
+.product_second ul li{width:35%;float:left;margin: 5% 2% 0% 9%;position: relative;}
+.half_price{overflow:hidden ;}
+.f_moldbaby{text-align: center;width:80%;margin-left:15%;margin-top:3%;}
+.f_moldbaby_product ul li{width:50%;float:left;}
+#f_moldbaby_entirety{overflow: hidden;}
+.f_mo_picture{overflow: hidden;}
+.f_mo_picture ul li{width:35%;float:left;margin: 5% 2% 0% 9%;}
+.f_goblet{text-align: center;width:55%;margin-top:5%;position: relative;margin-left:25%;}
+.f_cate_banner{width:80%;text-align: center;margin-top: 30px; margin-bottom: 20px;margin-left:10%;}
+.f_cate{overflow: hidden;}
+.f_cate_piuter ul li{width:50%;float:left;position: relative;}
+.f_nine_prefecture ul li a .purchase_one{position: absolute;width:24%;height:6%;z-index: 1;overflow: hidden;bottom:8%;left:70%;}
+.f_nine_prefecture ul li a .purchase_two{position: absolute;width:24%;height:6%;z-index: 1;overflow: hidden;bottom: 9%;left: 46%;} 
+.f_nine_prefecture ul li a .purchase_three{position: absolute;width:24%;height:6%;z-index: 1;overflow: hidden;bottom:21%;left:70%;}
+.f_nine_prefecture ul li a .purchase_four{position: absolute;width:24%;height:6%;z-index: 1;overflow: hidden;bottom: 21%;left: 46%;} 
+.purchase_banner{position: absolute;width: 23%;height: 4%;left: 57%;bottom: -124%;}
+.purchase_product_one{position: absolute;width: 28%;height: 15%;bottom: 4%;left: 68%;}
+.purchase_moldbaby_one{position: absolute;width: 10%;height: 6%;left: 75%;bottom: -213%;}
+.purchase_moldbaby_two{position: absolute;width: 10%;height: 6%;left: 37%;bottom: -213%;}
+.purchase_moldbaby_four{position: absolute;width: 10%;height: 6%;left: 76%;bottom: -248%;}
+.purchase_moldbaby_three{position: absolute;width: 10%;height: 6%;left: 37%;bottom: -248%;}
+.purchase_recommend_one{position: absolute;width: 41%;height: 12%;left: 59%;bottom: 7%;}
+.purchase_recommend_two{position: absolute;width: 10%;height: 6%;left: 32%;bottom: -340%; }
+.purchase_recommend_three{position: absolute;width: 10%;height: 6%;left: 32%;bottom: -375%; }
+.purchase_recommend_four{position: absolute;width: 10%;height: 6%;left: 33%;bottom: -410%; }
+.purchase_recommend_five{position: absolute;width: 11%;height: 6%;left: 78%;bottom: -340%;}
+.purchase_recommend_six{position: absolute;width: 11%;height: 6%;left: 78%;bottom: -375%;}
+.purchase_recommend_seven{position: absolute;width: 11%;height: 6%;left: 78%;bottom: -410%;}
+.purchase_cate_one{position: absolute;width: 19%;height: 14%;left: 74%;bottom: 6%;}
+.purchase_cate_two{position: absolute;width: 19%;height: 14%;left: 51%;bottom: 6%;}
+.purchase_cate_three{position: absolute;width: 19%;height: 14%;left: 74%;bottom: 4%; }
+.purchase_cate_four{position: absolute;width: 19%;height: 14%;left: 51%;bottom: 4%; }
+.purchase_cate_five{position: absolute;width: 19%;height: 14%;left: 76%;bottom: 19%; }
+.purchase_cate_six{position: absolute;width: 19%;height: 14%;left: 53%;bottom: 19%; }
+.f_nine_prefecture ul li{position: relative;}

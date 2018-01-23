@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星星杀</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starkill/common.css"/>
+
+</head>
+<body>
+<div class="start_wrap">
+	<div class="header">
+		<a href="/mindex/index.html"><img class="arrow"  src="/public/img/starkill/icon/Group 36.png " ></a>
+		<span class="head_title">星星杀</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+    <div class="start_con">
+    	<!-- 轮播 -->
+        {% if link %}
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+			{% if link['app.starkill.banner']['children']['app.starkill.banner.001']['items'] %}
+				{% for d in link['app.starkill.banner']['children']['app.starkill.banner.001']['items'] %}
+				<div class="swiper-slide"> 
+					<a href="{{d['mobile_link']}}">
+						<img src="{{d['picture']}}">
+					</a> 
+				</div>
+				{% endfor %}
+				{% endif %}		
+			</div>
+			<!-- 分页效果 -->
+			<div class="pagination"></div>
+		</div>
+        {% endif %}
+		<!-- 规则 -->
+		<div class="rule_btn">规则</div>
+		<div class="rule_wrap hide">
+		    <div class="rule_con"></div>
+			<div class="rule_txt">
+			    <img class="rule_close rule_img" src="/public/img/starkill/icon/delete@3x 2.png">
+				<p class="txt_title">规则</p>
+				<div class="rule_text">
+					<p>1、用户每使用星币杀价一次,即获得一份购买资格,享受最终杀价后价格来购买活动商品;</p>
+					<p>2、使用星币参与杀价后,将不再返还使用星币;</p>
+					<p>3、每个用户最多拥有规定次数的杀价机会,规定次数根据活动商品不同会有相对应的变化;</p>
+					<p>4、当活动商品杀价到达本次活动的最低价后,用户在活动时间结束前依旧可以消费星币获取购买资格,但活动商品价格不再降低;</p>
+					<p>5、活动以时间周期为截止点,活动时间结束则此次活动截止,不能再参加此次活动;</p>
+					<p>6、活动内容在法律允许范围内,如此生活拥有活动的最终解释权;</p>
+				</div>
+				<button class="rule_close rule_know">知道了</button>
+			</div>
+		</div>
+		<!-- 内容 -->
+		{% if start %}
+		<div>
+            {% if start['data'] %}
+			{% for i,res in start['data']%}
+			<div class="start_active">
+				<a href="/starkill/state.html?starkill_id={{res['starkill_id']}}">
+					<div class="active_img">
+						<img  src="{{res['details_pictures']}}"/>
+					</div>
+				</a>	
+				<p class="active_title">{{res['name']}}</p>
+				<div class="active_txt">
+				    <input type = "hidden" name = "time" class="stamp" data-index="{{i}}" value = "{{res['pre_end_date']}}" />
+					<span class="differ_txt">距杀价结束还有:</span>
+					<span class="differ_time timestamp{{i}}"></span>
+				</div>
+				<div class="active_progress">
+				    <input type="hidden" id="rule" value="{{res['rule']}}" name="" />
+				    <input type="hidden" id="percentage" value="{{res['percentage']}}" name="" />
+					<div class="progress"></div>
+				</div>
+				<ul class="active_num">
+					<li>
+						<p ><span>￥</span><span id="life_price">{{res['life_price']}}</span></p>
+					</li>
+					<li class="price_sec">
+						<p id="price_now">￥{{res['now_price']}}</p>
+					</li>
+					<li>
+						<p ><span>￥</span><span id="floor_price">{{res['floor_price']}}</span></p>
+					</li>
+				</ul>
+				<ul class="active_price">
+					<li>
+						<p>原价</p>
+					</li>
+					<li>
+						<p>现价</p>
+					</li>
+					<li>
+						<p>最低</p>
+					</li>
+				</ul>
+				<div class="active_btn">
+					<div class="active_target">
+                        {% if res['qty'] %}
+						<p>已参加<span id="qtyCount">{{res['qty']}}</span>人</p>
+						{% else %}
+						<p>已参加<span id="qtyCount">0</span>人</p>
+						{% endif %}
+						<p class="target_go">再杀{{res['surplus_qty']}}次即可到达低价</p>
+						<p class="target_suc hide"><a href="/starkill/state.html?starkill_id={{res['starkill_id']}}">已杀到底价,继续抢!</a></p>
+					</div>
+					{% if res['is_frist']==true %}
+					<a class="active_like" href="/starkill/state.html?starkill_id={{res['starkill_id']}}">我要杀价</a>
+					{% else%}
+					<a class="active_like" href="/starkill/state.html?starkill_id={{res['starkill_id']}}">继续杀价</a>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+            {% endif %}
+		</div>
+		{% endif %}
+        
+    </div>
+    <div class="start_btom">
+    	<a class="btom_change" href="/starkill/start.html">正在进行</a>
+        {% if start['nopage'] %}
+    	<a  disabled="disabled" id="no_active">即将开始</a>
+    	{% else %}
+    	<a  href="/starkill/nostart.html">即将开始</a>
+    	{% endif %}
+    	{% if is_login %}
+    	<a href="/starkill/mystar.html">我的星星杀</a>
+    	{% else %}
+    	<a href="{{url_m}}/logins/login.html?return_url={{ return_url }}">我的星星杀</a>
+    	{% endif %}
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script src="/public/js/starkill/start.js"></script>

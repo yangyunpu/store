@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|修改收货地址</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/setting/remaddres.css"/>
+<!-- 	<link rel="stylesheet" type="text/css" href="/public/css/setting/LArea.css"> -->
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+		<input type="hidden" name="id" value="{{result['id']}}">
+			<span onclick="window.history.go(-1)">
+				<img   src="/public/img/brandhui/xingxingsha_back@2x.png " class="lefter">
+			</span>
+			<span class="lj_srt">修改收货地址</span>  
+		</div>
+		<div class="void"></div>
+		<div class="contet">
+			<div class="take">
+				<div class="takes">
+					<div class="head"><span class="symbol">＊</span><span class="person">收货人</span></div> 
+					<div class="head2"><input class="name" type="text" name="consignee" value="{{result['consignee']}}"></div>
+				</div>
+			</div>
+			<div class="take">
+				<div class="takes">
+					<div class="head"><span class="symbol">＊</span><span class="person">手机号码</span></div>
+					<div class="head2"><input class="iphones" type="text" name="mobile" value="{{result['mobile']}}"></div>
+				</div>
+			</div>
+			<div class="take">
+				<div class="takes">
+					<div class="head"><span class="symbol">＊</span><span class="person">省市区</span> <p class="tou"><img src="/public/img/setting/mine_xiayiye@2x.png"></p></div>
+					<div class="head3">
+					<input id="demo1" class="three_level" type="text" name="region_text" readonly="" value="{{result['region_text']}}">
+					<!-- <input id="demo1" type="text" name="iphone" readonly="" placeholder="点击选择省市区"> -->
+					<input type="hidden" name="regionno" value="{{ result['region_no'] }}">
+					<p class="tou">
+						<!-- <img src="/public/img/setting/mine_xiayiye@2x.png"> -->
+					</p>
+					</div>
+				</div>
+			</div>
+			<div class="take">
+				<div class="takes">
+					<div class="head"><span class="symbol">＊</span><span class="person">详细地区</span></div>
+					<div class="head2"><input class="detail" type="text" name="address" value="{{result['address']}}"></div>
+				</div>
+			</div> 
+		</div>
+		<div class="btn_sure">确认</div>
+	</div>
+	<div id="mark">
+		<div id="main" class="bg-white">
+			<div id="title">请选所在地区
+				<img src="/public/img/common/delete@2x.png" alt="">
+			</div>
+			<div id="site_text">
+				<div id="text_box">
+					<p id="province">省</p>
+					<p id="city">市辖区</p>
+					<p id="county">县</p>
+				</div>
+				<div id="site_box">
+					<ul id="province_box"></ul>
+					<ul id="city_box" style="display:none;"></ul>
+					<ul id="county_box" style="display:none;"></ul>
+				</div>
+			</div>
+		</div>
+	</div> 
+</body>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script> 
+<script src="/public/js/setting/remaddres.js"></script>
+<!-- <script type="text/javascript" src="/public/js/setting/LArea.js"></script>
+<script type="text/javascript" src="/public/js/setting/LAreaData1.js"></script> -->
+</html>

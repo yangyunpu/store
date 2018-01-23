@@ -1,0 +1,112 @@
+body {
+    color: #5D5E5F;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.profusion {
+    overflow: hidden;
+    background: #3fbaf1;
+}
+
+.one_floor {
+    width: 100%;
+    padding-bottom: 5%;
+    background-size: 100% 100%;
+}
+
+.profusion img {
+    width: 100%;
+}
+
+._name {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.possess {
+    width: 98%;
+    margin: 0 auto;
+    background: url(../img/one_floor/name.png) 100% no-repeat;
+    background-size: 100% 100%;
+}
+
+.one_floor .possess_th ul {
+    padding-top: 39%;
+}
+
+.one_floor ul {
+    padding-top: 15%;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one_floor ul li {
+    width: 49%;
+    margin-bottom: 4%;
+}
+
+.two_name {
+    width: 58%;
+    margin: 10% auto 1.0rem;
+}
+
+._base {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 10%;
+}

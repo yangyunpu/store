@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		{% include '/layouts/inc_head.phtml' %}		
+	</head>
+	<body>
+	    {% include '/layouts/inc_header.phtml' %}
+	    <!-- {{ partial("layouts/inc_search_float") }} -->
+        {% include '/layouts/inc_search.phtml' %}
+         <!-- {{ partial("layouts/inc_navigation") }} -->
+		{{ content() }}
+        {% include '/layouts/inc_sidebar.phtml' %}
+		{% include '/layouts/inc_footer.phtml' %}   
+        {{assets.outputJs('footer')}}	
+	</body>
+</html>

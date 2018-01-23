@@ -1,0 +1,355 @@
+@CHARSET "UTF-8";
+	body{
+	font:.85em/1.4 "微软雅黑","Microsoft Yahei",'Arial','san-serif';
+	color:#666;
+	margin:0;
+	padding:0
+}
+img{
+	max-width:100%;
+	height:auto;
+	/*width:auto\9;*/
+	-ms-interpolation-mode:bicubic;
+	vertical-align:middle
+}
+a,button,input{
+	-webkit-tap-highlight-color:rgba(255,0,0,0)
+}
+input{
+	border:0 none;
+	-webkit-appearance:none
+}
+ul,p{
+	padding:0;
+	margin:0
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+ul,li{
+	list-style:none
+}
+a{
+	color:#666
+}
+a,a:hover{
+	text-decoration:none
+}
+a:focus{
+	outline:none
+}
+label{
+  font-weight: normal!important;
+}
+.animated{
+	-webkit-animation-duration:1.4s;
+	animation-duration:1.4s;
+	-webkit-animation-fill-mode:both;
+	animation-fill-mode:both
+}
+
+@-webkit-keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	transform:scale(1)
+}
+
+}
+@keyframes bounceIn{
+	0%{
+	opacity:0;
+	-webkit-transform:scale(.3);
+	-ms-transform:scale(.3);
+	transform:scale(.3)
+}
+50%{
+	opacity:1;
+	-webkit-transform:scale(1.05);
+	-ms-transform:scale(1.05);
+	transform:scale(1.05)
+}
+70%{
+	-webkit-transform:scale(.9);
+	-ms-transform:scale(.9);
+	transform:scale(.9)
+}
+100%{
+	opacity:1;
+	-webkit-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1)
+}
+
+}
+.bounceIn{
+	-webkit-animation-name:bounceIn;
+	animation-name:bounceIn
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100.0rem);
+    transform: translateY(-100.0rem);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100.0rem);
+    -ms-transform: translateY(-100.0rem);
+    transform: translateY(-100.0rem);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(1.5rem);
+    -ms-transform: translateY(1.5rem);
+    transform: translateY(1.5rem);
+  }
+
+  80% {
+    -webkit-transform: translateY(-0.5rem);
+    -ms-transform: translateY(-0.5rem);
+    transform: translateY(-0.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceOutUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(1.0rem);
+    transform: translateY(1.0rem);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100.0rem);
+    transform: translateY(-100.0rem);
+  }
+}
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  animation-name: bounceOutUp;
+}
+
+@-webkit-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg);
+    -ms-transform: translateX(-100%) rotate(-120deg);
+    transform: translateX(-100%) rotate(-120deg);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+/*------------------- 华丽分割线 -----------------------*/
+
+header {
+    width: 90%;
+    text-align: center;
+    padding: 5%;
+    letter-spacing: 0.1rem;
+    color: #333;
+    font-size: 1.2em;
+    text-shadow: 0 0 0.1rem #999;
+}
+
+.demo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.demo a {
+    margin: 0 0.25rem 1.0rem;
+    background-color: #eee;
+}
+
+/*------------------- 遮罩层-----------------------*/
+#wrapper{
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+#dialog {
+    width: 13.653333rem;
+    height: 8.576rem;
+    margin: 8.541333rem auto;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.dialogTop{
+  text-align: right;
+  padding-right: 0.426667rem;
+}
+/*------------------- 遮罩层end -----------------------*/
+.dialogIco {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: -1.25rem;
+    left: 50%;
+    margin-left: -1.25rem;
+}
+
+.editInfos {
+    padding: 0.25rem 0 0.95rem;
+}
+
+.editInfos li {
+    text-align: center;
+}
+.claseDialogBtn{
+    width: 0.64rem;
+    height: 0.64rem;
+    background: #fff
+}
+.ipt input{
+  width: 6.4rem;
+  height: 1.706667rem;
+  line-height: 2.0rem;
+  background: #f1f0f0;
+  border-radius: 3px;
+  margin-left: 1rem;
+  text-indent:0.5em;
+  font-size: 0.512rem;
+  color: #999;
+}
+.piccode{
+  width: 4.266667rem;
+  height: 1.706667rem;
+  float: left;
+}
+.verification{
+  position: relative;
+}
+.verification input{
+  width: 11.306667rem;
+  height: 1.706667rem;
+  font-size: 0.512rem;
+  color: #999;
+  line-height: 1.706667rem;
+  text-indent:1em;
+  background: #f1f0f0;
+  margin-top: 0.426667rem;
+}
+.verification a{
+  line-height: 2.0rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4.0rem;
+  height: 1.35rem;
+  color: #fff;
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1.35rem;
+  background: #eb6e65;
+  margin: 0.8rem 0.25rem 0 0;
+}
+.code:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.075) inset, 0 0 0.4rem rgba(102, 175, 233, 0.6);
+    -webkit-box-shadow: 0 0.05rem 0.05rem rgba(0, 0, 0, 0.075) inset, 0 0 0.4rem rgba(102, 175, 233, 0.6);
+}
+
+.submitBtn {
+    width: 11.306667rem;
+    height: 1.408rem;
+    line-height: 1.408rem;
+    font-size: 0.597333rem;
+    color: #fff;
+    background: #eb6e65;
+    border-radius: 0.2rem;
+    display: block;
+    margin: 0.426667rem auto 0;
+}
+#editForm li:nth-child(2){
+  position: relative;
+}
+.hint{
+  width: 9.0rem;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  background: #000;
+  opacity: .6;
+  color: #fff;
+  position: absolute;
+  top: 1.4rem;
+  left: 3.0rem;
+  border-radius: 0.15rem;
+}

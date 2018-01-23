@@ -1,0 +1,20 @@
+body{color: #5D5E5F; font-family: "Arial","Microsoft YaHei";font-style: normal;}
+body, html, p, span, img, a, div, ul, li{margin: 0; padding: 0;font: 'Microsoft YaHei';}
+ul,ol,li{ list-style: none;}
+img{ border: none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.body_a{
+	width: 100%; margin: 0;
+}
+.banner_a{
+	width: 100%; margin: 0; 
+}
+.banner_a img{
+	width: 100%; margin: 0; 
+}

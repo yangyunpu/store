@@ -1,0 +1,229 @@
+html,body{
+    width:100%;
+ }
+.lcy_statistics{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+}
+.lcy_statistics ul li{
+    list-style:none;    
+}
+.lcy_statistics a{
+    text-decoration: none;    
+}
+.lcy_statistics ul,li,div,p{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_statistics .head{
+    width:100%;
+    height:44px;
+    background:white;
+    border-bottom: 1px solid #ccc;
+} 
+.lcy_statistics .head div{
+    float:left;
+} 
+.lcy_statistics .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url(/public/img/back1.png) 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_statistics .head .title{
+    width:80%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.lcy_statistics .head .back2{
+    width: 10%;
+    height: 44px;
+}
+/*nav*/
+.lcy_statistics .nav {
+	width:100%;    
+
+}
+.lcy_statistics .nav .nav_list{
+    width: 100%;
+    height: 44px;
+    background: #f1f1f1;
+	padding-bottom: 0.296296rem;
+}
+.lcy_statistics .nav .nav_list li{
+    float: left;
+    width: 50%;
+    height: 44px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 44px;
+    background: white;
+    box-sizing: border-box;
+}
+.lcy_statistics .nav .nav_list li.active{
+	color:#ef8201;
+	border-bottom:2px solid #ef8201;
+}
+/*访问量*/
+.lcy_statistics .stat_main{
+	background: white;
+}
+.lcy_statistics .stat_main #chart{
+    width: 7rem !important;
+    height: 7rem !important;
+    margin-left: 24px;
+}
+.lcy_statistics .stat_main .visit_num{
+    color: #999;
+    font-size: 0.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.5rem;
+    margin-left: 0.8rem;
+}
+.lcy_statistics .stat_main .visitors{
+    float: right;
+    width: 30%;
+    margin-top: 2rem;
+    color: #999;
+}
+.lcy_statistics .stat_main .visitors .visit{
+	overflow:hidden;
+	clear:both;
+}
+.lcy_statistics .stat_main .visitors .visit div{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.lcy_statistics .stat_main .visitors .visit span{
+	display: block;
+    float: left;
+    font-size: 13px;
+}
+/*销售额*/
+.lcy_statistics .stat_sale{
+	display: none;
+	background: white;
+}
+.lcy_statistics .stat_sale .stat_sale_box #chart_sale{
+    width: 7rem !important;
+    height: 7rem !important;
+    margin-left: 24px;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale{
+    color: #999;
+    font-size: 0.6rem;
+    padding-top: 0.8rem;
+    padding-bottom: 1.5rem;
+    margin-left: 0.8rem;
+    float:left;
+    width:40%;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale.sale_n{
+    width:50%;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale_box{
+    float: right;
+    width: 30%;
+    margin-top: 2rem;
+    color: #999;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale_box .visit{
+	overflow:hidden;
+	clear:both;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale_box .visit div{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.lcy_statistics .stat_sale .stat_sale_box .sale_box .visit span{
+	display: block;
+    float: left;
+    font-size: 13px;
+}
+/*详情*/
+.lcy_statistics .stat_sale .sale_detail{
+	width:100%;
+}
+.lcy_statistics .stat_sale .sale_detail .title{
+	width:100%;
+	border-bottom:1px #f3f3f3 solid;
+	overflow: hidden;
+	clear:both;
+}
+.lcy_statistics .stat_sale .sale_detail .title .d_btn{
+	float: right;
+    font-size: 16px;    
+    height: 22px;    
+    margin-right: 10px;
+    width: 46px;
+}
+.lcy_statistics .stat_sale .sale_detail .title .vv{
+    background: url("/public/img/vv.png") no-repeat right center;
+    background-size: 25%;
+
+}
+.lcy_statistics .stat_sale .sale_detail .title .aa{
+	background:url("/public/img/aa.png") no-repeat right center;
+	background-size:25%;
+}
+/*商品*/
+.lcy_statistics .stat_sale .sale_detail .goods_big_box{
+	width:100%;
+	display:none;
+}
+.lcy_statistics .stat_sale .sale_detail .goods_big_box .goods_box{
+	margin-top:10px;
+	padding-left:2%;
+	width:100%;
+	overflow:hidden;
+	clear:both;
+    font-size: 14px;
+    position: relative;
+    color: #999;
+    border-bottom: 1px #f3f3f3 solid;
+    padding-bottom: 10px;
+}
+.lcy_statistics .stat_sale .sale_detail .goods_big_box .goods_box .goods_img{
+	width:15%;
+	float:left;
+	overflow: hidden;
+}
+.lcy_statistics .stat_sale .sale_detail .goods_big_box .goods_box .goods_img img{
+	width:100%;
+	display: block;
+}
+.lcy_statistics .stat_sale .sale_detail .goods_big_box .goods_box .goods_word{
+    width: 71%;
+    margin-left: 2%;
+    margin-top:10px;
+    float: left;
+    overflow: hidden;
+    height: 37px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.lcy_statistics .stat_sale .sale_detail .goods_big_box .goods_box .goods_num{
+	width:10%;
+	position: absolute;
+	bottom: 10px;
+	right:0;
+	overflow: hidden;
+}
+
+

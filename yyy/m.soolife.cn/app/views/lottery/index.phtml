@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>如此生活|满额抽奖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/ext/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/lottery/index.css"/>
+</head>
+<body class="keBody">
+<!-- 头部 -->
+<div id="soo-header">
+    <div id="header-left"><a onclick = "self.location=document.referrer;"> <img src="/public/img/lottery/shop_back_black@2x.png" alt=""></a></div>
+
+    <div id="header-center">满额抽奖</div>
+    <input type="hidden" class="url_m" value="{{url_m}}">
+    <!-- <div id="header-right"></div> -->
+</div>
+<!--抽奖卡牌-->
+{% if data['award'] %}
+<div class="hl-backimg">
+    <ul id="lottery">
+    {% if data['award'] %}
+        <?php foreach($data['award'] as $k=>$v):?>
+            <li>
+                <div class="flip hl-img">
+                    <img class="hkl-block" src="{{ v['S_Logo'] }}">
+                    <span>{{ v['S_Name'] }}</span>
+                </div>
+                <div class="mask list flip out">
+                    <img src="/public/img/lottery/fulldraw_comeback.png">
+                </div>
+            </li>
+            <?php if($k==3):?>
+                <li class="hl-btn" id="box" class="box viewport-flip">
+                    <img class="hkl-block" src="/public/img/lottery/fulldraw_start@2x22.png">
+                    <img class="hkl-none" src="/public/img/lottery/fulldraw_drawin.png">
+                </li>
+            <?php endif?>
+        <?php endforeach?>
+    {% endif %}
+    </ul>
+    <span data-val="{{data['main_order']}}" class="main_order"></span>
+</div>
+{% else %}
+<div class="active_end">
+    <img src="/public/img/lottery/fulfilthequota_end.png">
+    <p class="active_later">来晚了</p>
+    <p class="end_later">活动已结束</p>
+</div>
+{% endif %}
+
+<div class="hkl-fex"></div>
+<div class="hkl-neir">
+    <span class="hkl-head">本次抽奖的奖品</span>
+    <img class="neir-img" src="/public/img/lottery/delete@2x.png" alt="">
+    <div class="neir-backimg">
+    </div>
+</div>
+
+<div id="alert_img">
+
+</div>
+<!-- 活动结束 -->
+</body>
+
+</html>
+
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/lottery/index.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<!-- <script src="/public/js/sdk.2.2.js"></script> -->

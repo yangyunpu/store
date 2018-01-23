@@ -1,0 +1,158 @@
+html {overflow-y:scroll;}
+*{
+	font-family: '微软雅黑';
+}
+body {
+	margin:0; padding:0px;background:#ffffff; width: 100%;overflow: hidden;
+}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0; margin:0;font-family: '微软雅黑';} 
+table,td,tr,th{font-size:12px;} 
+li{list-style-type:none;} 
+img{border:0; display:block;} 
+ol,ul {list-style:none;}
+.wrap{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.lj_head{
+	width: 100%;
+	/*height: 11.306667rem;*/
+} 
+.lj_head img{
+	width: 100%; 
+}
+.model{
+	width: 100%;
+	font-size: 0.896rem;
+	text-align: center;
+	margin-top: 44px;
+	color: #434343;
+	font-weight: 700; 
+}
+.scheme{
+	width: 100%;
+	font-size: 0.597333rem;
+	text-align: center;
+	color: #434343;
+	margin-top: 0.426667rem;
+}
+.way{
+	width: 62%;
+	height: 1.408rem;
+	border: 1px solid  #434343;
+	margin: 0.853333rem auto 1.92rem;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 1.408rem;
+	font-size: 0.682667rem;  
+}
+.ways{
+	width: 62%;
+	height: 1.408rem;
+	margin: 0.853333rem auto 1.92rem;
+}
+.ways img{
+	width: 100%;
+}
+.lj_ipad{
+	width: 100%;
+	height: 12.010667rem;
+	background: #e2e2e2;
+	position: relative;
+}
+.lj_ipad img{
+	position: absolute;
+	width: 100%;
+	bottom: -10px;
+}
+.lj_good{
+	width: 100%;
+	text-align: center;
+	margin-top: 1.92rem;
+	color: #434343;
+	margin-bottom: 2.56rem;
+}
+.lj_good p{
+	font-size: 0.568rem;
+}
+.lj_shop{
+	font-size: 0.90rem !important;
+	text-align: center;
+	margin-bottom: 0.682667rem;
+	font-weight: 600;
+}
+.lj_pin {
+	background: rgb(243,243,243);
+	padding: 1.5rem;
+}
+.channel {text-align: center;color: rgb(51,51,51);margin-bottom:1rem;}
+.channel .channel-t {font-size: 0.90rem !important;font-weight: 600;padding: 0.5rem 0; }
+.channel p{
+	font-size: 0.568rem;
+}
+.exhibition {width: 100%;margin: 0 auto;text-align: center;font-size:0}
+.exhibition img{width: 5rem;height: 10rem;display: inline;margin: 0;padding: 0;}
+.exper {font-size: 0.7rem;
+color: rgb(51,51,51);
+text-align: center;
+padding: 1.5rem
+}
+.exper p span{font-weight: 600}
+.iphone {width: 100%;}
+.iphone img{width: 100%;}
+.experapp {padding: 1.5rem;font-size: 0.597333rem;text-align: center;color: rgb(130,130,130);}
+.experapp p{padding-bottom: 0.2rem;}
+.exp_shop {color: rgb(67,67,67);padding-bottom: 0.6rem!important;font-size:0.981333rem;}
+.mac .bg{width: 100%;position: absolute;z-index: -1}
+.mac .experience_s {text-align: center;padding: 1.5rem;z-index: 1}
+.mac .experience_s_t {font-size: 0.768rem;color: rgb(1,133,255);}
+.mac .highlights {position: static;padding: 1rem;margin: 0 auto;text-align: center;font-size: 0;}
+.mac .highlights img{
+	width: 6.8rem;
+	display: inline;
+	margin: 0 auto;
+}
+.experience_s_f {text-align: center;}
+.experience_s_f img{width: 85%;margin: 0 auto;}
+.increment .bg{width: 100%;position: absolute;z-index: -1}
+.increment .experience_s {text-align: center;padding-top: 4rem;z-index: 1}
+.increment .experience_s_t {font-size: 0.768rem;color: rgb(1,133,255);}
+.increment .experience_s .highlights {text-align: center;margin: 0 auto;padding-top: 1.5rem}
+.increment .experience_s .highlights img{text-align: center;margin: 0 auto;width: 90%;}
+.boutique {text-align: center;overflow: hidden;margin-top: 3rem;padding-bottom: 2rem;width: 100%}
+.boutique .boutique_s_t{font-size: 0.768rem;color: rgb(1,133,255);padding: 1rem;}
+.boutique .highlights {}
+.boutique .highlights img{text-align: center;margin: 0 auto;width: 90%}
+
+.characteristic {text-align: center;padding: 2rem 1rem;background: rgb(235,235,235);}
+.characteristic .highlights img{display: inline;width: 8rem}
+.characteristic .boutique_s_t {font-size: 0.768rem;color: rgb(1,133,255);margin-bottom: 0.8rem}
+.characteristic .boutique_s_r {color: rgb(112,112,112);font-size: 0.597333rem;margin-bottom: 0.8rem}
+.optional .boutique_s_t{color: rgb(51,51,51);
+text-align: center;padding: 1.5rem 0.2rem}
+.scroll {
+width:50rem;
+height:7rem;
+margin:0 auto;
+overflow: hidden;
+white-space: nowrap;
+background:#ffffff;}
+.shops { width: 19rem;height: 7rem;overflow-y: scroll;overflow:auto;-webkit-overflow-scrolling: touch;}
+.optional .shops img {display: inline;overflow: hidden;width: 10rem}
+.app {width: 100%;}
+.app img {width: 100%;}
+.collar {width: 100%;margin: 0 auto;font-size:0;overflow: hidden;background: #e2e2e2;}
+.collar img{width: 100%;margin: 0 auto;text-align: center;float: left;font-size: 0;border: none;}
+
+.storage {}
+.storage .bg{width: 100%;height: 30rem;position: absolute;z-index: -1;filter: blur(7px); }
+.storage .highlights img{margin: 0 auto;text-align: center;width: 100%};
+.zhaoshang {padding: 1.5rem}
+.cooperation {width: 100%;margin: 0 auto;text-align: center;margin: 1.5rem 0;}
+.cooperation img {text-align: center;width: 100%;}
+.copy {color: red;}
+.category {padding: 1.5rem 0;margin: 0 auto;text-align: center;}
+.category img{margin: 0 auto;text-align: center;width: 80%}
+.mask {position: fixed;top: 0;left: 0;bottom: 0;right: 0; width: 100%;z-index: 99;background: rgba(0,0,0,0.6);}
+.mask img {width: 95%;margin: 0 auto;margin-top: 5rem;}

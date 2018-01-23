@@ -1,0 +1,395 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	min-width: 300px;
+}
+body::-webkit-scrollbar{
+width:0;
+height:0;
+background: #f0f0f0;
+}
+p {
+	padding:0;
+	margin: 0;
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#ffffff;
+	overflow: hidden;
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+}
+.header{
+	width: 100%;
+	height:1.877333rem;
+	background: #f0f0f0;
+    text-align: center;
+    line-height:1.877333rem;
+    position: relative;
+    top: 0;
+}
+.lj_srt{font-size:0.810667rem;color:#333; }
+.lefter{
+	width: 0.64rem;
+	height: 0.981333rem;
+	position: absolute;
+	left: 0.444444rem;
+	bottom:0.34562963rem;
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.34562963rem;
+}
+/*倒计时*/
+.lj_count{
+	width: 100%;
+	/*height: 225px;*/
+	/*background: url(../img/starbg.png) no-repeat center center;*/
+	background-size: 100% 100%;
+	overflow: hidden;
+	position: relative;
+}
+.lj_bg{
+	width: 100%;
+}
+.lj_bg img{width: 100%;}
+.lj_wen{
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+.lj_rule{
+	width: 2.56rem;
+	height: 25px;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	font-size: 14px;
+	background: #333333;
+	float: right;
+	margin-right: 6px;
+	margin-left: 90%;
+}
+.lj_time{
+	font-size:0.810667rem;
+	color: #333;
+	text-align: center;
+	margin-top: 45px;
+}
+.lj_residue{
+	font-size: 1.024rem;
+	color: #333;
+	text-align: center;
+}
+.lj_num{
+	font-weight: bold;
+}
+.lj_shop{
+	font-size: 0.512rem;
+	color: #333;
+	text-align: center;
+	margin-top: 0.512rem;
+	margin-bottom: 0.4512rem;
+}
+.lj_iphone{
+	width: 9.85386667rem;
+	height: 1.066667rem;
+	border: 1px solid #999999;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 1.066667rem;
+	font-size:  0.569298667rem;
+	color: #333;
+	margin: 0 auto;
+	margin-bottom: 53px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.lj_iphone ul{padding: 0;margin: 0;}
+.lj_iphone>ul>li{
+	width: 9.85386667rem;
+	height: 1.066667rem;
+	text-align: center;
+	font-size:  0.569298667rem;
+	color: #333;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	/*border: 1px solid red;*/
+}
+/*奖项设置*/
+.lj_awards{
+	width: 95%;
+	border-radius: 4px;
+	margin: 0 2%;
+	background: #f0f0f0;
+	padding: 0 0 2%;
+	margin-top: 0.426667rem;
+}
+.first_prize{
+	width: 94.3%;
+	height: 5.12rem;
+	overflow: hidden;
+	padding:2% 3%;
+}
+.first_prize img{
+	width: 100%;
+	/*height: 100%;*/
+}
+.lj_combo{
+	width: 96%;
+	height: 52px;
+	margin:0 auto;
+}
+.lj_wid{
+	width: 7.666667rem;
+	height: 50px;
+	margin: 0 auto;
+	text-align:center;
+	line-height: 50px;
+}
+.lj_wid p{
+	float: left;
+}
+.left_hr{
+	float: left;
+	width: 1.32rem;
+	border: 1px solid #d9d9d9;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: 25px;
+}
+.lj_cover{
+	color: #4c4c4c;
+	font-size: 0.682667rem;
+	margin:0 7px;
+}
+.right_hr{
+	float: right;
+	width: 1.32rem;
+	border: 1px solid #d9d9d9;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	margin-top: 25px;
+}
+/*子图套餐*/
+.lj_set{
+	width: 95%;
+	border-radius: 4px;
+	margin: 0% 2% 3%;
+	background: #f0f0f0;
+	padding:3% 0 0;
+}
+.lj_master{
+	width: 94%;
+	height: 5.333333rem;
+	background: url(../../img/lucky/stard.png);
+	background-size: 100% 100%;
+	/*padding:2% 2%;*/
+	margin: 0 3%;
+	overflow: hidden;
+}
+.mas{
+	width:32%;
+	height: 100%;
+	float: left;
+}
+.lj_master img {
+	width: 100%;
+
+}
+.mas_right{
+	width: 63%;
+	float: left;
+	margin-left: 10px;
+}
+.lj_title{
+	width: 100%;
+	height: 1.828rem;
+	/*border: 1px solid red;*/
+	margin-top: 10px;
+	color: #666;
+	font-size:0.669341333rem;
+	display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    overflow: hidden;
+}
+.lj_title a{
+	color: #666;
+}
+.rice{
+	margin: 0;
+	padding: 0;
+}
+.ruling_price{
+	font-size: 0.85362667rem;
+	color: #666;
+	/*font-weight: bold;*/
+}
+.original_price{
+	text-decoration:line-through;
+	font-size: 0.4rem;
+	color: #acacac;
+}
+.title_foot{
+	width: 98%;
+	overflow: hidden;
+}
+.lj_repertory{
+	font-size: 0.469333rem;
+	color: #666;
+	padding-top: 10px;
+	float: left;
+}
+.title_btn{
+	width: 3.2rem;
+	height: 1.1576rem;
+	background: #d9d9d9;
+	font-size: 0.4rem;
+	border-radius: 4px;
+	color: #999;
+	text-align: center;
+	line-height:1.1576rem;
+	float: right;
+}
+.title_btnred{
+	width: 32%;
+	height: 27px;
+	background: #eb6e65;
+	font-size: 0.512rem;
+	border-radius: 4px;
+	color: #fff;
+	text-align: center;
+	line-height: 27px;
+	float: right;
+}
+.title_btn a{
+	color: #999;
+}
+.title_btnred a{
+	color: #fff;
+}
+.lj_subplot{
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.lj_subplot::-webkit-scrollbar{
+width:0;
+height:0;
+background: #f0f0f0;
+}
+.lj_subplot ul{
+	overflow: hidden;
+	margin: 0 2%;
+	padding: 0;
+	display: inline-block;
+	white-space: nowrap;
+}
+.lj_subplot ul li{
+	width: 3.91rem;
+	/*float: left;*/
+	text-align: center;
+	margin-right: 8px;
+	display: inline-block;
+}
+.lj_subplot ul li img{
+	width: 100%;
+	height: 3.84rem;
+}
+.lj_priced{
+	font-size: 0.512rem;
+	color: #4c4b4c;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0.326667rem;
+}
+.lj_check{
+	width: 96%;
+	height: 1.408rem;
+	border-radius: 4px;
+	background: #666;
+	margin: 2% 2%;
+	color: #fff;
+	font-size: 0.597333rem;
+	text-align: center;
+	line-height:  1.408rem;
+}
+.lj_check a{
+	color: #fff;
+}
+/*遮罩规则*/
+.rules{
+	background: rgba(0,0,0,0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: none;
+}
+.lj_act{
+	width: 88%;
+	border-radius: 4px;
+	margin: 1.8133333rem auto;
+	background: #fff;
+	z-index: 2;
+	position: relative;
+}
+.lj_act img {
+	position: absolute;
+	top: 0;
+	right:0;
+	padding: 4%;
+	display: inline-block;
+	margin-left: 75%;
+	width: 16px;
+}
+.lj_acter{
+	color: #4c4b4c;
+	font-size: 0.810667rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 1.03333rem;
+	margin-bottom: 0.54rem;
+}
+.matter{
+	width: 86%;
+	margin: 0.2rem auto;
+	padding-bottom: 0.1496667rem;
+}
+.titls{
+	font-size: 0.6597333rem;
+	color: #4c4b4c;
+	font-weight: bold;
+	padding: 0.1rem 0 !important;
+}
+.matter p{
+	color: #4c4b4c;
+	font-size: 0.5512rem;
+	padding:0.239426667rem 0;
+}

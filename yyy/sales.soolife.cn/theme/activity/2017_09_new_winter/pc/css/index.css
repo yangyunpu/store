@@ -1,0 +1,149 @@
+body {
+    color: #fde0cf;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.main {
+    margin-left: -2px;
+    width: 100%;
+    background: #fde0cf;
+    overflow: hidden;
+    position: relative;
+}
+
+._aa {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+._aa img {
+    width: 70%;
+}
+
+._cc img {
+    width: 70%;
+}
+
+._bb img {
+    width: 50%;
+    float: right;
+}
+
+._bb {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    right: 0;
+}
+
+._cc {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.y_banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.y_banner img {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.one_f {
+    width: 1200px !important;
+    margin: 0 auto;
+}
+
+.one_f li {
+    width: 24%;
+    padding-bottom: 20px;
+}
+
+.one_f li img {
+    width: 100%;
+}
+
+.one_f ul {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*padding-bottom: 80px;*/
+}
+
+.one_f ._three {
+    width: 32.5%;
+}
+
+.one_f .y_two {
+    width: 49.4%;
+}
+
+.one_f .y_two img {
+    width: 100%;
+}
+
+.one_f ._bottom {
+    padding-bottom: 200px;
+}

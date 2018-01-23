@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星星杀</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starkill/success.css"/>
+	
+
+</head>
+<body>
+<div class="index_wrap">
+	<div class="header">
+		<a href="/starkill/state.html?starkill_id={{suc['data']['starkill_id']}}"><img class="arrow"  src="/public/img/starkill/icon/Group 36.png " ></a>
+		<span class="head_title">付款成功</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+    <div class="suc_con">
+    	<p class="suc_suc">恭喜您!星星杀预订成功!</p>
+        {% if suc['data']%}
+		<div class="suc_good">
+			<img src="{{suc['data']['logo']}}">
+			<div class="suc_txt">
+				<p class="suc_state">预定</p>
+				<p class="suc_title">{{suc['data']['name']}}</p>
+				<div class="suc_coin">
+				    <input type="hidden" value="{{suc['data']['pre_price']}}" name="" id="suc_coin">
+				    <p>
+				    	<span id="coin_num"></span><span class="coin">星币</span>
+				    </p>
+					<span class="coin_count">*{{suc['data']['qty']}}</span>
+				</div>
+			</div>
+		</div>
+        {% endif %}
+		<div class="link_wrap">
+			<a class="suc_link" href="/starkill/start.html">去星星杀</a>
+		    <a class="suc_link go" href="/mindex/index.html">去首页</a>
+		</div>
+		<div id="guess">
+			<div id="like"><span>您可能还敢兴趣</span></div>
+		</div>
+        {% if like %}
+		<ul class="suc_list">
+		{% for d in like %}
+			<li>
+				<a href="{{d['url']}}/{{d['sku_id']}}.html">
+					<img src="{{d['logo']}}">
+					<p class="list_title">{{d['sku_name']}}</p>
+					<p class="list_price">￥{{d['act_price']}}</p>
+				</a>	
+			</li>
+			{% endfor %}
+		</ul>
+		{% endif %}
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/js/starkill/success.js"></script>

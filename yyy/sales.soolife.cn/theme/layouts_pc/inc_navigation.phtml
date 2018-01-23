@@ -1,0 +1,35 @@
+<div class="navbar">
+	<div class="nav">
+		<div class="catalog leftflo">
+			<h4>全部商品分类<i class="icon-angle-down icon-large"></i></h4>
+			<div class="catalogshow">
+				<script src="{{url_website}}/assets/category.js"></script>  
+			</div>
+			{% if zone==1 %}
+			{{ partial("index/zone/inc_zone") }}
+			{% endif %}
+		</div>
+		<div class="lists leftflo">
+			<ul>
+				<li>
+					<a {% if nav == "index" %} class="active" {% endif %} href="/">首  页</a>
+				</li>
+				<li>
+					<a {% if nav == "market" %} class="active" {% endif %} href="/market.html">星超市</a>
+				</li>
+				<li>
+					<a {% if nav == "mall" %} class="active" {% endif %} href="/mall.html">星商城</a>
+				</li>
+				<li>
+					<a {% if nav == "clothes" %} class="active" {% endif %} href="/clothes.html">服饰鞋包</a>
+				</li>
+				<li>
+					<a {% if nav == "discount" %} class="active" {% endif %} href="/discount.html">品牌特惠</a>
+				</li>
+				<li>
+					<a {% if nav == "zone" %} class="active" {% endif %} href="/zone.html">星粉专区</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

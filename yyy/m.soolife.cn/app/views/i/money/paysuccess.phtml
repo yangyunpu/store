@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|会员中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/i/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/i/money/paysuccess.css"/>
+</head>
+<body>
+<div id="paysuccess">
+	<div id="head">
+		<div id="head-center" class="between">付款成功</div>
+	</div>
+	<div id="top_place"></div>
+	<div class="top_img">
+		<img src="/public/img/i/success.png">
+	</div>
+	
+	<div id="back_index" class="between"><a href="/mindex/index.html">返回首页</a></div>
+	<!-- 店铺推荐 -->
+	<div class="recommend">
+		<div class="title"><span>为您推荐</span></div>
+	</div>
+	<input  type="hidden"  value="" />
+	<div class="main clear-f">
+	{% if guesslike %}
+		{% for d in guesslike %}
+		<div class="item float-l bg-white">
+			<a href="{{ d['url'] }}/{{ d['sku_id'] }}.html">
+				<div class="img_box ">
+					<img src="{{d['logo']}}">
+				</div>
+				<p class="name">{{d['sku_name']}}</p>
+				<p class="piece">￥{{d['act_price']}}</p>
+			</a>
+		</div>	
+		{% endfor %}
+	{% endif %}
+	</div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/i/money/walletpay.js"></script> 

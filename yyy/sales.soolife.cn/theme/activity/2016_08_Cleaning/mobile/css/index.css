@@ -1,0 +1,10 @@
+*{margin:0 auto;padding:0;}
+ul li{list-style: none;}
+.f_shower img{width:100%;margin-top:20px;border: none;}
+#f_banner img{width:100%;border: none;}
+#wash_product{margin-top:40px;width:90%;} 
+#wash_product img{width:100%;}
+.single_product{width:100%;overflow: hidden;}
+.single_product ul li{width:48%;float:left;position: relative;margin:1% 1%;}
+.single_product ul li img{width:100%;}
+.single_product .f_gomai{width: 46%;height: 8%;position: absolute;left: 48%;bottom: 0%;filter: alpha(opacity=50);opacity: 0.5;}

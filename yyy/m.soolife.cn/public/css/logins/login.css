@@ -1,0 +1,232 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #ffffff;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+li{ list-style:none }
+input{
+	outline: none;
+}
+.wrap{
+	width: 100%;
+	height: 100%;
+	font-family: "Microsoft YaHei";
+	background: #fff;
+	min-width: 300px;
+	position: fixed;
+	top:0; right:0; bottom:0; left:0;
+}
+#con{
+	width: 100%;
+	overflow-y:auto;
+	position:absolute; 
+	top:38%; 
+	transform: translate(0,-50%); 
+	-webkit-transform: translate(0,-50%);
+	-ms-transform: translate(0,-50%);
+	-moz-transform: translate(0,-50%); 
+	-o-transform: translate(0,-50%);
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 0.981333rem;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:12px; 
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.34562963rem; 
+}
+.void{
+	width: 100%;
+	height: 44px;
+}
+.logo{
+	width: 24.3%;
+	height: 1.514667rem;
+	margin: 80px auto;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.iphone{
+	width: 72%;
+	border-bottom: 1px solid #979797;
+	margin: 0 auto;
+	height: 61px;
+}
+.iphone input{
+	border:none;
+	/*margin-bottom: 15px;*/
+	font-size: 16px;
+	color: #4C4B4C;
+	line-height: 16px;
+	height: 50px;
+}
+/*图片验证码*/
+.security{
+	display: none;
+}
+.security input{
+	width: 50%;
+}
+/*.security img{
+	float: right;
+	width:3.584rem;
+	padding-top: 18px;
+}*/
+.img_code2 {
+	float: right;
+	width: 3.584rem;
+	height: 30px;
+	padding-top: 18px;
+}
+.img_code2 img{
+	width: 100%;
+	height: 100%;
+}
+.sure{
+	width: 72%;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: #EC6D65;
+	border-radius: 3px;
+	text-align: center;
+	margin: 20px auto;
+}
+.forgets{
+	width: 72%; 
+	margin: 0 auto;
+	height: 20px;
+	color: #666;
+	font-size: 14px;
+}
+.forgets a{
+	color: #666;
+	text-decoration:underline !important;
+}
+.forgets a:first-child{
+	float: left;
+}
+.forgets a:last-child{
+	float: right;
+}
+/*猜你喜欢*/
+.guess {
+    padding: 0.64rem 0;
+}
+.like {
+    text-align: center;
+    font-weight: 500;
+}
+.like span {
+    display: block;
+    font-size: 14px;
+    color:  #999999;
+    position: relative;
+}
+.like span:before {
+    content: '';
+    position: absolute;
+    top: 52%;
+    background: #999;
+    width: 17%;
+    /* height: 1px; */
+    border-bottom: 0.5px solid #999;
+    left: 12%;
+}
+.like span:after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    background: #999;
+    width: 17%;
+    /* height: 1px; */
+    border-bottom: 0.5px solid #999;
+    right: 12%;
+}
+.tencent{
+	width: 5.12rem;
+	height: 2.773333rem;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.qq{
+	float: right;
+}
+.qq img{
+	width: 1.706667rem;
+	margin: 0 auto;
+}
+.qq p{
+	font-size: 12px;
+	color: #ACACAC;
+	line-height: 12px;
+	padding-top: 12px;
+}
+.wechat{
+	float: left; 
+}
+.wechat p{
+	font-size: 12px;
+	color: #ACACAC;
+	line-height: 12px;
+	padding-top: 12px;
+} 
+.wechat img{
+	width: 1.706667rem;
+	margin: 0 auto;
+}
+/*弹出框*/
+#exceed{
+	width: 52%;
+	height: 33px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 33px;
+	background: rgba(0,0,0,0.6);
+	border-radius: 4px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -26%;
+	margin-top: -33px;
+	z-index: 1;
+	display: none;
+}

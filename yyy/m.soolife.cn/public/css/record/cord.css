@@ -1,0 +1,126 @@
+body{
+	margin:0;
+	padding:0;
+}
+.lcy_starfans {
+	width:100%;
+    font-family:"黑体","arial";
+    min-width:300px;
+    background:#ffffff;
+    position: relative;
+}
+.lcy_starfans ul,li,p {
+	padding:0;
+	margin:0;
+}
+.lcy_starfans img {
+	display:block;
+}
+/*头部*/
+.lcy_starfans .head{
+	width:100%;
+	height:44px;
+	background:white;
+	display:flex;
+	display: -webkit-flex;
+} 
+.lcy_starfans .head .back{
+    width: 70px;
+    height: 25px;
+    background: url(/public/img/back1.png) 10px center no-repeat;
+    background-size: contain;
+    margin:auto 0;
+} 
+.lcy_starfans .head .back2{
+    width: 70px;
+    height: 25px;
+} 
+.lcy_starfans .head p{
+	width:100%;
+	text-align:center;
+	height:44px;
+	line-height: 44px;
+	font-size: 16px;
+} 
+/*邀请记录内容*/
+.lcy_starfans .enroll{
+	width: 100%;
+	/*height: 1.333333rem;*/
+	border-top: 1px solid #E6E6E6;
+
+}
+
+.lcy_starfans .enroll .successed{
+	font-size: 0.866667rem;
+	padding-left: 5px;
+	padding-top: 4px;
+    /*font-weight: bold;*/
+    color:#3c3c3c; 
+	background: #ffffff;
+}
+.lcy_starfans .enroll .tasks{
+	font-size: 0.566667rem;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+.lcy_starfans .enroll .moneyd{
+	position: absolute;
+	right:5%;
+	/*margin-left: 50px;*/
+	color: #F08200;
+}
+.lcy_starfans .enroll .time{
+	font-size: 0.566667rem;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-bottom: 12px;
+}
+.lcy_starfans .enroll .award{
+		position: absolute;
+		right:5%;
+		/*margin-left: 50px;*/
+		color: #F08200;
+}
+.lcy_starfans .fled{
+	width: 100%;
+	/*height: 1.333333rem;*/
+}
+
+.lcy_starfans .fled .successed{
+	font-size: 0.866667rem;
+	padding-left: 5px;
+	padding-top: 4px;
+   
+    color:#3c3c3c; 
+	background: #ffffff;
+}
+.lcy_starfans .fled .tasks{
+	font-size: 0.566667rem;
+	padding-top: 8px;
+	padding-left: 5px;
+}
+.lcy_starfans .fled .moneyd{
+	position: absolute;
+	right:5%;
+	/*margin-left: 50px;*/
+	color: #F08200;
+}
+.lcy_starfans .fled .time{
+	font-size: 0.566667rem;
+	padding-top: 3px;
+	padding-left: 5px;
+	padding-bottom: 12px;
+}
+.lcy_starfans .fled .award{
+		position: absolute;
+		right:5%;
+		/*margin-left: 50px;*/
+		color: #F08200;
+}
+
+
+
+
+
+
+

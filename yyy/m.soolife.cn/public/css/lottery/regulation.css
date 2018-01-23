@@ -1,0 +1,126 @@
+html {
+    background: #F1F0F0;;
+}
+a {
+    display: inline-block;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/*定位头部*/
+#soo-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:44px;
+    box-sizing: border-box;
+    padding:0 2%;
+    line-height:44px;
+    overflow: hidden;
+    background-color:#e6e6e6;
+    z-index: 9;
+}
+#soo-header>#header-left,#header-center,#header-right{
+    float:left;
+}
+#soo-header>#header-left{
+    font-family: "SimSun";
+    text-align:left;
+    width:20%;
+}
+#soo-header>#header-left img{
+    margin-top: 10px;
+    width:10px;
+}
+#soo-header>#header-right img{
+    margin-top: 10px;
+    width:19px;
+}
+#soo-header>#header-center{
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    color:#333333;
+}
+#soo-header>#header-right{
+    text-align:right;
+    width:20%;
+}
+.regula-back {
+    position: absolute;
+    background-image: url(../../img/lottery/regula_back.png);
+    background-size:100% 100%; 
+    width: 100%;
+    height: 28.458667rem;
+    margin-top: 44px;
+}
+.regula-h1{
+    margin: 0;
+    font-size: 1.024rem;
+    color: #EC6D65;
+    line-height: 1.024rem;
+    text-align: center;
+    padding-top: 6.357333rem;
+    margin-bottom: 0; 
+}
+.regula-h2{
+    margin-top: 0.490667rem;
+    font-size: 0.597333rem;
+    color: #68290A;
+    line-height: 0.597333rem;
+    text-align: center;
+}
+.regula-text1 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin-left: 2.218667rem;
+    margin-right: 12.1333%;
+    margin-top: 2.24rem;
+    margin-bottom: 0;
+}
+.regula-text2 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin: 0.213333rem 12.1333% 0 2.218667rem;
+}
+.regula-text3 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin: 0.213333rem 12.1333% 0 2.218667rem;
+}
+.regula-text4 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin: 0.213333rem 12.1333% 0 2.218667rem;
+}
+.regula-text5 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin: 0.213333rem 12.1333% 0 2.218667rem;
+}
+.regula-text6 {
+    font-size: 0.512rem;
+    color: #632202;
+    line-height: 0.896rem;
+    margin: 0.213333rem 12.1333% 0 2.218667rem;
+}
+.regula-btn {
+    margin-top: 2.133333rem;
+    background: #EC6D65;
+    border-radius: 0.170667rem;
+    width: 5.333333rem;
+    height: 1.408rem;
+    margin-left: 33.33%;
+    font-size: 0.597333rem;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.408rem;
+    text-decoration: none;
+}

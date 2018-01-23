@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p, input, a, img, dl, dd, dt {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+img,textarea,button {
+    border: 0;
+    display: block;
+    border: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+body {
+    font-family: Arial, "微软雅黑";
+    color: #666;
+    font-size: 12px;
+}
+
+.clear {
+    clear: both;
+}
+
+.inner {
+    /*width: 57.3%;*/
+    width: 1100px;
+    margin: 0 auto;
+    background: #fff5c9;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+.cao_banner img{
+    width: 100%;
+}
+ .cao_content{
+     /*width: 100%;*/
+    background: #5e1d93;
+     text-align: center;
+ }
+.cao_content .inner .active{
+    width: 80%;
+    margin-left: 12%;
+    padding-top: 50px;
+}
+
+.cao_content .inner .active li{
+    float: left;
+    margin-left: 1.2%;
+    width: 29.2%;
+
+}
+.cao_content .inner .active li img{
+    width: 100%;
+}
+.cao_content .inner .cao_content_theme .title{
+    margin-left: 32.3%;
+    width: 34.3%;
+}
+.cao_content .inner .cao_content_theme .commodity{
+    margin-top: 72px;
+}
+.cao_content .inner .cao_content_theme .commodity .left{
+    float: left;
+    margin-left: 5.4%;
+    width: 47.6%;
+
+}
+.cao_content .inner .cao_content_theme .commodity .left img{
+    width: 100%;
+}
+.cao_content .inner .cao_content_theme .commodity .right{
+    float: left;
+    width: 41.4%;
+    /*margin-left: 5%;*/
+    margin-left: 20px;
+}
+.cao_content .inner .cao_content_theme .commodity .right img{
+    /*width: 93.1%;*/
+}
+.cao_content .inner .cao_content_theme .commodity .right p{
+    color: #fb435d;
+}
+.cao_content .inner .cao_content_theme .commodity .right .desc{
+    font-size: 22px;
+    border-bottom: 1px solid #fb435d;
+    padding-bottom: 10px;
+}
+.cao_content .inner .cao_content_theme .commodity .right .name{
+    font-size: 26px;
+    font-weight: bolder;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid #fb435d;
+}
+.cao_content .inner .cao_content_theme .commodity .right .price{
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    margin-bottom: 60px;
+    padding-right: 2%;
+
+}
+.cao_content .inner .cao_content_theme .commodity .right span{
+    text-decoration: line-through;
+    display: block;
+    color: #c2c0b7;
+    font-size: 24px;
+}
+.cao_content .inner .cao_content_theme .commodity .right i{
+    font-size: 40px;
+}
+
+.cao_content .inner .cao_content_theme .commodity .right img{
+    border-top: 2px solid #fb435d;
+}
+
+.cao_footer img{
+    width: 100%;
+
+}
+
+.ac{
+    margin-top: 30px;
+}
+.last{
+    padding-bottom: 50px;
+}
+.pic{
+   padding-top: 70px;
+    /*display: block;*/
+}
+
+.left{
+    padding-top: 10px;
+    /*display: block;*/
+}
+
+.btn{
+    margin-left: 40px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

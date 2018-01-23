@@ -1,0 +1,120 @@
+
+body {
+    margin: 0;
+    text-align: center;
+}
+#clipArea {
+    margin: 20px;
+    height: 300px;
+}
+#file,
+#clipBtn {
+    margin: 20px;
+}
+#view {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+
+
+html,body{
+    width:100%;
+ }
+.lcy_shopdatum{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+}
+.lcy_shopdatum ul li{
+    list-style:none;    
+}
+.lcy_shopdatum a{
+    text-decoration: none;    
+}
+.lcy_shopdatum ul,li,div,p{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_shopdatum .head{
+    width:100%;
+    height:44px;
+    background:white;
+} 
+.lcy_shopdatum .head div{
+    float:left;
+} 
+.lcy_shopdatum .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url(/public/img/back1.png) 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_shopdatum .head .title{
+    width:80%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.lcy_shopdatum .head .back2{
+    width: 10%;
+    height: 44px;
+}
+/*内容*/
+.lcy_shopdatum .contain{
+    width: 100%;
+    height: 44px;
+    font-size: 15px;
+    line-height: 44px;
+    border-bottom: #f3f3f3 solid 1px;
+    background:white;
+    color:#888282;
+}
+
+.lcy_shopdatum .contain .word{
+    float:left;
+    height: 44px;  
+    text-indent: 13px;
+} 
+.lcy_shopdatum .contain .logo{
+    float: right;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right: 10px;
+} 
+ 
+.lcy_shopdatum .contain .logo img{
+    width: 40px;
+    border-radius: 50%;
+} 
+.lcy_shopdatum .contain .name{
+    float:right;
+}
+.lcy_shopdatum .contain .name input{
+    font-size: 16px;
+    font-family:"Microsoft YaHei","arial";
+    text-align: right;
+    border:0;
+    outline:none;
+   
+    margin-right: 10px;
+} 
+.lcy_shopdatum .mark{
+    display: none;
+    position: absolute;
+    top:0 ;
+    left:0;
+    right:0;
+    bottom: 0;
+    background:#fff;
+}
+
+
+
+ 

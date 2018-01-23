@@ -1,0 +1,42 @@
+.market_banner,
+.market_content,
+.crazy,
+.caprice,
+.floor{margin: 0px auto;position: relative;left: -18px;}
+
+/* Banner */
+.market_banner {width: 1200px;}
+.market_banner .carousel .carousel-inner {width: 1200px;height: 480px;}
+.market_banner .carousel .carousel-images {margin-left:240px;position:relative; width: 800px; height: 480px;overflow: hidden;}
+.market_banner .carousel .carousel-floated {height: 480px;width: 170px;display: block;z-index: 10; opacity: 0.95;position: absolute;right: 0;top: 0;overflow: hidden;}
+.market_banner .carousel .carousel-floated ul>li{height: 240px;width: 170px;z-index: 10;}
+.market_content {width: 1201px; height: 260px;margin-top: 20px;border-left: 1px solid #EFEFEF;}
+.market_content ul>li {width: 180px;height: 260px;overflow: hidden;float: left;border-right: 1px solid #EFEFEF;border-top: 1px solid #EFEFEF;border-bottom: 1px solid #EFEFEF;}
+.market_content ul>li.wide {width: 479px;}
+
+/* 陪你疯 */
+.crazy .crazy_title {margin-top:10px;height: 40px;border-bottom: 2px solid #fd5a5d;}
+.crazy .crazy_title span{ font-size: 20px;font-weight:bold;line-height: 40px;}
+.crazy .crazy_content {overflow: hidden;height: 500px;}
+.crazy .crazy_content .leftside { width: 320px;float: left;border-right: 1px solid #EFEFEF;}
+.crazy .crazy_content .leftside ul>li {float: left;width: 54px;height: 500px;display: block;overflow: hidden;}
+.crazy .crazy_content .leftside ul>li.open{width: 156px;}
+.crazy .crazy_content .rightside { width: 880px; float: right;border-top: 1px solid #EFEFEF;}
+.crazy .crazy_content .rightside ul>li {width: 220px;height: 250px;border-right: 1px solid #EFEFEF;border-bottom: 1px solid #EFEFEF;display: block;float: left;overflow: hidden;}
+
+/* 任你购 */
+.caprice{background-color: #ffd2d0}
+.caprice .caprice_title {margin-top:10px;height: 68px;padding-left: 11px;}
+.caprice .caprice_title span{ font-size: 24px;font-weight:bold;color:#FFFFFF;line-height: 68px;}
+.caprice .caprice_content {height: 510px;padding-left: 11px;padding-right:1px;}
+.caprice .caprice_content ul>li{background-color: #FFFFFF;width: 386px;height:240px;margin-right: 10px;margin-bottom: 10px;float: left;overflow: hidden;}
+
+/* 楼层 */
+.floor .floor_title {margin-top:10px;height: 40px;border-bottom: 2px solid #fd5a5d;}
+.floor .floor_title span {font-size:16px;font-weight:bold;line-height: 40px;}
+.floor .floor_content {overflow: hidden;height: 502px;}
+.floor .floor_content .leftside { width: 320px;height: 500px;float: left;border-right: 1px solid #EFEFEF;}
+.floor .floor_content .rightside { width: 880px; float: right;border-top: 1px solid #EFEFEF;}
+.floor .floor_content .rightside ul>li {width: 220px;height: 250px;border-right: 1px solid #EFEFEF;border-bottom: 1px solid #EFEFEF;display: block;float: left;overflow: hidden;}
+
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星主题</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/startheme/startheme.css"/>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+			<span onclick="window.history.go(-1)">
+				<img src="/public/img/starhui/return.png " class="lefter">
+			</span>
+			<!-- <span class="lj_srt">星特惠</span>  -->
+		</div>
+		<div class="void" id="void"></div>
+		<!-- 下载框 -->
+		<div class="download_box" id="download-nav">
+			<div class="remove" id="download-nav-hide"><img src="/public/img/common/icon_close@3x.png" alt=""></div>
+			<div class="logo"><img src="/public/img/common/logo@3x.png" alt=""></div>
+			<div class="word">下载如此生活客户端</div>
+			<div class="sure" id="download-nav-sure"><div>下载</div></div>
+		</div>
+		<div class="soo-row lj_head">
+			<div class="soo-slice-5 reds lj_red">衣</div>
+			<div class="soo-slice-5 reds">食</div>
+			<div class="soo-slice-5 reds">住</div>
+			<div class="soo-slice-5 reds">行</div>
+			<div class="soo-slice-5 reds">娱</div>
+		</div>
+		{% if data%}
+		<div class="big_content">
+			<!-- 衣 -->
+			
+				<div class="child show">
+				{% if  data['cloth'] %}
+				{% for d in data['cloth']%}
+					<div class="lj_content ">
+						<div class="image-text">
+								<img class="open-new-web" data-new-web-url="{{url_m}}/startheme/themechild/{{ d['starthemeid'] }}.html" src="{{d['sbanner']}}">
+						</div>
+						<div class="lj_sale">
+							<ul>
+							{% if d['sstarthemesku_dels'] %}
+							{% for c in d['sstarthemesku_dels']%}
+								<li class="open-goods-detail" data-goods-id="{{ c['skuid'] }}">
+										<p class="lj_them">
+											<img src="{{c['showimg']}}">
+										</p>
+										<div class="lj_price">￥{{ c['sprice'] }}</div>
+								</li>
+							{% endfor %}
+							{% endif %}
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+				{% else %}
+				<div><img src="/public/img/startheme/zanwushuju.png "></div>
+				{% endif %}	
+				</div>
+			
+			<!-- 食 -->
+				
+				<div class="child">
+				{% if data['foods'] %}
+				{% for d in data['foods'] %}
+					<div class="lj_content">
+						<div class="image-text">
+								<img class="open-new-web" data-new-web-url="{{url_m}}/startheme/themechild/{{ d['starthemeid'] }}.html" src="{{ d['sbanner'] }}">
+						</div>
+						<div class="lj_sale">
+							<ul>
+								{% for i in d['sstarthemesku_dels'] %}
+								<li class="open-goods-detail" data-goods-id="{{ i['skuid'] }}"> 
+										<p class="lj_them">
+											<img src="{{ i['showimg'] }}">
+										</p>
+										<div class="lj_price">￥{{ i['sprice'] }}</div> 
+								</li>
+								{% endfor%}	
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+				{% else %}
+				<div><img src="/public/img/startheme/zanwushuju.png "></div>
+				{% endif %}
+				</div>
+				
+			<!-- 住 -->
+			
+				<div class="child">
+				{% if data['live'] %}
+				{% for d in data['live'] %}
+					<div class="lj_content">
+						<div class="image-text">
+								<img class="open-new-web" data-new-web-url="{{url_m}}/startheme/themechild/{{ d['starthemeid'] }}.html"  src="{{ d['sbanner'] }}">
+						</div>
+						<div class="lj_sale">
+							<ul>
+								{% for c in d['sstarthemesku_dels'] %}
+								<li class="open-goods-detail" data-goods-id="{{ c['skuid'] }}"> 
+										<p class="lj_them">
+											<img src="{{ c['showimg'] }}">
+										</p>
+										<div class="lj_price">￥{{ c['sprice'] }}</div> 
+								</li>
+								{% endfor%}	
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+				{% else %}
+				<div><img src="/public/img/startheme/zanwushuju.png "></div>
+				{% endif %}
+				</div>
+				
+			<!-- 行 -->
+			
+				<div class="child">
+				{% if data['walk'] %}
+				{% for i in data['walk'] %}
+					<div class="lj_content">
+						<div class="image-text">
+								<img class="open-new-web" data-new-web-url="{{url_m}}/startheme/themechild/{{ i['starthemeid'] }}.html" src="{{ i['sbanner'] }}">
+						</div>
+						<div class="lj_sale">
+							<ul>
+								{% for d in i['sstarthemesku_dels'] %}
+								<li class="open-goods-detail" data-goods-id="{{ d['skuid'] }}"> 
+										<p class="lj_them">
+											<img src="{{ d['showimg'] }}">
+										</p>
+										<div class="lj_price">￥{{ d['sprice'] }}</div> 
+								</li>
+								{% endfor%}	
+							</ul>
+						</div>
+					</div>
+				{% endfor %}
+				{% else %}
+				<div><img src="/public/img/startheme/zanwushuju.png "></div>
+				{% endif %}	
+				</div>
+			
+			<!-- 娱 -->
+			
+				<div class="child">
+				{% if data['amusement'] %}
+				{% for d in data['amusement'] %}
+					<div class="lj_content">
+						<div class="image-text">
+								<img class="open-new-web" data-new-web-url="{{url_m}}/startheme/themechild/{{ d['starthemeid'] }}.html"  src="{{ d['sbanner'] }}">
+						</div>
+						<div class="lj_sale">
+							<ul>
+								{% for c in d['sstarthemesku_dels'] %}
+								<li class="open-goods-detail" data-goods-id="{{ c['skuid'] }}"> 
+										<p class="lj_them">
+											<img src="{{ c['showimg'] }}">
+										</p>
+										<div class="lj_price">￥{{ c['sprice'] }}</div> 
+								</li>
+								{% endfor%}	
+							</ul>
+						</div>
+					</div>
+				{%  endfor %}
+				{% else %}
+				<div><img src="/public/img/startheme/zanwushuju.png "></div>
+				{% endif %}
+				</div>	
+			</div>
+			
+		</div>
+		{% endif %}
+</body>
+</html>
+<script>
+		var isApp = /SoolifeApp/i.test(navigator.userAgent);
+		if(isApp){
+			document.getElementById('header').style.display = "none";
+			document.getElementById('void').style.display = "none";
+			document.getElementById('download-nav').style.display = "none";
+		};
+</script>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/js/startheme/startheme.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

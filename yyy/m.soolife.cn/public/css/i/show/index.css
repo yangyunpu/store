@@ -1,0 +1,132 @@
+.head_show{
+	font-size: 0.597333rem;
+    color: #333333;
+    position: absolute;
+    right: 0.64rem;
+}
+.hide{
+	display: none;
+}
+#showlist{
+	width: 95%;
+	margin: 0 2.5%;
+	font-size: 0;
+}
+#showlist li{
+	width: 97.2%;
+	height: 5.12rem;
+	margin-top: 0.426667rem;
+	background: #fff;
+	padding-right: 2.8%;
+	border-radius: 3px;
+}
+.show_img{
+	width: 33.8%;
+	height: 5.12rem;
+	margin-right: 2.8%;
+}
+#showlist .show_con{
+	display: inline-block;
+	width: 63.4%;
+	position: relative;
+}
+.show_date{
+	height: 1.365333rem;
+	line-height: 1.365333rem;
+	text-align: right;
+	font-size: 0.512rem;
+	color: #ACACAC;
+	margin-bottom: 0.213333rem;
+}
+.show_txt{
+	height: 1.706667rem;
+	line-height: 0.853333rem;
+	font-size: 0.597333rem;
+	color: #666666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 2;
+	-ms-line-clamp: 2;
+	-moz-line-clamp: 2;
+	-o-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+	margin-bottom: 0.469333rem;
+}
+.show_bottom{
+	height: 1.365333rem;
+	line-height: 1.365333rem;
+}
+.check{
+	display: inline-block;
+	font-size: 0.512rem;
+    color: #EC6D65;
+}
+.show_check{
+	display: inline-block;
+	font-size: 0.512rem;
+    color: #999;
+}
+.show_btn{
+	display: inline-block;
+	width: 2.986667rem;height: 1.152rem;
+	background: #EC6D65;
+	color: #fff;
+	line-height: 1.152rem;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 0.512rem;
+	position: absolute;
+	right: 0;
+	bottom: 0.426667rem;
+}
+/*蒙版*/
+#show_mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#show_mask .mask_con{
+	width: 57.8%;
+	background: #fff;
+	overflow: hidden;
+	margin: 0 auto;
+    padding-top: 0.64rem;
+	border-radius: 3px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform:translateX(-50%); 	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* FirefoX */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 
+}
+.mask_con p{
+	font-size: 0.597333rem;
+    color: #4C4B4C;
+    line-height: 0.853333rem;
+    padding: 0 0.64rem;
+    word-break:break-all;
+}
+.mask_con a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	height: 2.218667rem;
+	line-height: 2.218667rem;
+	font-size: 0.682667rem;
+    color: #EC6D65;
+    padding-bottom: 0.64rem;
+    padding-top: 0.64rem;
+}

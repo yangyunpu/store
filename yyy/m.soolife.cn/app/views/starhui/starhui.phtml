@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星特惠</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starhui/starhui.css"/>
+
+</head>
+<body>
+
+
+<div class="wrap">
+	<div class="header" id="header">
+		<span onclick="window.history.go(-1)">
+			<img src="../public/img/starhui/return.png " class="lefter">
+		</span>
+		<span class="lj_srt">星特惠</span> 
+	</div>
+	<!-- 下载框 -->
+	<div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div>
+	<!-- 间隙 -->
+	<div class="void" id="void"></div>
+	<div class="lj_ads">
+		{% if data|length>0 %}
+		<ul>
+			{% for i,v in data %} 
+				<li class="open-new-web" {% if v['mobile_link']!='http://' %} data-new-web-url="{{ v['mobile_link'] }}" {% endif %}><img src="{{ v['picture'] }} "></li> 
+			{% endfor %}	
+		</ul>
+		{% else %}
+		
+		{% endif %}
+	</div>
+
+</div>
+</body>
+</html>
+<script>
+		var isApp = /SoolifeApp/i.test(navigator.userAgent);
+		if(isApp){
+			document.getElementById('header').style.display = "none";
+			document.getElementById('void').style.display = "none";
+			document.getElementById('download-nav').style.display = "none";
+		};
+</script>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

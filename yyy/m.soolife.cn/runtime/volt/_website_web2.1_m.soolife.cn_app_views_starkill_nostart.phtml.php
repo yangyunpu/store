@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星星杀</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starkill/common.css"/>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<a href="/mindex/index.html"><img class="arrow"  src="/public/img/starkill/icon/Group 36.png " ></a>
+		<span class="head_title">星星杀</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+	<?php if ($nostart) { ?>
+    <div class="nostart_con">
+        <?php  if(!empty($nostart['data'])) { ?>
+		<div>
+            <?php foreach ($nostart['data'] as $i => $d) { ?>
+			<div class="nostart_active">
+				<a href="/starkill/details.html?starkill_id=<?= $d['starkill_id'] ?>">
+					<div class="active_mark">
+					   
+					</div>
+					<div class="mark_txt">
+						<input type="hidden" name="" class="stamp" data-index="<?= $i ?>" value="<?= $d['pre_begin_date'] ?>" />
+				    	<span>距活动开启还有:</span>
+					    <span class="differ_time timestamp<?= $i ?>"></span>
+					</div>
+				</a>
+				<a href="/starkill/details.html?starkill_id=<?= $d['starkill_id'] ?>">
+					<div class="active_img">
+						<img  src="<?= $d['details_pictures'] ?>">
+					</div>
+				</a>
+				<p class="active_title"><?= $d['name'] ?></p>
+				<p class="nostart_low">最低￥<?= $d['floor_price'] ?></p>
+				<p class="nostart_price">原价￥<?= $d['life_price'] ?></p>
+				<a class="nostart_link" href="/starkill/details.html?starkill_id=<?= $d['starkill_id'] ?>">查看详情</a>
+			</div>
+            <?php } ?>
+		</div>
+		<?php } else { ?>
+		<div id="com_bg">
+		</div>
+		
+		<?php  } ?>
+    </div>
+    <?php } ?>
+	<div class="start_btom">
+	    <?php if ($nostart['startpage']) { ?>
+    	<a disabled="disabled" id="no_active">正在进行</a>
+    	<?php } else { ?>
+        <a href="/starkill/start.html">正在进行</a>
+    	<?php } ?>
+    	<a class="btom_change" href="/starkill/nostart.html">即将开始</a>
+    	<?php if ($is_login) { ?>
+    	<a href="/starkill/mystar.html">我的星星杀</a>
+    	<?php } else { ?>
+    	<a href="<?= $url_m ?>/logins/login.html?return_url=<?= $return_url ?>">我的星星杀</a>
+    	<?php } ?>
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script src="/public/js/starkill/nostart.js"></script>

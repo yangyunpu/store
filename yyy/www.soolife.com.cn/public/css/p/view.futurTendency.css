@@ -1,0 +1,33 @@
+li {list-style: none;}
+.lj_top{margin-top: 20px;}
+.lj_head{margin-top: 20px;overflow: auto;}
+.lj_img{width: 700px;float: left; overflow: hidden;}
+.lj_content{width: 370px;height: 430px; float: left;margin-left: 35px;}
+.lj_contop{width: 100%;height: 60px;}
+.lj_conbg{width: 10px;height: 60px;background-color: #0068b6; float: left;}
+.lj_brand{width: 180px;height: 55px; float: left;}
+.lj_brand p:first-child{font-size:30px; margin: 0;padding: 0;}
+.lj_center{margin-left: 30px; margin-top: 30px;}
+.lj_fen{margin-top: 15px;}
+.lj_five{width: 100%;height: 60px;}
+.lj_fuimg{width: 100%;height: 400px; text-align: center;margin-top: 30px;margin-bottom: 85px;}
+/*企业荣誉*/
+.lj_enhead{margin-top: 20px; overflow: auto;}
+.lj_enleft{width:480px; height: 490px; float: left; overflow: hidden;}
+.lj_enright{width: 674px;height: 460px; float: left;margin-left: 30px;}
+.lj_firm p{margin-top: 18px;}
+.lj_honor{width: 100%;height: 60px;margin-top: 30px; margin-bottom: 20px;  font-size: 34px;text-align: center;line-height: 60px;}
+.lj_banner{width: 100%;height: 340px;margin-bottom: 100px;}
+.carousel-control.right{background-image: none;}
+.carousel-control.left{background-image: none;}
+/*核心团队*/
+.lj_core ul>li{float: left; width: 380px;height: 360px;margin-right: 18px; margin-top: 30px; border-radius: 5px;overflow: hidden; position: relative;}
+.lj_core{margin-bottom: 105px; overflow: hidden;}
+.lj_core ul{overflow: hidden;}
+.lj_corefot{width: 380px;height: 80px;background:#43a3d7; position: absolute; bottom: 0;}
+.lj_coreleft{float: left; margin: 16px; color: #fff;}
+.lj_coreleft p:first-child{font-size: 20px;}
+.lj_coreright{float: right;margin: 18px;}
+
+
+

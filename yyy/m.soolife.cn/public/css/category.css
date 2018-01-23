@@ -1,0 +1,183 @@
+
+.lcy_category{
+    font-family:"Microsoft YaHei","arial"; 
+    min-width:300px !important;
+}
+.lcy_category .head_bar{
+	width: 100%;
+    height: 40px;
+    padding-top: 3px;
+    background: white;
+}
+.lcy_category .head_bar .search_box{
+    font-family: "Microsoft YaHei","arial";
+    display: block;
+    width: 90%;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding: 0 0 0 15px !important;
+}
+.lcy_category .mui-fullscreen {
+    top: 38px;
+    border-top: 1px solid #cdcdcd;
+}
+.lcy_category .mui-row.mui-fullscreen>[class*="mui-col-"] {
+	height: 100%;
+}
+.lcy_category .mui-col-xs-3,.lcy_category .mui-control-content {
+	overflow-y: auto;
+	height: 100%;
+	background: #f3f4f6;
+}
+.lcy_category .mui-segmented-control .mui-control-item {
+	line-height: 50px;
+	width: 100%;
+}
+.lcy_category .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+	background-color: #fff;
+	border-right:0;
+	border-left: 2px solid #f08201;
+}
+
+.lcy_category .mui-control-content.mui-active {
+    background: white;
+}
+.lcy_category .mui-control-content p{
+	text-indent: 20px;
+    height: 51px;
+    line-height:51px;
+}
+.lcy_category .mui-table-view:before {
+	background: none;
+}
+.lcy_category .mui-table-view:after {
+	background: none;
+}
+.lcy_category .mui-content{
+	background: white;	
+    padding-bottom: 50px;
+}
+.lcy_category .mui-segmented-control{
+	display:block;
+}
+.lcy_category .mui-table-view .mui-table-view-cell .mui-media-body {
+    font-size: 12px;
+}
+/*底部*/
+.lcy_category .foot_bottom{
+	padding-top:5px;
+	position: fixed;
+	bottom:0px;
+	background: white;
+	z-index: 2;
+	width:100%;
+	height:50px;
+}
+
+.lcy_category .foot_bottom ul{
+	margin:0;
+	padding:0;
+}
+.lcy_category .foot_bottom ul li{
+	list-style: none;
+	float:left;
+	width:20%;
+	height:50px;
+}
+
+.lcy_category .foot_bottom ul li a img {
+	margin:0 auto;
+	display: block;
+	width: 26px;
+}
+.lcy_category .foot_bottom ul li a p {
+	font-size:12px;
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
+.lcy_category .foot_bottom ul a .shopcar_n_box{
+    margin: 0 auto;
+    width: 28px;
+    height: 26px;
+    position: relative;
+}
+.lcy_category .foot_bottom ul li a .shopcar_n_box .shopcar_n{
+    position: absolute;
+    right: -9px;
+    margin-right: 26%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: red;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: "simsun";
+    text-align: center;
+    color: white;
+}
+.lcy_category .foot_bottom ul li a .footer_bottom_color{
+	color:#0068B6;
+}
+.mui-content .mui-table-view .aa img{
+    height: 16% !important;
+}
+/*底部导航*/
+.navigation{
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 99;
+    width: 100%;
+    height: 56px;
+}
+.navigation ul{
+    margin: 0;
+    padding:0;
+    background: #fff; 
+}
+.navigation ul li{
+    list-style: none;
+    float: left;
+    width: 20%;
+    height: 50px;
+    padding-top: 6px;
+    position: relative;
+}
+.shopping_car{
+    position: absolute;
+    top: 0;
+    right: 24%;
+    display: inline-block;
+    background: red;
+    border-radius: 50%;
+    padding: 0px 4px;
+    color: #fff;
+    font-size: 12px;
+    display: none;
+}
+.navigation ul li a{
+    text-decoration: none;
+}
+.navigation ul li a img{
+    margin: 0 auto;
+    display: block;
+    width: 23px;
+}
+.navigation ul li a p{
+    font-size: 12px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #999;
+}
+
+.footer_bottom_color{
+    color: #EC6D65 !important;
+}
+/*搜索页面---------

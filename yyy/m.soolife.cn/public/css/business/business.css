@@ -1,0 +1,585 @@
+body{
+    padding:0;
+    margin:0;
+}
+.lh_business ul,li,p,h5,input{
+    padding:0;
+    margin:0;
+}
+.lh_business ul li{
+    list-style:none;    
+}
+.lh_business img{
+    display:block;
+}
+.lh_business{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:310px;
+}
+/*商探申请*/
+/*头部*/
+.lh_business .lcy_apply{
+    width:100%;
+    color:#716c6c;
+}
+.lh_business .lcy_apply .head{
+    width:100%;
+}
+.lh_business .lcy_apply .head{
+    width:100%;
+    height:44px;
+    background:white;
+    display:flex;
+    display: -webkit-flex;
+    color:#000;
+} 
+.lh_business .lcy_apply .head .back{
+    width: 70px;
+    height: 25px;
+    background: url(/public/img/back1.png) 10px center no-repeat;
+    background-size: contain;
+    margin:auto 0;
+} 
+.lh_business .lcy_apply .head .back2{
+    width: 70px;
+    height: 25px;
+} 
+.lh_business .lcy_apply .head h5{
+    width:100%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 18px;
+} 
+/*banner*/
+.lh_business .lcy_apply .banner{
+    width:100%;
+    background: white;
+}
+.lh_business .lcy_apply .banner img{
+    width:100%;
+}
+/*介绍*/
+.lh_business .lcy_apply .introduce{
+    width: 96%;
+    font-size: 0.6rem;
+    padding: 25px 2%;
+}
+/*全民商探参与方式*/
+.lh_business .lcy_apply .join_top{
+    width: 96%;
+    font-size: 0.5rem;
+    padding: 10px 2%;
+    font-weight: bold;
+    color:#000;
+}
+/*商家报备与签约*/
+.lh_business .lcy_apply .words{
+    width: 96%;
+    font-size: 0.4rem;
+    padding: 10px 2%;
+    line-height: 1rem;
+}
+.lh_business .lcy_apply .words span{
+    color:#000;
+}
+/*按钮*/
+
+.lh_business .lcy_apply .btn{
+    width: 96%;
+    text-align: center;
+    background: #f18101;
+    color: #fff;
+    font-size: 0.7rem;
+    height: 46px;
+    line-height: 46px;
+    margin:40px auto 0 auto;
+}
+/*提交申请*/
+/*头部*/
+.lh_business .lcy_submit{
+    width:100%;
+    background:white;
+    display: none;
+}
+.lh_business .lcy_submit .head{
+    width:100%;
+    border-bottom:1px solid #ccc;
+    height:44px;
+    background:white;
+    color:#000;
+} 
+.lh_business .lcy_submit .head a{
+    display: block;
+    width:10%;
+    float:left;
+    padding: 9px 0 0 10px;
+}
+.lh_business .lcy_submit .head a .back{
+    width: 100%;
+    height: 25px;
+    background: url(/public/img/back1.png) 0px center no-repeat;
+    background-size: contain;
+    float: left;
+}  
+.lh_business .lcy_submit .head .title{
+    width:80%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 18px;
+    float:left;
+} 
+/*信息*/
+.lh_business .lcy_submit .box{
+    width:100%;
+    margin-top:10px;
+    border-top:1px solid #ddd;
+    font-size: 12px;
+}
+.lh_business .lcy_submit .box p span{
+    position: relative;
+    top:2px;
+}
+.lh_business .lcy_submit .box div{
+    border-bottom:1px solid #ddd;
+}
+.lh_business .lcy_submit .box .command{
+    width:100%;
+    height:44px;
+    line-height: 44px;
+} 
+.lh_business .lcy_submit .box .command .word{
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    margin: 0 10px;
+} 
+.lh_business .lcy_submit .box .command .text{
+    background:white;
+    float: right;
+    width:65%;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    text-align: right;
+    margin: 0 10px;
+    font-family:"Microsoft YaHei","arial";
+}
+/*公司基本信息 */
+.lh_business .lcy_submit .box .mess_top{
+    height: 44px;
+    line-height: 44px;
+    color: #ccc;
+    border-bottom: 1px solid #ddd;
+    margin: 0 10px;
+}
+.lh_business .lcy_submit .box .message_box{
+    width:100%;
+}
+.lh_business .lcy_submit .box .message_box .mess_con {
+    width: 96%;
+    height: 44px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+/*城市三级联动效果*/
+.lh_business .lcy_submit .box .message_box .mess_con .mark{
+   display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.51);
+    z-index: 9;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks{
+    
+    width: 90%;
+    height: 180px;
+     position: fixed;
+     top:40%;
+     left: 5%;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .province{
+    font-size: 0.72rem;color:#959696; display: block;float: left;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks p{
+     height: 30px; margin-top: 5px; margin: 3px auto ; width: 63%;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .provinced{
+   display: block; float: left; width: 60%; height: 26px; border: 1px solid #959696; line-height: 26px;
+}
+/*省份下拉列表*/
+.lh_business .lcy_submit .box .message_box .mess_con .marks .spinner{
+   position: absolute; top: 20%;left: 33%; width: 40%; height:150px; border: 1px solid #959696;overflow-y: scroll; background:#FFFFFF; display: none; z-index: 10;}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .spinner ul li {width: 100%; height: 30px; line-height: 30px;}
+/*城市下拉列表*/
+.lh_business .lcy_submit .box .message_box .mess_con .marks .cityed{
+     position: absolute; top: 36.5%;left: 33%; width: 40%; height:150px; border: 1px solid #959696;overflow-y: scroll; background:#FFFFFF;display: none; z-index: 10;}
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .cityed ul li {font-size: 0.8rem;width: 100%; height: 30px; line-height: 30px;}
+
+/*县区下拉列表*/
+.lh_business .lcy_submit .box .message_box .mess_con .marks .countiesd{
+     position: absolute; top: 55.5%;left: 33%; width: 40%; height:150px; border: 1px solid #959696;overflow-y: scroll; background:#FFFFFF; display: none; z-index: 10;}
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .countiesd ul li {font-size: 0.8rem;width: 100%; height: 30px; line-height: 30px;}
+
+
+.lh_business .lcy_submit .box .message_box .mess_con .marks .citys{
+  display: block; float: left; width:60%; height: 26px; border: 1px solid #959696; line-height: 26px;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .sanjaksd{
+ display: block; float: left; width: 60%; height: 26px; border: 1px solid #959696; line-height: 26px;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .marks .sure{
+ margin: 30px auto 3px; width: 90%; height: 40px; background:#F18101; color:#FFFFFF;  border-radius: 4px; text-align: center;line-height:40px;font-size:1.0rem; 
+}
+.lh_business .lcy_submit .box .message_box .mess_con .word{
+    float:left;
+    height:44px;
+    line-height: 44px;
+} 
+.lh_business .lcy_submit .box .message_box .mess_con .text{
+    float: right;
+    width:75%;
+    height: 44px;
+    line-height: 44px;
+    border: 0;
+    text-align: right;
+    font-family:"Microsoft YaHei","arial";
+} 
+.lh_business .lcy_submit .btn{
+    width: 96%;
+    text-align: center;
+    background: #f18101;
+    color: #fff;
+    font-size: 0.7rem;
+    height: 46px;
+    line-height: 46px;
+    margin:40px auto 20px auto;
+} 
+/*补充*/
+.lh_business .lcy_submit .box .message_box .mess_con.no_border{
+    border:0;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .red{
+    color:red ;
+} 
+.lh_business .lcy_submit .box .message_box .mess_con .text.check_box{
+    display: flex;
+    display: -webkit-flex;  
+    flex-direction:row-reverse;
+}
+.lh_business .lcy_submit .box .message_box .mess_con .text .check_box{
+    margin: auto 0;
+    position: relative;
+    top: 2%;
+    margin-left:5px;
+} 
+
+
+
+
+
+
+/*hkl.css*/
+/*方式选择*/
+.lh_business .h_way{
+    display: none;  
+}
+.lh_business .h_way .mui-bar-nav h5{
+    text-align: center;
+    margin:11px auto;
+    font-size: 18px;
+}
+.lh_business .h_way a {
+    position: absolute;
+    width:20%;
+    height:44px;
+    display: flex;
+    display: -webkit-flex;
+}
+.mui-bar-nav .back_img {
+    width: 70px;
+    height: 25px;
+    background: url(/public/img/back1.png) no-repeat 10px center;
+    background-size: contain;
+}
+/*内容*/
+.lh_business .h_way .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #ef8201;
+    background: 0 0;
+}
+.lh_business .h_way .xing_hot_goods_1 img{
+    width: 100%;
+    height: 7.5rem;
+}
+/*余额*/
+.lh_business .h_way .superkitty {
+    width: 100%;
+    height: 2.72rem;
+    background: #fff;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
+}
+.lh_business .h_way .superkitty img {
+    height: 1.92rem;
+    margin-top: 0.4rem;
+    width: 100%;
+}
+.lh_business .h_way .superkitty span {
+    line-height: 1.92rem;
+    margin-left: 0.4rem;
+}
+.lh_business .h_way .superkitty i img {
+    float: right;
+    height: 1rem;
+    width: 1.2rem;
+    margin-top: 0.36rem;
+    margin-right: 0.4rem;
+}
+.lh_business .h_way .recharge-promptlya {
+    color: #fff;
+    background: #f18101;
+    width: 95%;
+    margin-left: 0.4rem;
+    height: 2.0rem;
+    border-radius: 0.1rem;
+    display: block;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 2.0rem;
+    margin-top: 15px; 
+    position: relative;
+    text-decoration: none;
+}
+.lh_business .h_way .recharge-promptly {
+    color: #fff;
+    background: #ce362b;
+    width: 95%;
+    margin-left: 0.4rem;
+    height: 2.0rem;
+    border-radius: 0.1rem;
+    display: block;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 2.0rem;
+    margin-top: 15px; 
+    position: relative;
+    text-decoration: none;
+}
+.lh_business .h_way .recharge-youhui p {
+    color: #777777;
+    font-size: 0.6rem;
+    margin-left: 0.4rem;
+}
+.lh_business .h_way .recharge-youhui {
+    margin-top: 4%;
+    border-bottom: 1px solid #ddd;
+    width: 96%;
+    margin-left: 2%;
+    padding-bottom: 4%;
+}
+/*/*/
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box{
+    width:90%;
+    height:6.296296rem;
+    display: -webkit-flex; 
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;;
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box a{
+    margin:auto;
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .img_t{
+    width:100%;
+    display: block;
+    margin:auto;
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 p{
+    width: 90%;
+    margin: 11px auto 0 auto;
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .piece{
+    width: 90%;
+    margin: 0 auto;
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .piece img{
+    width: 16px;
+    margin: 0 auto;
+}
+.lh_business .h_way .mui-content #xing_hot_slider .xing_hot_goods_1 .piece .piece_big{
+    font-size: 16px;
+    color:#ef8201;
+}
+/*商家签约  */
+.lh_business .h_contract{
+    display: none;
+}
+.lh_business .h_contract .mui-bar-nav h5{
+    text-align: center;
+    margin:11px auto;
+    font-size: 18px;
+}
+.lh_business .h_contract a {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+}
+
+.lh_business .h_contract .hkl_qy {
+    width: 100%;
+    height: 3.6rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.lh_business .h_contract .hkl_qy ul {
+    margin-left: 12.5%;
+    width: 75%;
+}
+.lh_business .h_contract .hkl_qy ul li {
+    height: 1.8rem;
+    width: 30%;
+    border-bottom: 1px solid #ddd;
+    float: left;
+}
+.lh_business .h_contract .hkl_qy ul .hkl_wz {
+    border-bottom: 0;
+    height: 2.6rem;
+    width: 36.9%;
+}
+.lh_business .h_contract .hkl_qy ul .hkl_wz span {
+    font-size: 0.7rem;
+    margin-top: 1.3rem;
+    margin-left: 0.1rem;
+    position: absolute;
+    color: #787878;
+}
+.lh_business .h_contract .hkl_nav {
+    margin-left: 0.5rem;
+}
+.lh_business .h_contract .hkl_nav h6 {
+    border-left: 3px solid #000; 
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.lh_business .h_contract .hkl_nav p {
+    font-size: 0.65rem;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.lh_business .h_contract .hkl_nav .hkl_bottom {
+    margin-bottom: 0.9rem;
+}
+.lh_business .h_contract .hkl_nav ol {
+    margin: 0;
+    padding-left: 0.9rem;
+}
+.lh_business .h_contract .hkl_nav ol li {
+    font-size: 0.65rem;
+    color: #787878;
+    list-style-type: square;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+.lh_business .h_contract .hkl_nav p a {
+    position: relative;
+    text-decoration: none;
+    color: #ee8301;
+}
+/*补充协议*/
+.lh_business .h_bcxy{
+    display: none;  
+}
+.lh_business .h_bcxy .mui-bar-nav h5{
+    text-align: center;
+    margin:11px auto;
+    font-size: 18px;
+}
+.lh_business .h_bcxy{
+    padding-bottom: 2rem;
+}
+.lh_business .h_bcxy a {
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+}
+.lh_business .h_bcxy .mui-bar-nav .back_img {
+    width: 70px;
+    height: 25px;
+    background: url(/public/img/back1.png) no-repeat 10px center;
+    background-size: contain;
+}
+.lh_business .h_bcxy .hkl_bcxy {
+    border-top: 1px solid #ddd;
+    width: 99%;
+    margin-left: 1%;
+}
+.lh_business .h_bcxy .hkl_bcxy span {
+    font-size: 0.4rem;
+}
+.lh_business .h_bcxy .hkl_bcxy .hkl_weiht {
+    font-size: 0.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.lh_business .h_bcxy .hkl_bcxy .hkl_topz {
+    margin-top: 20px;
+}
+.lh_business .h_bcxy .hkl_bcxy p {
+    font-size: 0.4rem;
+}
+.lh_business .h_bcxy .hkl_bcxy .hkl_btn {
+    height: 2rem;
+    width: 98%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    background: #f08200;
+}
+.lh_business .h_bcxy .hkl_bcxy .hkl_btn button {
+    width: 49%;
+    display: inline-block;
+    height: 2rem;
+    border: none;
+    color: #fff;
+    background: #f08200;
+    font-size: 0.7rem;
+    font-family:"Microsoft YaHei","arial";
+}
+.lh_business .h_bcxy .hkl_bcxy .hkl_btn .hkl_btn_height {
+    height: 1.8rem;
+    margin-top: 0.1rem;
+    border-right: 1px solid #fff;
+}
+
+
+/*三级地址*/
+
+.lh_business .lcy_submit .box .message_box .mess_con .address_mark{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: black;
+
+}

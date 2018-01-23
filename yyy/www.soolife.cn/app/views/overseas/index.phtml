@@ -1,0 +1,570 @@
+<?php
+$css = $this -> assets -> get('header');
+$css -> addCss("public/v3.0.1/css/pc.overseas.css");
+
+$js = $this -> assets -> get('footer');
+$js -> addJs("public/v3.0.1/js/pc.overseas.js");
+
+$style = '';
+if (!empty($banner))
+{
+	$item = current($banner);
+	$style = @"background: {$item['bgcolor']} url('{$this->utility->get_advert_picture($item['bgimage'])}') no-repeat center center;";
+}
+?>
+<div id="banner" style="{{ style }}">
+	<div class="overseas_banner main-container">
+		<div class="overseas_banner_carousel">
+			<!-- begin carousel -->
+			<div id="carousel-index"  class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{% if banner %}
+						{% for d in banner %}
+							<li data-target="#carousel-index" data-slide-to="{{loop.index0}}" {% if loop.first %} class="active" {% endif %}></li>
+						{% endfor %}
+					{% endif %}
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					{% if banner %}
+						{% for d in banner %}
+						<div class="item  {% if loop.first %} active {% endif %}" 
+							data-bgcolor="{{d['bgcolor']}}" 
+							data-bgimage="<?php echo $this->utility->get_advert_picture($d['bgimage']); ?>"
+							data-link="{{d['link']}}" 
+							data-id="{{d['id']}}">
+							<a href="{{d['link']}}" target="_blank">
+								<img class="carousel-images" src="<?php echo $this->utility->get_advert_picture($d['picture']); ?>" alt="{{d['title']}}">
+							</a>
+							<div class="carousel-floated">
+								<div class="picture"><?php echo $this->utility->get_advert_html('first',$d['sidebar']['first'],FALSE); ?></div>
+								<div class="picture"><?php echo $this->utility->get_advert_html('second',$d['sidebar']['second'],FALSE); ?></div>
+							</div>
+						</div>
+						{% endfor %}
+					{% endif %}
+				</div>
+			</div>
+			<!-- end carousel -->
+		</div>
+	</div>
+</div>
+<div class="row-container clearfix">
+	<div class="overseas_recommend main-container">
+		<ul>
+				<li><?php echo $this->utility->get_advert_html('pc.overseas.banner.005',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_html('pc.overseas.banner.006',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_html('pc.overseas.banner.007',$ads); ?></li>
+				<li><?php echo $this->utility->get_advert_html('pc.overseas.banner.008',$ads); ?></li>
+				<li class="right"><?php echo $this->utility->get_advert_html('pc.overseas.banner.009',$ads); ?></li>
+			</ul>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.banner.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 全球大牌 -->
+<div id="global_brands" class="row-container clearfix">
+	<div class="global_brands main-container">
+		<div class="global_brands_title">
+			<span>全球大牌</span>
+		</div>
+		<div class="global_brands_content">
+			<div class="leftside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.001',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.003',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.007',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.008',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.009',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.010',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.brand.011',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.banner.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 国家馆 -->
+<div id="country" class="row-container clearfix">
+	<div class="country main-container">
+		<div class="country_title">
+			<span>国家馆</span>
+		</div>
+		<div class="country_content">
+			<ul>
+				{% if ads['pc.overseas.country.001'] %}
+					{% for d in ads['pc.overseas.country.001'] %}
+					<li class="frame {{ loop.first?'left':'' }}">
+						<div class="move">
+							<a href="{{d['pc_link']}}" target="_blank" title="{{d['title']}}">
+						 		<img class="lazy" src="/public/v3.0.1/img/s.gif" data-original="<?php echo $this->utility->get_advert_picture($d['picture']); ?>" title="{{d['title']}}" alt="{{d['title']}}" />
+						 	</a>
+						</div>
+					</li>
+					{% endfor %}
+				{% endif %}
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.country.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 洗护 -->
+<div id="floor001" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_01">
+			<span>洗护</span>
+		</div>
+		<div class="floor_model_first">
+			<div class="leftside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods001',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods003',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods007',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods008',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods009',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods010',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.001.goods011',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.001.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 母婴 -->
+<div id="floor002" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_02">
+			<span>母婴</span>
+		</div>
+		<div class="floor_model_second">
+			<div class="leftside">
+				<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods001',$ads); ?>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods003',$ads); ?>
+						</div>
+					</li>
+					<li class="wide frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods007',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.002.goods008',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.002.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 食物 -->
+<div id="floor003" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_03">
+			<span>食物</span>
+		</div>
+		<div class="floor_model_first">
+			<div class="leftside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods001',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods003',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods007',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods008',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods009',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods010',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.003.goods011',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.003.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 电器 -->
+<div id="floor004" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_04">
+			<span>电器</span>
+		</div>
+		<div class="floor_model_second">
+			<div class="leftside">
+				<?php echo $this->utility->get_advert_direct('pc.overseas.floor.004.goods001',$ads); ?>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="wide frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods003',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="wide frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.004.goods007',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.004.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 保健 -->
+<div id="floor005" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_05">
+			<span>保健</span>
+		</div>
+		<div class="floor_model_first">
+			<div class="leftside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods001',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods003',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rightside">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods007',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods008',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods009',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods010',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.005.goods011',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.005.column',$ads); ?>
+	</div>
+</div>
+
+<!-- 服饰 -->
+<div id="floor006" class="row-container clearfix">
+	<div class="floor main-container">
+		<div class="floor_title_06">
+			<span>服饰</span>
+		</div>
+		<div class="floor_model_third">
+			<div class="leftside">
+				<?php echo $this->utility->get_advert_direct('pc.overseas.floor.006.goods001',$ads); ?>
+			</div>
+			<div class="center">
+				<ul>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods002',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods003',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods004',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods005',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods006',$ads); ?>
+						</div>
+					</li>
+					<li class="frame">
+						<div class="move">
+							<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods007',$ads); ?>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="rightside frame">
+				<div class="move">
+					<?php echo $this->utility->get_advert_html('pc.overseas.floor.006.goods008',$ads); ?>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="full-column main-container">
+		<?php echo $this->utility->get_advert_direct('pc.overseas.floor.006.column',$ads); ?>
+	</div>
+</div>

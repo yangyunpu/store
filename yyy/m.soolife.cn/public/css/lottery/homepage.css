@@ -1,0 +1,332 @@
+html {
+    background: #F1F0F0;;
+}
+a {
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style:none;
+}
+/*定位头部*/
+#soo-header{
+    position:fixed;
+    top:0;
+    width:100%;
+    height:44px;
+    box-sizing: border-box;
+    padding:0 2%;
+    line-height:44px;
+    overflow: hidden;
+    background-color:#e6e6e6;
+    z-index: 9;
+}
+#soo-header>#header-left,#header-center,#header-right{
+    float:left;
+}
+#soo-header>#header-left{
+    font-family: "SimSun";
+    text-align:left;
+    width:20%;
+}
+#soo-header>#header-left img{
+    margin-top: 10px;
+    width:10px;
+}
+#soo-header>#header-right img{
+    margin-top: 10px;
+    width:19px;
+}
+#soo-header>#header-center{
+    text-align: center;
+    width: 60%;
+    font-size: 16px;
+    color:#333333;
+}
+#soo-header>#header-right{
+    text-align:right;
+    width:20%;
+}
+.hl-banner{
+    font-size: 0.597333rem;
+    color: #FFFFFF;
+    background: #333333;
+    border-radius: 0.128rem;
+    padding: 0.106667rem 0.746667rem;
+    display: inline-block;
+    position: absolute;
+    z-index: 8;
+    right: 0.426667rem;
+}
+/*抽奖卡片*/
+#dd{
+    margin: 44px auto 0 !important;
+    height: 9.6rem;
+}
+#lottery li {
+    background: #fff;
+    margin-left: 0.192rem;
+    margin-top: 0.192rem;
+    float: left;
+    width: 4.266667rem;
+    height:5.546667rem;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 0.128rem;
+}
+.hl-btn{
+   background: #FEEC9E !important; 
+   font-size: 0.682667rem;
+   color:#333;
+}
+.hl-btn .box-man {
+    margin-top: 1.962667rem;
+    margin-bottom: 0;
+}
+.hl-btn .box-chou {
+    margin-top: 0.277333rem;
+}
+.hl-btn p {
+   line-height: 0.682667rem;
+}
+#lottery li img{
+    width: 100%;
+    height: 4.26rem;
+}
+#lottery li .sname{
+    word-wrap: break-word;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    font-size: 0.597333rem;
+    line-height: 0.897333rem;
+    overflow: hidden;
+    height: 0.897333rem;
+    margin-bottom: 0;
+    padding: 0 0.426667rem;
+}
+#lottery li .mask img{
+    width: 100%;
+    height:5.546667rem;
+    font-size: 0;
+    border: 0;
+    float: left;
+}
+#lottery{
+    width:90%;
+    height:17.253333rem;
+    margin: 0.8966rem auto;
+    margin-left: 0.768rem;
+    position: absolute;
+    border-radius: 0.128rem;
+}
+.hl-img{
+    border-radius: 0.128rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+.hl-img p {
+    margin-bottom: 0;
+    margin-top:0.213333rem;
+    height: 1.066667rem;
+    line-height: 1.066667rem;
+    overflow: hidden;
+    font-size: 0.597333rem;
+    padding: 0 0.213333rem;
+}
+.regula-text {
+    font-size: 0.597333rem;
+    letter-spacing: 0.021333rem;
+    color: #4C4B4C;
+    line-height: 0.896rem;
+    margin-left: 0.64rem;
+    margin-right: 0.64rem;
+    margin-top: 0.341333rem;
+}
+.list {
+    position: absolute;
+    width: 100%;
+}
+#lottery #box img{
+    width: 3.84rem;
+    height: 3.84rem;
+    line-height: 5.546667rem;
+    margin: 0.853333rem auto;
+}
+.hl-backimg {
+    background-image: url(../../img/lottery/fulldraw_dial.png); 
+    background-size:100% 100%;   
+    width: 94.2222222%;
+    height: 19.2rem;
+    margin: 0.597333rem auto;
+    position: relative;
+}
+.neir-btn{
+    margin-top: 0.853333rem;
+}
+.alert_wrap{
+    position: relative;
+}
+.hkl-fex {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: #000;
+    opacity: .6;
+}
+.hkl-neir{
+    display: none;
+    width: 13.653333rem;
+    background: #fff;
+    position: fixed;
+    top:15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    border-radius: 3px;
+    padding-bottom: 1.173333rem;
+}
+/*轮播----------------------------------------------*/
+ .swiper-container {
+  width: 100%;
+  height: 9.6rem;
+  margin-top: 0.426667rem !important;
+}
+.swiper-container img{
+    width: 100%;
+}
+.content-slide {
+  padding: 20px;
+  color: #fff;
+}
+.swiper-wrapper,.swiper-wrapper .swiper-slide,.swiper-wrapper .swiper-slide img{
+width: 100%;
+height: 100%;
+}
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom:5px;
+  width: 100%;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 0.256rem;
+  height: 0.256rem;
+  border-radius: 10px;
+  background: #000;
+  opacity: .33;
+  margin: 0 3px;
+}
+.swiper-active-switch {
+  background: #ec6d65;
+}
+.hkl-head {
+    font-size: 0.810667rem;
+    color: #4C4B4C;
+    margin-top: 1.6rem;
+    margin-bottom: 0.853333rem;
+    text-align: center;
+}
+.neir-img{
+    width: 0.64rem;
+    height: 0.64rem;
+    position: absolute;
+    top: 0.426667rem;
+    right: 0.426667rem;
+}
+.neir-btn{
+    padding-bottom: 20px;
+}
+.neri-shop {
+    width: 7.189333rem;
+    height: 5.504rem;
+    margin: 2.133333rem auto 0;
+    text-align: center;
+    overflow: hidden;
+}
+.neir-name {
+    font-size: 0.597333rem;
+    color: #333;
+    margin-top: 0.938667rem;
+    margin-bottom: 0;
+}
+.neir-red {
+    font-size: 0.682667rem;
+    color: #EC6D65;
+}
+.neir-btn button{
+    width: 3.413333rem;
+    height: 1.408rem;
+    border: none;
+    margin-top: 0.853333rem;
+}
+.btn-gray{
+    background: #F1F0F0;
+    border-radius: 8px;
+    font-size: 0.597333rem;
+    color: #EC6D65;
+}
+.btn-pink{
+    background: #EC6D65;
+    border-radius: 8px;
+    font-size: 0.597333rem;
+    color: #fff;
+}
+.neir-backimg{
+    background-image: url(../../img/lottery/fulldraw_end@2x.png); 
+    background-size:100% 100%; 
+}
+.bannera{
+    width: 100%;
+}
+.hkl-hd {
+    line-height: 0.682667rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.682667rem;
+    position: relative;
+    margin-top: 0.64rem;
+    margin-bottom: 0.64rem;
+}
+.hkl-hd p {
+    display: inline-block;
+    width: 2.346667rem;
+    position: absolute;
+    top: -0.20667rem;
+    margin-top: 0;
+}
+.hkl-hd p span {
+    width: 2.346667rem;
+    height: 1px;
+    background-color: #d9d9d9;
+    display: inline-block;
+}
+.hkl-hd .hd-h {
+    width: 2.730667rem;
+}
+.hkl-bor-left {
+    margin-left: -2.986667rem;
+}
+.hkl-bor-right {
+    margin-left: 0.64rem;
+}
+.hkl-gg{
+    width: 94.6%;
+    height: 5.12rem;
+    margin-bottom: 0.21333rem;
+    margin-left: 2.7%;
+    border-radius: 0.128rem;
+}

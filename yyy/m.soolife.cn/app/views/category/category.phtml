@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>如此生活|分类</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/category.css"/>
+</head>
+
+	<body class="lcy_category header_top" url_search={{url_search}}>
+		<header class="head_bar">
+			<input type="text" placeholder="搜索..." class="search_box" id="text">
+		</header>
+		<div class="mui-content mui-row mui-fullscreen">
+			<div class="mui-col-xs-3">
+				<div id="segmentedControls" class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+				<?php if(!empty($data)) { ?>
+				{% for i,v in data %}
+					<a class="mui-control-item" href="#item{{i}}">{{v['name']}}</a>
+				{% endfor %}
+				</div>
+			</div>
+			<div id="segmentedControlContents" class="mui-col-xs-9">
+                 {% for i,v in data %}
+                 {% if v['children']|length>0 %}
+				<div id="item{{i}}" class="{{i==0?'mui-control-content mui-active':'mui-control-content'}}">
+					<p>{{v['name']}}</p>
+					<!-- 商品 -->
+					<div class="mui-content">
+					    <ul class="mui-table-view mui-grid-view">
+					        {% for k,v1 in v['children'] %}
+					        <li class="aa mui-table-view-cell mui-media mui-col-xs-4" code={{v1['code']}}>
+					            <a href="#">
+					                <img class="mui-media-object" src="{{v1['icon']}}">
+					                <div class="mui-media-body">{{v1['name']}}</div>
+					                </a>
+					        </li>
+							{% endfor %}
+					    </ul>    
+					</div>
+				</div>
+				{% endif %}
+				{% endfor %}
+				<?php  } ?>
+		</div>
+      
+	{% include '/layouts/inc_category.phtml' %}
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/mui.min.js"></script>
+<!-- <script src="/public/js/index/soolife.index.js"></script> -->
+<script src="/public/js/category/soolife.category.js"></script>
+<script src="/public/js/m_analytics.js"></script>

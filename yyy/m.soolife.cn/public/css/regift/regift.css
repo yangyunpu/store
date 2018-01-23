@@ -1,0 +1,171 @@
+ 
+#regift .clear-f{
+	clear:both;
+	overflow: hidden;
+}
+#regift .float-l{
+	float: left;
+}
+#regift .float-r{
+	float: right;
+}
+#regift .margin-b{
+	margin-bottom:10px;
+}
+img{
+	width:100%;
+	display: block;
+} 
+#regift #head{
+	width:100%;
+	height:44px;
+	background-color: #e6e6e6;
+	position: fixed;
+	z-index: 2;
+}
+#regift #head #head-left{
+	float:left;
+}
+#regift #head #head-center{
+	font-size: 18px;
+	color:#333; 
+	text-align: center;
+	line-height: 44px;
+}
+#regift #head #head-left img{
+	margin-top: 12px;
+	margin-left:15px;
+	width:11px;
+}
+#regift #head #head-right{
+	margin-top: 11px;
+	margin-right:15px; 
+	float: right; 
+}
+#regift #head #head-right img{
+	width:21px;
+}
+#regift #top_place{
+	height:44px;
+	width:100%; 
+}
+#main{
+	width:100%;
+	height: 19.0rem;
+	background:url("/public/img/regift/zhuceH5_bg@3x.png") no-repeat top center;
+	background-size: contain;
+	padding-top:1px;
+}
+#box{
+	width:72%;
+	margin:0 auto;
+	background-color: #fff; 
+	margin-top:1.5rem;
+	padding:6.5%;
+}
+#box>div{
+	width:100%;
+	height: 1.65rem;
+	margin-bottom: 1.0rem;
+}
+#box>div>input{
+	width:100%;
+	height: 100%;
+	color:#999;
+	border:1px #ddd solid;
+	border-radius: 3px;
+	padding-left: 10px;
+	box-sizing: border-box;
+	font-size: 0.7rem;
+}
+#box #testword{
+	float: left;
+	width:50%;
+}
+#box .testbox{
+	float: right;
+	width:42%;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.65rem;
+	background-color: #EC6D65;
+	color:#fff;
+	border-radius: 3px;
+}
+#box .testbox.hide{
+	background-color: #ddd;	
+}
+#box .password{
+	margin-bottom: 1.5rem;
+}
+#box #sure{
+	background-color: #EC6D65; 
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 14px;
+	line-height: 1.65rem;
+	color:#fff;
+	border-radius: 3px;
+}
+#mark{
+	position: fixed;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+	text-align: center;
+}
+#markmain{
+	background:url("/public/img/regift/qw.png") no-repeat top center;
+	background-size: cover;
+	width:270px;
+	height: 180px;
+	background-color: #EC6D65;
+	margin:60% auto 0 auto;
+	border-radius: 3px;
+	color:#fff;
+	padding-top: 40px;
+	position: relative;
+}
+#markmain img{ 
+	width:16px;
+	height: 16px; 
+	position: absolute;
+	right: 10px;
+	top:10px;
+}
+#mtitle{ 
+	margin-bottom: 30px;
+}
+#markmain p{
+    margin-bottom: 4px;
+}
+.mengxin{
+	margin-top: 1rem;
+	text-align: center;
+	margin: 0 auto;
+    height: 0.5rem;
+    border: 0;
+    width: 5rem;
+    color: #fff;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border-radius: 0.09rem;
+    background-color: #ec6d65;
+}
+#qianbao {
+	margin: 0 auto;
+	text-align: center;
+	border: 1px dotted #EC6D65;
+    border-radius: 6px;
+    width: 9rem;
+    height: 1.2rem;
+    color: 0.5rem;
+    line-height: 1.2rem;
+    font-size: 0.52rem;
+}
+.dongtai{
+	padding: 0.5rem;
+	font-size: 0.682667rem;
+}

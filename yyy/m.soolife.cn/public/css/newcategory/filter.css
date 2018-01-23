@@ -1,0 +1,153 @@
+ 
+#filter .clear-f{
+	clear:both;
+	overflow: hidden;
+}
+#filter .float-l{
+	float: left;
+}
+#filter .float-r{
+	float: right;
+}
+#filter .margin-b{
+	margin-bottom:10px;
+}
+img{
+	width:100%;
+	display: block;
+} 
+#filter #head{
+	width:100%;
+	height:44px;
+	background-color: #e6e6e6;
+	position: fixed;
+	z-index: 2;
+}
+#filter #head #head-left{
+	float:left;
+}
+#filter #head #head-center{
+	font-size: 18px;
+	color:#333; 
+	text-align: center;
+	line-height: 44px;
+}
+#filter #head #head-left img{
+	margin-top: 12px;
+	margin-left:15px;
+	width:11px;
+}
+#filter #head #head-right{
+	margin-top: 11px;
+	margin-right:15px; 
+	float: right; 
+}
+#filter #head #head-right img{
+	width:21px;
+}
+#filter #top_place{
+	height:94px;
+	width:100%; 
+}
+#filter #main{ 
+	position: absolute;
+	top: 44px;
+    right: 0;
+    bottom: 2.45rem;
+    left: 0;
+}
+#main_left{
+	color:#333;
+	width:19%;
+	background-color: #f1f0f0;
+	height: 100%;
+	float: left;
+	overflow-y: scroll;
+}
+#main_left ul li.active{
+	background-color: #fff;
+}
+#main_left ul li{
+    width: 100%;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#main_left ul li.active img{
+	display:block;
+}
+#main_left ul li img{
+	width: 5px;
+    position: absolute;
+    top: 44%;
+    left: 17%;
+    display: none;
+}
+#main_right{
+	width:69%;
+	background-color: #fff;
+	height: 100%;
+	float: left;
+	padding-left:8%; 
+	color:#acacac;
+	overflow-y: scroll;
+}
+#main_right .item ul li{
+	height:1.95rem;
+	line-height: 1.95rem; 
+	position: relative;
+}
+#main_right .item ul li img{
+	width:5%; 
+	position: absolute;
+	right: 0;
+	top: 40%;
+	display: none;
+}
+#main_right .item ul li.active{
+	color:#EC6D65;
+}
+#main_right .item ul li.active img{
+	display: block;
+}
+#sure{
+	width:100%;
+	height: 2.45rem;
+		position: fixed;
+	bottom: 0;
+}
+#sure div{
+	width:50%;
+	line-height: 2.45rem;
+	float: left;
+	text-align: center;
+}
+#remove{
+	background-color: #F1F0F0;
+	color:#EC6D65;
+}
+#surebtn{
+	background-color: #EC6D65;
+	color:#fff;
+}
+#piecebox input{
+	width:80px;
+	height:30px;
+	border-radius: 3px;
+	text-align:center;
+	border:1px solid #999;
+	font-size: #999;
+	font-size: 14px;
+	margin-top:30px;
+}
+#piecebox p.xian{
+	width:26px;
+	display: inline-block; 
+	border-top:1px solid #999; 
+	position: relative;
+	top: -5px;
+}

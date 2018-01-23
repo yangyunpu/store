@@ -1,0 +1,213 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #f1f0f0;
+	min-width: 300px;
+	min-height: 100%;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#f1f0f0;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #f0f0f0;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	height: 24px;
+	position: absolute;
+	left: 0.426667rem;
+	bottom:8px; 
+}
+.lj_head{
+	width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    position: fixed;
+}
+.void{
+	width: 100%;
+	height: 44px;
+}
+.lj_red{
+	color:#EC6D65; 
+}
+.big_content{
+	margin-top: 60px;
+}
+.child{
+	display: none;
+}
+.lj_content{
+	width: 94.5%;
+	margin:10px auto;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 4px;
+
+}
+.show{
+	display: block;
+}
+.lj_content::-webkit-scrollbar{
+	width:0;
+	height:0;
+	background: #f0f0f0;
+}
+.image-text{
+	width: 100%;
+	height: 6.4rem;
+	overflow: hidden;
+}
+.image-text img{
+	width: 100%;
+}
+.lj_sale{
+	width: 100%;
+	margin-top: 10px;
+	padding-bottom: 3px;
+	text-align: center;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+.lj_sale a{
+	color: #4C4B4C;
+}
+.lj_sale ul{
+	overflow: hidden;
+	margin: 0 3%;
+	padding: 0;
+	display: inline-block;
+	white-space: nowrap;
+	font-size: 0;
+}
+.lj_sale ul li {
+	width: 3.84rem;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+}
+.lj_sale ul li:last-child{
+	margin-right: 0px !important;
+}
+.lj_them{
+	width: 3.84rem;
+	height: 3.84rem;
+	overflow: hidden;
+	border-radius: 3px;
+	/*background: red;*/
+}
+.lj_them img{
+	width: 100%;
+}
+.lj_price{
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

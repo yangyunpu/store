@@ -1,0 +1,530 @@
+/*星币*/
+.hide{
+	display: none;
+}
+#wrap .money_top{
+    width: 100%;
+    overflow: hidden;
+    background: #F1F0F0;
+    padding-top: 0.426667rem;
+    padding-bottom: 0.64rem;
+    position: fixed;
+    top:44px;
+    z-index: 20;
+}
+#wrap .money_bg{
+	width: 95%;
+	margin: 0 2.5%;
+	height: 7.253333rem;
+	background: #EC6D65;
+	border-radius: 3px;
+	text-align: center;
+}
+.money_explain{
+	font-size: 0.597333rem;
+	color: #FFFFFF;
+	padding-top: 0.426667rem;
+	text-align: right;
+	margin-right: 0.426667rem;
+}
+.money_num{
+	width: 100%;
+	text-align: center;
+	height: 2.816rem;
+	line-height: 2.816rem;
+	font-size: 0.682667rem;
+    color: #FFFFFF;
+}
+.money_num #num{
+	font-size: 1.024rem;
+	color: #FFFFFF;
+}
+.money_change{
+	display: inline-block;
+	width: 36.6%;
+	height: 1.408rem;
+	line-height: 1.408rem;
+	text-align: center;
+	background: #FFFFFF;
+    border-radius: 3px;
+    font-size: 0.597333rem;
+    color: #EC6D65;
+    margin-top: 0.512rem;
+}
+.record_date{
+	width: 91%;
+	margin: 0 2.5%;
+	padding: 0 2%;
+    height: 1.706667rem;
+    line-height: 1.706667rem;
+    font-size: 0.597333rem;
+    color: #ACACAC;
+    background: #fff;
+    padding-top: 8.32rem;
+    position: fixed;
+    top: 44px;
+    z-index: 9;
+}
+.record_date p{
+    border-bottom: 1px solid #ddd;
+}
+.money_record{
+	width: 91%;
+	margin: 0 2.5%;
+	background: #fff;
+	overflow: hidden;
+	padding: 0 2%;
+	margin-bottom: 0.426667rem;
+	margin-top: 10.026667rem;
+	position: absolute;
+	top: 44px;
+}
+.money_record li{
+	width: 100%;
+	height: 2.645333rem;
+	border-bottom: 1px solid #ddd;
+	font-size: 0;
+}
+.money_record li:last-child{
+	border:none;
+}
+.record_list{
+	width: 70%;
+	display: inline-block;
+	height: 2.645333rem;
+	line-height: 2.645333rem;
+}
+.record_list p:first-child{
+	height: 1.024rem;
+	line-height: 1.024rem;
+	margin-top: 0.341333rem;
+	font-size: 0.597333rem;
+	color: #666666;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.record_list p:last-child{
+	font-size: 0.512rem;
+	color: #ACACAC;
+	height: 0.938667rem;
+	line-height: 0.938667rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+
+.record_num {
+	display: inline-block;
+	width: 30%;
+	height: 2.645333rem;
+	line-height: 2.645333rem;
+	font-size: 0.512rem;
+    color: #EC6D65;
+    text-align: right;
+}
+.money_data{
+	width: 95%;
+	margin: 0 2.5%;
+	background: #fff;
+	height: 17.566667rem;
+	text-align: center;
+	position: fixed;
+	top: 10.197333rem;
+}
+.money_data  .data_no{
+	padding-top: 4.373333rem;
+	font-size: 0.810667rem;
+	color: #666666;
+}
+/*蒙版*/
+#money_mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+#money_rule{
+	width: 9.386667rem;
+	padding: 0 0.426667rem;
+	overflow: hidden;
+	background: #fff;
+	margin: 0 auto;
+	margin-top: 7.68rem;
+	border-radius: 3px;
+}
+.rule_con p:first-child{
+	font-size: 0.597333rem;
+	color: #4C4B4C;
+	height: 1.450667rem;
+	line-height: 1.450667rem;
+	margin-top: 0.64rem;
+	font-weight: 600;
+}
+.rule_con p:last-child{
+	font-size: 0.512rem;
+    color: #4C4B4C;
+}
+.rule_txt{
+	line-height: 0.768rem;
+	overflow: hidden;
+}
+.rule_val{
+	height: 0.512rem;
+	line-height: 0.512rem;
+	margin-bottom: 1.066667rem;
+}
+.rule_know{
+	display: inline-block;
+	width: 100%;
+	height: 1.408rem;
+	line-height: 1.408rem;
+	text-align: center;
+	font-size: 0.512rem;
+    color: #333333;
+    background: #DDDDDD;
+    border-radius: 3px;
+    margin-bottom: 0.853333rem;
+}
+/*现金*/
+#cash_num{
+    padding-top: 1.024rem;
+}
+#cash_change{
+   margin-top: 0.512rem;
+}
+/*钱包充值*/
+.recharge{
+	width: 95%;
+/*	padding:0 2.5%;*/
+	margin: 0 2.5%;
+	background: #fff;
+	margin-top: 0.426667rem;
+	border-radius: 3px;
+}
+.recharge_nickname{
+	height: 1.877333rem;
+	line-height: 1.877333rem;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.597333rem;
+    color: #666666;
+	margin: 0 2.5%;
+}
+.recharge_val{
+	width: 100%;
+	font-size: 0;
+	margin-top: 0.213333rem;
+	margin-left: 2px;
+}
+.recharge .recharge_val span{
+	display: inline-block;
+	box-sizing:border-box;
+    width: 28.196%;
+	border: 1px solid #ACACAC;
+    border-radius: 3px;
+    height: 1.408rem;
+    line-height: 1.408rem;
+    text-align: center;
+    font-size: 0.597333rem;
+    color: #ACACAC;
+    margin: 0 2.352%;
+    margin-top: 0.64rem;
+}
+.recharge .recharge_val .change{
+	border: 1px solid #EC6D65;
+	color: #EC6D65;
+}
+.recharge_active{
+	height: 2.304rem;
+	line-height: 2.304rem;
+	font-size: 0.597333rem;
+    color: #666666;
+	margin: 0 2.5%;
+}
+.recharge_instant{
+	width: 100%;
+	text-align: center;
+	margin-top: 1.28rem;
+}
+.recharge_instant a{
+	display: inline-block;
+	margin-top: 1.28rem;
+	width: 93.4%;
+	height: 1.408rem;
+	line-height: 1.408rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.597333rem;
+	background: #EC6D65;
+    border-radius: 3px;
+    margin: 0 3.3%;
+    margin-bottom: 0.64rem;
+}
+/*支付中心*/
+.pay_wrap{
+	margin: 0 2.5%;
+	width: 95%;
+	background: #fff;
+	height: 8.917333rem;
+	font-size: 0;
+	text-align: center;
+	margin-top: 0.426667rem;
+}
+.pay_wrap .pay_img{
+	width: 15.2%;
+	height: 2.304rem;
+	margin-top: 1.28rem;
+}
+.pay_wrap .pay_suc{
+	font-size: 0.682667rem;
+	color: #333333;
+	margin-top: 0.213333rem;
+	height: 1.536rem;
+	line-height: 1.536rem;
+}
+.pay_wrap .pay_warn{
+	margin: 0 auto;
+	width: 67.887%;
+	font-size: 0.597333rem;
+	color: #333333;
+	line-height: 0.896rem;
+}
+.pay_wrap .pay_date{
+	font-size: 0.512rem;
+	color: #999999;
+	height: 0.938667rem;
+	line-height: 0.938667rem;
+	margin-bottom: 0.853333rem;
+}
+.pay_money{
+	margin: 0 2.5%;
+	width: 95%;
+	background: #fff;
+	margin-top: 0.426667rem;
+	height: 2.133333rem;
+	line-height: 2.133333rem;
+	font-size: 0;
+	position: relative;
+}
+.pay_money span:first-child{
+    display: inline-block;
+    font-size: 0.597333rem;
+    color: #333333;
+    padding-left: 0.426667rem;
+}
+.pay_money span:last-child{
+	display: inline-block;
+	font-size: 0.810667rem;
+	color: #EC6D65;
+	position: absolute;
+	right: 0.426667rem;
+}
+.pay_way{
+	margin: 0 2.5%;
+	width: 90%;
+	background: #fff;
+	/*height: 4.309333rem;*/
+	padding: 0 2.5%;
+	margin-top: 0.426667rem;
+}
+.pay_pay{
+	width: 100%;
+	height: 2.133333rem;
+	line-height: 2.133333rem;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.pay_pay:last-child{
+	border: none;
+}
+.way_img{
+	width: 0.853333rem;
+	height: 0.853333rem;
+	margin-right: 0.426667rem;
+}
+.way_txt{
+	font-size: 0.597333rem;
+	color: #333333;
+}
+.way_check{
+	width: 0.64rem;
+	height: 0.64rem;
+	position: absolute;
+	right: 0.426667rem;
+	top: 50%;
+	transform: translateY(-50%);
+	-ms-transform:translateY(-50%); 	/* IE 9 */
+	-moz-transform:translateY(-50%); 	/* FirefoY */
+	-webkit-transform:translateY(-50%); /* Safari 和 Chrome */
+	-o-transform:translateY(-50%); 
+}
+.suc_pay{
+	display: inline-block;
+	width: 100%;
+	height: 2.090667rem;
+	line-height: 2.090667rem;
+	color: #fff;
+	font-size: 0.597333rem;
+	background: #EC6D65;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+/*蒙板*/
+#mask_pay{
+	width: 45%;
+	line-height: 1.28rem;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	margin:0 auto;
+	text-align: center;
+	border-radius: 3px;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform:translateX(-50%); 	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* FirefoX */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 
+}
+
+/*充值钱包*/
+
+#cash_wrap{
+	width: 95%;
+	margin: 0 2.5%;
+}
+.cash_balance{
+	height: 2.133333rem;
+	line-height: 2.133333rem;
+	font-size: 0.597333rem;
+	color: #EC6D65;
+	padding-left: 0.426667rem;
+}
+.cash_balance .cash_total{
+	display: inline-block;
+	margin-left: 0.426667rem;
+}
+.cash_way{
+	background: #fff;
+	border-radius: 3px;
+	padding:0  0.426667rem;
+}
+.cash_way .cash_re{
+	height: 2.154667rem;
+	line-height: 2.133333rem;
+	font-size: 0.597333rem;
+}
+.cash_way .cash_re:first-child{
+	border-bottom: 1px solid #ddd;
+}
+.cash_way  .cash_name{
+	display: inline-block;
+	color: #333333;
+	margin-right: 0.426667rem;
+}
+.cash_way .cash_num {
+	width: 75%;
+	height: 2.133333rem;
+	display: inline-block;
+	color: #EC6D65;
+}
+.cash_way .cash_num p{
+	width: 100%;
+	height: 2.133333rem;
+	line-height: 2.133333rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	display: -webkit-box;
+	display: -ms-box;
+	display: -moz-box;
+	display: -o-box;
+	-webkit-line-clamp: 1;
+	-ms-line-clamp: 1;
+	-moz-line-clamp: 1;
+	-o-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	-ms-box-orient: vertical;
+	-moz-box-orient: vertical;
+	-o-box-orient: vertical;
+}
+.cash_way .cash_num input{
+	width: 100%;
+	height: 1.9rem;
+	line-height: 1.9rem;
+	font-size: 0.597333rem;
+	border: none;
+	outline: none;
+}
+.cash_pay{
+	width: 100%;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+	background: #999;
+	border-radius: 3px;
+	height: 1.408rem;
+	line-height: 1.408rem;
+	margin-top: 0.64rem;
+}
+.cash_pay_change{
+	background: #EC6D65;
+}
+/*提示*/
+#cash_mask{
+	text-align: center;
+	width: 45%;
+	line-height: 1.066667rem;
+	padding: 0 0.426667rem;
+	font-size: 0.512rem;
+	background: rgba(0,0,0,0.6);
+	color: #fff;
+	position: fixed;
+	top:25%;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform:translateX(-50%); 	/* IE 9 */
+	-moz-transform:translateX(-50%); 	/* FirefoX */
+	-webkit-transform:translateX(-50%); /* Safari 和 Chrome */
+	-o-transform:translateX(-50%); 
+	border-radius: 3px;
+}
+.photo_logo{
+	width: 100%;
+	height: 6.4rem;
+
+}
+.photo_logo img{
+	width: 100%;
+	height: 100%;
+}

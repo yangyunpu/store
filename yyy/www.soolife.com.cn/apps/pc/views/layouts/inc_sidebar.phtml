@@ -1,0 +1,20 @@
+{% for m in menus %}
+	<?php  $mm = strpos($nav,strtolower($m['name'])); ?>
+	{% set active = (mm===false)?'':'active open' %}
+		<li class="{{active}}">
+			<a title="如此生活" href="{{ m['target'] }}" class="dropdown-toggle">
+				<span class="menu-text"> {{ m['text'] }} </span>
+			</a>
+			<ul class="submenu">
+				{% for n in m['items']%}
+				{% set active_n = (n['name']==nav)?'active':'' %}
+				<li class="{{active_n}}">
+					<a title="如此生活" href="{{ n['target'] }}">
+						{{ n['text'] }}
+					</a>
+					<b class="arrow"></b>
+				</li>
+				{% endfor %}
+			</ul>
+		</li>
+{% endfor %}

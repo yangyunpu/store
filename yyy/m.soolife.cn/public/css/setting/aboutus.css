@@ -1,0 +1,133 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #f1f0f0;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+ul{
+	padding:0;
+	margin: 0;
+}
+li{ list-style:none }
+.wrap{
+	width: 100%;
+	background-color:#f1f0f0;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 0.981333rem;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:12px; 
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.34562963rem; 
+}
+.void{
+	width: 100%;
+	height: 44px;
+}
+.logo{
+	width: 33.6%;
+	height: 2.090667rem;
+	margin: 25px auto ;
+	overflow: hidden;
+}
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+.code{
+	width: 160px;
+	height: 160px;
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+.code img{
+	width: 100%;
+	height: 100%;
+}
+.firend{
+	font-size: 14px;
+	color: #333;
+	width: 86%;
+	margin: 15px auto;
+	text-align: center;
+}
+.content{
+	width: 95%;
+	/*height: 190px;*/
+
+	margin: 10px auto 240px;
+	border-radius: 3px;
+}
+.content ul li{
+	width: 100%;
+	/*border-bottom: 1px solid #f1f0f0;*/
+	margin: 10px auto;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	text-indent: 12px;
+	border-radius: 3px;
+
+}
+.content ul li span:first-child{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.enter2{
+	float: right !important;
+	width: 14px;
+	height: 100%;
+	margin-right: 10px;
+}
+.enter2 img{
+	width:6px;
+	margin-left: 5px;
+	margin-top: 15px;
+}
+.versions{
+	width: 100%;
+	font-size: 12px;
+	color: #999;
+	text-align: center;
+	margin-bottom: 20px;
+	 
+}

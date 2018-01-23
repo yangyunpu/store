@@ -1,0 +1,409 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, input, button, textarea, p, th, td {
+    padding: 0;
+    margin: 0;
+}
+/*newcityagent*/
+.content{
+	width: 100%!important;
+}
+
+.banner{
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.banner h2{
+	position: absolute;
+	top: 42%;
+	left: 32%;
+	color: #fff;
+	border: 1px solid #fff;
+	text-align: center;
+	width: 600px;
+	height: 74px;
+	line-height: 74px;
+	font-size: 36px;
+}
+.xl_content{
+	width: 100%;
+}
+.xl_content .title {
+	margin-top: 70px;
+	text-align: center;
+}
+.xl_content .title div{
+	display: inline-block;
+	padding-right: 15px;
+}
+.xl_content .title div h3{
+	font-size: 36px;
+}
+.xl_content .title div p{
+	 text-transform: Uppercase;
+	 padding-top: 10px;
+}
+.xl_content .title span{
+	display: inline-block;
+	font-size: 24px;
+	width: 70px;
+	border-left: 1px solid #999999;
+}
+.xl_main{
+	margin-top: 84px;
+}
+.xl_main .left{
+	float: left;
+	margin-left: 30.9%;
+}
+
+.xl_main .left li{
+	font-size: 18px;
+	color: #666;
+	font-weight: normal;
+	padding-bottom: 38px;
+}
+.xl_main .left .overstriking{
+	font-size: 28px;
+	color: #333333;
+}
+.xl_main .right{
+	margin-top: 120px;
+	margin-left: 8%;
+	width: 330px;
+	float: left;
+}
+.xl_main .right li{
+	padding-left: 5px;
+	padding-bottom: 5px;
+	float: left;
+}
+.clearfix:after {
+     content: ".";
+     display: block;
+     height: 0;
+     clear: both;
+     visibility: hidden;
+}
+.bannerone{
+	position: relative;
+}
+.bannerone .title{
+	position: absolute;
+	top: -6%;
+	left: 28.5%;
+	width: 816px;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.bannerone .title h3{
+	margin-top: 30px;
+}
+.bannerone .title h3,.en{
+	font-size: 36px;
+}
+.bannerone .title .en{
+	margin-bottom: 58px;
+}
+.bannerone .title ul{
+	text-align: left;
+	padding-left: 105px;
+}
+.bannerone .title ul li{
+	padding-bottom: 30px;
+}
+.narrate{
+	padding-top: 140px;
+	text-align: center;
+	background:#f0f0f0; 
+}
+.narrate .narrateone{
+	padding-bottom: 160px;
+}
+.narrate .narrateone p{
+	text-align: left;
+	float: left;
+	margin-left: 21.8%;
+	font-size: 18px;
+	color: #666;
+	line-height: 40px;
+}
+.narrate .narrateone img{
+	float: left;
+	padding-left: 5%;
+}
+.narratetwo .title h3{
+	font-size: 36px;
+	color: #333;
+	padding-bottom: 10px;
+}
+.narratetwo .title p{
+	font-size: 18px;
+	color: #999;
+}
+.narratetwo ul{
+	margin-top: 60px;
+	padding-bottom: 90px;
+}
+.explain{
+	padding-top: 60px;
+	font-size: 16px;
+	color: #666;
+	line-height: 40px;
+}
+.xl_footer{
+
+	position: relative;
+}
+.xl_info{
+	/*text-align: center;*/
+	width: 830px;
+	height: 100%;
+	background: #259bff;
+	position: absolute;
+	top: 0;
+	left: 24%;
+	color: #fff;
+}
+.xl_info .title{
+	margin-top: 60px;
+	margin-bottom: 36px;
+	text-transform:uppercase;
+}
+.xl_info .title h3{
+	font-size: 36px;
+	padding-bottom: 16px;
+}
+
+.xl_info .title p{
+	font-size: 12px;
+}
+/*brandinvestment*/
+.brandbanner{
+	position: relative;
+	background: #fefefe;
+}
+.brandbanner img{
+	width: 100%;
+}
+.brandcontent{
+	width: 100%;
+	text-align: center;
+	padding-top: 60px;
+	background: #f0f0f0;
+}
+.brandcontent .title{
+	font-size: 28px;
+	color: #666;
+}
+.brandcontent .title h3{
+	line-height: 40px;
+	font-size: 24px;
+	color: #333;
+}
+
+.brandcontent .title ul{
+	margin-left: 34%;
+	width: 40%;
+	margin-top: 60px;
+
+}
+.brandcontent .title ul li{
+	width: 120px;
+	height: 100px;
+	float: left;
+	margin-right: 6%;
+	margin-bottom: 100px;
+}
+.brandcontent .title ul li div h3{
+    font-size: 16px;
+    color: #333;
+}
+.brandcontent .title ul li div p{
+	font-size: 12px;
+	color: #999;
+}
+.brandcontent .clx{
+	background: #fff;
+	width: 100%;
+
+}
+.brandcontent .info{
+	background: #fefefe;
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 54px;
+}
+.brandcontent .info li{
+	float: left;
+}
+
+.teamwork div h3{
+	font-size: 36px;
+	padding-top: 60px;
+	padding-bottom: 42px;
+}
+.teamwork ul li{
+	float: left;
+	padding-left: 0.5%;
+}
+.teamwork ul li:nth-child(1){
+	padding-left: 0;
+}
+.partner{
+	margin-top: 85px;
+}
+.partner div h3{
+	padding-bottom: 30px;
+	font-size: 36px;
+	color: #333;
+}
+.partner div p{
+	font-size: 18px;
+	color: #999;
+}
+.partner div{
+	margin-bottom: 40px;
+}
+/*experience*/
+.experiencecontent{
+	width: 100%;
+	text-align: center;
+	padding-top: 60px;
+	background: #f0f0f0;
+}
+.experiencecontent .title .subheading h3{
+	font-size: 36px;
+	color: #333;
+	font-weight: normal;
+	padding-bottom: 22px;
+}
+.experiencecontent .title .subheading p{
+	font-size: 14px;
+	color: #999;
+	text-transform: Uppercase;
+	margin-bottom: 50px;
+}
+.experiencecontent .title ul{
+	padding-left: 30.5%;
+}
+.experiencecontent .title ul li{
+	float: left;
+	padding-left: 4%;
+}
+.experiencecontent .title ul li:nth-child(1){
+	padding-left: 0;
+}
+.experiencecontent .title ul li div{
+	padding-top: 20px;
+}
+.experiencecontent .title ul li div h3{
+	font-size: 24px;
+	color: #333;
+	font-weight: normal;
+	padding-bottom: 5px;
+}
+.experiencecontent .title ul li div p{
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+}
+.experiencecontent .strategiclayout{
+	margin-top: 74px;
+	position: relative;
+}
+.experiencecontent .strategiclayout div{
+	position: absolute;
+	top: 0;
+	left: 25%;
+	width: 590px;
+	color: #fff;
+}
+.experiencecontent .strategiclayout div .title h3{
+	font-size: 36px;
+	margin-top: 48px;
+	padding-bottom: 20px;
+}
+.experiencecontent .strategiclayout div .title p{
+	font-size: 12px;
+}
+.experiencecontent .strategiclayout div .layout{
+	background: #1c1c1c;
+	width: 590px;
+	opacity: 0.8;
+	font-size: 16px;
+	text-align: left;
+	margin-top: 150px;
+	border: 1px solid #fff;
+}
+.experiencecontent .strategiclayout div .layout ul li{
+	padding-bottom: 26px;
+	padding-left: 30px;
+}
+.experiencecontent .joincondition {
+	margin-top: 56px;
+}
+ .experiencecontent .joincondition .title h3{
+	font-size: 36px;
+	color: 333;
+	padding-bottom: 16px;
+}
+ .experiencecontent .joincondition .title p{
+ 	font-size: 12px;
+ 	color: #999;
+ 	padding-bottom: 36px;
+ }
+ .experiencecontent .joincondition h4{
+ 	font-size: 18px;
+ 	padding-bottom: 20px;
+ }	
+ .experiencecontent .joincondition ul{
+ 	padding-left: 17.3%;
+ }
+.experiencecontent .joincondition ul li{
+	float: left;
+	padding-left: 2%;
+}
+.experiencecontent .joincondition table{
+	/*margin-left: 24.5%;*/
+	width: 1200px;
+	margin: 0 auto;
+}
+.experiencecontent .joincondition table th,td{
+	width: 140px;
+	border: 1px solid #666666;
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+}
+.experiencecontent .joincondition .pic{
+	padding-top: 70px;
+}
+.experiencecontent .joincondition .pic li{
+	padding-left: 0!important;
+
+}
+.pictwo li{
+	float: left;
+	font-size: 24px;
+	text-align: left;
+	line-height: 50px;
+}
+.pictwo li span{
+	font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

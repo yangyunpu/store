@@ -1,0 +1,47 @@
+/*品牌活动*/
+a{color: #000;}
+ul li{list-style: none;}
+.lj_rhead{width: 1200px; overflow: hidden; margin-top: 20px; margin-bottom: 100px;}
+.lj_rhead ul{overflow: hidden;}
+.lj_rhead li{float: left; width:380px;height: 350px; margin-right: 18px;margin-bottom: 34px;border-radius: 5px;overflow: hidden; }
+.lj_fot{ width: 380px;height: 120px; background: #f2f2f2;}
+.lj_time{width:90px;height: 120px;  float: left;text-align: center; border-right: 1px solid #f2f2f2;}
+.lj_time p:first-child{margin-top:20px;  }
+.lj_time p:last-child{margin-top:18px; 	font-size: 18px;color: #facc66;	}
+.lj_title{width: 270px;height: 120px;float: left;}
+.lj_title,.border-l{border-left:1px solid #fff;}
+.lj_title p:first-child{margin-top: 20px;margin-left: 20px;font-size: 17px; }
+.lj_title p:last-child{margin-top: 18px;margin-left: 20px;  font-size: 12px;}
+.lj_title .wen{color:#a1a1a1;}
+/*视频报道***********************************/
+.lj_video{overflow: hidden; margin-top: 20px;margin-bottom: 80px;}
+.lj_video ul{overflow: hidden;}
+.lj_video li{width:380px;height:290px;border-radius: 5px;float: left;margin-right: 18px;margin-bottom: 30px; overflow: hidden; position: relative;}
+.lj_op{position: absolute;top: 30%;left: 45%; background-image: url('/public/img/video/video3.png');width:48px;height:48px;}
+.lj_video ul li:hover .lj_op{ background-image: url('/public/img/video/video1.png');}
+.lj_vtext{width: 380px;height:60px;text-align: center;line-height: 60px; background-color: #f2f2f2;}
+.lj_vmp4{width: 100%;height: 100%; z-index: 2; position: fixed;top: 0;bottom: 0;left: 0;right: 0;  background: rgba(0,0,0,0.2); display: none; }
+.lj_vopen{width: 728px;height: 516px;background: #fff;  float: left;text-align: center;line-height: 400px;font-size: 28px;}
+.lj_vcenter{width: 770px;height: 516px; margin:10% auto; }
+.lj_vcenter p{font-size: 24px;color: #fff; float: right; cursor: pointer;}
+.lj_close{font-size: 20px;margin-left: 20px;color: #fff;width: 20px;height: 20px;float: right;}
+/*媒体专访*/
+.lj_new{width: 100%;text-align: center;    margin-bottom: 20px;}
+h2{width: 100%;text-align: center;}
+.lj_tim{width: 100%;text-align: center;margin-top: 8px;n}
+.lj_font{margin-top: 40px;line-height: 30px;}
+.lj_font2{text-indent: 2em;margin-top: 40px;line-height: 30px;}
+.lj_font3{margin-top: 40px;line-height: 30px;margin-bottom: 100px;}
+/*领导拜访*/
+/**/
+.xl_new .title{
+    width:100%;
+    text-align: center;
+}
+.title h3{
+    font-size: 22px;
+    font-family: normal;
+}
+.xl_new ul{
+
+}

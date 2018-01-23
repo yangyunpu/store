@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	/*background: #f3c90b;*/
+	/*max-width: 1600px;*/
+}
+.lj_wrap{
+	width: 100%;
+    background: #f3c90b;
+    overflow: hidden;
+}
+.lj_header{
+	 margin: 0;
+	 width: 100%;
+	 /*height: 1129px;*/
+	margin: 0 auto;
+}
+.lj_header img{
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.lj_center{
+	width:1200px ;
+	margin: 0 auto;
+}
+.lj_center ul li a {
+	display: block;
+	text-decoration: none;
+	list-style: none;
+}
+.center_sift ul li a {
+	text-decoration: none;
+}
+.lj_center ul li {
+	list-style: none;
+	float: left;
+}
+.center_sift{
+	width: 960px;
+	height: 635px;
+	margin: 0 auto;
+	background: url("/theme/activity/2016_09_Pentacles/pc/img/sift.png") no-repeat;
+	background-size: 100% 100%;
+}
+.center_sift li{
+	float: left;
+	margin-top: 170px;
+	margin-left: 20px;
+	width: 180px;
+	list-style: none;
+	/*height: 300px;*/
+}
+.center_sift li img{
+	width: 100%;
+}
+.center_sift li .price{
+	width: 74%;
+	margin-left: 22px;
+	margin-top: 5px;
+}
+.center_sift li .pricefirst{
+	width: 86%;
+	height: 26px;
+	margin-left: 10px;
+         margin-top: 5px;   
+}
+.center_sift li:first-child{
+	margin-left: 100px;
+}
+.oldprice{
+	color: #848383;
+	text-decoration: line-through;
+	font-weight: bold;
+	text-align: center;
+         margin:0;
+         padding:0;
+}
+.brand{
+	font-size: 20px;
+	font-weight:bolder;
+	text-align: center;
+	line-height: 26px;
+	color: #000000;
+         margin:0;
+         padding:0;
+}
+.trait{
+       font-size: 16px;
+       text-align: center;
+       font-weight: bold;
+       line-height: 20px;
+       color: #625b3f;
+        margin:0;
+        padding:0;
+}
+.center_find{
+	width: 960px;
+	height: 635px;
+	margin: 0 auto;
+	background: url("/theme/activity/2016_09_Pentacles/pc/img/find.png") no-repeat;
+	background-size: 100% 100%;
+}
+.center_find li{
+	float: left;
+	margin-top: 180px;
+	margin-left: 20px;
+	width: 180px;
+	list-style: none;
+}
+.center_find li img{
+	width: 100%;
+}
+.center_find li .price{
+	width: 84%;
+	margin-left: 14px;
+	margin-top: 5px;
+}
+.center_find li .pricefirst{
+	width: 90%;
+	height: 24px;
+	margin-left: 10px;
+    margin-top: 5px;   
+}
+.center_find li:first-child{
+	margin-left: 100px;
+}
+
+.center_food{
+	width: 960px;
+	height: 930px;
+	margin: 0 auto;
+	background: url("/theme/activity/2016_09_Pentacles/pc/img/food.png") no-repeat;
+	background-size: 100% 100%;
+}
+.center_food li{
+	float: left;
+	width: 190px;
+	height: 300px;
+	list-style: none;
+}
+.center_food .first-line{
+	float: left;
+	margin-top: 170px;
+	margin-left: 20px;
+	width: 180px;
+	height: 300px;
+}
+.center_food li img{
+	width: 100%;
+}
+.center_food li .price{
+	width: 94%;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+.center_food li .pricefirst{
+	width: 90%;
+	height: 24px;
+	margin-left: 10px;
+    margin-top: 5px;   
+}
+.center_food li:first-child{
+	margin-left: 90px;
+	margin-top: 170px;
+}
+.center_food li:nth-child(2){
+    margin-left: 20px;
+	margin-top: 170px;
+}
+.center_food li:nth-child(3){
+    margin-left: 20px;
+	margin-top: 170px;
+}
+.center_food li:nth-child(4){
+    margin-left: 20px;
+	margin-top: 170px;
+}
+.center_food li:nth-child(5){
+     margin-left: 90px;
+	margin-top:50px;
+}
+.center_food li:nth-child(6){
+     margin-left: 20px;
+	margin-top:50px;
+}
+.center_food li:nth-child(7){
+     margin-left: 20px;
+	margin-top:50px;
+}
+.center_food li:nth-child(8){
+     margin-left: 20px;
+	margin-top:50px;
+}
+.centet_cosmetics{
+	width: 960px;
+	height: 635px;
+	margin: 0 auto;
+	background: url("/theme/activity/2016_09_Pentacles/pc/img/cosmetics.png") no-repeat;
+	background-size: 100% 100%;
+}
+
+.centet_cosmetics li{
+	float: left;
+	margin-top: 180px;
+	margin-left: 20px;
+	width: 180px;
+	list-style: none;
+}
+.centet_cosmetics li img{
+	width: 100%;
+}
+.centet_cosmetics li .price{
+	width: 84%;
+	margin-left: 12px;
+	margin-top: 5px;
+}
+.centet_cosmetics li .pricefirst{
+	width: 90%;
+	height: 24px;
+	margin-left: 10px;
+    margin-top: 5px;   
+}
+.centet_cosmetics li:first-child{
+	margin-left: 100px;
+}
+
+.center_sears{
+	width: 960px;
+	height: 890px;
+	margin: 0 auto;
+	background: url("/theme/activity/2016_09_Pentacles/pc/img/sears.png") no-repeat;
+	background-size: 100% 100%;
+}
+.center_sears li{
+	float: left;
+	margin-left: 20px;
+	width: 190px;
+	height: 300px;
+	list-style: none;
+}
+.center_sears li img{
+	width: 100%;
+}
+.center_sears li .price{
+	width: 68%;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+.center_sears li:nth-child(1){
+	width: 380px;
+	height: 260px;
+	margin-top: 170px;
+	margin-left: 80px;
+}
+.center_sears li:nth-child(2){
+	width: 380px;
+	height: 260px;
+	margin-top: 170px;
+	margin-left: 20px;
+}
+.center_sears li:nth-child(3){
+	margin-top: 25px;
+	margin-left: 56px;
+}
+.center_sears li:nth-child(4){
+	margin-top: 25px;
+	margin-left: 20px;
+}
+.center_sears li:nth-child(5){
+	margin-top: 25px;
+	margin-left: 20px;
+}
+.center_sears li:nth-child(6){
+	margin-top:25px;
+	margin-left: 20px;
+}
+.lj_footer{
+	width: 100%;
+	/*height: 250px;*/
+}
+.footer img{
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}

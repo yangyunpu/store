@@ -1,0 +1,114 @@
+html,body{
+    width:100%;
+ }
+.lcy_agree{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+}
+.lcy_agree ul li{
+    list-style:none;    
+}
+.lcy_agree a{
+    text-decoration: none;    
+}
+.lcy_agree ul,li,div,p{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_agree .head{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    background: white;
+} 
+.lcy_agree .head div{
+    float:left;
+} 
+.lcy_agree .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url(/public/img/back1.png) 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_agree .head .title{
+    width:80%;
+    text-align:center;
+    height:44px;
+    line-height: 44px;
+    font-size: 16px;
+}
+.lcy_agree .head .back2{
+    width: 10%;
+    height: 44px;
+} 
+/*协议*/
+.lcy_agree .agreement_box{
+    width:100%;
+}
+.lcy_agree .agreement_box .box{
+    width: 96%;
+    background: white;
+    margin:0 2%;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 16px 0;
+}
+.lcy_agree .agreement_box .box .head_t{
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom:16px;
+}
+.lcy_agree .agreement_box .box .agreement{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 95%;
+    border-bottom: 1px #ccc solid;
+    margin: 0 auto;  
+    color:#716d6d;
+}
+.lcy_agree .agreement_box .box .agreement .s_title{
+    color:#000;
+
+}
+.lcy_agree .agreement_box .box .agreement .title{
+    font-size: 14px;
+    color:#000;
+    text-align: center;
+}
+.lcy_agree .agreement_box .box .agreement .agree_main>li{
+    margin-top:15px;
+}
+.lcy_agree .bottom_btn{
+    font-size: 12px;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background:white;
+}
+.lcy_agree .bottom_btn .check{
+    margin-left: 5%;
+    margin-top: 15px;
+    position: relative;
+    top: 3px;
+}
+.lcy_agree .bottom_btn .btn{
+    width: 95%;
+    height: 36px;
+    background-color: #a9a7a6;  
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 36px;
+    font-size: 15px;
+    border-radius: 2px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}

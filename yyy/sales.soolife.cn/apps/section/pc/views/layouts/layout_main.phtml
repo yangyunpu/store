@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		{% include '/layouts/inc_head.phtml' %}		
+	</head>
+	<body>
+	    {% include '/layouts/inc_header.phtml' %}
+	    {% include '/layouts/inc_search.phtml' %}
+		<script src="http://www.soolife.loc/assets/header.js"></script>  
+		{{ partial("layouts/inc_ordertop") }}
+		
+		
+		{{ content() }}
+        
+        
+		<script src="http://www.soolife.loc/assets/footer.js"></script>
+		<script src="http://www.soolife.loc/assets/sidebar.js"></script>  
+		{% include '/layouts/inc_footer.phtml' %}   
+        {{assets.outputJs('footer')}}	
+	</body>
+</html>

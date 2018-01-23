@@ -1,0 +1,249 @@
+body{
+	width: 16.0rem;
+	margin: 0;
+	padding: 0;
+}
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+}
+a {
+	list-style: none;
+}
+.wrap{
+	width: 16.0rem;
+	background-color:#cfedfc;
+	 overflow: hidden; 
+	 font-family: "黑体";
+}
+.header{
+	width: 16.0rem;
+	height: 1.777778rem;
+	background: #fff;
+	font-size: 0.681481rem;
+    text-align: center;
+    line-height:1.777778rem; 
+    position: relative;
+}
+.lefter{
+	width: 0.444444rem;
+	height: 0.740741rem;
+	position: absolute;
+	left: 0.444444rem;
+	bottom:0.562963rem; 
+}
+.cars{
+	width: 16.0rem;
+	height: 8.740741rem;
+	background:#f1260a; 
+	 position: relative;
+	 overflow: hidden;
+}
+.cart{
+	width: 16.0rem;
+	height: 7.348148rem;
+	position: absolute;
+	top: -0.397037rem;
+}
+.cart img{
+	width: 100%;
+}
+.autos{
+	width: 10.725926rem;
+	height: 5.555556rem;
+	position: absolute;
+	left: 1.22963rem;
+	bottom: 0.977778rem;
+}
+.autos img{
+	width: 100%;
+}
+.banners{
+	width: 16.0rem;
+	height: 1.037037rem;
+	position: absolute;
+	bottom: 0px;
+}
+.draw{
+	width:6.296296rem;
+	height: 1.555556rem;
+	position: absolute;
+	left: 4.592593rem;
+	bottom: 0.533333rem;
+}
+.draw img{
+	width: 100%;
+}
+.content{
+	width: 16.0rem;
+	background-image: url(/public/img/reward/invate/dabg.jpg);
+	background-size: 1.481481rem 1.481481rem;
+	background-repeat: repeat;
+}
+.rule{
+	width: 14.592593rem;
+	height: 10.637037rem;
+	border-radius: 5px;
+	background-color: #cfedfc;
+	margin: 0 auto;
+	position: relative;
+	padding-top: 1.037037rem;
+}
+.lj_evnet{
+    width: 12.585185rem;
+    height: 9.255556rem;
+    background-image: url(/public/img/reward/invate/con1.png);
+    background-size: 100% 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.lj_evnet ol {
+	margin: 0;
+	padding:0; 
+	font-size: 0.474074rem;
+	position: absolute;
+	top: 3.851852rem;
+	left: 2.37037rem;
+}
+.lj_evnet ol li{
+    width: 8.5rem;
+    line-height: 0.85rem;
+}
+.rocks{
+	width: 3.007407rem;
+	height: 3.496296rem;
+	position: absolute;
+	top: -2.37778rem;
+    left: -0.805926rem;
+}
+.rocks img{
+	width:100%;
+}
+.girl{
+	width: 3.333333rem;
+	height: 3.407407rem;
+	position: absolute;
+	top: -3.307407rem;
+    right: -0.66667rem;
+}
+.girl img{
+	width: 100%;
+}
+.pink{
+	width: 1.377778rem;
+	height: 0.548148rem;
+	position: absolute;
+	top: -0.377778rem;
+    right: -0.622222rem;
+}
+.pink img{
+	width: 100%;
+}
+.lj_flow{
+	width: 14.592593rem;
+	height:9.185185rem;
+	border-radius: 5px;
+	background: #cfedfc;
+	margin: 0.844444rem auto 0px;
+	position: relative;
+
+}
+.flows{
+	width: 12.088889rem;
+	height: 6.681481rem;
+	margin: 0 auto;
+	padding-top: 1.111111rem;
+}
+.flows img{
+	width: 100%;
+}
+.ring{
+	width: 0.562963rem;
+	height: 2.311111rem;
+}
+.firleft{
+	position: absolute;
+	bottom: -1.592593rem;
+    left: 0.5222222rem;
+    z-index: 5;
+}
+.firright{
+	position: absolute;
+	bottom: -1.592593rem;
+	right: 0.5222222rem;
+	z-index: 5;
+}
+.person{
+	width: 14.592593rem;
+	height: 9.881481rem;
+	border-radius: 5px;
+	background: #cfedfc;
+	margin: 0.844444rem auto 0px;
+	position: relative;
+}
+.personbg{
+	width: 12.777778rem;
+	height: 8.844444rem;
+	background-image: url(/public/img/reward/invate/con3.png);
+	background-size: 100% 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 1.25926rem;
+	top:0.740741rem;
+}
+.board_box ul li{
+	list-style: none;
+	font-size:0.444444rem; 
+	line-height: 0.896296rem;
+	text-align: center;
+}
+.board_box ul{
+	margin: 0;
+	padding:0; 
+}
+.board_box{
+	width: 7.414815rem;
+	height: 4.444444rem;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 2.837037rem;
+    left: 1.792593rem;
+    overflow: hidden;
+}
+.lj_foot{
+	width: 16.0rem;
+	height:7.703704rem; 
+	position: relative;
+}
+.lj_gold{
+	width: 16.0rem;
+	height:7.214815rem;
+	background-image: url(/public/img/reward/invate/gold1.png);
+	background-size: 100% 100%; 
+	position: absolute;
+	bottom: 0;
+}
+.explain{
+	width: 10.518519rem;
+	height: 0.444444rem;
+	text-align: center;
+	font-size: 0.474074rem;
+	color: #fff;
+	margin-top: 0.740741rem;
+}
+.last_foot{
+	width: 16.0rem;
+	height: 1.066667rem;
+	color: #fff;
+	line-height: 1.066667rem;
+	font-size: 0.533333rem;
+	text-align: center;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	bottom: 0;
+}

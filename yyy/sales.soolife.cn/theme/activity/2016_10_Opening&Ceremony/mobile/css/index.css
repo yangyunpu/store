@@ -1,0 +1,19 @@
+body{margin:0;padding:0;}
+.f_start_business{background:#4b1776;overflow: hidden;}
+.f_start_business ul {display: block;margin:0;padding:0;}
+.f_start_business ul li{list-style: none;}
+.f_start_business img{width:100%;border:none;}
+.f_bg{background:#fff5c9;width:90%;margin:0 auto;overflow: hidden;padding-bottom:3%;}
+#discount_coupon ul li{width:30%;float: left;margin:2% 1%;}
+#discount_coupon ul .first{margin-left:3.3%;}
+#discount_coupon{width:100%;}
+.f_hot_sell{width:65%;margin:0 auto;}
+#content{margin:3% 0 0 0;}
+.hot_style ul li{width:85%;margin:0 auto;}
+.hot_style ul li a img{margin-top:8%;}
+.f_active_demand{width:65%;margin: 0 auto;}
+.f_active_demand img{margin-top:8%;}
+.f_combo{width:65%;margin: 0 auto;}
+.f_combo img{margin-top:8%;}
+.collect{width:65%;margin: 0 auto;}
+.collect img{margin-top:8%;}

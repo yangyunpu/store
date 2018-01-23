@@ -1,0 +1,230 @@
+.nav .catalog {
+	width: 1200px; height: 40px; line-height:40px ; margin: 0 auto; padding: 0; overflow: hidden;
+}
+.nav .catalog >div{
+	float: left; 
+}
+
+.navbar .nav .category h4{
+	width: 250px; height: 40px; line-height: 40px; font-size: 18px; background: #bb038b; color: #fff;
+}
+.navbar .nav .category h4 i {
+	color: #fff;
+	margin: 5px 15px;
+}
+.nav .catalog .biaot{
+	width: 250px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; background: #ff588c;
+}
+.nav .catalog .lists{
+	width: 600px; height: 40px;  margin: 0 auto; padding: 0; overflow: hidden;
+}
+.nav .catalog .lists ul li{
+	float: left; width: 150px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; text-align: center; 
+}
+.nav .catalog .lists ul li a{
+	width: 150px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; color: #000; font-size: 16px;
+}
+
+.bigbanner {
+	background: url("../img/banner.jpg");
+	height: 480px;
+	width: 100%;
+	border-top: 3px solid #ff588c;
+	background-size: cover;
+}
+.crzy_beside_box{
+	position: relative;
+}
+
+
+.navbar .catalogmenu ul li {
+    width: 230px;height: 60px;line-height: 60px;cursor: pointer; padding-left: 20px;margin: 0 auto;background: #ff588c; color: #fff;
+    border-bottom: 1px dashed #ccc;position: relative;
+}
+
+
+.navbar .catalogmenu ul li a {
+	width: 220px; height: 60px; line-height: 60px; text-decoration: none; font-size: 14px; color: #fff;
+}
+.navbar .catalogmenu ul li span {
+	width: 20px; height: 60px; line-height: 60px; display: inline-block; margin-right: 0px; position: absolute; right: 10px;color: #fff; 
+}
+.navbar .catalogmenu {
+	height: 483px;
+	width: 250px;
+	
+	float: left;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, .4);
+}
+.navbar .catalogmenu ul li .catalog-icon-clothes {
+	padding-left: 23px; 
+}
+.navbar .catalogpannel {
+	float: left;
+	background: #FFF;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, .4);
+}
+.catalogshow {
+	width: 1200px; height: 483px;overflow: hidden; position: absolute; left: 18px;  top: 43px; 
+}
+.navbar .catalogmenu ul .selected{
+	background: white; color: #fff;
+}
+.navbar .catalogmenu ul .selected a {
+	color: #bb038b;
+	width: 230px;
+	height: 60px;
+	line-height: 60px;
+	
+}
+.navbar .catalogmenu ul .selected span{
+	width: 20px; padding-left: 10px; height: 60px; line-height: 60px; color: #bb038b;
+}
+.navbar .catalogpannel .pannel {
+	padding: 0px;
+	width: 950px;
+	min-height: 480px;
+	display: none;
+}
+
+.navbar .catalogpannel {
+	background: #fff none repeat scroll 0 0;
+	box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.4);
+	float: left;
+	width: 950px;
+}
+
+.navbar .catalogpannel .pannel .tags-bd {
+	clear: both;
+	margin: 0px 0px;
+	width: 680px;
+	float: left;
+}
+.catalogmenu .selected{
+	background: #fff; color: #bb038b;
+}
+
+.catalogshow .classify{
+	width: 150px; height: 79px; border: 1px solid #bb038b; background: white; position: absolute;  top: -3px; left: 700px;
+}
+.catalogshow .classify p{
+	width: 150px; height: 39px; line-height: 39px; border-bottom: 1px dashed #bb038b ; font-size: 16px; text-align: center;
+}
+.bigbanner .juzhong_a {
+	width: 100%;
+	margin: 0 auto;
+	height: 483px;
+}
+.bigbanner .juzhong_a div {
+	float: left;
+}
+.banner {
+	width: 100%;  height: 480px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.nav >div >a {
+	height: 30px;
+	line-height: 30px;
+}
+.bigbanner .juzhong_a .banner {
+	width: 100%;
+	height: 480px;
+	margin: 0 auto;
+	padding: 0;
+}
+.banner .swiper-slide img {
+	
+	width: 100%;
+	overflow-y: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+.xhg_body{
+	width: 1200px; margin: 0 auto; padding: 0; padding-bottom: 50px;
+}
+.navigation{
+	width: 1200px; height: 40px;  margin: 0 auto; padding: 0; margin-top: 10px; overflow: hidden;
+	border-bottom: 2px solid #ff588c;
+}
+.navigation ul li{
+	float: left; width: 100px; height: 40px; line-height: 40px; margin: 0 auto; padding: 0; font-size: 16px; font-weight: 600;
+}
+.navigation ul li i{
+	padding-right: 5px;
+}
+.navigation ul .classify{
+	color: #ff588c;
+}
+.hotspot{
+	width: 1200px; margin: 0 auto; padding: 0; overflow: hidden; margin-top: 20px; overflow: hidden;
+}
+.hotspot ul li{
+	float: left; width: 290px; height: 450px; margin: 6.5px; 
+}
+.hotspot ul .frame_l{
+	margin-left: 0px;
+}
+.hotspot ul .frame_r{
+	margin-right: 0px;
+}
+.hotspot ul li .particulars{
+	width: 290px; height: 110px; margin: 0 auto; padding: 0; margin-top: 5px;
+}
+.hotspot ul li .particulars .name{
+	width: 290px; height: 22px; line-height: 22px; font-size: 16px;  margin: 0 auto; padding: 0; color: #adadad;
+}
+.hotspot ul li .particulars .price_p{
+	width: 290px; height: 60px; margin: 0 auto; padding: 0; margin-top: 5px;
+}
+.hotspot ul li .particulars .price_p .left_p{
+	width: 140px; height: 60px; margin: 0 auto; padding: 0;
+}
+.particulars .price_p .left_p .xhgo_p{
+	color: #000; width: 140px; height: 30px; line-height: 30px; margin: 0 auto; padding: 0;
+}
+.particulars .price_p .left_p .xhgo_p .xingbi{
+	color: #e97e20; font-size: 18px; font-weight: 600;
+}
+.particulars .price_p .left_p .xhgo_p .xingbi i{
+	padding-right: 5px;
+}
+.particulars .price_p .left_p .xhgo_p .xian_price{
+	color: #f00000; font-size: 16px; font-weight: 600;
+}
+.particulars .price_p .left_p .bazaar_price{
+	width: 140px; height: 22px; margin: 0 auto; color: #858585; font-size: 14px; text-decoration:line-through;
+}
+.particulars .price_p .right_p{
+	width: 110px; height: 60px; margin: 0 auto; padding: 0; text-align: center;
+}
+.particulars .price_p .right_p .residue{
+	width: 110px; height: 22px; margin-top: 5px; margin: 0 auto; font-size: 12px; padding: 0; color: #858585;
+}
+.particulars .price_p .right_p .residue .number{
+	color: #e97e20; font-size: 16px;
+}
+.particulars .price_p .right_p .residue .piece{
+	font-size: 16px;
+}
+.particulars .price_p .right_p .ljsh{
+	width: 110px; height: 30px; line-height: 30px; margin: 0 auto; padding: 0;
+}
+.placename{
+	width: 1200px; height: 140px; margin: 0 auto; padding: 0; margin-top: 20px;
+}
+
+
+
+
+
+

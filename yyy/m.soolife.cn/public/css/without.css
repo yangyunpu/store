@@ -1,0 +1,54 @@
+.lcy_without{
+	margin:0;
+	padding:0;
+}
+.lcy_without .without{
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.lcy_without .without p{
+	margin-top:40%;
+	font-size: 0.7rem;
+	text-align:center;
+	animation: w_rotate linear 8s infinite;
+	-moz-animation: w_rotate linear 8s infinite;
+	-webkit-animation: w_rotate linear 8s infinite;
+	-o-animation: w_rotate linear 8s infinite;
+}
+@keyframes w_rotate{
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+@-moz-keyframes w_rotate {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
+@-webkit-keyframes w_rotate {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}
+
+@-o-keyframes w_rotate {
+	from {
+		transform:rotate(0deg);
+	}
+	to {
+		transform:rotate(360deg);
+	}
+}

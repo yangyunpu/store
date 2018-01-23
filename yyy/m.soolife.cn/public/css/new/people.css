@@ -1,0 +1,104 @@
+#new-people{
+	 background: #F1F0F0;
+    font-family: PingFangSC-Regular;
+}
+.fl-left{
+	float:left;
+}
+#new-people #pe-new-header{
+background: #fff;
+padding: 0.6rem 0.64rem;
+}
+#new-people #pe-new-header .header-left a img{
+width: 0.426667rem;
+height: 0.810667rem;
+}
+#new-people #pe-new-header .header-center{
+font-size: 0.768rem;
+margin-left: 5.333333rem;
+}
+#new-people #pe-new-header .header-right{
+width: 0.810667rem;
+height: 0.810667rem;
+margin-left:4.970667rem;
+}
+.pe_subject  .header_link{
+	font-size:0;
+}
+.pe_subject .header_link .link{
+	width: 16.0rem;
+	height: 6.4rem;
+	margin: 0;
+}
+.pe_subject .header_link .coupon{
+	width: 16.0rem;
+	height: 2.261333rem;
+}
+.pe_subject .explosive_goods{
+width: 100%;
+height: 2.026667rem;
+}
+.pe_subject .explosive_goods .e-title{
+	text-align: center;
+    position: relative;
+    height: 1.962667rem;
+    line-height: 1.962667rem;
+    font-size: 0.682667rem;
+    color: #EC6D65;
+    letter-spacing:0.021333rem;
+}
+.pe_subject .explosive_goods .e-title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #CECECE;
+    width: 4.330667rem;
+    border-bottom: 0.064rem solid #ddd;
+    left: 1.92rem;
+}
+.pe_subject .explosive_goods .e-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: #CECECE;
+    width: 4.330667rem;
+    border-bottom: 0.064rem solid #ddd;
+    right:1.92rem;
+}
+.pe_subject .burst{
+	width: 16.0rem;
+	height: 13.994667rem;
+	background: #fff;
+	text-align: center;
+	margin-bottom: 0.426667rem;
+}
+.pe_subject .burst img{
+width: 100%;
+height: 7.68rem;
+}
+.pe_subject .burst .price p{
+display: inline-block;
+font-size:0.597333rem;
+color: #EC6D65;
+letter-spacing: 0.021333rem;
+text-align: center;
+}
+.pe_subject .burst p{
+text-align: center;
+font-size: 0.597333rem;
+color: #333333;
+letter-spacing: 0.027093rem;
+}
+.pe_subject .burst .purchase{
+margin: 0 auto;
+margin-top: 1.045333rem;
+width: 14.293333rem;
+height: 1.408rem;
+background: #EC6D65;
+border-radius: 0.128rem;
+font-size: 0.597333rem;
+color: #FFFFFF;
+letter-spacing: 0.021333rem;
+text-align: center;
+line-height:  1.408rem;
+}

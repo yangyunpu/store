@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|会员中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/i/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/i/record/record.css"/>
+</head>
+<body>
+<div class="index_wrap">
+	<div class="header">
+	    <a onclick="window.history.go(-1)"><img class="arrow"  src="/public/img/common/shop_back_black@1x.png " ></a>
+		<span class="head_title">足迹</span> 
+		<span class="head_edit">编辑</span>
+	</div>
+	<!-- 下载框 -->
+<!-- 	<div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+	<div id="wrap">
+	    {% if history %}
+        {% if history['items'] %}
+		<input id="hidden" type="hidden" value="{{ history['skip'] }}">
+        <ul id="atten_baby" class="record">
+        	{% for d in history['items'] %}
+        	<li>
+	        	<a class="his_link" data-id="{{ d['sku_id'] }}"  href=" {{ d['url'] }}/{{ d['sku_id'] }}.html ">
+	        		<div class="edit_bg" >
+	        			<img class="edit_logo" src="{{ d['logo'] }}">
+		        		<div class="edit_txt">
+		        			<p class="title">{{ d['name'] }}</p>
+		        			<div id="footprint_num">
+		        				<span>¥{{ d['shop_price'] }}</span>
+		        				<span>¥{{ d['market_price'] }}</span>
+		        				<span></span>
+		        			</div>
+		        		</div>
+	        		</div>
+        		</a>
+        	</li>
+        	{% endfor %}
+        </ul> 
+		{% endif %}
+		{% endif %}
+		<p id="none" style="text-align:center;display:none;">没有更多商品了...</p>
+		<div id="bottom">
+			
+		</div>
+        <a id="cancel" class="hide">删除</a> 
+        <!-- 提示框 -->
+        <div id="title" class="hide">
+        	提示框提示
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/i/record/footprint.js"></script>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|星星杀</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+	<link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+	<link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" href="/public/ext/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/starkill/order.css"/>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<a href="/starkill/state.html?starkill_id={{order['data']['starkill_id']}}"><img class="arrow"  src="/public/img/starkill/icon/Group 36.png " ></a>
+		<span class="head_title">预订确认</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+    {% if order['data'] %}
+    <div class="order_con">
+    	<div class="order_active">
+    		<div class="order_top">
+                <input type="hidden"  name="" value="{{order['data']['starkill_id']}}" id="starkill_id" />
+	    		<div class="top_img">
+	    			<img src="{{order['data']['logo']}}">
+	    		</div>
+    			<div class="top_txt">
+    				<p class="top_state">预定</p>
+    				<p class="top_title">{{order['data']['name']}}</p>
+                    <input name="" value="{{order['data']['pre_price']}}" type="hidden" id="order_rule" />
+    				<div class="top_coin">
+                        <p>
+                            <span id="rule"></span>
+                            <span>星币</span>
+                        </p>
+    					<p >
+                            <span>*</span>
+                            <span id="qty">{{order['data']['qty']}}</span>
+                        </p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="order_mark">
+    			注:预订费用,不退换,不找零,不参与抵扣购买商品的价格。
+    		</div>
+    	</div>
+    </div>
+    {% endif  %}
+    <div class="order_btom">
+    	<p>
+    		<span>实付款:</span>
+    		<span id="sum"></span>
+            <span class="order_sum">星币</span>
+    	</p>
+    	<a  id="pay">确认付款</a>
+    </div>
+    <!-- 提示框 -->
+    <div class="alert_msg hide">
+        
+    </div>
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script type="text/javascript" src="/public/ext/js/swiper.min.js"></script>
+<script src="/public/js/starkill/order.js"></script>

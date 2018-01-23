@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>如此生活|满额抽奖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="/public/ext/css/soo.m.ui.css"/>
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/ext/css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/lottery/homepage.css"/>
+</head>
+<body class="keBody">
+<!-- 头部 -->
+<div id="soo-header">
+    <div id="header-left"><a href="{{url_m}}/mindex/index.html"> <img src="../public/img/lottery/shop_back_black@2x.png" alt=""></a></div>
+    <div id="header-center">满额抽奖</div>
+    <!-- <div id="header-right"><a href="regulation.html"> <img src="../public/img/lottery/xingxingsha_share@2x.png" alt=""></a></div> -->
+</div>
+<div class="swiper-container" id="dd">
+    <span class="hl-banner">规则</span>
+    <div class="swiper-wrapper">
+
+    <?php if(isset($link['app.fullaward.banner.001']['items'])) { ?>
+        {% for d in link['app.fullaward.banner.001']['items'] %}
+            <a href="{{ d['mobile_link'] }}" class="swiper-slide"><img class="bannera" src="{{ d['picture'] }}" alt="banner"></a>
+        {% endfor %}
+    <?php } else { ?>
+ <!--        <div class="swiper-slide"><img class="bannera" src="/public/img/lottery/group8.png" alt="banner"></div>
+        <div class="swiper-slide"><img class="bannera" src="/public/img/lottery/group8.png" alt="banner"></div>
+        <div class="swiper-slide"><img class="bannera" src="/public/img/lottery/group8.png" alt="banner"></div> -->
+    <?php } ?>
+    </div>
+     <div class="pagination"></div>
+</div>
+<!--抽奖卡牌-->
+<div class="hl-backimg">
+    <ul id="lottery">
+        <?php foreach($data['award'] as $k=>$v):?>
+        <li>
+            <img src="{{ v['S_Logo'] }}">
+            <span class="sname">{{ v['S_Name'] }}</span>
+        </li>
+        <?php if($k==3):?>
+            <li class="hl-btn" id="box" class="box viewport-flip">
+                <input type="hidden" id="rule_money"  name="" value="{{data['rule']}}"  />
+                <p class="box-man">满<span></span></p>
+                <p class="box-chou">抽大奖</p>
+            </li>
+        <?php endif?>
+      <?php endforeach?>
+    </ul>
+</div>
+<div class="hkl-hd">
+    <p class="hkl-bor-left"><span></span></p>
+    <span class="hd-h">活动商品</span>
+    <p class="hkl-bor-right"><span></span></p>
+</div>
+    {% for d in data['cate'] %}
+    <a href="/lottery/interface.html?fullid={{d['Full_ID']}}&fcid={{d['FC_ID']}}">
+        <img class="hkl-gg" src="{{d['FC_Logo']}}" alt="">
+     </a>
+    {% endfor %}
+    <div class="alert_wrap">
+        <div class="hkl-fex"></div>
+        <div class="hkl-neir">
+            <img class="neir-img" src="/public/img/lottery/delete@2x.png" alt="">
+            <p class="hkl-head">规则</p>
+            <p class="regula-text">1、订单支付完成后,用户直接获得抽奖机会提示,可以参与抽奖;</p>
+            <p class="regula-text">2、若用户点击关闭抽奖提示页面,则视为放弃此次抽奖机会,将不再显示抽奖;</p>
+            <p class="regula-text">3、每次订单只有一次抽奖机会;</p>
+            <p class="regula-text">4、若用户在抽中奖品后,发起退款申请,则需将奖品及购买商品一起返还,否则无法通过退款;</p>
+            <p class="regula-text">5、抽奖商品无法提供相应发票;</p>
+            <p class="regula-text">6、在法律允许范围内,如此生活拥有活动的最终解释权;</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/swiper.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/lottery/homepage.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<!-- <script src="/public/js/sdk.2.2.js"></script> -->

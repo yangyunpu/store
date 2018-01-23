@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="/public/mobile/css/activity/swiper.css">
+        <link rel="stylesheet" type="text/css" href="/public/mobile/css/activity/index.css">
+    </head>
+    <body bgcolor="{{data['backgroudcolor']}}">
+        <div class="wrap">
+            <div class="head">
+                <!-- 轮播 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        {% for d in data['banner'] %}                        
+                        <?php $num = count($data['banner']); if($num>1){?>
+                        <div class="swiper-slide">
+                            <img src="{{d}}">
+                        </div>
+                        <?php }else { ?>
+                         <div>
+                            <img src="{{d}}">
+                        </div>    
+                        <?php } ?>
+                        {% endfor %}
+                    </div>
+                    <!-- 分页效果 -->
+                    <div class="pagination"></div>
+                </div>
+            </div>
+            <div class="title">
+                {% if data['floorname'] %}
+                <ul>
+                    {% for n,d in data['floorname'] %}
+                    <li><a href="#one{{n}}">{{d}}</a></li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% for k,d in data['floor'] %}
+            <div class="sku_id" id="one{{k}}">
+                <div class="sku_one">
+                    <a href="{{d['link']}}"><img src="{{d['banner']}}"></a>
+                </div>
+                <ul class="shop">
+                    {% for s in d['sku']%}
+                    <li class="item open-goods-detail" data-goods-id="{{s['sku']}}">
+                        <!-- <a href="{{url}}/m/{{s['sku']}}.html"> -->
+                        <img class="shop_img" src="{{s['logo']}}">
+                        <!-- </a> -->
+                        <p class="shop_name">{{s['name']}}</p>
+                        <div class="price">
+                            <P>￥{{s['shop_price']}}</p>
+                            <p>￥{{s['market_price']}}</p>
+                        </div>
+<!--                        <div class="goods">
+                            <img class="lj_goods" src="/public/mobile/img/lucky/goods.png">
+                        </div>-->
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+<!--         购物车弹出框 
+        <div class="goods_delt_mark" >
+            <div class="goods_delt_box">
+                <div class="goods_delt_main">
+                    <div class="item">
+                        <p class="title">单位</p>
+                        <div class="main">
+                            <span class="active">件</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">颜色</p>
+                        <div class="main">
+                            <span class="active">黄迷彩</span>
+                            <span  >绿迷彩</span>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p class="title">尺码</p>
+                        <div class="main">
+                            <span >均码</span>
+                        </div>
+                    </div>
+                    <p class="title">数量</p>
+                    <div class="amount">
+                        <span class="jian">-</span>
+                        <input id="amount_int" type="text" value="1" disabled="disabled">
+                        <span class="add">+</span>
+                    </div>
+                </div>
+                <div class="goods_done_btn d_btn sure_btn" style="">
+                    确定
+                </div>
+            </div>
+        </div>-->
+        <div id="alert_mark" ></div>
+    </body>
+</html>
+<script type="text/javascript" src="/public/mobile/js/lucky/rem.js"></script>
+<script type="text/javascript" src="/public/mobile/js/lucky/rem.js"></script>
+<script src="/public/js/sdk.2.0.js"></script>
+<script type="text/javascript" src="/public/mobile/js/lucky/jquery.-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/activity/swiper.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/activity/activity.js"></script>

@@ -1,0 +1,435 @@
+Sat 23 11:31:01 [INFO] member_id：
+Sat 23 11:31:01 [INFO] 30340929
+Sat 23 11:31:01 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340929',
+   'login_id' => '17602174629',
+   'nickName' => '176****4629',
+   'token' => 'c97ecd1742d79233225f2536be69923a',
+   'type' => '1',
+   'visit' => '510',
+   'last_time' => 1506136693,
+   'ip' => '106.15.45.24',
+))
+Sat 23 14:55:32 [INFO] member_id：
+Sat 23 14:55:32 [INFO] 30340938
+Sat 23 14:55:32 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => 'a5e93b736e54eea2a4a81f1af7c75a14',
+   'type' => '1',
+   'visit' => '227',
+   'last_time' => 1506145664,
+   'ip' => '103.214.84.243',
+))
+Sat 23 15:08:13 [INFO] member_id：
+Sat 23 15:08:13 [INFO] 30055451
+Sat 23 15:08:13 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'a21abfca2cd289c2c11eefc019cd3b7e',
+   'type' => '1',
+   'visit' => '135',
+   'last_time' => 1506150266,
+   'ip' => '103.214.84.243',
+))
+Sat 23 15:35:28 [INFO] member_id：
+Sat 23 15:35:28 [INFO] 30341228
+Sat 23 15:35:28 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341228',
+   'login_id' => '15702152531',
+   'nickName' => '157****2531',
+   'token' => '4c8fd8543e52b3edfa230c3e4329935e',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506150468,
+   'ip' => '103.214.84.243',
+))
+Sat 23 15:48:28 [INFO] member_id：
+Sat 23 15:48:28 [INFO] 30001202
+Sat 23 15:48:28 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001202',
+   'login_id' => '18896717435',
+   'nickName' => '平平',
+   'token' => '4f7bf9262344ba4912b2f1ce0a551247',
+   'type' => '1',
+   'visit' => '1275',
+   'last_time' => 1506152713,
+   'ip' => '103.214.84.243',
+))
+Sat 23 15:54:30 [INFO] member_id：
+Sat 23 15:54:30 [INFO] 30001202
+Sat 23 15:54:30 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001202',
+   'login_id' => '18896717435',
+   'nickName' => '平平',
+   'token' => '4f7bf9262344ba4912b2f1ce0a551247',
+   'type' => '1',
+   'visit' => '1276',
+   'last_time' => 1506153002,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:01:47 [INFO] member_id：
+Sat 23 16:01:47 [INFO] 30341229
+Sat 23 16:01:47 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341229',
+   'login_id' => '18814141458',
+   'nickName' => '188****1458',
+   'token' => 'd68cf1bd166450529c79d1f5250e83bb',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506153593,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:05:41 [INFO] member_id：
+Sat 23 16:05:41 [INFO] 30341229
+Sat 23 16:05:41 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341229',
+   'login_id' => '18814141458',
+   'nickName' => '188****1458',
+   'token' => 'd68cf1bd166450529c79d1f5250e83bb',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506153593,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:24:58 [INFO] member_id：
+Sat 23 16:24:58 [INFO] 30341230
+Sat 23 16:24:58 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341230',
+   'login_id' => '13822296028',
+   'nickName' => '138****6028',
+   'token' => '887099b36209c56ac9152dfaf108248b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155061,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:25:35 [INFO] member_id：
+Sat 23 16:25:35 [INFO] 30341230
+Sat 23 16:25:35 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341230',
+   'login_id' => '13822296028',
+   'nickName' => '138****6028',
+   'token' => '887099b36209c56ac9152dfaf108248b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155061,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:26:15 [INFO] member_id：
+Sat 23 16:26:15 [INFO] 30341230
+Sat 23 16:26:15 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341230',
+   'login_id' => '13822296028',
+   'nickName' => '138****6028',
+   'token' => '887099b36209c56ac9152dfaf108248b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155061,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:29:13 [INFO] member_id：
+Sat 23 16:29:13 [INFO] 30341231
+Sat 23 16:29:13 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341231',
+   'login_id' => '13600007589',
+   'nickName' => '136****7589',
+   'token' => '366b127d8ee55b47af37e1f479f15d2a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155321,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:35:45 [INFO] member_id：
+Sat 23 16:35:45 [INFO] 30341231
+Sat 23 16:35:45 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341231',
+   'login_id' => '13600007589',
+   'nickName' => '136****7589',
+   'token' => '366b127d8ee55b47af37e1f479f15d2a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155321,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:37:29 [INFO] member_id：
+Sat 23 16:37:29 [INFO] 30341231
+Sat 23 16:37:29 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341231',
+   'login_id' => '13600007589',
+   'nickName' => '136****7589',
+   'token' => '366b127d8ee55b47af37e1f479f15d2a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506155321,
+   'ip' => '103.214.84.243',
+))
+Sat 23 16:38:14 [INFO] member_id：
+Sat 23 16:38:14 [INFO] 30001202
+Sat 23 16:38:14 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001202',
+   'login_id' => '18896717435',
+   'nickName' => '平平',
+   'token' => '4f7bf9262344ba4912b2f1ce0a551247',
+   'type' => '1',
+   'visit' => '1278',
+   'last_time' => 1506155869,
+   'ip' => '103.214.84.243',
+))
+Sat 23 17:15:36 [INFO] member_id：
+Sat 23 17:15:36 [INFO] 30055451
+Sat 23 17:15:36 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'b2fd2c219c420968cc94121a4efe8559',
+   'type' => '1',
+   'visit' => '133',
+   'last_time' => 1506138462,
+   'ip' => '106.15.45.24',
+))
+Sat 23 18:37:04 [INFO] member_id：
+Sat 23 18:37:04 [INFO] 30341231
+Sat 23 18:37:04 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341231',
+   'login_id' => '13600007589',
+   'nickName' => '136****7589',
+   'token' => '366b127d8ee55b47af37e1f479f15d2a',
+   'type' => '1',
+   'visit' => '3',
+   'last_time' => 1506162999,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:39:41 [INFO] member_id：
+Sat 23 18:39:41 [INFO] 30341232
+Sat 23 18:39:41 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506163134,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:40:41 [INFO] member_id：
+Sat 23 18:40:41 [INFO] 30341232
+Sat 23 18:40:41 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506163134,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:42:34 [INFO] member_id：
+Sat 23 18:42:34 [INFO] 30341232
+Sat 23 18:42:34 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506163134,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:46:02 [INFO] member_id：
+Sat 23 18:46:02 [INFO] 30341232
+Sat 23 18:46:02 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506163134,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:46:41 [INFO] member_id：
+Sat 23 18:46:41 [INFO] 30341232
+Sat 23 18:46:41 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506163134,
+   'ip' => '103.214.84.243',
+))
+Sat 23 18:50:25 [INFO] member_id：
+Sat 23 18:50:25 [INFO] 30341232
+Sat 23 18:50:25 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '1',
+   'last_time' => 1506163724,
+   'ip' => '103.214.84.243',
+))
+Sat 23 19:20:34 [INFO] member_id：
+Sat 23 19:20:34 [INFO] 30195751
+Sat 23 19:20:34 [INFO] stdClass::__set_state(array(
+   'member_id' => '30195751',
+   'login_id' => '13917724402',
+   'nickName' => 'mxg',
+   'token' => 'd89260d4cbb43089b0d23dbc0ff27ada',
+   'type' => '1',
+   'visit' => '91',
+   'last_time' => 1506165565,
+   'ip' => '106.15.45.24',
+))
+Sat 23 19:20:56 [INFO] member_id：
+Sat 23 19:20:56 [INFO] 30055451
+Sat 23 19:20:56 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'a21abfca2cd289c2c11eefc019cd3b7e',
+   'type' => '1',
+   'visit' => '156',
+   'last_time' => 1506165626,
+   'ip' => '103.214.84.243',
+))
+Sat 23 19:23:28 [INFO] member_id：
+Sat 23 19:23:28 [INFO] 1013786
+Sat 23 19:23:28 [INFO] stdClass::__set_state(array(
+   'member_id' => '1013786',
+   'login_id' => '13262652235',
+   'nickName' => '(null)',
+   'token' => 'fa780231a59558032807e16401929a54',
+   'type' => '1',
+   'visit' => '735',
+   'last_time' => 1506163577,
+   'ip' => '106.15.45.24',
+))
+Sat 23 19:35:09 [INFO] member_id：
+Sat 23 19:35:09 [INFO] 30341232
+Sat 23 19:35:09 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341232',
+   'login_id' => '13822112235',
+   'nickName' => '138****2235',
+   'token' => 'c5f830810218e2ff39396c1f81195a0b',
+   'type' => '1',
+   'visit' => '2',
+   'last_time' => 1506164017,
+   'ip' => '103.214.84.243',
+))
+Sat 23 19:46:29 [INFO] member_id：
+Sat 23 19:46:29 [INFO] 30340938
+Sat 23 19:46:29 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => '1879ac762bee3825f1d22a1b3433b03f',
+   'type' => '1',
+   'visit' => '230',
+   'last_time' => 1506167172,
+   'ip' => '106.15.45.24',
+))
+Sat 23 19:46:42 [INFO] member_id：
+Sat 23 19:46:42 [INFO] 30055451
+Sat 23 19:46:42 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'a21abfca2cd289c2c11eefc019cd3b7e',
+   'type' => '1',
+   'visit' => '163',
+   'last_time' => 1506167179,
+   'ip' => '103.214.84.243',
+))
+Sat 23 19:46:48 [INFO] member_id：
+Sat 23 19:46:48 [INFO] 
+Sat 23 19:46:48 [INFO] NULL
+Sat 23 20:08:10 [INFO] member_id：
+Sat 23 20:08:10 [INFO] 30001202
+Sat 23 20:08:10 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001202',
+   'login_id' => '18896717435',
+   'nickName' => '平平',
+   'token' => '4f7bf9262344ba4912b2f1ce0a551247',
+   'type' => '1',
+   'visit' => '1284',
+   'last_time' => 1506168465,
+   'ip' => '103.214.84.243',
+))
+Sat 23 20:09:49 [INFO] member_id：
+Sat 23 20:09:49 [INFO] 30341233
+Sat 23 20:09:49 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506168559,
+   'ip' => '103.214.84.243',
+))
+Sat 23 20:10:34 [INFO] member_id：
+Sat 23 20:10:34 [INFO] 30341233
+Sat 23 20:10:34 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506168559,
+   'ip' => '103.214.84.243',
+))
+Sat 23 20:11:36 [INFO] member_id：
+Sat 23 20:11:36 [INFO] 30341233
+Sat 23 20:11:36 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506168559,
+   'ip' => '103.214.84.243',
+))
+Sat 23 20:13:12 [INFO] member_id：
+Sat 23 20:13:12 [INFO] 30341233
+Sat 23 20:13:12 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506168559,
+   'ip' => '103.214.84.243',
+))
+Sat 23 20:14:59 [INFO] member_id：
+Sat 23 20:14:59 [INFO] 30341233
+Sat 23 20:14:59 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506168559,
+   'ip' => '103.214.84.243',
+))
+Sat 23 21:27:56 [INFO] member_id：
+Sat 23 21:27:56 [INFO] 30341233
+Sat 23 21:27:56 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341233',
+   'login_id' => '18818876318',
+   'nickName' => '188****6318',
+   'token' => '142f1f70907153ce73d3a98302ccb48a',
+   'type' => '1',
+   'visit' => '2',
+   'last_time' => 1506169320,
+   'ip' => '103.214.84.243',
+))

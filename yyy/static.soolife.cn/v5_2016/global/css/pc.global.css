@@ -1,0 +1,27 @@
+/*默认样式*/
+.f_global_content p,span{font-family: "微软雅黑";color:#2F2F2F;font-size:16px;}
+.f_global_content a{text-decoration: none;}
+.f_global_content div,ul,li{margin:0px;padding:0px;}
+.f_global_content{width:1200px;margin:0 auto;}
+.f_global_content .f_global_product ul li{list-style: none;}
+.f_global_content .f_global_total ul li{list-style: none;}
+.f_global_content .f_global_seller{text-align: center;margin:20px;}
+
+/*最新热卖*/
+.f_global_content .f_global_product ul li{width:590px;height:300px;float:left;margin-bottom:20px;}
+.f_global_product{width:1200px;height:660px;}
+.f_global_content .f_global_product ul .f_global_space{margin-left:20px;}
+
+/*全球热卖*/
+.f_global_content .f_global_total{width:1200px;height:900px;overflow: hidden;}
+.f_global_content .f_global_total .f_global_each{float:left;}
+.f_global_content .f_global_total .f_global_each ul li img{width:190px;height:190px;}
+.f_global_content .f_global_total .f_global_each ul li{width:190px;height:290px;float:left;border:1px solid #ccc;background:white;margin-bottom:10px}
+.f_global_content .f_global_character{padding:10px;margin-top:-25px;}
+.f_global_content .f_global_total .f_global_each .f_global_character .original_cost{font-size:12px;color:#ccc;text-decoration:line-through;position: relative;bottom:8px;}
+.f_global_content .f_global_total .f_global_each .f_global_character .figure .activity{font-size:12px;color:#FB2324;}
+.f_global_content .f_global_total .f_global_each .f_global_character .figure .number{font-size:20px;font-weight: 600;color:#FB2324;}
+.f_global_content .f_global_total .f_global_each .facial_mask{line-height:20px;height:70px}
+.f_global_content .f_global_total .f_global_each .figure {height:20px;line-height:20px;}
+.f_global_content .f_global_total .f_global_each .figure .promptly_buy img{width:36px;height:36px;float:right;position: relative;left:5px;bottom:40px;}
+.f_global_content .f_global_total .f_global_each ul .interval{margin-left:9px;}

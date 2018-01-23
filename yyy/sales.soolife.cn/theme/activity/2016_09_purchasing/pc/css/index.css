@@ -1,0 +1,36 @@
+body{margin:0;padding:0;}
+.f_pc_carnival_purchasing{background:#ffb804;overflow: hidden;}
+.f_pc_carnival_purchasing img{width:100%;border:none;}
+.f_content{width:1210px;margin:0 auto;}
+.f_pc_carnival_purchasing ul li{list-style: none;}
+.f_ta_matters ul li{width:50%;float: left;}
+.f_ta_matters ul{margin:0px;padding:0px;}
+.f_product ul li{width:33.2%;float: left;}
+.f_product ul{margin:0px;padding:0px;}
+.f_product ul li a{list-style: none;}
+#ta_purchase ul li{width:50%;float: left;}
+#ta_purchase ul{margin:0px;padding:0px;}
+.thirst ul li{width:33.32%;float: left;}
+.thirst ul{margin:0px;padding:0px;}
+.f_caigo{height:1100px;width:100%;}
+.ta_fresh{width:70%;margin:0 auto;}
+.ta_fresh img{margin-top:6%;}
+.f_fresh ul li{width:50%;float:left;}
+.f_fresh ul {margin:0px;padding:0px;}
+.f_product ul .second{width:26%;margin-top:3%;margin-left:3%;}
+.f_product ul .thirty{width:37%;}
+#ta_purchase ul .one_side{width:44.94%;}
+#ta_purchase ul .two_side{width:54.7%;}
+.thirst_one ul li{width:33.15%;float: left;}
+.thirst_one ul{margin:0px;padding:0px;}
+.chocolate ul li{margin-top:3%;}
+.f_product ul .chocolate_one{width:36%;}
+.f_product ul .chocolate_two{width:28%;margin-left:1%;margin-right:1%;}
+#bathroom ul .bathroom_one{width:51.65%;float: left;}
+#bathroom ul .bathroom_two{width:48.3%;float: left;}
+#bathroom ul{margin:0px;padding:0px;}
+.thirst{width:100%;overflow: hidden;}
+.thirst_one{width:100%;overflow: hidden;}
+.ta_purchase{width:100%;overflow:hidden;}
+#ta_purchase{width:100%;overflow: hidden;}
+.f_product{width:100%;overflow: hidden;}

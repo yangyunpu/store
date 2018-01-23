@@ -1,0 +1,167 @@
+body {
+    color: #5D5E5F;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.profusion {
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.one_floor {
+    width: 100%;
+    padding-bottom: 15%;
+    background: url(../img/banner/setting.jpg) 100% no-repeat;
+    background-size: 100% 100%;
+}
+
+.profusion img {
+    width: 100%;
+}
+
+._name {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.0rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.possess {
+    width: 99%;
+    margin: 0 auto;
+    background: url(../img/one_floor/name.png) 100% no-repeat;
+    background-size: 100% 100%;
+}
+
+.possess_t {
+    width: 99%;
+    margin: 0 auto;
+    margin-top: 1.0rem;
+    background: url(../img/two_floor/name.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.one_floor ul {
+    padding-top: 3.0rem;
+    padding-bottom: 1.0rem;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one_floor ul li {
+    width: 49%;
+    margin-bottom: 4%;
+}
+
+.one_floor ul .juice_extractor {
+    width: 100%;
+}
+
+.two_name {
+    width: 58%;
+    margin: 10% auto 1.0rem;
+}
+
+.y_top {
+    position: relative;
+}
+
+
+/* 倒计时 */
+
+._time {
+    width: 100%;
+    position: absolute;
+    top: 70%;
+}
+
+._time p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.5rem;
+    line-height: 1.125rem;
+}
+
+.time-item {
+    font-size: 0.4rem;
+    margin: 0 auto;
+    width: 41%;
+    background: #ffffff;
+    padding-left: 0.5rem;
+    padding-right: 0.25rem;
+    border-radius: 0.25rem;
+    color: #ff3b3c;
+    text-align: center;
+    border: 2px solid #ffcc8a;
+    box-shadow: 0px 3px 4px #ffcc8a;
+}
+
+.time-item strong {
+    width: 0.8rem;
+    text-align: center;
+    margin: 0.25rem 0 0.25rem 0;
+    display: inline-block;
+    color: #ff3b3c;
+    background: #ffe5da;
+    line-height: 0.825rem;
+    font-size: 0.7rem;
+    font-family: Arial;
+    margin-right: 0.25rem;
+    border-radius: 0.125rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}

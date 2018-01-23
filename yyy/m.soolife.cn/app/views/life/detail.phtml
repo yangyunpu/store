@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>  
+<head>
+	<meta charset="utf-8">
+	<title>如此生活|惠生活|详情页面</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/detail.css"/>
+</head>
+<body>
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript" >
+var jiathis_config={
+	siteNum:4,
+	sm:"cqq,qzone,weixin,tsina",
+	summary:"",
+	title:"如此生活|星粉秀详情",
+	showClose:true,
+	shortUrl:false,
+	hideMore:true
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?btn=r5.gif&move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+<div class="lcy_hui_detail">
+	<header class="nav"
+	token        = "{{token}}" 
+	fanshow-id   ="{{mata['fans_show']['fanshow_id']}}" 
+    praise_count ="{{mata['praise_count']}}"
+    url_member   ="{{url_member}}">
+    	<p>
+			<img src="/public/img/back1.png" alt="" class="back_l" onclick="javascript:history.go(-1)">
+			<span>星粉秀详情</span>
+			<!-- <img src="/public/img/back4.png" alt="" class="back_r"> -->
+		</p>
+	</header>
+	<div class="mui-content">
+		<div class="share_box">
+		    <div class="mui-slider">
+		        <div class="mui-slider-group mui-slider-loop">
+		        	<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+		                    	<a href="#">
+		                    	<?php if(!empty($mata['fans_show']['albums'])) { ?>
+		                    	<?php  $k = count($mata['fans_show']['albums']);$k--  ?>
+		                    		<img class="mui-media-object" src="<?php echo $mata['fans_show']['albums'][$k]['photo'] ?>">
+		                    	<?php } ?>
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <!-- 轮播主体 -->
+		            <?php if(!empty($mata['fans_show']['albums']))  {?>
+		            {% for v in mata['fans_show']['albums'] %}
+                     <?php if(!empty($v['photo'])) { ?>
+		            <div class="mui-slider-item">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+		                    	<a href="#">
+		                    		<img class="mui-media-object" src="{{v['photo']}}">
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		            <?php  } ?>
+                    {% endfor %}
+                    <?php  } ?>
+		            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一个图文表格) -->
+		            <div class="mui-slider-item mui-slider-item-duplicate">
+		                <ul class="mui-table-view mui-grid-view">
+		                    <li class="mui-table-view-cell mui-media mui-col-xs-12">
+		                    	<a href="#">
+		                    	<?php if(!empty($mata['fans_show']['albums'])) { ?>
+		                    		<img class="mui-media-object" src="<?php echo $mata['fans_show']['albums'][0]['photo'] ?>">
+		                    	<?php } ?>
+		                        </a>
+		                    </li>
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="mui-slider-indicator">
+		            <div class="mui-number">
+		                <span>1</span>/<span><?php echo $k = count($mata['fans_show']['albums']);  ?></span>
+		            </div>
+		        </div>
+		    </div>
+		    <div class="share_bm">		    	
+			    <p class="share_word">
+			   		{{mata['fans_show']['text'] }}
+			    </p>
+			    <div class="share_preson">
+			       <?php  if($mata['is_praise']==1) {?>
+			    	<div class="like"><p class="yes_img" id="like"></p>赞</div>
+			       <?php  }else{ ?>
+			        <div class="like"><p class="no_img" id="like"></p>赞</div>
+			       <?php } ?>
+			      <!--  头像 -->
+			    	<ul>
+		            <?php if(!empty($mata['fans_show']['comments'][0]['avatar'])) { ?>
+		            <li><img src="<?php echo $mata['fans_show']['comments'][0]['avatar']  ?>" alt=""></li>
+		            <?php }else{ ?>
+		            <li><img src="/public/img/head portrait.png" alt=""></li>
+		            <?php  } ?>
+			    	</ul>
+			    	<p class="zan"><span class="count"><?php echo $mata['praise_count']?></span>赞</p>
+			    </div>
+		    </div>
+		</div>
+		<div class="comment">
+			<div class="comment_top">
+				评论详情<span class="comment_num">(<span><?php echo $mata['comments_count'] ?></span>)</span>
+			</div>
+			<div class="comment_main">
+				<ul>
+				 <?php if(!empty($mata['fans_show']['comments']))  {?>
+				 {% for vo in mata['fans_show']['comments'] %}
+					<li>
+						<div class="user">
+							<div class="img">
+							<?php if(!empty($vo['avatar'])) { ?>
+								<img src="{{vo['avatar']}}" alt="" class="userimg">
+							<?php }else{ ?>
+								<img src="/public/img/head portrait.png" alt="" class="userimg">
+						    <?php  } ?>
+							</div>
+							<p class="username">{{vo['nick_name']}}</p>
+							<p class="usertime"><?php echo date("Y/m/d H:i:s",$vo['create_time'])  ?></p>
+						</div>
+						<p class="says"><?php echo htmlspecialchars($vo['comments']) ?></p>
+					</li>
+				 {% endfor %}
+				 <?php  } ?>	
+				</ul>
+			</div>
+			<div class="says_submit_box">
+				<textarea cols="4" rows="5" class="says_text" placeholder="发表一下你的点评"></textarea>
+				<input type="button" value="提交" class="says_btn">			
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/life/soolife.detail.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/mui.min.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>{{title}}</title>
+		<meta name="keywords" content="{{keywords}}" />
+		<meta name="description" content="{{description}}" />
+		<meta name="author" content="tony wang" />
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="apple-touch-icon" href="/public/v3.0.1/img/icon/apple-touch-icon-144-precomposed.png">
+		
+{% for d in dns %}
+<link rel="dns-prefetch" href="{{d}}" />
+{% endfor %}
+		<!-- page css library -->
+		{{assets.outputCss('header')}}
+		
+	</head>
+	<body>
+		<script src="/assets/header.js"></script>
+		{{ partial("layouts/inc_search") }}
+		<script src="/assets/category.js?nav={{nav}}&hide={{hide}}"></script>
+		{{ content() }}
+		<script src="/assets/footer.js"></script>
+		<script src="/assets/sidebar.js"></script>
+		<!-- pages js library -->
+		{{assets.outputJs('footer')}}
+		<script src="/tj/analytics.js"></script>
+	</body>
+</html>

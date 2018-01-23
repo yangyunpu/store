@@ -1,0 +1,119 @@
+body{color: #5D5E5F; font-family: "Arial","Microsoft YaHei";font-style: normal;}
+body, html, p, span, img, a, div, ul, li{margin: 0; padding: 0;font: 'Microsoft YaHei';}
+ul,ol,li{ list-style: none;}
+img{ border: none;}
+a{ text-decoration:none;}
+a:hover{ text-decoration:underline; text-decoration: none;}
+.clearfix:after {
+	height: 0; content: "."; clear: both; display: block; visibility: hidden;
+}
+.fl{float: left;}
+.fr{float: right;}
+.cleaning_boby{
+	width: 100%; margin: 0 auto; padding-bottom:50px; background: url(/theme/activity/2016_08_Cleaning/pc/img/beij.jpg); background-size:100% ;
+}
+.cleaning_boby .banner{
+	width: 100%; margin: 0 auto; padding: 0;height: auto;
+}
+.cleaning_boby .banner img{
+	width: 100%; margin: 0 auto; padding: 0;
+}
+.cleaning_boby .subjectival{
+	width: 1100px; margin: 0 auto; padding: 0;
+}
+.prefecture{
+	width: 1100px; margin: 0 auto; padding: 0;
+}
+.prefecture .title{
+	width: 1050px; margin: 0 auto; padding: 0;
+}
+.prefecture .single{
+	width: 1100px; margin: 0 auto; padding:20px 0;background: #fff; text-align: center;
+}
+.hairdressing{
+	width: 930px; margin: 0 auto; overflow: hidden; padding-top: 20px;
+}
+.hairdressing ul li{
+	width: 270px;  height: 440px; margin: 0 20px; padding: 0; float: left; border-top: 1px solid #e7203e;
+}
+.hairdressing ul li a{
+	width: 270px;  height: 420px; *display: inline; zoom: 1; cursor: pointer;
+}
+.hairdressing ul li .impact{
+	width: 270px; height: 35px; line-height: 35px; margin-top: 10px; color: #000000; font-size: 26px; font-weight: 700;
+}
+.hairdressing ul li .name{
+	width: 270px; height: 26px; line-height: 26px;  color: #000000; font-size: 20px;
+}
+.hairdressing ul li .price{
+	width: 255px; height: 40px;  margin: 0 auto; padding: 0; margin-top: 10px;
+}
+.hairdressing ul li .price .fr{
+    margin-top:10px;
+}
+.hairdressing ul li .price .qiangg{
+	color: #ff0000; font-size: 18px; font-weight: 600;
+}
+.hairdressing ul li .price .price_p{
+	font-size: 34px; color: #ff0000; font-weight: 700;
+}
+.laundry{
+	width: 1100px; margin: 0 auto; padding: 0;
+}
+.laundry .title{
+	width: 1050px; margin: 0 auto; padding: 0;
+}
+.laundry .single{
+	width: 1100px; margin: 0 auto; padding: 20px 0; background: #fff;
+}
+.laundry .single .background_fs{
+	width: 1050px; height: 620px; margin: 0 auto; padding: 0; background: #fee8e8;
+}
+.laundry .single .background_ls{
+	width: 1050px; height: 620px; margin: 0 auto; padding: 0; background: #dffff9;
+}
+.laundry .single .background_hs{
+	width: 1050px; height: 620px; margin: 0 auto; padding: 0; background: #ffffdc;
+}
+.background_shs{
+	width: 1050px; height: 620px; margin: 0 auto; padding: 0; background: #fae8d8;
+}
+.laundry .single .individual{
+	width:450px; height: 600px; margin: 10px 35px; text-align: center; border-top: 1px solid #e7203e;
+}
+.laundry .single .individual .impact{
+	width: 450px; height: 40px; line-height: 40px;  margin-top: 10px; color: #000000; font-size: 30px; font-weight: 700;
+}
+.laundry .single .individual .name{
+	width: 450px; height: 30px; line-height: 30px;  color: #000000; font-size: 20px;
+}
+.laundry .single .individual .price{
+	width: 275px; height: 40px;  margin: 0 auto; padding: 0; margin-top: 10px;
+}
+.laundry .single .individual .price .qiangg{
+	color: #ff0000; font-size: 18px; font-weight: 600;
+}
+.laundry .single .individual .price .price_p{
+	font-size: 36px; color: #ff0000; font-weight: 700;
+}
+.laundry .single .individual .price .fr{
+	margin-top: 10px;
+}
+
+
+a:link{ 
+text-decoration:none; 
+} 
+a:visited{ 
+text-decoration:none; 
+} 
+a:hover{ 
+text-decoration:none; 
+} 
+a:active{ 
+text-decoration:none; 
+} 
+
+
+
+

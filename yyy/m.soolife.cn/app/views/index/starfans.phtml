@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>如此生活|我的邀请</title>
+		<link rel="stylesheet" type="text/css" href="/public/css/starfans/starfans.css">
+	</head>
+	<body class="Ljj_Invite">
+		<div class="Ljj_wrap">
+			<!-- 头部 -->
+			<header class="head" id="head" member_id={{member_id}}>
+				<div class="back" onclick="javascript:history.go(-1)"></div>
+				<p>星粉联</p>
+				<div class="back2"></div>
+			</header>
+			<!-- banner 插入图片 -->
+			<div class="Ljj_banner">
+				<img src="/public/img/starfans/img1/ask.png">
+			</div>
+			<!-- 中间文字部分center -->
+			<a href="#"><div class="Ljj_center">
+				<p class="share">分享如此生活红包给您的好友</p>
+				<p>每成功邀请一位好友完成注册，即可获得10元邀请<br>红包，注册成功的新用户可获得20元新人红包</p>
+			</div></a>
+			<!--二维码  连接分享-->
+			 <div class="Ljj_share">
+			 	<!--左边二维码部分-->
+			 	 <div class="Ljj_shareleft">
+			 	 	 <a><img class="share_photo" src="{{img_url}}"/></a>
+			 	 	 <span>请您的好友直接扫描上方二维码</span>
+			 	 </div>
+			 	 <!--右边分享连接部分-->
+			 	 <div class="Ljj_shareright" id="aa" str={{str}}>
+			 	 	<a ><img src="/public/img/starfans/img1/connect1.png" id="btn" /></a>
+			 	 	<span>复制连接分享给您的好友</span>
+			 	 </div>
+			 </div>
+			 <!-- 查看邀请记录 -->
+			 <div class="Ljj_check">
+			 	<a href="/record.html">查看邀请记录</a> 
+			 </div>
+			 <!-- 分享下方链接 -->
+			 <div class="Ljj_foot"><img src="/public/img/starfans/img1/share.png"></div>
+		</div>
+        <!-- JiaThis Button BEGIN -->
+		<script type="text/javascript" >
+		var member_id = document.getElementById('head').getAttribute('member_id');
+		var jiathis_config={
+			url:"http://m.soolife.cn/getbag.html?member_id="+member_id,
+			siteNum:4,
+			sm:"cqq,qzone,weixin,tsina",
+			summary:"",
+			title:"如此生活|领红包",
+			showClose:true,
+			shortUrl:false,
+			hideMore:true
+		}
+		</script>
+		<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jiathis_r.js?btn=r5.gif&move=0" charset="utf-8"></script>
+		<!-- JiaThis Button END -->
+
+	</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/starfans/soolife.starfans.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

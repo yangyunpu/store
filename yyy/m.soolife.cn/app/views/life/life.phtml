@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>如此生活|惠生活</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/mylife.css"/>
+</head>
+	<body class="lcy_life">
+		<div class="mask_layer">
+			<div class="tubi"></div>
+			<div class="mylife">
+				<img src="/public/img/mylife.gif" alt="">
+			</div>
+		</div>
+		<!-- 头部 -->
+		<header class="market_head">惠生活</header>
+		<div class="mui-content">
+		<!-- nav -->
+			<div class="head_nav" url_member={{url_member}}
+			 url_search={{url_search}}
+			 token={{token}} >
+				<ul>
+					<li class="active"><a href="#">全部分类</a></li>
+					{% for d in koko %}
+					<li code={{d['code']}}><a>{{d['name']}}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		<!-- baner1 -->
+			<div class="banner_top">
+				<img src="/public/img/star.png" alt="">
+				<div class="star_coin" success ={{xingbi['success']}}>
+				    <?php if($token === 0){ ?>
+					<p>领取更多星币请</p>
+					<p><span><button class="login">登录</button></span></p>
+				    <?php }else{ ?>
+					<p>明日可领取<span>
+					<?php 
+					if(!empty($xingbi['tomorrow_payin']))
+					{
+						echo $xingbi['tomorrow_payin'];
+					}
+					   
+					?>
+					 </span>个</p>
+					<p>我的星币：<span class="star_c">
+					<?php
+					if(!empty($xingbi['coin']))
+					{
+					 echo $xingbi['coin'];
+					}
+					?>
+					 </span>&nbsp;个</p>
+				    <?php } ?>
+				</div>
+			</div>
+			<!-- 星兑换 -->
+			<div class="xing_huan">
+				<div class="xing_top">
+					&nbsp;&nbsp;|&nbsp;星兑换 <span></span>
+				</div>
+				<div class="xing_huan_goods">
+					<div class="xing_huan_goods_1">
+					<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.01']['items'])) { ?>
+					{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.01']['items'] %}
+						<a href="{{d['mobile_link']}}"><img src="{{d['picture']}}" alt=""></a>
+					<?php break; ?>
+					{% endfor %}
+					<?php } ?>
+					</div>
+					
+					
+					<div class="xing_huan_goods_2">
+					<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.02']['items'])) { ?>
+					{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.02']['items'] %}
+						<a href="{{d['mobile_link']}}"><img src="{{d['picture']}}" alt=""></a>
+					<?php break; ?>
+					{% endfor %}
+					<?php } ?>		
+					</div>
+					
+					
+					<div class="xing_huan_goods_2">
+					<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.03']['items'])) { ?>
+					{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.03']['items'] %}
+						<a href="{{d['mobile_link']}}"><img src="{{d['picture']}}" alt=""></a>
+					<?php break; ?>
+					{% endfor %}
+					<?php } ?>		
+					</div>
+					
+					
+					<div class="xing_huan_goods_2">
+					<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.04']['items'])) { ?>
+					{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.04']['items'] %}
+						<a href="{{d['mobile_link']}}"><img src="{{d['picture']}}" alt=""></a>
+					<?php break; ?>
+					{% endfor %}
+					<?php } ?>			
+					</div>
+					
+					
+					<div class="xing_huan_goods_2">
+					<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.05']['items'])) { ?>
+					{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.05']['items'] %}
+						<a href="{{d['mobile_link']}}"><img src="{{d['picture']}}" alt=""></a>
+					<?php break; ?>
+					{% endfor %}
+					<?php } ?>	
+					</div>
+					
+				</div>
+			</div>
+			<!-- 星粉秀 -->
+			<div class="xing_xiu">
+				<div class="xing_top">
+					&nbsp;&nbsp;|&nbsp;星粉秀 <span></span>
+				</div>
+				<div class="xing_xiu_goods">
+				<!-- 小轮播 -->
+					<div id="hui_slider" class="mui-slider">
+						<div class="mui-slider-group mui-slider-loop">
+							<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="/show/<?php echo $data[3]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[3]['photo']; ?>">
+									<!-- <p class="mui-slider-title">eeeeeeeee</p> -->
+								</a>
+							</div>
+                           <!-- 中间 -->
+							<div class="mui-slider-item">
+								<a href="/show/<?php echo $data[0]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[0]['photo']; ?>">
+									<!-- <p class="mui-slider-title">ssssssssss</p> -->
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="/show/<?php echo $data[1]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[1]['photo']; ?>">
+									<!-- <p class="mui-slider-title">qqqqqqqqqqq</p> -->
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="/show/<?php echo $data[2]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[2]['photo']; ?>">			
+									<!-- <p class="mui-slider-title">ddddddddddd</p> -->
+								</a>
+							</div>
+							<div class="mui-slider-item">
+								<a href="/show/<?php echo $data[3]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[3]['photo']; ?>">
+									<!-- <p class="mui-slider-title">eeeeeeeeee</p> -->
+								</a>
+							</div>
+
+							<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+							<div class="mui-slider-item mui-slider-item-duplicate">
+								<a href="/show/<?php echo $data[0]['fanshow_id']; ?>.html">
+									<img src="<?php echo $data[0]['photo']; ?>">
+									<!-- <p class="mui-slider-title">ssssssssss</p> -->
+								</a>
+							</div>
+						</div>
+						<div class="mui-slider-indicator mui-text-right">
+							<div class="mui-indicator mui-active"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+							<div class="mui-indicator"></div>
+						</div>
+					</div>
+					<div class="xing_xiu_goods_1">
+						<a href="/show/<?php echo $data[4]['fanshow_id']; ?>.html"><img src="<?php echo $data[4]['photo']; ?>" alt=""></a>
+					</div>
+					<div class="xing_xiu_goods_1">
+						<a href="/show/<?php echo $data[5]['fanshow_id']; ?>.html"><img src="<?php echo $data[5]['photo']; ?>" alt=""></a>
+					</div>
+				</div>								
+			</div>
+			<!-- 最新和热门 -->
+			<div class="xing_hot">
+				<!-- <div class="xing_top hot_w">最新和热门</div> -->
+				<div class="xing_hot_goods">
+					<div class="xing_hot_goods_1">
+						<img src="/public/img//minet/new.jpg" alt="">
+					</div>	
+					<ul class="xing_hot_goods_2">
+					{% if mata %}
+					{% for d in mata %}
+					<?php  if(!empty($d['photo'])) {?>
+						<li>							
+							<a href="/show/{{d['fanshow_id']}}.html"><img data-lazyload="{{d['photo']}}" alt=""></a>
+						</li>
+					<?php  }else{ ?>
+						<li>							
+							<a href="/show/{{d['fanshow_id']}}.html"><img data-lazyload="/public/img/minet/defaultimg.png" alt=""></a>
+						</li>
+					<?php } ?>
+					{% endfor %}
+					{% endif %}
+					</ul>	
+				</div>
+				<div class="xing_hot_goods">
+					<div class="xing_hot_goods_1">
+						<img src="/public/img//minet/hot.jpg" alt="">
+					</div>	
+					<ul class="xing_hot_goods_2">
+					{% if faker %}
+					{% for d in faker %}
+					<?php if(!empty($d['photo'])) { ?>
+						<li>							
+							<a href="/show/{{d['fanshow_id']}}.html"><img data-lazyload="{{d['photo']}}" alt=""></a>
+						</li>
+					<?php }else{  ?>
+						<li>							
+							<a href="/show/{{d['fanshow_id']}}.html"><img data-lazyload="/public/img/minet/defaultimg.png" alt=""></a>
+						</li>
+					<?php }  ?> 
+				    {% endfor %}
+				    {% endif %}
+					</ul>	
+				</div>					
+			</div>
+			<!-- banner2 -->
+			<div class="banner_top">
+			<?php if(!empty($ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.column']['items'])) { ?>
+			{% for d in ads['app.lifestyle.exchange']['children']['app.lifestyle.exchange.column']['items'] %}
+				<a href="{{d['mobile_link']}}"><img data-lazyload="{{d['picture']}}" alt=""></a>
+			<?php  break; ?>
+			{% endfor %}
+	        <?php } ?>
+			</div>		
+			<!-- 星换购 -->
+			<div class="xing_sale">
+				<div class="xing_top">
+					&nbsp;&nbsp;|&nbsp;星换购 <span></span>
+				</div>
+				<!-- 四个换购滑动 -->
+				<div id="xing_hot_slider" class="mui-slider">
+					<ul id="star_sale_nav" url_goods={{url_goods}}>
+						<li class="actived">全部</li>
+						<li>0--100</li>
+						<li>100--500</li>
+						<li>500--1000</li>
+						<li>1000以上</li>
+					</ul>
+					<!-- 商品循环 -->
+						<div id="item1mobile" class="mui-control-content mui-active">
+						<!-- all -->
+						<?php  if(!empty($xingxingall['items'])) {  ?>
+						 {% for d in xingxingall['items'] %}
+							<div class="xing_hot_goods_1">
+								<div class="img_box">
+								<?php if(!empty($d['logo'])) { ?>
+									<a href="{{url_goods}}/{{d['id']}}.html"><img  data-lazyload="{{d['logo']}}" alt="" class="img_t"></a>
+								<?php }else{ ?>
+									<a href="{{url_goods}}/{{d['id']}}.html"><img  data-lazyload="/public/img/minet/defaultimg.png" alt="" class="img_t"></a>
+								<?php  } ?>
+								</div>
+								<p>{{d['name']}}</p>
+								<p class="piece">
+									<img src="/public/img/tag1.png" alt="">
+									{% if d['promo']%}
+									<span class="piece_big">{{d['promo']['coin']}}</span>&nbsp;+
+									<span  class="piece_small">￥{{d['promo']['price']}}</span>
+									{% else %}
+									<span class="piece_big">0</span>&nbsp;+
+									<span  class="piece_small">￥{{d['price']}}</span>
+									{% endif %}
+								</p>
+							</div>
+                          {% endfor %}
+                          <?php }else{  ?>
+                          <div class="not">
+                           <img src="/public/img/life/zanwushuju.png">
+                          </div>
+                          <?php }  ?>
+						</div>
+					
+				</div>
+			</div>
+
+		</div><!--接上面-->
+		<!-- 底部 -->
+		
+		{% include '/layouts/inc_life.phtml' %}
+</body>
+</html>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/life/coin.js"></script>
+<script src="/public/js/rem.js"></script>
+<script src="/public/js/mui.min.js"></script>
+<script src="/public/js/mui.lazyload.js"></script>
+<script src="/public/js/mui.lazyload.img.js"></script>
+<script src="/public/js/life/soolife.life.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+<script src="/public/js/sdk.2.2.js"></script>

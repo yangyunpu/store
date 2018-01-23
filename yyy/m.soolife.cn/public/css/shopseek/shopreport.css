@@ -1,0 +1,287 @@
+body{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: #f0f1f1;
+	min-width: 300px;
+}
+
+p {
+	padding:0;
+	margin: 0; 
+}
+img{
+	padding:0;
+	margin: 0;
+	/*display: block;*/
+	border: none;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+ul{
+	padding:0;
+	margin: 0;
+}
+li{ list-style:none;}
+input{outline: none;}
+.wrap{
+	width: 100%;
+	background-color:#f0f1f1;
+	overflow: hidden; 
+	font-family: "Microsoft YaHei";
+	min-width: 300px;
+	position: relative;
+}
+.header{
+	width: 100%;
+	height:44px;
+	background: #e6e6e6;
+    text-align: center;
+    line-height:44px; 
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+.lj_srt{font-size:19px;color:#333; }
+.lefter{
+	width: 12px;
+	/*height: 24px;*/
+	position: absolute;
+	left: 0.426667rem;
+	bottom:10px; 
+}
+.share{
+	width:0.981333rem;
+	height: 0.981333rem;
+	position: absolute;
+	right: 0.444444rem;
+	bottom:0.562963rem;
+	 
+}
+.void{
+	width: 100%;
+	height: 44px;
+	z-index: 2;
+}
+.recom{
+	width: 95%;
+	height: 50px;
+	margin: 10px auto;
+	background: #fff;
+	border-radius: 3px;
+	line-height: 50px;
+}
+.recoms{
+	width: 95%;
+	height: 50px;
+	margin: 0 auto;
+}
+.recoms span{
+	font-size: 14px;
+	color: #333;
+}
+.recoms input{
+	width: 80%;
+	height: 34px;
+	border: none;
+	text-indent: 12px;
+	color: #333;
+}
+.company{
+	width: 95%;
+	margin: 0 auto 10px;
+	overflow: hidden;
+	border-radius: 3px;
+	background: #fff;
+}
+.company ul li{
+	width: 95%;
+	height: 50px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	margin: 0 auto;
+	line-height: 50px;
+	padding-top: 2px;
+}
+.company ul li:last-child{
+	border: none;
+}
+.company ul li span{
+	font-size: 14px;
+	color: #333;
+	float: left;
+	 
+}
+.company ul li input{
+	width: 71%;
+    height: 44px;
+    border: none;
+    text-indent: 12px;
+    color: #333;
+    display: inline-block;
+    float: left;
+}
+.lj_line{
+	width: 60% !important;
+	height: 44px;
+    border: none;
+    text-indent: 12px;
+    color: #333;
+    display: inline-block;
+    float: left;
+}
+.lj_lines{
+	width: 60% !important;
+}
+.message{
+	font-weight: bold;
+}
+/*补充信息*/
+.companys{
+	width: 95%;
+	margin: 0 auto 70px;
+	overflow: hidden;
+	border-radius: 3px;
+	background: #fff;
+}
+.companys ul{
+	overflow: hidden;
+}
+.companys ul li:first-child{
+	width: 95%;
+	height: 50px;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	margin: 0 auto;
+	line-height: 50px;
+}
+
+.companys ul li:last-child{
+	border: none;
+}
+.companys ul li span{
+	font-size: 14px;
+	color: #333;
+	float: left;
+	 
+}
+.source{
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 8px;
+	overflow: hidden;
+	border-bottom: 1px solid #ddd;
+}
+.slect{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 2px;
+}
+.slects{
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 2px;
+}
+.source .firend{
+	float: left;
+	width: 74%;
+	/*height: 34px;*/
+	margin-left: 12px;
+}
+.source .firend div{
+	float: left;
+	margin-left: 12px;
+	margin-bottom: 8px;
+}
+.sour{
+	margin: 0 auto 18px;
+	width: 100%;
+	height: 33px; 
+	float: left;
+	display: none;
+}
+.sour input{
+	width: 100%;
+	height: 33px;
+	background: #F1F0F0;
+	border-radius: 3px;
+	margin: 0 auto;
+	border: none;
+	font-size: 14px;
+	text-indent: 10px;
+}
+.submit{
+	width: 100%;
+	height: 50px;
+	background: #EC6D65; 
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+} 
+
+/*商家签约引导页*/
+ 
+.guide{
+	width: 95%;
+	/*height: 500px;*/
+	border-radius: 3px;
+	background: #fff;
+	margin: 10px auto 50px;
+	padding-bottom: 10px;
+}
+.title{
+	width: 100%;
+	text-align: center;
+	font-size: 19px;
+	color: #333333;
+	padding-top: 18px;
+	padding-bottom: 23px;
+}
+.title2{
+	width: 93%;
+	margin-left: 15px;
+	font-size: 16px;
+	color: #333;
+	line-height: 27px;
+}
+.title3{
+	width: 93%;
+	margin-left: 15px;
+	font-size: 16px;
+	color: #333;
+	font-weight: bold;
+	line-height: 27px;
+}
+.title3 a{
+	color: blue;
+}
+.title4{
+	width: 88%;
+	margin-left: 35px;
+	font-size: 14px;
+	color: #333; 
+	line-height: 27px;
+}
+ .lj_alert{
+ 	width: 30%;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	text-align: center;
+ 	font-size: 14px;
+ 	position: fixed;
+ 	top: 35%;
+ 	left: 50%;
+ 	margin-left: -40px;
+ 	background: rgba(0,0,0,0.5);
+ 	border-radius: 4px;
+ 	color: #fff;
+ 	display: none;
+ }

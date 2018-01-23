@@ -1,0 +1,167 @@
+.vip_banner,
+.limited,
+.fans,
+.buys,
+.brands,
+.exchange {margin:0px auto;position: relative;left:-18px;}
+
+.vip_banner{height: 480px;}
+.vip_banner .vip_banner_carousel .carousel-inner{height: 480px;}
+.vip_banner .vip_banner_carousel .carousel-inner .item {overflow: hidden;}
+.vip_banner .vip_banner_carousel .carousel-inner .carousel-images {z-index: 0;margin-left:240px; width: 960px;height: 510px;overflow: hidden;}
+
+.vip_banner .vip_banner_layer{
+	width:240px;
+	height:478px;
+	background: url('../img/vip/coin_background.jpg') no-repeat center center;
+	position: absolute;
+	padding-top: 10px;
+	z-index: 20;
+    box-shadow: 5px 5px 10px rgba(55, 55, 55, 0.4);
+    display: inline-block;
+}
+.vip_banner .vip_banner_layer .avatar {
+	width: 108px;
+	height: 108px;
+	background-color: #FFFFFF;
+	padding: 4px;
+	border-radius:54px;
+	margin: 0px 66px;	
+}
+.vip_banner .vip_banner_layer .avatar img
+{	
+	width: 100px;
+	height: 100px;
+	background-color: #EEEEEE;
+	border-radius:50px;
+}
+.vip_banner .vip_banner_layer .content
+{
+	padding-top: 4px;
+}
+.vip_banner .vip_banner_layer .content p {
+	line-height: 20px;
+	height:20px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px auto;
+	font-size:14px;
+}
+.vip_banner .vip_banner_layer .control{margin-top: 20px;text-align: center;}
+.vip_banner .vip_banner_layer .control .btn-coin {
+    background-color: #FF588C;
+    border-color: #FF588C;
+    color: #fff;
+}
+.vip_banner .vip_banner_layer .control .btn-coin:hover {color: #EFEFEF;}
+
+.vip_banner .vip_banner_layer .rule
+{
+	margin:40px 20px auto;
+	padding:8px;
+	width: 200px;
+	height: 120px;
+	background-color: #FFFFFF;
+	filter:alpha(Opacity=80);
+	-moz-opacity:0.7;
+	opacity: 0.7;
+	border-radius:4px;
+	color:#000000;
+}
+
+.gain_coin {
+	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    display: none;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    top:0px;
+}
+.gain_coin .box
+{	
+	margin:0px auto;
+	width: 370px;
+	height: 400px;
+	margin-top:120px;
+	cursor: pointer;
+}
+.gain_coin .box img {
+	margin: 0px auto;
+    width: 370px;
+}
+.gain_coin .box img.close {
+	cursor: pointer;
+    position: absolute;
+    width: 25px;
+    z-index: 101;
+    background-color: #FFFFFF;
+}
+
+.gain_coin .box span
+{
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.gain_coin .box span b{ color:#f6ab00;}
+
+
+
+.limited{margin-top:20px;}
+.limited .limited_content{height: 300px;}
+.limited .limited_content .limited_first {width: 240px;height: 300px;margin-right: 10px;overflow: hidden;border: 1px solid #EFEFEF;}
+.limited .limited_content .limited_second {	width: 320px;height: 300px;margin-right: 10px;overflow: hidden;}
+.limited .limited_content .limited_third {width: 260px;height: 300px;margin-right: 10px;overflow: hidden;}
+.limited .limited_content .limited_fourth {width: 350px;height: 300px;}
+.limited .limited_content .limited_fourth .limited_fourth_top,
+.limited .limited_content .limited_fourth .limited_fourth_bottom {overflow: hidden;width: 350px;height: 145px;}
+.limited .limited_content .limited_fourth .limited_fourth_top {margin-bottom: 10px;}
+
+/* 星粉秀 */
+.fans { margin:0px auto;margin-top:20px; position: relative; left:-18px; }
+.fans .fans_title {background: #FFFFFF url('../img/vip/fans_horizontal.png') no-repeat center center;height:40px;}
+.fans .fans_title span {display:none;}
+.fans .fans_content {height: 500px;margin: 0px auto;}
+.fans .fans_content .fans_content_column{width: 240px;height: 500px;overflow: hidden;}
+.fans .fans_content .fans_content_column .fans_content_column_top,
+.fans .fans_content .fans_content_column .fans_content_column_bottom{width: 240px;height: 250px;overflow: hidden;}
+
+/* 星换购 */
+.buys { margin:0px auto;margin-top:20px; position: relative; left:-18px; }
+.buys .buys_title {background: #FFFFFF url('../img/vip/buys_horizontal.jpg') no-repeat center center;height:40px;}
+.buys .buys_title span {display:none;}
+.buys .buys_content {height: 240px;margin: 0px auto;overflow-x:auto;overflow-y:hidden;}
+.buys .buys_content .buys_content_item {width: 160px;height: 240px;float: left;margin-right: 11px;}
+.buys .buys_content .buys_content_picture {width: 160px;height: 160px;overflow:hidden;}
+.buys .buys_content .buys_content_explain {width: 160px;height: 80px;overflow:hidden;}
+.buys .buys_content ul{}
+.buys .buys_content ul>li {width: 160px;height: 240px;float: left;margin-right: 10px; border:1px solid #EFEFEF; display: inline-table;}
+.buys .buys_content ul>li .picture {width: 160px;height: 160px;overflow:hidden;}
+.buys .buys_content ul>li .explain,
+.buys .buys_content ul>li .quoted {width: 160px;height: 40px;overflow:hidden;background-color: #EFEFEF;}
+.buys .buys_content ul>li .quoted {padding: 4px 8px;}
+.buys .buys_content ul>li .quoted .orange{color:#f6ab00;font-size: 16px;}
+.buys .buys_content ul>li .quoted .red{color:#ff111d;font-size:14px;}
+.buys .buys_content ul>li .explain{padding:4px 8px;}
+.buys .buys_content ul>li .explain span{font-size:12px;}
+
+/* 星品牌 */
+.brands { margin:0px auto;margin-top:20px; position: relative; left:-18px; }
+.brands .brands_title {background: #FFFFFF url('../img/vip/brands_horizontal.jpg') no-repeat center center;height:40px;}
+.brands .brands_title span {display:none;}
+.brands .brands_content {height: 490px;margin: 0px auto;overflow-x:auto;overflow-y:hidden;}
+.brands .brands_content ul>li{width: 394px;height: 240px;float: left;margin-right: 9px;margin-bottom: 9px;overflow-y:hidden;}
+.brands .brands_content ul>li.right{float: right;margin-right: 0px;}
+
+/* 星兑换 */
+.exchange { margin:0px auto;margin-top:20px; position: relative; left:-18px; }
+.exchange .exchange_title {background: #FFFFFF url('../img/vip/exchange_horizontal.png') no-repeat center center;height:40px;}
+.exchange .exchange_title span {display:none;}
+.exchange .exchange_content {margin: 0px auto;}
+.exchange .exchange_content ul>li {width: 595px;height: 300px;float: left; margin-bottom: 10px;-moz-box-shadow: 3px 3px 4px #ababab;-webkit-box-shadow: 3px 3px 4px #ababab;box-shadow: 3px 3px 4px #ababab;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababab')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#ababab');
+}
+.exchange .exchange_content ul>li.left{margin-right: 10px;}
+

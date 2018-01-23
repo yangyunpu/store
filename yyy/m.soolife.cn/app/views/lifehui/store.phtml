@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|惠生活</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">	
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+	<link rel="stylesheet" type="text/css" href="/public/css/lifehui/common.css"/>
+	<link rel="stylesheet" type="text/css" href="/public/css/lifehui/store.css"/>
+</head>
+<body>
+<div class="index_wrap">
+	<div class="header">
+	    <a onclick="window.history.go(-1)"><img class="arrow"  src="/public/img/common/shop_back_black@1x.png " ></a>
+		<span class="head_title">体验店列表</span> 
+	</div>
+	<!-- 下载框 -->
+	<!-- <div class="download_box" id="download-nav">
+		<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+		<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+		<div class="word">下载如此生活客户端</div>
+		<div class="sure" id="download-nav-sure"><div>下载</div></div>
+	</div> -->
+	{% if store %}
+	<div id="wrap">
+	{% if store['list'] %}
+		<ul id="store_list">
+		{% for d in store['list'] %}
+		<li>
+			<a href="/lifehui/storedetail.html?store_id={{d['store_id']}}">
+			    <img class="logo" src="{{d['logo']}}">
+				<div class="txt">
+					<p class="name">{{d['store_name']}}</p>
+					<p class="adress">{{d['address']}}</p>
+				</div>
+				<img class="more" src="/public/img/lifehui/life_more.png">
+			</a>
+		</li>
+		{% endfor %}
+		</ul>
+	{% endif %}	
+	</div>
+	{% endif %}
+</div>
+</body>
+</html>
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/download.js"></script>

@@ -1,0 +1,40 @@
+<div class="search_bar clearfix">
+	<div class="main-container ">
+		<div class="logo left">
+			<a class="picture" href="https://www.soolife.cn" target="_blank">如此生活</a>
+		</div>
+		<div class="control left">
+			<div class="box">
+				<div class="form-panel">
+					<fieldset>
+						<div class="input clearfix">
+							<div class="s-combobox">
+								<div>
+									<input type="text" title="请输入搜索文字" placeholder="兰野" class="s-combobox-input" >
+									<input type="hidden" value="<?= $url_search ?>" id="hidden">
+								</div>
+								<label class="s-combobox-placeholder"></label>
+							</div>
+							<button>
+								搜索
+							</button>
+						</div>
+					</fieldset>
+				</div>
+				<div class="search-box">
+					<!-- 点击显示的搜索的历史记录 -->
+				</div>
+
+				<div class="form-tags">
+					<script type="text/javascript" src="/assets/tags.js"></script>
+				</div>
+				<ul class="search_display_list">
+					
+				</ul>
+			</div>
+		</div>
+		<div class="hotline right">
+			<a class="picture" href="https://help.soolife.cn" target="_blank">客服热线 400-068-5151</a>
+		</div>
+	</div>
+</div>

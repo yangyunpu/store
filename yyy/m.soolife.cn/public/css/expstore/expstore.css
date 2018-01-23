@@ -1,0 +1,71 @@
+body{
+	padding:0;
+	margin:0;
+}
+body img{
+	width:100%;
+	display: block;
+}
+p{
+	margin:0;
+	padding:0;
+}
+.img_box{
+	width:100%;
+	position: relative;
+}
+#box{
+	width: 16%;
+    position: absolute;
+    z-index: 9;
+    left: 42.5%;
+	bottom: -5%;
+}
+#word{
+	width: 16%;
+    position: absolute;
+    z-index: 9;
+    left: 42.5%;
+	top: 0;	
+	color:#fff;
+	font-size: 20px;
+	text-align: center;
+	margin-top:3%;
+}
+#goods{
+    width: 95%;
+    height: 80%;
+    position: absolute;
+    top: 8%;
+    left: 5%;
+}
+#goods .item {
+	width: 20%;
+    float: left;
+    font-size: 18px;
+}
+#goods .item .itemimg{
+    width: 73%;    
+}
+.smaller{
+	width: 40%;
+	float:left;
+    margin-top: 11%;
+}
+.word_l{
+	width: 29.2%;
+    float: left;
+    margin-right: 4%;
+}
+.word_l.l3{
+	width: 28.2%; 
+}
+.word_l.l4{
+	width: 27.7%; 
+}
+.word_l.l2{
+	 width: 28.5%; 
+}
+.plus{
+	padding-left:24%;
+}

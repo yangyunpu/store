@@ -1,0 +1,7 @@
+document.write('<ul>');
+	{% for d in tags %}
+document.write('	<li>');
+document.write('		<a href="{{url_search}}/search?keyword={{d['keywords']}}" target="_blank" >{{d["name"]}}</a>');
+document.write('	</li>');
+	{% endfor %}
+document.write('</ul>');

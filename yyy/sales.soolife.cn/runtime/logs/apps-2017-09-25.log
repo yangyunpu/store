@@ -1,0 +1,84 @@
+Mon 25 11:57:45 [INFO] member_id：
+Mon 25 11:57:45 [INFO] 30340938
+Mon 25 11:57:45 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => '1879ac762bee3825f1d22a1b3433b03f',
+   'type' => '1',
+   'visit' => '233',
+   'last_time' => 1506308394,
+   'ip' => '106.15.45.24',
+))
+Mon 25 17:44:56 [INFO] member_id：
+Mon 25 17:44:56 [INFO] 30055451
+Mon 25 17:44:56 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'a21abfca2cd289c2c11eefc019cd3b7e',
+   'type' => '1',
+   'visit' => '170',
+   'last_time' => 1506332671,
+   'ip' => '103.214.84.243',
+))
+Mon 25 18:51:19 [INFO] member_id：
+Mon 25 18:51:19 [INFO] 30001202
+Mon 25 18:51:19 [INFO] stdClass::__set_state(array(
+   'member_id' => '30001202',
+   'login_id' => '18896717435',
+   'nickName' => '平平',
+   'token' => '4f7bf9262344ba4912b2f1ce0a551247',
+   'type' => '1',
+   'visit' => '1300',
+   'last_time' => 1506335820,
+   'ip' => '103.214.84.243',
+))
+Mon 25 18:54:09 [INFO] member_id：
+Mon 25 18:54:09 [INFO] 30341246
+Mon 25 18:54:09 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341246',
+   'login_id' => '13020288825',
+   'nickName' => '130****8825',
+   'token' => '35f6d76d07be331249c5b77edf978a04',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506336828,
+   'ip' => '103.214.84.243',
+))
+Mon 25 18:55:16 [INFO] member_id：
+Mon 25 18:55:16 [INFO] 30341246
+Mon 25 18:55:16 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341246',
+   'login_id' => '13020288825',
+   'nickName' => '130****8825',
+   'token' => '35f6d76d07be331249c5b77edf978a04',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506336828,
+   'ip' => '103.214.84.243',
+))
+Mon 25 18:58:17 [INFO] member_id：
+Mon 25 18:58:17 [INFO] 30341246
+Mon 25 18:58:17 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341246',
+   'login_id' => '13020288825',
+   'nickName' => '130****8825',
+   'token' => '35f6d76d07be331249c5b77edf978a04',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1506336828,
+   'ip' => '103.214.84.243',
+))
+Mon 25 19:33:00 [INFO] member_id：
+Mon 25 19:33:00 [INFO] 30136396
+Mon 25 19:33:00 [INFO] stdClass::__set_state(array(
+   'member_id' => '30136396',
+   'login_id' => '18502105415',
+   'nickName' => '咿呀咿呀哟',
+   'token' => '14ef6ea14dd235a15e91f8efb6af0ee2',
+   'type' => '1',
+   'visit' => '227',
+   'last_time' => 1506338890,
+   'ip' => '103.214.84.243',
+))

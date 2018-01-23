@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+.c_banner {
+    width: 100%;
+}
+
+.c_banner img {
+    width: 50%;
+    float: left;
+}
+
+.c_content {
+    background: #efe7d1;
+    /*padding-bottom: 230px;*/
+    overflow: hidden;
+}
+
+.c_content .item {
+    position: relative;
+    z-index: 2;
+}
+
+.c_content .item .particulars {
+    position: absolute;
+    left: 80px;
+    top: 85px;
+}
+
+.c_content .item .particulars .list {
+    float: left;
+
+}
+
+.c_content .item .particulars .list h2 {
+    font-size: 28px;
+    color: #350406;
+    padding-top: 20px;
+}
+
+.c_content .item .particulars .list .desc {
+    font-size: 26px;
+    color: #350406;
+    font-weight: bolder;
+}
+
+.c_content .item .particulars .list .activity {
+    border: 5px solid #350406;
+    width: 206px;
+    font-size: 26px;
+    color: #350406;
+    margin-top: 15px;
+}
+
+.c_content .item .particulars .list .activity span {
+    height: 41px;
+    display: inline-block;
+    text-align: center;
+    width: 95px;
+    background: #350406;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.c_content .item .particulars .list .price {
+    font-size: 18px;
+    color: #350406;
+    text-decoration: line-through;
+}
+
+.c_content .item .particulars .list {
+    padding-right: 20px;
+}
+
+.c_content .bc {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.c_content .bg {
+    background: url("/theme/activity/2016_09_DoubleNinthFestival/pc/img/c_content_22.jpg") no-repeat left center;
+    height: 785px;
+    position: relative;
+
+}
+
+
+
+
+
+
+
+
+

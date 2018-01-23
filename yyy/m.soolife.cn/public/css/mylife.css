@@ -1,0 +1,418 @@
+html,body{
+ 	width:100%;
+ }
+.lcy_life{
+	width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+}
+.lcy_life ul li{
+	list-style:none;	
+}
+.lcy_life ul,li,div,p,h4{
+	margin:0;
+	padding:0;
+}
+.lcy_life .mui-bar-nav h4{
+	text-align: center;
+
+	margin:11px auto;
+}
+/*头部*/
+.lcy_life .market_head{
+	height:44px;
+	background: white;
+	position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-bottom: 1px solid #f1f1f1;
+    z-index: 9;
+}
+/*头部可滑动nav*/
+.lcy_life .mui-content{
+	padding-bottom: 60px;
+	padding-top:44px;
+}
+.lcy_life .mui-content .head_nav{
+	width:100%;
+}
+.lcy_life .mui-content .head_nav ul{
+	background: white;
+    height: 45px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 45px;
+}
+.lcy_life .mui-content .head_nav ul li{
+	text-align: center;
+	display: inline-block;
+    margin-right: 8px;
+}
+.lcy_life .mui-content .head_nav ul .active{
+    height: 43px;
+	border-bottom: 2px #ef8201 solid;
+}
+.lcy_life .mui-content .head_nav ul li a{
+	text-align: center;
+	font-size: 12px;
+	color:#000;
+}
+/*bnner1*/
+.lcy_life .mui-content .banner_top{
+	width:100%;
+	margin: 0.296296rem 0;
+	position: relative;
+}
+.lcy_life .mui-content .banner_top .star_coin{
+	position: absolute;
+	bottom: 15%;
+    right: 10%;
+}
+.lcy_life .mui-content .banner_top .star_coin p{
+	color:white;
+    font-size: 0.7rem;
+    margin-bottom: 7px;
+    line-height:100%;
+}
+.lcy_life .mui-content .banner_top .star_coin p .star_c{
+	color:#0068B6;
+    font-size: 0.8rem;
+}
+.lcy_life .mui-content .banner_top img{
+	width:100%;
+
+}
+/*各个小top*/
+.lcy_life .mui-content .xing_top{
+	margin-top: 0.296296rem;
+	width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: white;
+    font-size: 0.65rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.lcy_life .mui-content .xing_top span{
+	float: right;
+    font-family: "宋体";
+    font-weight: bold;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+}
+/*星兑换*/
+.lcy_life .mui-content .xing_huan .xing_huan_goods{
+	width:100%;
+	overflow: hidden;
+	clear:both;
+}
+
+.lcy_life .mui-content .xing_huan .xing_huan_goods .xing_huan_goods_1{
+	width:66.6%;
+	height:5.9rem;
+	float:left;
+	border-bottom:1px #f3f3f3 solid;
+	border-right:1px #f3f3f3 solid;  
+	 overflow: hidden;
+	 background-color: white;
+}
+.lcy_life .mui-content .xing_huan .xing_huan_goods .xing_huan_goods_1 img{
+	width:100%;
+	height:100%;
+}
+.lcy_life .mui-content .xing_huan .xing_huan_goods .xing_huan_goods_2{
+	float:left;
+	width:33.3%;
+	height:5.9rem;
+	border-bottom:1px #f3f3f3 solid;
+	border-right:1px #f3f3f3 solid;
+    background: white;
+}
+.lcy_life .mui-content .xing_huan .xing_huan_goods .xing_huan_goods_2 img{
+	width:100%;
+	height:100%;
+}
+/*星粉秀*/
+.lcy_life .mui-content .xing_xiu .xing_xiu_goods{
+	width:100%;
+	overflow: hidden;
+	clear:both;
+}
+.lcy_life .mui-content #hui_slider{
+	margin-left:2.5%;
+	width:62.5%;
+	height:10rem;
+	float:left;
+	overflow: hidden;
+}
+.lcy_life .mui-content .xing_xiu .xing_xiu_goods .xing_xiu_goods_1{
+	float: left;
+    width: 30.5%;
+    height: 4.825rem;
+    margin-bottom: 0.35rem;
+    margin-left: 2%;
+    overflow: hidden;
+}
+.lcy_life .mui-content .xing_xiu .xing_xiu_goods .xing_xiu_goods_1 img{
+	width:100%;height:100%;
+}
+.lcy_life .mui-slider .mui-slider-group .mui-slider-item {
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10rem;
+    vertical-align: top;
+    white-space: normal;
+}
+.lcy_life .mui-slider .mui-slider-group .mui-slider-item>a:not(.mui-control-item) {
+    line-height: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.lcy_life .mui-slider .mui-slider-group .mui-slider-item img {
+    width: 100%;
+    height:100%;
+}
+/*最新和热卖*/
+.lcy_life .mui-content .xing_hot{
+	overflow: hidden;
+	clear:both;
+}
+.lcy_life .mui-content .xing_hot .hot_w{
+	text-align: center;
+}
+
+.lcy_life .mui-content .xing_hot .xing_hot_goods .xing_hot_goods_1{
+	float:left;
+	width:21%;
+	height:3.259259rem;
+	margin-left:2.5%;
+	overflow: hidden;
+}
+.lcy_life .mui-content .xing_hot .xing_hot_goods .xing_hot_goods_1 img{
+	width:100%;
+}
+.lcy_life .mui-content .xing_hot .xing_hot_goods .xing_hot_goods_2{
+	float:left;
+	margin-left:1.5%;
+	width:75%;
+	height:3.259259rem;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+	margin-bottom:2.5%;
+}
+.lcy_life .mui-content .xing_hot .xing_hot_goods .xing_hot_goods_2 li{
+	width:28%;
+	height:3.259259rem;
+	display: inline-block;
+}
+.lcy_life .mui-content .xing_hot .xing_hot_goods .xing_hot_goods_2 li img{
+	width:100%;
+	height:100%;
+}
+
+
+.lcy_life .searhloading{
+	overflow: hidden;
+    clear: both;
+}
+.lcy_life .evaluate{
+    overflow: hidden;
+    clear: both;
+}
+.lcy_life #star_sale_nav{
+    width: 100%;
+    height: 44px;
+    font-size: 12px;
+    line-height: 44px;
+    text-align: center;
+    background-color: white;
+}
+.lcy_life #star_sale_nav li{
+	width:20%;
+	height:44px;
+	float:left;
+}
+.lcy_life #star_sale_nav li.actived{
+    height: 43px;
+	border-bottom: 2px #007aff solid;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1{
+	float:left;
+	width:46%;
+	margin-left:2.5%;
+	margin-top:2%;
+	background: white;
+	overflow: hidden;
+}
+
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box{
+	width:90%;
+	height:6.296296rem;
+	display: -webkit-flex; 
+	display: flex;
+	margin: 0 auto;
+	overflow: hidden;
+	background: white;;
+}
+.lcy_life .mui-segmented-control.mui-segmented-control-inverted .mui-control-item{
+	font-size:12px;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box a{
+	margin:auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_t{
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 p{
+    width: 90%;
+    margin: 11px auto 0 auto;
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece{
+    width: 90%;
+    margin: 0 auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece img{
+    width: 16px;
+    margin: 0 auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece .piece_big{
+	font-size: 16px;
+	color:#ef8201;
+}
+
+.lcy_life .mui-content #xing_hot_slider .mui-control-content .not{
+	width:100%;
+}
+.lcy_life .mui-content #xing_hot_slider .mui-control-content .not img{
+	width:50%;
+	display:block;
+	margin:0 auto;
+	margin-top:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.lcy_life .foot_bottom{
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+}
+
+.lcy_life .foot_bottom ul{
+	margin:0;
+	padding:0;
+}
+.lcy_life .foot_bottom ul li{
+	list-style: none;
+	float:left;
+	width:20%;
+	height:50px;
+}
+
+.lcy_life .foot_bottom ul li a img {
+	margin: 0 auto;
+    display: block;
+    width: 26px;
+}
+.lcy_life .foot_bottom ul li a p {
+	font-size:12px;
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
+.lcy_life .foot_bottom ul a .shopcar_n_box{
+    margin: 0 auto;
+    width: 28px;
+    height: 26px;
+    position: relative;
+}
+.lcy_life .foot_bottom ul li a .shopcar_n_box .shopcar_n{
+    position: absolute;
+    right: -9px;
+    margin-right: 26%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: red;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: "simsun";
+    text-align: center;
+    color: white;
+}
+.lcy_life .foot_bottom ul li a .footer_bottom_color{
+	color:#0068B6;
+}
+.login{
+	line-height:9px;
+	border: #FFE400 1px solid; 
+	font-size: 12px; 
+	color: black;
+	height: 21px;
+}
+
+
+/* 金币css */
+canvas{position:fixed;top:0;left:0;z-index: 1000000;height:100% !important;width:100% !important;}
+
+img.lazyload {
+	background: url('/public/img/index/loading.gif') no-repeat center center;
+}
+/*遮罩层*/
+.mask_layer{
+	width:100%;
+	height:100%;
+	position: fixed;
+	background:rgba(12, 12, 12, 0.6);
+	z-index:12;
+	display:none;
+
+}
+.tubi{    z-index: 13;
+    position: relative;background: url(../img/download_x.png) no-repeat;width:30px;height:30px;background-size: contain;float: right;margin-top:8px;margin-right:8px;}
+.mylife{
+	position: relative;height:100%;
+}
+.mylife img{
+	width:100%;position: absolute;bottom:100px;
+}

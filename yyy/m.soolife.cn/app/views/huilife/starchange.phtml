@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>星兑换|如此生活</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">   
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="/public/ext/css/soo.m.ui.css">
+    <link rel="stylesheet" href="/public/ext/css/download.css">
+    <link rel="stylesheet" href="/public/css/huilife/common.css">
+    <link rel="stylesheet" href="/public/css/huilife/starchange.css">
+</head>
+<body>
+
+
+
+<div id="soo-header" data-url="{{ url_goods }}">
+	<div id="header-left"><a onclick="window.history.go(-1)"> <img src="../public/img/common/shop_back_black@2x.png" alt=""></a></div>
+	<div id="header-center">星兑换</div>
+	<div id="header-right"></div>
+</div>
+<!-- 下载框 -->
+<div class="download_box" id="download-nav">
+	<div class="remove" id="download-nav-hide"><img src="../public/img/common/icon_close@3x.png" alt=""></div>
+	<div class="logo"><img src="../public/img/common/logo@3x.png" alt=""></div>
+	<div class="word">下载如此生活客户端</div>
+	<div class="sure" id="download-nav-sure"><div>下载</div></div>
+</div>
+<!-- start -->
+<div class="lcy_starchange lcy_hui">
+<!-- banner -->
+{% if starchangeAd_banner %}
+<div class="route">
+	<a href="{{ starchangeAd_link }}">
+		<img src="{{ starchangeAd_banner }}" class="img-w">
+		<div class="content">
+			<!-- <p class="title title_color">星兑换</p>
+			<p class="word word_color">星币直接抵现</p> -->
+			<p class="title getnum">我的星币:<span>{{ coinNum }}星币</span></p>
+		</div>
+	</a>
+</div>
+{% endif %}
+<!-- 分类  btn_active-->
+<div class="classify" data-btn-code="">
+	<div class="soo-row nav">
+		<div class="soo-col-2 btn_item btn_active" data-code="">全部</div>
+		{% if starchangeBtn %}
+		{% for k,d in starchangeBtn %}
+		<div class="soo-col-2 btn_item" data-code="{{k+1}}">{{ d['name'] }}</div>	
+		{% endfor %}
+		{% endif %}	
+		<div class="soo-col-2 select">
+			<div class="filter_down">
+				<div>筛选</div>
+				<div class="img"><img src="../public/img/huilife/star_down@2x.png" alt=""></div>				
+			</div>
+			<div class="filter_up" style="display:none;">
+				<div>筛选</div>
+				<div class="img"><img src="../public/img/huilife/star_order@2x.png" alt=""></div>				
+			</div>
+		</div>	
+	</div>
+	<div class="interval">
+		<p>星币区间</p>
+		<div class="box">
+			<div class="in_box">
+				<input type="number" placeholder="最低价格" id="min_text">
+				<span>&minus;</span>
+				<input type="number" placeholder="最高价格" id="max_text">
+				<img src="../public/img/huilife/getstar_fdj@2x.png" alt="" class="interval_s">	
+			</div>
+		</div>
+		<div class="slide-stage num_node">
+			<div data-span="yes" data-coin-min="" data-coin-max="" class="interval_s">&nbsp;全部&nbsp;</div>
+			<div data-span="yes" data-coin-min="1" data-coin-max="100" class="interval_s">&nbsp;1~100&nbsp;</div>
+			<div data-span="yes" data-coin-min="100" data-coin-max="500" class="interval_s">&nbsp;100~500&nbsp;</div>
+			<div data-span="yes" data-coin-min="500" data-coin-max="1001" class="interval_s">&nbsp;500~1000&nbsp;</div>
+			<div data-span="yes" data-coin-min="1000" data-coin-max="" class="interval_s">&nbsp;1000以上&nbsp;</div>
+		</div>		
+	</div>
+</div>
+<div class="goods"> 
+	{% if starchangeM_data %}
+	{% for item in starchangeM_data %}
+	{% if item['status']==2 %} 
+	<div class="daotime">
+		<p class="timel float-l">距开启还有</p>
+		<p class="timer float-r" data-begintime="{{item['begintime']}}">
+			<span>29</span>&nbsp;天&nbsp;<span>23</span>&nbsp;:&nbsp;<span>59</span>&nbsp;:&nbsp;<span>59</span>
+		</p>
+	</div>
+	{% endif %}	
+	<div class="item clear-f">
+		{% if item['status']==1 %} 
+		<img src="../public/img/huilife/zhong.png" class="teimg">
+		{% endif %}
+		{% if item['status']==3 %} 
+		<img src="../public/img/huilife/guang.png" class="teimg">
+		{% endif %}   
+		<div class="img float-l"><a href="{{url_goods}}/{{item['skuid']}}.html"><img src="{{item['logo']}}" alt=""></a></div>
+		<div class="wen float-l">
+			<p class="mess">{{item['name']}}</p>
+			{% if item['limit']==0 %}
+			<p class="coin">{{item['coin']}}星币</p>
+			{% else %}
+			<p class="coin">￥{{item['price']}}</p>
+			{% endif %}
+			<p class="piece">市场参考价：￥{{item['marketprice']}}</p>
+		</div>
+	</div> 
+	{% endfor %}
+	{% endif %}
+</div>
+</div><!-- end -->
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?826cba0598fb59fb393282dd20e7d118";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+<script src="/public/ext/js/rem.js"></script>
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/ext/js/download.js"></script>
+<script src="/public/ext/js/soo.m.ui.js"></script>
+<script src="/public/ext/js/jquery.base64.js"></script>
+<script src="/public/js/huilife/starchange.js"></script>
+</body>
+</html>

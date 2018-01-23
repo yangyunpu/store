@@ -1,0 +1,30 @@
+.active_num{
+	height: 8.618666rem;
+}
+.active_num .num_wrap{
+    border-bottom: 1px solid #ddd;
+}
+.active_num .num_wrap:last-child{
+    border-bottom: none;
+}
+.iphones3{
+	height: 2.090667rem;
+	border-bottom:none !important;
+}
+.iphone input{
+	height:1.706667rem;
+}
+.sure {
+    height: 1.450667rem;
+    margin: 0 auto;
+    /*display: none;*/
+    line-height: 15px;
+    margin: 10px auto 0;
+}
+.flag{
+    width: 95%;
+    margin:0 auto;
+    color: #EC6D65;
+    font-size: 12px;
+    margin-top: 0.426667rem;
+}

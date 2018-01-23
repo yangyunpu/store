@@ -1,0 +1,345 @@
+html,body{
+    width:100%;
+ }
+.lcy_lists{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+    background:#f1f1f1;
+}
+.lcy_lists ul li{
+    list-style:none;    
+}
+.lcy_lists a{
+    text-decoration: none;    
+}
+.lcy_lists ul,li,div,p,input{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_lists .head{
+    width:100%;
+    height:44px;
+    background:white;
+    border-bottom: 1px solid #ccc;
+    box-sizing:border-box;
+} 
+.lcy_lists .head div{
+    float:left;
+} 
+.lcy_lists .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url("/public/img/back1.png") 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_lists .head .title{
+    position: relative;
+    width: 70%;
+    height: 44px;
+    font-size: 16px;
+    z-index: 4;
+} 
+.lcy_lists .head .title .search{
+    background: white url("/public/img/search_box.png") right center no-repeat;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    background-size: contain;
+}
+.lcy_lists .head .title input{
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 2px;
+    border:1px solid #ccc;
+    text-indent: 30px;
+}
+.lcy_lists .head .back2{
+    background: url("/public/img/money_classifity.png") right center no-repeat;
+    width: 10%;
+    height: 44px;
+} 
+
+
+/*back2遮罩*/
+.lcy_lists .head .back2 .back2_mark{
+    display: none;
+    position:fixed;
+    top:44px;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(19, 17, 17, 0.45);
+    z-index: 3;
+}
+
+.lcy_lists .head .back2 .back2_mark .back2_btn{
+    width:100%;
+    overflow: hidden;
+    clear:both;
+    background: white;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list{
+    width:100%;
+    overflow: hidden;
+    clear:both;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list li{
+    width:50%;
+    height:55px;
+    float:left;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list li a{
+    display: block;
+    height:35px;
+    width:100%;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn1{
+    background: url("/public/img/Make-money_shop_home@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn5{
+    background: url("/public/img/Make-money_shop_share@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_lists .head .back2 .back2_mark .back2_btn .back2_btn_list li p{
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    color:#000;
+}
+/*头部小分类遮罩*/
+.lcy_lists .head .back3{
+    background: url("/public/img/money_shop_commodity.png") right center no-repeat;
+    width: 10%;
+    height: 44px;
+    position: relative;
+}
+.lcy_lists .head .back3 .classify_top{
+    display: none;
+    width: 155px;
+    height: 268px;
+    background: rgba(12, 12, 12, 0.6);
+    position: absolute;
+    right: 0;
+    top: 36px;
+    z-index: 3;
+    font-size: 12px;
+}
+.lcy_lists .head .back3 .classify_top .list_top{
+    width:155px;
+    height:8px;
+    background: white url("/public/img/sanjiao.png") no-repeat 131px center;
+}
+.lcy_lists .head .back3 .classify_top .classify_list{
+    width:100%;
+    overflow-y:scroll;
+    height: 260px;
+}
+.lcy_lists .head .back3 .classify_top .classify_list li {
+    margin: 18px;
+}
+.lcy_lists .head .back3 .classify_top .classify_list li a{
+    color:#fff;   
+}
+/*头像*/
+.lcy_lists .head_pic{
+    background: url("/public/img/head_bg.png") no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 10px 0;
+}
+.lcy_lists .head_pic .head_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 2%; 
+}
+.lcy_lists .head_pic .head_img img{
+    width:100%; 
+    display: block; 
+}
+.lcy_lists .head_pic .message {
+    position: absolute;
+    left:90px;
+    bottom: 10px;
+}
+.lcy_lists .head_pic .message .name{
+    font-size: 14px;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.lcy_lists .head_pic .message .num{
+    font-size: 12px;
+    color:#fff;
+}
+.lcy_lists .head_pic .zhu_btn{
+    position: absolute;
+    top: 15px;
+    right: 11px;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+/*banner*/
+.lcy_lists .banner{
+    width:100%;
+    margin:0.296296rem 0;
+}
+.lcy_lists .banner img{
+    width:100%;
+    display:block;
+}
+/*nav*/
+.lcy_lists .head_nav{
+    background: white;
+    width:100%;
+    font-size: 12px;
+}
+.lcy_lists .head_nav ul{
+    width: 94%;
+    margin: 0 3%;
+    height: 45px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 45px;
+}
+.lcy_lists .head_nav ul li{
+
+    text-align: center;
+    display: inline-block;
+    margin-right:16px;
+}
+.lcy_lists .head_nav ul .active{
+    height: 43px;
+    border-bottom: 2px #ef8201 solid;
+}
+.lcy_lists .head_nav ul .active a{
+    color:#ef8201;
+}
+.lcy_lists .head_nav ul li a{
+    text-align: center;
+    color:#000;
+}
+/*goodslist*/
+.lcy_lists .goods_list {
+    width:100%;
+    overflow: hidden;
+    clear:both;
+    padding-bottom: 45px;
+}
+.lcy_lists .goods_list .goods_box{
+    float: left;
+    width:47%;
+    margin-left:2%;
+    margin-top:2%;
+    border:1px solid #bbb;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+}
+.lcy_lists .goods_list .goods_box .img_box{
+    width:100%;
+    height:6.266667rem;
+    overflow: hidden;
+}
+.lcy_lists .goods_list .goods_box .img_box img{
+    width:100%;
+    display: block;
+}
+.lcy_lists .goods_list .goods_box .detail{
+    font-size: 12px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 15px;
+    height: 30px;
+    -webkit-box-orient: vertical;
+    width: 90%;
+    padding: 0 5%;
+}
+.lcy_lists .goods_list .goods_box .piece{
+    font-size: 12px;
+    color: red;
+    margin: 6px 0;
+    overflow: hidden;
+    clear: both;
+    padding:0 10px;
+}
+.lcy_lists .goods_list .goods_box .piece .now_piece{
+    display: block;
+    color: red;    
+    font-size: 16px;
+}
+.lcy_lists .goods_list .goods_box .piece .old_piece{
+    display: block;
+    color: #999;
+}
+.lcy_lists .updata{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+.lcy_lists .updata .men_img{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: url("/public/img/men.png") no-repeat center;
+    background-size: contain;
+}
+.lcy_lists .updata .men_img .men{
+    width: 38px;
+    height: 27px;
+    margin:0 auto;
+}
+.lcy_lists .updata .men_img .hide{
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    background: url("/public/img/myshop_x.png") no-repeat center;
+    background-size: contain;
+}
+.lcy_lists .updata .word{
+    display: none;
+    text-align: center;
+    line-height: 36px;
+    width: 100%;
+    height: 30px;
+    background: url("/public/img/myshop_b.png") no-repeat center;
+    background-size: 100% 100%;
+}
+.lcy_lists .updata .updata_b{
+    width: 100%;
+    height: 2px;
+    background:#2D99FF;
+}
+
+
+
+
+
+ 

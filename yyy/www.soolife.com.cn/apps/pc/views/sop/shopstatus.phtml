@@ -1,0 +1,124 @@
+<?php
+	$css = $this->assets->get('header');
+	$css -> addCss("public/css/p/view.shopstatus.css");
+
+	$js  = $this->assets->get('footer');
+?>
+{% if result %}
+<div class="lj_wrap">
+	<div class="banner"><img alt="如此生活" src="/public/img/sop/banner.jpg"></div>
+	{% if result['status'] == 0 %}
+	<!-- 审核中 -->
+	<div class="audit_center">
+		<p class="lj_sub">{{result['statusText']}}</p>
+		<a title="如此生活"  href="/index.html"><div class="lj_return">返回首页</div></a>
+		<p class="cell">如有疑问，请拨打客服电话，将有专人为您服务</p>
+		<p class="cell high">客服电话:400-6699-878</p>
+	</div>
+	{% elseif result['status'] == 2 or result['status'] == 9 %}
+	<!-- 审核失败 -->
+	<div class="audit_false">
+		<p class="lj_subser">{{result['statusText']}}</p>
+		<p class="lj_subs">失败原因为：{{result['reason']}}</p>
+		<a title="如此生活" href="/sop/edit.html"><div class="amend">点击修改,重新审核</div></a>
+		<p class="cell">如有疑问，请拨打客服电话，将有专人为您服务</p>
+		<p class="cell high">客服电话:400-6699-878</p>
+	</div>
+	{% elseif result['status'] == 1 %}
+	<!-- 审核通过 -->
+	<div class="lj_pass">
+		<p class="pass">{{result['statusText']}}</p>
+		<p class="lj_toll">已选套餐</p>
+		<br>
+		<div class="row">
+			<table align="center" class="table table-bordered" style="width: 800px; margin:0 auto;">
+				<tr class="lj_head" align="center" >
+					<td style="line-height: 42px;">套餐服务</td>
+					<td style="line-height: 42px; width: 300px;">金额</td>
+					<td style="line-height: 42px;">赠送星币数</td>
+				</tr>
+				<tr align="center">
+					<td class="lj_radio">
+						保证金
+					</td>
+					<td>1W</td>
+					<td>/</td>
+				</tr>
+				<tr align="center">
+					<td class="lj_radio">
+						线上服务
+					</td>
+					<td>{{result['service_cost']['online_money'] / 10000}}W</td>
+					<td>{{result['service_cost']['online_money'] / 10000}}W枚</td>
+				</tr>
+				<tr align="center">
+					<td class="lj_radio">
+						线下服务
+					</td>
+					<td>{{result['service_cost']['offline_money'] / 10000}}W</td>
+					<td>{{result['service_cost']['offline_coin'] / 10000}}W枚</td>
+				</tr>
+				<tr align="center">
+					<td class="lj_radio">
+						总计
+					</td>
+					<td>{{result['service_cost']['total_money'] / 10000}}W</td>
+					<td>{{result['service_cost']['total_coin'] / 10000}}W枚</td>
+				</tr>
+			</table>
+		</div>
+		<br><br><br><br>
+
+		<p class="lj_toll">如何缴费？</p>
+		<div class="bank_card">
+			<div class="bank_left">
+				<div class="bank_img"><img alt="如此生活" src="/public/img/sop/Group2.png"></div>
+				<p>银行卡转账</p>
+			</div>
+			<div class="bank_right">
+				<div class="lj_money">
+					<ul>
+						<li class="lj_assure">保证金缴费</li>
+						<li class="lj_symbol">{</li>
+						<li class="lj_openbank">
+							<p class="bank_lj">开户行：农业银行上海中山公园支行</p>
+							<p>账  户：03-446000040004034</p>
+						</li>
+					</ul>
+				</div>
+				<div class="lj_money">
+					<ul>
+						<li class="lj_assure">服务费缴费</li>
+						<li class="lj_symbol">{</li>
+						<li class="lj_openbank">
+							<p class="bank_lj">开户行：工商银行上海市松江区文诚路分行</p>
+							<p>账  户：1001748009000030021</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bank_card">
+			<div class="bank_left">
+				<div class="bank_img"><img alt="如此生活" src="/public/img/sop/Group7.png"></div>
+				<p>第三方转账</p>
+			</div>
+			<div class="bank_right">
+				<ul class="online_pay">
+					<li class="wecat">
+						<p>微信支付</p>
+						<div class="lj_scod"><img alt="如此生活" src="/public/img/sop/wecat.jpg"></div>
+					</li>
+					<li class="apliy">
+						<p>支付宝支付</p>
+						<div class="lj_scod"><img alt="如此生活" src="/public/img/sop/apliy.jpg"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p class="cell">如有疑问，请拨打客服电话，将有专人为您服务</p>
+		<p class="cell high">客服电话:400-6699-878</p>
+	</div>
+	{% endif %}
+</div>
+{% endif %}

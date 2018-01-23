@@ -1,0 +1,380 @@
+body{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #560681;
+}
+p {
+	padding:0;
+	margin: 0;
+}
+img{
+	padding:0;
+	margin: 0;
+	display: block;
+}
+a {
+	list-style: none;
+	text-decoration: none;
+}
+.wrap{
+	width: 100%;
+	background-color:#cfedfc;
+	 overflow: hidden;
+	 font-family: "微软雅黑";
+}
+.header{
+	width: 100%;
+	position: relative;
+}
+.lj_head1{
+	width: 100%;
+	height: 3.688889rem;
+	background-image: url(../img/lucky/head11.png);
+	background-size: 100% 100%;
+}
+.lj_head2{
+	width: 100%;
+	height: 3.511111rem;
+	background-image: url(../img/lucky/head22.png);
+	background-size: 100% 100%;
+}
+.lj_head3{
+	width: 100%;
+	height: 2.2rem;
+	background-image: url(../img/lucky/head33.png);
+	background-size: 100% 100%;
+	padding-top: 1.52963rem;
+	padding-bottom: 0.296296rem;
+}
+.lj_prize1{
+	width: 82%;
+	height: 2.237037rem;
+	background-image: url(../img/lucky/praise4.png);
+	background-size: 100% 100%;
+	margin: auto;
+	text-align: center;
+	line-height: 2.237037rem;
+	color: #E41064;
+	font-size: 0.8rem;
+	font-family: '黑体';
+    font-weight: bold;
+}
+.lj_money{
+	width: 100%;
+	height: 13.748148rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.lj_money img {
+	width: 100%;
+	height: 100%;
+}
+.lj_roll{
+	width: 75%;
+	height: 5.6rem;
+	position: absolute;
+	top: 1.422222rem;
+	left: 2.296296rem;
+}
+.lj_roll img{
+	width: 100%;
+	height: 100%;
+}
+/*获奖名单*/
+.lj_people{
+      width: 100%;
+      /*height: 13.066667rem;*/
+      background-image: url(../img/lucky/dan1.png);
+      background-size: 100% 100%;
+}
+.lj_table1{
+	width: 82%;
+	/*height: 12.192593rem;*/
+	border: 1px solid #570681;
+	margin-left: 1.451852rem;
+	position: relative;
+}
+.lj_fer{
+	width:100%;
+	height:  1.481481rem;
+	background:#a74eb5;
+    /*position: absolute;
+    top: 0;*/
+}
+.lj_fer span{
+      display: block;
+      width: 47%;
+      height: 1.481481rem;
+      font-size: 0.622222rem;
+      font-weight: bold;
+      color: #fff;
+      float: left;
+      text-align: center;
+      line-height: 1.481481rem;
+}
+.lj_fer span:nth-child(1){
+         border-right: 1px dotted #fff;
+}
+.lj_table1 ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lj_table1 ul{
+	margin: 0;
+	padding: 0;
+}
+.lj_messagef{
+	width: 100%;
+	max-height: 10.711112rem;
+   /*margin-top: 1.4934125926rem;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.lj_table1 ul li:nth-child(2n+1){
+	width: 100%;
+	height: 1.125926rem;
+	background:#aa7abf;
+}
+.lj_table1 ul li:nth-child(2n){
+	width: 100%;
+	height: 1.125926rem;
+	background:#8d4eaa;
+}
+.lj_table1 ul li span:nth-child(2n+1){
+	width: 47%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+	border-right: 1px dotted #fff;
+}
+.lj_table1 ul li span:nth-child(2n){
+	width: 48%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+}
+/*一飞冲天奖*/
+.lj_conter2{
+      width: 100%;
+      /*height: 16.325926rem;*/
+      background-image: url(../img/lucky/dan2.png);
+      background-size: 100% 100%;
+      padding-top: 0.296296rem;
+      padding-bottom: 1.296296rem;
+}
+.lj_prize2{
+	width:82%;
+	height: 2.237037rem;
+	background-image: url(../img/lucky/praise4.png);
+	background-size: 100% 100%;
+	margin: auto;
+	text-align: center;
+	line-height: 2.237037rem;
+	color: #E41064;
+	font-size: 0.8rem;
+	font-family: '黑体';
+    font-weight: bold;
+    margin-left: 1.451852rem;
+    margin-top: 0.296296rem;
+}
+.lj_prize2 img{
+	width:100%;
+	height: 100%;
+}
+/*名单2*/
+.lj_table2{
+	width: 82%;
+	/*height: 12.192593rem;*/
+	border: 1px solid #570681;
+	margin-left: 1.451852rem;
+	position: relative;
+	top: 0.42148148rem;
+}
+.lj_fer2{
+	width:100%;
+	height:  1.481481rem;
+	background:#a74eb5;
+   /* position: absolute;
+    top: 0;*/
+}
+.lj_fer2 span{
+      display: block;
+      width: 47%;
+      height: 1.481481rem;
+      font-size: 0.622222rem;
+      font-weight: bold;
+      color: #fff;
+      float: left;
+      text-align: center;
+      line-height: 1.481481rem;
+}
+.lj_fer2 span:nth-child(1){
+         border-right: 1px dotted #fff;
+}
+.lj_table2 ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lj_table2 ul{
+	margin: 0;
+	padding: 0;
+}
+.lj_messagef2{
+	width: 100%;
+	max-height: 10.711112rem;
+   /*margin-top: 1.45934125926rem;*/
+   overflow-y: auto;
+   overflow-x:hidden;
+}
+.lj_table2 ul li:nth-child(2n+1){
+	width: 100%;
+	height: 1.125926rem;
+	background:#aa7abf;
+}
+.lj_table2 ul li:nth-child(2n){
+	width: 100%;
+	height: 1.125926rem;
+	background:#8d4eaa;
+}
+.lj_table2 ul li span:nth-child(2n+1){
+	width: 47%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+	border-right: 1px dotted #fff;
+}
+.lj_table2 ul li span:nth-child(2n){
+	width: 48%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+}
+
+/*名单2 end*/
+/*望穿秋水奖*/
+.lj_conter3{
+	 width: 100%;
+      /*height: 15.481481rem;*/
+      background-image: url(../img/lucky/dan3.png);
+      background-size: 100% 100%;
+      padding-top: 0.96296rem; 
+      padding-bottom:0.888889rem;
+}
+.lj_prize3{
+	width:82%;
+	height: 2.237037rem;
+	background-image: url(../img/lucky/praise4.png);
+	background-size: 100% 100%;
+	margin: auto;
+	text-align: center;
+	line-height: 2.237037rem;
+	color: #E41064;
+	font-size: 0.8rem;
+	font-family: '黑体';
+    font-weight: bold;
+	margin-left: 1.451852rem;
+}
+.lj_prize3 img{
+	width: 100%;
+	height: 100%;
+}
+/*名单3*/
+.lj_table3{
+	width: 82%;
+	/*height: 12.192593rem;*/
+	border: 1px solid #570681;
+	margin-left: 1.451852rem;
+	position: relative;
+	top: 0.42148148rem;
+}
+.lj_fer3{
+	width:100%;
+	height:  1.481481rem;
+	background:#a74eb5;
+   /* position: absolute;
+    top: 0;*/
+}
+.lj_fer3 span{
+      display: block;
+      width: 47%;
+      height: 1.481481rem;
+      font-size: 0.622222rem;
+      font-weight: bold;
+      color: #fff;
+      float: left;
+      text-align: center;
+      line-height: 1.481481rem;
+}
+.lj_fer3 span:nth-child(1){
+         border-right: 1px dotted #fff;
+}
+.lj_table3 ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.lj_table3 ul{
+	margin: 0;
+	padding: 0;
+}
+.lj_messagef3{
+	width: 100%;
+	max-height: 10.711112rem;
+   /*margin-top: 1.45934125926rem;*/
+   overflow-y: auto;
+   overflow-x:hidden;
+}
+.lj_table3 ul li:nth-child(2n+1){
+	width: 100%;
+	height: 1.125926rem;
+	background:#aa7abf;
+}
+.lj_table3 ul li:nth-child(2n){
+	width: 100%;
+	height: 1.125926rem;
+	background:#8d4eaa;
+}
+.lj_table3 ul li span:nth-child(2n+1){
+	width: 47%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+	border-right: 1px dotted #fff;
+}
+.lj_table3 ul li span:nth-child(2n){
+	width: 48%;
+	height: 1.125926rem;
+	color: #fff;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.125926rem;
+	font-size: 0.592593rem;
+}
+
+/*名单3end*/

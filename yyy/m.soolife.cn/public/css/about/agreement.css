@@ -1,0 +1,21 @@
+.lcy_agreement{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+.lcy_agreement ul li{
+	list-style: none;
+}
+.lcy_agreement .agreement_main{
+	width:90%;
+	margin:0 auto;
+    font-family:"Microsoft YaHei","arial"; 
+    font-size: 12px;
+}
+.lcy_agreement .agreement_main h2{
+	margin:10px auto;
+	text-align: center;
+}
+.lcy_agreement .agreement_main img{
+	width:90%;
+}

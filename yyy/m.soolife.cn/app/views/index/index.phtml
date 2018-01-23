@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<link rel="stylesheet" type="text/css" href="/public/css/mui.min.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="/public/css/app.css"/>
+
+</head>
+<body>
+<div class="lcy_moblie_index">
+	<header class="header_top" 
+	url_search={{url_search}}
+    url_goods={{url_goods}}
+	>
+   <div class="download_box">
+			<div class="download_l">
+				<div class="download_x" id="download_x"></div>
+				<div class="download_logo"><img src="/public/img/download_logo.png" alt=""></div>
+			</div>
+			<p>下载如此生活客户端!</p>
+			<div class="download_r"><button id="download">下载</button></div>
+		</div>
+		<!-- 下载页面弹出框 -->
+		<div class="download_mark">
+			<div class="download_mark_box">
+				<div class="mark_box_top">在“如此生活”中打开?</div>
+				<div class="mark_box_b no_border" data="1">确定</div>
+				<div class="mark_box_b " data="0">取消</div>
+			</div>
+		</div>
+	<div class="search_bg">
+	    <div class="header_top_box">
+	    	<a href="/index.html"><img src="/public/img/logo_white.png" alt="" class="logo"></a>
+	    </div>
+		<div class="search_box_big">			
+			<div class="search_box" id="search_box"/>搜索您喜欢的店铺和商品</div>
+			<img src="/public/img/index/search_box.png" alt="" class="s_img">
+		</div>
+		<?php  if($token === 0) { ?>
+		<div class="enter_box"><a href="{{url_member}}/login.html">登录</a></div>
+		<?php  }else{ ?>
+		<div class="enter_box"><a href="{{url_member}}/index.html"><img src="/public/img/index/my.png" alt=""></a></div>
+		<?php   }?>
+	</div>
+	</header>
+	<!-- 热搜 -->
+		<div class="search_page">
+			<div class="search_page_top">
+					<div class="header_top_box hide_x">
+						<img src="/public/img/xxx.png" class="x_img">
+					</div>
+					<div class="search_box_big">			
+						<input type="text" placeholder="搜索您喜欢的店铺和商品" class="search_box" id="text"/>
+						<img src="/public/img/index/search_box.png" alt="" class="search">
+					</div>
+			</div>
+			<div class="hot_main">
+			{% if hot %}
+				<p>热门搜索：</p>
+				<ul>
+				{% for i in hot %}
+					<li class="hot"><a>{{i['name']}}</a></li>
+				{% endfor %}
+				</ul>
+			{% endif %}
+				<p>历史记录：<img src="/public/img/shopping_clear.png" alt="" class="clear_img"></p>
+				<ul class="history">
+				</ul>
+			</div>
+		</div>
+	<!-- 轮播 -->
+	<div class="mui-content">
+		<div id="slider" class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop">
+				<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+				 <?php if(!empty($mata['app.home.banner']['children']['app.home.banner.01']['items'])) { ?>
+				<div class="mui-slider-item mui-slider-item-duplicate">	
+				<?php  $k = count($mata['app.home.banner']['children']['app.home.banner.01']['items']);$k--  ?>
+						<a href="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][$k]['mobile_link'] ?>"><img src="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][$k]['picture'] ?>" alt="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][$k]['title'] ?>" /></a>
+				</div>	
+		        <?php } ?>
+				<!-- end -->
+			
+		        <?php if(!empty($mata['app.home.banner']['children']['app.home.banner.01']['items'])) { ?>
+		       {% for d in mata['app.home.banner']['children']['app.home.banner.01']['items'] %}
+				 <div class="mui-slider-item">
+					<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" /></a>
+				</div>
+					{% endfor %}
+		        <?php } ?>
+				<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+				 <?php if(!empty($mata['app.home.banner']['children']['app.home.banner.01']['items'])) { ?>
+				 <div class="mui-slider-item mui-slider-item-duplicate">
+				<a href="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][0]['mobile_link'] ?>"><img src="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][0]['picture'] ?>" alt="<?php echo $mata['app.home.banner']['children']['app.home.banner.01']['items'][0]['title'] ?>" /></a>
+				 </div> 
+				  <?php } ?> 
+				<!-- end -->
+			</div>
+			<div class="mui-slider-indicator mui-text-right">
+				 {% for i,d in mata['app.home.banner']['children']['app.home.banner.01']['items'] %}
+				 <div class="{{i==0?'mui-indicator mui-active':'mui-indicator'}}"></div>
+				 {% endfor %}
+			</div>
+		</div>
+	
+<!-- banner -->
+	<div class="banner">
+	    <?php if(!empty($mata['app.home.banner']['children']['app.home.banner.02']['items'])) { ?>
+		{% for d in mata['app.home.banner']['children']['app.home.banner.02']['items'] %}
+		<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" class="banner_img"></a>
+		<?php  break; ?>
+		{% endfor %}
+		 <?php } ?>
+	</div>
+
+<!-- 小圆圈 -->
+	    <ul class="fast_class">
+	    {% for d in navs %}
+	        <li>
+	            <a href="{{d['url']}}">
+	                <img src="{{d['icon']}}">
+	                <span>{{d['name']}}</span>
+	            </a>
+	        </li>
+	     {% endfor %}
+	    </ul>
+	    <!-- soo快报     -->
+	    <div class="soo_box">
+	    	<img src="/public/img/sooBrief.png" alt="">
+	    	<span>限量首发&nbsp;秒到手软&nbsp;女神陪你过七夕</span>
+	    	<img src="/public/img/icon_hot.png" alt="" class="icon_host_img">
+	    </div>
+  
+	    <!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.banner']['children']['app.home.banner.column']['items'])) { ?>
+	     {% for d in mata['app.home.banner']['children']['app.home.banner.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img src="{{ d['picture'] }}" alt="{{ d['title'] }}" class="banner_b_img"></a>
+			<?php  break; ?>
+	    {% endfor %}
+	    <?php } ?>
+		</div>
+		<!-- 开始懒加载 -->
+		<!-- 星特卖 -->
+		<div class="xing_sale">
+			<div class="xing_sale_top">
+				&nbsp;&nbsp;|&nbsp;星特卖 <span></span>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_1">
+			     <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.01']['items'])) { ?>
+		         {% for d in mata['app.home.buy']['children']['app.home.buy.01']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt=""></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_2">
+			    <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.04']['items'])) { ?>
+		         {% for d in mata['app.home.buy']['children']['app.home.buy.04']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt="" </a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_2">
+			    <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.05']['items'])) { ?>
+		            {% for d in mata['app.home.buy']['children']['app.home.buy.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt="" ></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_4">
+			     <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.02']['items'])) { ?>
+		           {% for d in mata['app.home.buy']['children']['app.home.buy.02']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt="" ></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_4">
+			   <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.06']['items'])) { ?>
+		        {% for d in mata['app.home.buy']['children']['app.home.buy.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt=""></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_4">
+			    <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.03']['items'])) { ?>
+				{% for d in mata['app.home.buy']['children']['app.home.buy.03']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt="" ></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+			<div class="xing_sale_goods xing_sale_goods_4">
+			     <?php if(!empty($mata['app.home.buy']['children']['app.home.buy.07']['items'])) { ?>
+				{% for d in mata['app.home.buy']['children']['app.home.buy.07']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" data-lazyload="{{ d['picture'] }}" alt="" ></a>
+				<?php break; ?>
+				 {% endfor %}
+	             <?php } ?>
+			</div>
+		</div>
+
+<!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.buy']['children']['app.home.buy.column']['items'])) { ?>
+	    {% for d in mata['app.home.buy']['children']['app.home.buy.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img  data-lazyload="{{ d['picture'] }}" alt="" class="banner_b_img lazyload"></a>
+		<?php break; ?>
+		 {% endfor %}
+	     <?php } ?>
+		</div>
+<!-- 星粉星币 -->
+		<div class="xing_coin">
+			<div class="xing_coin_top">
+				&nbsp;&nbsp;|&nbsp;星粉星币 <span></span>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_1">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.01']['items'])) { ?>
+	        {% for d in mata['app.home.life']['children']['app.home.life.01']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"><
+			<?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_2">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.02']['items'])) { ?>
+	        {% for d in mata['app.home.life']['children']['app.home.life.02']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_2">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.03']['items'])) { ?>
+	         {% for d in mata['app.home.life']['children']['app.home.life.03']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+			<?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_4">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.04']['items'])) { ?>
+	         {% for d in mata['app.home.life']['children']['app.home.life.04']['items'] %}
+	           <a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+			<?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_4">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.05']['items'])) { ?>
+	         {% for d in mata['app.home.life']['children']['app.home.life.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+			<?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_coin_goods xing_coin_goods_4">
+			<?php if(!empty($mata['app.home.life']['children']['app.home.life.06']['items'])) { ?>
+	        {% for d in mata['app.home.life']['children']['app.home.life.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+			<?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+		</div>	
+		
+<!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.life']['children']['app.home.life.column']['items'])) { ?>
+	   {% for d in mata['app.home.life']['children']['app.home.life.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img  data-lazyload="{{ d['picture'] }}" alt="" class="banner_b_img lazyload"></a>
+		<?php break; ?>
+		{% endfor %}
+	    <?php } ?>
+		</div>
+<!-- 星发现 -->
+		<div class="xing_find">
+			<div class="xing_find_top">
+				&nbsp;&nbsp;|&nbsp;星发现 <span></span>
+			</div>
+			<div class="xing_find_goods xing_find_goods_1">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.01']['items'])) { ?>
+					{% for d in mata['app.home.discover']['children']['app.home.discover.01']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_find_goods xing_find_goods_1">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.02']['items'])) { ?>
+					{% for d in mata['app.home.discover']['children']['app.home.discover.02']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		  <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_find_goods xing_find_goods_4">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.03']['items'])) { ?>
+			{% for d in mata['app.home.discover']['children']['app.home.discover.03']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_find_goods xing_find_goods_4">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.04']['items'])) { ?>
+			{% for d in mata['app.home.discover']['children']['app.home.discover.04']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_find_goods xing_find_goods_4">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.05']['items'])) { ?>
+			{% for d in mata['app.home.discover']['children']['app.home.discover.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_find_goods xing_find_goods_4">
+			<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.06']['items'])) { ?>
+		   {% for d in mata['app.home.discover']['children']['app.home.discover.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		   <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+		</div>		
+<!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.discover']['children']['app.home.discover.column']['items'])) { ?>
+	     {% for d in mata['app.home.discover']['children']['app.home.discover.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img data-lazyload="{{ d['picture'] }}" alt="" class="banner_b_img lazyload"></a>
+		<?php break; ?>
+		 {% endfor %}
+	     <?php } ?>
+		</div>
+<!-- 品牌特惠 -->
+		<div class="xing_benefit">
+			<div class="xing_benefit_top">
+				&nbsp;&nbsp;|&nbsp;品牌特惠 <span></span>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_1">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.01']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.01']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+		        <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.02']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.02']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.03']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.03']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.04']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.04']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.05']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.06']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_2">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.07']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.07']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_3">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.08']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.08']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_3">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.09']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.09']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+			<div class="xing_benefit_goods xing_benefit_goods_3">
+			<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.10']['items'])) { ?>
+			{% for d in mata['app.home.brand']['children']['app.home.brand.10']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				 <?php break; ?>
+		   {% endfor %}
+	       <?php } ?>
+			</div>
+		</div>	
+		
+<!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.brand']['children']['app.home.brand.column']['items'])) { ?>
+	    {% for d in mata['app.home.brand']['children']['app.home.brand.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img data-lazyload="{{ d['picture'] }}" alt="" data-lazyload="" class="banner_b_img lazyload"></a>
+				 <?php break; ?>
+		 {% endfor %}
+	    <?php } ?>
+		</div>
+<!-- 星店铺 -->
+		<div class="xing_shop">
+			<div class="xing_shop_top">
+				&nbsp;&nbsp;|&nbsp;星店铺 <span></span>
+			</div>
+			<div class="mui-slider">
+				<div class="xing_shop_silder_box mui-slider-group">
+				     <?php if(!empty($mata['app.home.shop']['children']['app.home.shop.01']['items'])) { ?>
+					 {% for k,d in mata['app.home.shop']['children']['app.home.shop.01']['items'] %}
+					<div class="xing_shop_silder mui-slider-item">
+							<div class="xing_shop_goods xing_shop_goods_1">
+								<a href="{{d['mobile_link']}}"><img  data-lazyload="{{d['picture']}}" alt="" >
+							</div>
+							<div class="xing_shop_goods xing_shop_box">
+								<div class="xing_shop_goods_2">
+								<?php if(!empty($mata['app.home.shop']['children']['app.home.shop.02']['items'])) { ?> 
+									<a href="<?php echo $mata['app.home.shop']['children']['app.home.shop.02']['items'][$k]['mobile_link'];  ?>"><img class="lazyload" data-lazyload="<?php echo $mata['app.home.shop']['children']['app.home.shop.02']['items'][$k]['picture']; ?>" alt=""></a>
+									<?php } ?>
+								</div>
+								<div class="xing_shop_goods_2 mar_b">
+								<?php if(!empty($mata['app.home.shop']['children']['app.home.shop.03']['items'])) { ?> 
+									<a href="<?php echo $mata['app.home.shop']['children']['app.home.shop.03']['items'][$k]['mobile_link'];  ?>"><img class="lazyload" data-lazyload="<?php echo $mata['app.home.shop']['children']['app.home.shop.03']['items'][$k]['picture']; ?>" alt="" ></a>
+									<?php } ?>
+								</div>
+							</div>		
+					</div>
+					{% endfor %}
+					<?php } ?>
+
+	</div>		
+</div>
+
+
+		</div>
+		<div class="xing_shop shop_mar_t ">
+			<div class="xing_shop_goods xing_shop_goods_4">
+			    <?php if(!empty($mata['app.home.shop']['children']['app.home.shop.04']['items'])) { ?>
+			    {% for d in mata['app.home.shop']['children']['app.home.shop.04']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_shop_goods xing_shop_goods_4">
+			    <?php if(!empty($mata['app.home.shop']['children']['app.home.shop.05']['items'])) { ?>
+			    {% for d in mata['app.home.shop']['children']['app.home.shop.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_shop_goods xing_shop_goods_4">
+			    <?php if(!empty($mata['app.home.shop']['children']['app.home.shop.06']['items'])) { ?>
+			    {% for d in mata['app.home.shop']['children']['app.home.shop.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_shop_goods xing_shop_goods_4">
+			    <?php if(!empty($mata['app.home.shop']['children']['app.home.shop.07']['items'])) { ?>
+			    {% for d in mata['app.home.shop']['children']['app.home.shop.07']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+				<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+		</div>	
+<!-- banner -b -->
+		<div class="banner_b">
+		<?php if(!empty($mata['app.home.shop']['children']['app.home.shop.column']['items'])) { ?>
+        {% for d in mata['app.home.shop']['children']['app.home.shop.column']['items'] %}
+			<a href="{{d['mobile_link']}}"><img data-lazyload="{{ d['picture'] }}" alt="" class="banner_b_img lazyload"></a>
+	    <?php break; ?>
+	    {% endfor %}
+	    <?php } ?>
+		</div>
+<!-- 星主题 -->
+		<div class="xing_theme">
+			<div class="xing_theme_top">
+				&nbsp;&nbsp;|&nbsp;星主题 <span></span>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_1">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.01']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.01']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.02']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.02']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.03']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.03']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.04']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.04']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.05']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.05']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.06']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.06']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.07']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.07']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.08']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.08']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.09']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.09']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.10']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.10']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+			<div class="xing_theme_goods xing_theme_goods_2">
+			<?php if(!empty($mata['app.home.subject']['children']['app.home.subject.11']['items'])) { ?>
+			    {% for d in mata['app.home.subject']['children']['app.home.subject.11']['items'] %}
+				<a href="{{d['mobile_link']}}"><img class="lazyload" alt="" data-lazyload="{{ d['picture'] }}"></a>
+					<?php break; ?>
+				{% endfor %}
+				<?php } ?>
+			</div>
+		</div>	
+	<!-- 猜你喜欢 -->
+		<div class="xian_box">
+			<img src="/public/img/index/likeyou.png" alt="">
+		</div>
+		<div class="xing_like">
+			
+	
+		</div>
+	<div class="loading"></div>
+	</div><!-- 连接最上面的.mui-content的div -->	
+<!-- 回到顶部 -->
+	<div class="to_head" id="to_head"><img src="/public/img/index/scrolltop.png" alt=""></div>	
+	{% include '/layouts/inc_index.phtml' %}
+</body>
+</html>
+
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+<script src="/public/js/jquery.base64.js"></script>
+<script src="/public/js/mui.min.js"></script>
+<script src="/public/js/mui.lazyload.js"></script>
+<script src="/public/js/mui.lazyload.img.js"></script>
+<script src="/public/js/index/soolife.index.js"></script>
+<script src="/public/js/m_analytics.js"></script>
+

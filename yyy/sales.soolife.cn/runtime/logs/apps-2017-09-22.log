@@ -1,0 +1,121 @@
+Fri 22 16:03:54 [INFO] member_id：
+Fri 22 16:03:54 [INFO] 30055451
+Fri 22 16:53:24 [INFO] member_id：
+Fri 22 16:53:24 [INFO] 
+Fri 22 16:54:00 [INFO] member_id：
+Fri 22 16:54:00 [INFO] 
+Fri 22 16:54:04 [INFO] member_id：
+Fri 22 16:54:04 [INFO] 
+Fri 22 16:54:31 [INFO] member_id：
+Fri 22 16:54:31 [INFO] 
+Fri 22 16:55:21 [INFO] member_id：
+Fri 22 16:55:21 [INFO] 
+Fri 22 16:58:52 [INFO] member_id：
+Fri 22 16:58:52 [INFO] 30340929
+Fri 22 17:01:37 [INFO] member_id：
+Fri 22 17:01:37 [INFO] 30340938
+Fri 22 17:04:23 [INFO] member_id：
+Fri 22 17:04:23 [INFO] 30341220
+Fri 22 17:08:38 [INFO] member_id：
+Fri 22 17:08:38 [INFO] 30341220
+Fri 22 17:16:37 [INFO] member_id：
+Fri 22 17:16:37 [INFO] 30055451
+Fri 22 17:17:14 [INFO] member_id：
+Fri 22 17:17:14 [INFO] 30341220
+Fri 22 17:19:27 [INFO] member_id：
+Fri 22 17:19:27 [INFO] 30341220
+Fri 22 17:20:20 [INFO] member_id：
+Fri 22 17:20:20 [INFO] 30341220
+Fri 22 17:21:45 [INFO] member_id：
+Fri 22 17:21:45 [INFO] 30341220
+Fri 22 17:23:55 [INFO] member_id：
+Fri 22 17:23:55 [INFO] 30341220
+Fri 22 17:32:13 [INFO] member_id：
+Fri 22 17:32:13 [INFO] 30341220
+Fri 22 17:37:29 [INFO] member_id：
+Fri 22 17:37:29 [INFO] 30055451
+Fri 22 17:46:01 [INFO] member_id：
+Fri 22 17:46:01 [INFO] 30340929
+Fri 22 17:46:06 [INFO] member_id：
+Fri 22 17:46:06 [INFO] 30055451
+Fri 22 17:50:23 [INFO] member_id：
+Fri 22 17:50:23 [INFO] 30055451
+Fri 22 17:56:35 [INFO] member_id：
+Fri 22 17:56:35 [INFO] 30341217
+Fri 22 18:04:36 [INFO] member_id：
+Fri 22 18:04:36 [INFO] 30055451
+Fri 22 18:16:01 [INFO] member_id：
+Fri 22 18:16:01 [INFO] 30341217
+Fri 22 18:30:55 [INFO] member_id：
+Fri 22 18:30:55 [INFO] 30055451
+Fri 22 19:09:28 [INFO] member_id：
+Fri 22 19:09:28 [INFO] 30341221
+Fri 22 19:20:42 [INFO] member_id：
+Fri 22 19:20:42 [INFO] 
+Fri 22 19:22:54 [INFO] member_id：
+Fri 22 19:22:54 [INFO] 30340938
+Fri 22 19:28:49 [INFO] member_id：
+Fri 22 19:28:49 [INFO] 30340931
+Fri 22 19:30:22 [INFO] member_id：
+Fri 22 19:30:22 [INFO] 30340931
+Fri 22 19:32:41 [INFO] member_id：
+Fri 22 19:32:41 [INFO] 30341223
+Fri 22 19:35:13 [INFO] member_id：
+Fri 22 19:35:13 [INFO] 30055451
+Fri 22 19:35:57 [INFO] member_id：
+Fri 22 19:35:57 [INFO] 30341224
+Fri 22 19:38:57 [INFO] member_id：
+Fri 22 19:38:57 [INFO] 30341223
+Fri 22 19:40:23 [INFO] member_id：
+Fri 22 19:40:23 [INFO] 30055451
+Fri 22 19:41:35 [INFO] member_id：
+Fri 22 19:41:35 [INFO] 30055451
+Fri 22 19:43:02 [INFO] member_id：
+Fri 22 19:43:02 [INFO] 30341226
+Fri 22 19:46:04 [INFO] member_id：
+Fri 22 19:46:04 [INFO] 30055451
+Fri 22 19:46:50 [INFO] member_id：
+Fri 22 19:46:50 [INFO] 30340932
+Fri 22 19:47:57 [INFO] member_id：
+Fri 22 19:47:57 [INFO] 30340932
+Fri 22 19:48:23 [INFO] member_id：
+Fri 22 19:48:23 [INFO] 30055451
+Fri 22 19:49:13 [INFO] member_id：
+Fri 22 19:49:13 [INFO] 30055451
+Fri 22 19:49:13 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'b2fd2c219c420968cc94121a4efe8559',
+   'type' => '1',
+   'visit' => '119',
+   'last_time' => 1506070773,
+   'ip' => '106.15.45.24',
+))
+Fri 22 19:50:44 [INFO] member_id：
+Fri 22 19:50:44 [INFO] 30055451
+Fri 22 19:50:44 [INFO] stdClass::__set_state(array(
+   'member_id' => '30055451',
+   'login_id' => '18817380245',
+   'nickName' => '188****0245',
+   'token' => 'b2fd2c219c420968cc94121a4efe8559',
+   'type' => '1',
+   'visit' => '119',
+   'last_time' => 1506070773,
+   'ip' => '106.15.45.24',
+))
+Fri 22 20:17:38 [INFO] member_id：
+Fri 22 20:17:38 [INFO] 30340938
+Fri 22 20:17:38 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340938',
+   'login_id' => '18238326201',
+   'nickName' => 'danny',
+   'token' => '1879ac762bee3825f1d22a1b3433b03f',
+   'type' => '1',
+   'visit' => '219',
+   'last_time' => 1506082541,
+   'ip' => '106.15.45.24',
+))
+Fri 22 21:22:00 [INFO] member_id：
+Fri 22 21:22:00 [INFO] 
+Fri 22 21:22:00 [INFO] NULL

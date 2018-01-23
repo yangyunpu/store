@@ -1,0 +1,138 @@
+Tue 3 10:44:18 [INFO] member_id：
+Tue 3 10:44:18 [INFO] 30136396
+Tue 3 10:44:18 [INFO] stdClass::__set_state(array(
+   'member_id' => '30136396',
+   'login_id' => '18502105415',
+   'nickName' => '咿呀咿呀哟',
+   'token' => 'e996bf02ecb9831af7c57e717cda3615',
+   'type' => '1',
+   'visit' => '239',
+   'last_time' => 1506998630,
+   'ip' => '106.15.45.24',
+))
+Tue 3 16:15:56 [INFO] member_id：
+Tue 3 16:15:56 [INFO] 30340931
+Tue 3 16:15:56 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340931',
+   'login_id' => '13319503596',
+   'nickName' => '133****3596',
+   'token' => 'a64473ebd7a8a4ecfb86f6b7c33938c3',
+   'type' => '1',
+   'visit' => '242',
+   'last_time' => 1507018538,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:17:00 [INFO] member_id：
+Tue 3 16:17:00 [INFO] 30341298
+Tue 3 16:17:00 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341298',
+   'login_id' => '17707486496',
+   'nickName' => '177****6496',
+   'token' => 'cada4e8f6a19ef0cc258d38ccff4bd60',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507018610,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:17:43 [INFO] member_id：
+Tue 3 16:17:43 [INFO] 30341298
+Tue 3 16:17:43 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341298',
+   'login_id' => '17707486496',
+   'nickName' => '177****6496',
+   'token' => 'cada4e8f6a19ef0cc258d38ccff4bd60',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507018610,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:19:08 [INFO] member_id：
+Tue 3 16:19:08 [INFO] 30341299
+Tue 3 16:19:08 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341299',
+   'login_id' => '17707486496',
+   'nickName' => '177****6496',
+   'token' => '149d174ca2e106693f06464492065091',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507018729,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:21:07 [INFO] member_id：
+Tue 3 16:21:07 [INFO] 
+Tue 3 16:21:07 [INFO] NULL
+Tue 3 16:22:57 [INFO] member_id：
+Tue 3 16:22:57 [INFO] 30341300
+Tue 3 16:22:57 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341300',
+   'login_id' => '17707486496',
+   'nickName' => '177****6496',
+   'token' => '1f9dbca9d414a51d3a8aa62a955dd71a',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507018950,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:28:33 [INFO] member_id：
+Tue 3 16:28:33 [INFO] 30341301
+Tue 3 16:28:33 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341301',
+   'login_id' => '18907357885',
+   'nickName' => '189****7885',
+   'token' => '459a5dd3d997615acfe1b3868a552907',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507019304,
+   'ip' => '103.214.84.243',
+))
+Tue 3 16:34:16 [INFO] member_id：
+Tue 3 16:34:16 [INFO] 30341302
+Tue 3 16:34:16 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341302',
+   'login_id' => '18907357885',
+   'nickName' => '189****7885',
+   'token' => '954522c8554e9295cc93a949cc091bc4',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507019643,
+   'ip' => '106.15.45.24',
+))
+Tue 3 17:11:00 [INFO] member_id：
+Tue 3 17:11:00 [INFO] 
+Tue 3 17:11:00 [INFO] NULL
+Tue 3 17:12:22 [INFO] member_id：
+Tue 3 17:12:22 [INFO] 30340958
+Tue 3 17:12:22 [INFO] stdClass::__set_state(array(
+   'member_id' => '30340958',
+   'login_id' => '18130616025',
+   'nickName' => '181****6025',
+   'token' => 'bbbc436b04ae1d2e6dab298a795dbedf',
+   'type' => '1',
+   'visit' => '64',
+   'last_time' => 1506944588,
+   'ip' => '106.15.45.24',
+))
+Tue 3 17:20:21 [INFO] member_id：
+Tue 3 17:20:21 [INFO] 30341304
+Tue 3 17:20:21 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341304',
+   'login_id' => '18907357885',
+   'nickName' => '189****7885',
+   'token' => '8e6ae1024933da73cf9088a5213e3585',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507022412,
+   'ip' => '103.214.84.243',
+))
+Tue 3 17:24:29 [INFO] member_id：
+Tue 3 17:24:29 [INFO] 30341305
+Tue 3 17:24:29 [INFO] stdClass::__set_state(array(
+   'member_id' => '30341305',
+   'login_id' => '18907357885',
+   'nickName' => '189****7885',
+   'token' => '49a8d0bb0f63bc60503f7a084e74b2ca',
+   'type' => '1',
+   'visit' => '0',
+   'last_time' => 1507022621,
+   'ip' => '103.214.84.243',
+))

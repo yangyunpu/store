@@ -1,0 +1,424 @@
+html,body{
+    width:100%;
+ }
+.lcy_edit{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+    margin:0;
+    padding:0;
+    background:#f1f1f1;
+}
+.lcy_edit ul li{
+    list-style:none;    
+}
+.lcy_edit a{
+    text-decoration: none;    
+}
+.lcy_edit ul,li,div,p,input{
+    margin:0;
+    padding:0;
+}
+/*头部*/
+.lcy_edit .head{
+    width:100%;
+    height:44px;
+    background:white;
+    border-bottom: 1px solid #ccc;
+    box-sizing:border-box;
+} 
+.lcy_edit .head div{
+    float:left;
+} 
+.lcy_edit .head .back{
+    width:10%;
+    height: 26px;
+    margin-top:9px;
+    background: url("/public/img/back1.png") 10px center no-repeat;
+    background-size: contain;
+} 
+.lcy_edit .head .title{
+    position: relative;
+    width: 70%;
+    height: 44px;
+    font-size: 16px;
+    z-index: 4;
+} 
+.lcy_edit .head .title .search{
+    background: white url("/public/img/search_box.png") right center no-repeat;
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    background-size: contain;
+}
+.lcy_edit .head .title input{
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    line-height: 30px;
+    font-size: 16px;
+    border-radius: 2px;
+    border:1px solid #ccc;
+    text-indent: 30px;
+}
+.lcy_edit .head .back2{
+    background: url("/public/img/money_classifity.png") right center no-repeat;
+    width: 10%;
+    height: 44px;
+} 
+
+
+/*back2遮罩*/
+.lcy_edit .head .back2 .back2_mark{
+    display: none;
+    position:fixed;
+    top:44px;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(19, 17, 17, 0.45);
+    z-index: 3;
+}
+
+.lcy_edit .head .back2 .back2_mark .back2_btn{
+    width:100%;
+    overflow: hidden;
+    clear:both;
+    background: white;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list{
+    width:100%;
+    overflow: hidden;
+    clear:both;
+}
+/*浏览页面使用*/
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li.edit{
+    width:50%;
+    height:55px;
+    float:left;
+}
+/*编辑页面使用*/
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li{
+    width:20%;
+    height:55px;
+    float:left;
+}
+
+
+
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li a{
+    display: block;
+    height:35px;
+    width:100%;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn1{
+    background: url("/public/img/Make-money_shop_home@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn2{
+    background: url("/public/img/Make-money_shop_edit@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn3{
+    background: url("/public/img/Make-money_shop_add@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn4{
+    background: url("/public/img/tongji.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li .btn5{
+    background: url("/public/img/Make-money_shop_share@2x.png") center no-repeat;
+    background-size: contain;
+}
+.lcy_edit .head .back2 .back2_mark .back2_btn .back2_btn_list li p{
+    width:100%;
+    text-align: center;
+    font-size: 12px;
+    color:#000;
+}
+/*头部小分类遮罩*/
+.lcy_edit .head .back3{
+    background: url("/public/img/money_shop_commodity.png") right center no-repeat;
+    width: 10%;
+    height: 44px;
+    position: relative;
+}
+.lcy_edit .head .back3 .classify_top{
+    display: none;
+    width: 155px;
+    height: 268px;
+    background: rgba(12, 12, 12, 0.6);
+    position: absolute;
+    right: 0;
+    top: 36px;
+    z-index: 3;
+    font-size: 12px;
+}
+.lcy_edit .head .back3 .classify_top .list_top{
+    width:155px;
+    height:8px;
+    background: white url("/public/img/sanjiao.png") no-repeat 131px center;
+}
+.lcy_edit .head .back3 .classify_top .classify_list{
+    width:100%;
+    overflow-y:scroll;
+    height: 260px;
+}
+.lcy_edit .head .back3 .classify_top .classify_list li {
+    margin: 18px;
+}
+.lcy_edit .head .back3 .classify_top .classify_list li a{
+    color:#fff;   
+}
+/*头像*/
+.lcy_edit .head_pic{
+    background: url("/public/img/head_bg.png") no-repeat;
+    width: 100%;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 10px 0;
+}
+.lcy_edit .head_pic .head_img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 2%; 
+}
+.lcy_edit .head_pic .head_img img{
+    width:100%; 
+    display: block; 
+}
+.lcy_edit .head_pic .message {
+    position: absolute;
+    left:90px;
+    bottom: 10px;
+}
+.lcy_edit .head_pic .message .name{
+    font-size: 14px;
+    color:#fff;
+    margin-bottom: 5px;
+}
+.lcy_edit .head_pic .message .num{
+    font-size: 12px;
+    color:#fff;
+}
+.lcy_edit .head_pic .zhu_btn{
+    position: absolute;
+    top: 15px;
+    right: 11px;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+    /*头部遮罩*/
+.lcy_edit .head_pic .head_pic_mark{
+    width:100%;
+    height:100%;
+    background-color: rgba(45, 42, 42, 0.49);
+    position: absolute;
+    top:0; 
+}
+
+.lcy_edit .head_pic .head_pic_mark .modify{
+    color: #fff;
+    font-size: 17px;
+    background: url("/public/img/money_shop_modify2.png") no-repeat right center;
+    width: 160px;
+    margin-top: 56px;
+    margin-left: 88px;
+    background-size: contain;
+}
+
+/*banner*/
+.lcy_edit .banner{
+    width:100%;
+    margin:0.296296rem 0;
+}
+.lcy_edit .banner img{
+    width:100%;
+    display:block;
+}
+/*nav*/
+.lcy_edit .head_nav{
+    background: white;
+    width:100%;
+    font-size: 12px;
+}
+.lcy_edit .head_nav ul{
+    width: 94%;
+    margin: 0 3%;
+    height: 45px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 45px;
+}
+.lcy_edit .head_nav ul li{
+
+    text-align: center;
+    display: inline-block;
+    margin-right:16px;
+}
+.lcy_edit .head_nav ul .active{
+    height: 43px;
+    border-bottom: 2px #ef8201 solid;
+}
+.lcy_edit .head_nav ul .active a{
+    color:#ef8201;
+}
+.lcy_edit .head_nav ul li a{
+    text-align: center;
+    color:#000;
+}
+/*goodslist*/
+.lcy_edit .goods_list {
+    width:100%;
+    overflow: hidden;
+    clear:both;
+    padding-bottom: 45px;
+}
+.lcy_edit .goods_list .goods_box{
+    float: left;
+    width:47%;
+    margin-left:2%;
+    margin-top:2%;
+    border:1px solid #bbb;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+}
+.lcy_edit .goods_list .goods_box .img_box{
+    width:100%;
+    height:6.266667rem;
+    overflow: hidden;
+}
+.lcy_edit .goods_list .goods_box .img_box img{
+    width:100%;
+    display: block;
+}
+.lcy_edit .goods_list .goods_box .detail{
+    font-size: 12px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-height: 15px;
+    height: 30px;
+    -webkit-box-orient: vertical;
+    width: 90%;
+    padding: 0 5%;
+}
+.lcy_edit .goods_list .goods_box .piece{
+    font-size: 12px;
+    color: red;
+    margin: 6px 0;
+    overflow: hidden;
+    clear: both;
+    padding:0 10px;
+}
+.lcy_edit .goods_list .goods_box .piece .now_piece{
+    display: block;
+    color: red;    
+    font-size: 16px;
+}
+.lcy_edit .goods_list .goods_box .piece .old_piece{
+    display: block;
+    color: #999;
+}
+/*商品遮罩*/
+.lcy_edit .goods_list .goods_box .goods_mark{
+    width:100%;
+    height:100%;
+    background-color: rgba(45, 42, 42, 0.49);
+    position: absolute;
+    top:0;
+}
+.lcy_edit .goods_list .goods_box .goods_mark div{
+    margin: 5px 5px 0 5px;
+}
+.lcy_edit .goods_list .goods_box .goods_mark div img{
+    float:left;
+    display: block;
+}
+.lcy_edit .goods_list .goods_box .goods_mark .delete{
+    float:left;
+}
+.lcy_edit .goods_list .goods_box .goods_mark .up{
+    float:right;
+}
+.lcy_edit .goods_list .goods_box .goods_mark .down{
+    float:right;
+}
+.lcy_edit .success{
+    display:none;
+    width:100%;
+    height:40px;
+    text-align: center;
+    line-height:40px;
+    color:#fff;
+    background:#ef8201;
+    font-size:22px;
+    position: fixed;
+    bottom: 0;
+    border-radius: 2px;
+}
+.lcy_edit .updata{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    font-size: 14px;
+    color: #fff;
+}
+.lcy_edit .updata .men_img{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: url("/public/img/men.png") no-repeat center;
+    background-size: contain;
+}
+.lcy_edit .updata .men_img .men{
+    width: 38px;
+    height: 27px;
+    margin:0 auto;
+}
+.lcy_edit .updata .men_img .hide{
+    position:absolute;
+    top:0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+    background: url("/public/img/myshop_x.png") no-repeat center;
+    background-size: contain;
+}
+.lcy_edit .updata .word{
+    display: none;
+    text-align: center;
+    line-height: 36px;
+    width: 100%;
+    height: 30px;
+    background: url("/public/img/myshop_b.png") no-repeat center;
+    background-size: 100% 100%;
+    color:#fff;
+}
+.lcy_edit .updata .updata_b{
+    width: 100%;
+    height: 2px;
+    background:#2D99FF;
+}
+
+
+
+
+
+ 

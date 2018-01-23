@@ -1,0 +1,242 @@
+<?php
+	require_once ROOT_PATH . "/apps/librarys/weixinshare/jssdk.php";
+	$jssdk = new JSSDK("wx6fe7550ec5625a23", "57bdd0bbe290a22b6844673509db0b61");
+	$signPackage = $jssdk->GetSignPackage();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="black" name=" apple-mobile-web-app-status-bar-style"   />
+	<meta itemprop="name" content="体验店加盟"/>
+	<meta itemprop="image" content="https://sales.soolife.cn/public/mobile/img/ming.jpg" />
+	<meta name="description" itemprop="description" content="拿到属于你的名!全新OAO模式,全渠道一站式解决方案,与您相商共赢之名。" />
+	<title>体验店加盟</title>
+	<link rel="stylesheet" type="text/css" href="/public/mobile/css/investment/view.feelshop.css">
+</head>
+<body>
+	<!-- 微信分享 -->
+	<input type="hidden" name="appId" value="{{ signPackage['appId'] }}" />
+	<input type="hidden" name="timestamp" value="{{ signPackage['timestamp'] }}" />
+	<input type="hidden" name="nonceStr" value="{{ signPackage['nonceStr'] }}" />
+	<input type="hidden" name="signature" value="{{ signPackage['signature'] }}" />
+
+	<div style="display: none;">
+		<img src="https://sales.soolife.cn/public/mobile/img/ming.jpg">
+		<p>拿到属于你的名!全新OAO模式,全渠道一站式解决方案,与您相商共赢之名。</p>
+	</div>
+
+	<div class="wrap">
+		<div class="head_one">
+			<img src="/public/mobile/img/feelshop/head_one/name_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/name_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/name_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/name_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/name_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/name_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_one/featur_six.jpg">
+		</div>
+		<div class="head_two">
+			<img src="/public/mobile/img/feelshop/head_two/food_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_seven.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/food_eight.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_two/new_six.jpg">
+		</div>
+		<div class="head_three">
+			<img src="/public/mobile/img/feelshop/head_three/soo_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/soo_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/soo_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/soo_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/app_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/app_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/app_three.jpg">
+		</div>
+		<div class="head_three">
+			<p class="three_one">让商家盈利&nbsp;让消费者受益</p>
+			<p class="three_ones">打通线上线下&nbsp;实现商品互通&nbsp;打通左右渠道&nbsp;实现人群互联</p>
+		</div>
+		<div class="city">
+	 		<img src="/public/mobile/img/trademark/mark_one/city.jpg">
+	 	</div>
+	 	<div class="exper">
+			<p class="exp_shop">·&nbsp;&nbsp;体验店端&nbsp;&nbsp;·</p>
+			<p>免费线下体验店品牌展示</p>
+			<p>去除中间环节</p> 
+			<p>商家商品直达消费者</p> 
+		</div>
+		<div class="head_three">
+			<img src="/public/mobile/img/feelshop/head_three/mobile_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/mobile_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/mobile_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/mobile_four.jpg">
+		</div>
+		<div class="exper">
+			<p class="exp_shop">·&nbsp;&nbsp;APP端&nbsp;&nbsp;·</p>
+			<p>免费APP运营推广服务</p>
+			<p>多种营销工具</p> 
+			<p>全网会员分销</p> 
+		</div>
+		<div class="mac">
+			<img src="/public/mobile/img/trademark/mark_four/mac.jpg">
+		</div>
+		<div class="exper">
+			<p class="exp_shop">·&nbsp;&nbsp;仓储端&nbsp;&nbsp;·</p>
+			<p>免费仓储&nbsp;,管家服务</p>
+			<p>代存&nbsp;代管&nbsp;代发</p> 
+		</div>
+		<div class="hend">
+			<img src="/public/mobile/img/feelshop/head_three/hand_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/hand_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/hand_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_three/hand_four.jpg">
+		</div>
+		<div class="two">
+			<p class="blue">[2]</p>
+			<p class="blue">投资与零售市场分析</p>
+			<p class="black">零售市场现状</p>
+		</div>
+		<div class="online">
+			<img src="/public/mobile/img/feelshop/head_four/online_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/online_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/online_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/online_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/online_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/online_six.jpg">
+		</div>
+		<div class="day">
+			<p>中国商业零售市场的渠道可以用天(网销),</p>
+			<p>地(店销),人(直销)形容，线上线下单一入口运营</p>
+			<p>成本过高,盈利越来越来难</p>
+		</div>
+		<div class="place">
+			<img src="/public/mobile/img/feelshop/head_four/place_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_seven.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/place_eight.jpg">
+		</div>
+		<div class="day">
+			<p>新零售以互联网为依托,通过大数据,</p>
+			<p>人工智能,物联网等,对线上服务,线下体验以及</p>
+			<p>现代物流进行深度融合。</p>
+		</div>
+		<div class="hands">
+			<img src="/public/mobile/img/feelshop/head_four/hands_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/hands_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_four/hands_three.jpg">
+		</div>
+		<div class="two">
+			<p class="blue">[3]</p>
+			<p class="blue">商家服务政策</p>
+			<p class="black">品牌商户合作政策</p>
+		</div>
+		<div class="hands">
+			<img src="/public/mobile/img/feelshop/head_five/align_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_seven.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/align_eight.jpg">
+		</div>
+		<div class="life">
+			<img src="/public/mobile/img/feelshop/head_five/life_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_seven.jpg">
+			<img src="/public/mobile/img/feelshop/head_five/life_eight.jpg">
+		</div>
+		<div class="modle">
+			<img src="/public/mobile/img/feelshop/head_six/modle_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/modle_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/modle_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/modle_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/modle_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/modle_six.jpg">
+		</div>
+		<div class="two">
+			<p class="blue">[7]</p>
+			<p class="blue">投资运营预算分析</p>
+			<p class="blacks">经营数据预测</p>
+		</div>
+		<div class="table">
+			<img src="/public/mobile/img/feelshop/head_six/table_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/table_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/table_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/table_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/table_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/table_six.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_one.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_two.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_three.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_four.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_five.jpg">
+			<img src="/public/mobile/img/feelshop/head_six/map_six.jpg">  
+		</div>
+		<!-- 填写个人资料 -->
+		<div class="lj_input tops">
+			<input type="text" name="name" placeholder="如何称呼您" class="place_input"/>
+			<input type="hidden" name="type" class="place_input" value="1" />
+		</div>
+		<div class="lj_input top">
+			<input type="text" name="iphone" placeholder="如何联系您" class="place_input"/>
+		</div>
+		<div class="lj_input top">
+			<input type="text" name="compny" placeholder="贵公司名称" class="place_input"/>
+		</div>
+		<input type="hidden" name="types" value="1" />
+                <input type="hidden" name="tid" value="<?php  if(isset($_GET['tid'])){ print_r($_GET['tid']); }else{ echo '0'; }?>" />
+       <!--  <div class="lj_input top">
+			<input type="text" name="inviter" placeholder="邀请人" class="place_input"/>
+		</div> -->
+		<div class="open">开启属于你的时代</div>
+		<div class="guess">
+			<div class="like">
+			<p>在您之前,已有<span class="num">{{num}}</span>位提交咨询</p> 
+			</div>
+		</div>
+		<br> 
+		<div class="datum lj_data">您的资料我们会给予保密，敬请放心！</div>
+		<div class="datum data_bottom">稍后会有客服人员回电，给您提供优质的服务！</div>
+		<div class="wang">www.soolife.cn</div>
+	</div>
+	<div id="alert_mark"> </div>
+	<div class="success">
+		<div id="alert_success">
+			<h4>提交成功</h4>
+			<p>属于你的时代即将开启</p>
+			<div class="gondss">好的</div>
+		</div>
+	</div>
+	<div class="lj_iphones"><a href="tel:{{res['mobile']}}"><img src="/public/mobile/img/investment/iphones.png"></a></div>
+	</div>
+</body>
+<script type="text/javascript" src="/public/mobile/js/investment/rem.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/jquery.-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/mobile/js/weixin/jssdk.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/brands.js"></script>
+<script type="text/javascript" src="/public/mobile/js/investment/genwxshare.js"></script>
+</html>

@@ -1,0 +1,416 @@
+#nav3 {
+    box-shadow: none;
+    position: relative;
+    left: -18px;
+    background: #FBFBFB;
+}
+#nav3 .mainBox {
+    height: 120px;
+}
+.mainBox {
+    width: 1200px;
+    margin: 0 auto;
+}
+#nav3 .mainBox .nav1 {
+    width: 300px;
+    padding-top: 30px;
+    height: 76px;
+    position: relative;
+}
+#nav3 .mainBox .leftflo {
+    display: inline;
+}
+.leftflo {
+    float: left;
+}
+#nav3 .mainBox .nav1 a.logo {
+    width: 200px;
+    height: 60px;
+    display: block;
+    background: url(http://static.soolife.cn/asset/img/logo.gif) no-repeat;
+}
+#nav3 .mainBox .nav3 {
+    height: 65px;
+    width: 900px;
+    position: relative;
+    padding-top: 30px;
+}
+.rightflo {
+    float: right;
+}
+.flowstep {
+    position: absolute;
+    right: -70px;
+}
+.flowstep ol {
+    overflow: hidden;
+    zoom: 1;
+}
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.flowstep li {
+    float: left;
+    width: 170px;
+    list-style: none;
+    text-align: center;
+}
+.flowstep .step-name {
+    padding: 3px 0;
+    font-weight: 700;
+    color: #888;
+}
+.flowstep .step-name a {
+    font-weight: 700;
+    color: #888;
+}
+.flowstep .step-first .step-done .step-no {
+    background-position: 50% -204px;
+}
+.flowstep .step-no, .flowstep .step-sub-box .step-sub {
+    background: url(http://static.soolife.cn/asset/img/cart/cart.png) 50% -102px no-repeat;
+}
+.flowstep .step-name {
+    padding: 3px 0;
+    font-weight: 700;
+    color: #888;
+}
+.flowstep .step-ok {
+    background-position: 50% -170px;
+}
+.flowstep .step-ok {
+    background-position: 50% -170px;
+}
+.flowstep .step-last .step-no {
+    background-position: 50% -136px;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.flowstep .step-no {
+    height: 34px;
+    line-height: 34px;
+    font-family: 'arial black';
+    color: #fff;
+    font-size: 18px;
+}
+.paycon {
+    margin: 15px 30px;
+}
+.paycon .paytit h3 {
+    float: left;
+    line-height: 26px;
+    height: 26px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+}
+.paycon .paytit h4 {
+    float: right;
+    color: #666;
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    margin-bottom: 4px;
+}
+.paycon .paytit h4 b {
+    font-size: 20px;
+    vertical-align: bottom;
+    color: #c00;
+    margin: 0 3px;
+    font-weight: 700;
+}
+.paycon .payinfo .payinfo-tit h6 {
+    line-height: 20px;
+    height: 20px;
+    margin-top: 0;
+    font-size: 14px;
+    float: left;
+    margin-bottom: 5px;
+}
+.paycon .payinfo .payinfo-tit h6 em {
+    font-style: normal;
+    font-weight: 700;
+    color: #c00;
+    font-size: 14px;
+}
+.paycon .payinfo .payinfo-tit .payinfo-tit-btn {
+    float: right;
+}
+a {
+    text-decoration: none;
+    color: #37A0DB;
+}
+.paycon .payinfo .payinfo-tit .payinfo-tit-btn i {
+    margin: 0 3px;
+}
+.paycon .payinfo .payinfo-con {
+    padding: 12px 0 0;
+    border-top: 1px solid #ddd;
+}
+.paycon .payinfo-con .payinfo-line {
+    line-height: 24px;
+    font-size: 14px;
+}
+.paycon .payinfo-con .payinfo-line span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.payinfo-con .payinfo-line .payinfo-name {
+    margin-left: 10px;
+}
+.paycon .payinfo-con .payinfo-line span {
+    font-size: 14px;
+    margin-right: 10px;
+}
+.paycon .payinfo-con .payinfo-line {
+    line-height: 24px;
+    font-size: 14px;
+}
+.paycon .payinfo-con .payinfo-line span em {
+    font-style: normal;
+    color: #F6AB00;
+}
+.paycon .payinfo-con .payinfo-line span label {
+    font-size: 14px;
+}
+label{
+	font-weight: normal;
+}
+.paybank {
+    border-top: 3px solid #0068B6;
+    background-color: #fff;
+    padding: 26px 30px 30px;
+    margin-top: 15px;
+}
+.paybank .paybank-con {
+    border: 2px solid #0196EC;
+    padding: 0;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.paybank .paybank-con .paybank-title {
+    color: #333;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px 10px 6px 69px;
+    font-size: 16px;
+}
+b {
+    font-weight: 400;
+}
+.paybank .paybank-wrap {
+    padding: 15px 70px;
+    overflow: hidden;
+}
+ ul {
+    margin: 0;
+    padding: 0;
+}
+.paybank .paybank-wrap ul.paybank-card li {
+    float: left;
+    background-color: #fff;
+    padding: 5px 0;
+    height: 50px;
+    width: 188px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #0196EC;
+    -webkit-transition: border-color .2s;
+    -moz-transition: border-color .2s;
+    -ms-transition: border-color .2s;
+    transition: border-color .2s;
+    text-align: center;
+    position: relative;
+}
+.paybank ul.paybank-card li label {
+    cursor: pointer;
+}
+.paybank ul.paybank-card li i.icon-ok-circle {
+    position: absolute;
+    display: none;
+    right: 12px;
+    font-size: 14px;
+    color: #f6ab00;
+}
+img {
+    vertical-align: middle;
+}
+.paybank ul.paybank-card li label span {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border: 1px solid #F6AB00;
+    background-color: #F6AB00;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: bottom .2s,opacity .2s;
+    -moz-transition: bottom .2s,opacity .2s;
+    -ms-transition: bottom .2s,opacity .2s;
+    transition: bottom .2s,opacity .2s;
+    z-index: 5;
+}
+.paybank .paybank-wrap ul .paybank-card li .hover {
+    border: 1px solid #f6ab00;
+}
+.paybank ul.paybank-card li.bankCardmore {
+    display: block;
+    background-color: #d8f1ff;
+    padding: 5px 0;
+    height: 50px;
+    line-height: 40px;
+    font-size: 14px;
+    width: 188px;
+    
+    text-align: center;
+    color: #2ea7e7;
+    font-weight: 700;
+    cursor: pointer;
+    -webkit-transition: background-color .2s,color .2s;
+    -moz-transition: background-color .2s,color .2s;
+    -ms-transition: background-color .2s,color .2s;
+    transition: background-color .2s,color .2s;
+}
+.paybank .paybank-btn {
+    display: inline-block;
+    margin: 0 0 0 70px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 28px;
+    font-size: 19px;
+    color: #fff;
+    background: #F6AB00;
+    cursor: pointer;
+}
+.payalipay {
+    background: #fff;
+    margin: 15px 0;
+}
+.payalipay .payalipay-con {
+    padding: 15px 30px;
+}
+.payalipay .payalipay-btn {
+    margin: 0;
+    float: right;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 28px;
+    font-size: 16px;
+    color: #fff;
+    background: #F6AB00;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+}
+.paybank_top ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.paybank_top ul li{
+	float: left;
+	height: 25px;
+	width: 1200px;
+	margin-top: 20px;
+}
+.paybank_top{
+	width: 1200px;
+	height: 300px;
+	background: white;
+}
+.paybank_top ul li div{
+	float: left;
+	font-size: 14px;
+}
+.paytop_left{
+	width: 150px;
+	text-align: right;
+}
+.paycolor{
+	color: red;
+}
+.but_pay{
+	width: 80px;
+	height: 30px;
+	background: #37A0DB;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.but_tr{
+	margin-left: 150px;
+	width: 80px;
+	height: 30px;
+	background: #F6AB00;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+.tap_img img{
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+body {
+    background: #F1F2F7;
+}
+.show1{
+	width:500px;height:300px;
+	
+	visibility: hidden;
+	padding:1px;position:absolute;
+	background:white;z-index:1001;zoom:1;
+	border: 10px solid #dcdcdc;
+}
+#bgbox{position:absolute;left:0;top:0;background:#000;filter:alpha(opacity=30);opacity:0.3;z-index:1000}
+.mbrnorecord-tit2{
+    background: url(../img/avatar1.jpg) no-repeat;
+    margin-left: 82px;
+    margin-top: 60px;
+    padding-left: 160px;
+    height: 171px;
+    width: 523px;
+    line-height: 5;
+    font-size: 18px;
+    border-spacing: 2px;
+    border-color: gray;
+}
+.show1 button{
+	background: #0068b6;
+	width: 50px;
+	height: 30px;
+	margin-left: 228px;
+	border: none;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

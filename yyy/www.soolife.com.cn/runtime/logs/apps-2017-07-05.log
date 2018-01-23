@@ -1,0 +1,76 @@
+Wed 5 09:54:57 [INFO] 200:stdClass::__set_state(array(
+   'code' => 104,
+   'login_info' => 
+  stdClass::__set_state(array(
+     'member_id' => '30001209',
+     'login_id' => '17317227519',
+     'nickName' => '173****7519',
+     'token' => 'fc9b1903bdf7b64a51e6e9ea4eccc0f7',
+     'type' => '1',
+     'visit' => '270',
+     'last_time' => 1499219697,
+     'ip' => '103.214.84.243',
+  )),
+   'entry' => 
+  stdClass::__set_state(array(
+     'msg' => '登录成功',
+     'key' => '',
+  )),
+))
+Wed 5 10:00:48 [INFO] 200:stdClass::__set_state(array(
+   'code' => 104,
+   'login_info' => 
+  stdClass::__set_state(array(
+     'member_id' => '30001202',
+     'login_id' => '18896717435',
+     'nickName' => '平安',
+     'token' => '228fc818929e3b534aa28f0f39d8b942',
+     'type' => '1',
+     'visit' => '1326',
+     'last_time' => 1499220048,
+     'ip' => '103.214.84.243',
+  )),
+   'entry' => 
+  stdClass::__set_state(array(
+     'msg' => '登录成功',
+     'key' => '',
+  )),
+))
+Wed 5 10:02:52 [INFO] 200:stdClass::__set_state(array(
+   'code' => 100,
+   'login_info' => 
+  stdClass::__set_state(array(
+     'member_id' => '',
+     'login_id' => '',
+     'nickName' => '',
+     'token' => '',
+     'type' => '',
+     'visit' => '',
+     'last_time' => '',
+     'ip' => '',
+  )),
+   'entry' => 
+  stdClass::__set_state(array(
+     'msg' => '星粉账号或密码不正确!',
+     'key' => '',
+  )),
+))
+Wed 5 10:02:56 [INFO] 200:stdClass::__set_state(array(
+   'code' => 104,
+   'login_info' => 
+  stdClass::__set_state(array(
+     'member_id' => '30001202',
+     'login_id' => '18896717435',
+     'nickName' => '平安',
+     'token' => '228fc818929e3b534aa28f0f39d8b942',
+     'type' => '1',
+     'visit' => '1327',
+     'last_time' => 1499220176,
+     'ip' => '103.214.84.243',
+  )),
+   'entry' => 
+  stdClass::__set_state(array(
+     'msg' => '登录成功',
+     'key' => '',
+  )),
+))

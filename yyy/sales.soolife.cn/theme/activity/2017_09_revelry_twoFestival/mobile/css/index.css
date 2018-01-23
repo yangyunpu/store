@@ -1,0 +1,178 @@
+body {
+    color: #5D5E5F;
+    font-family: "Arial", "Microsoft YaHei";
+    font-style: normal;
+}
+
+body,
+html,
+p,
+span,
+img,
+a,
+div,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font: 'Microsoft YaHei';
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    height: 0;
+    content: ".";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.profusion {
+    overflow: hidden;
+    background: #e7e8da;
+}
+
+.one_floor {
+    width: 100%;
+    padding-bottom: 15%;
+    background-size: 100% 100%;
+}
+
+.profusion img {
+    width: 100%;
+}
+
+._name {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.0rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.possess {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -1.5rem;
+    padding-bottom: 3.0rem;
+    background: url(../img/one_floor/name.png) 100% no-repeat;
+    background-size: 100% 100%;
+}
+
+.possess_t {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 2.0rem;
+    margin-top: -2.0rem;
+    background: url(../img/two_floor/name.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.possess_th {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+    padding-bottom: 2.0rem;
+    margin-top: -1.5rem;
+    background: url(../img/three_floor/name.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.one_floor .possess_th ul {
+    padding-top: 39%;
+}
+
+.one_floor .possess_th ._olny{
+    width: 100%;
+}
+
+.one_floor ul {
+    padding-top: 43%;
+    width: 86%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.one_floor ul li {
+    width: 49%;
+    margin-bottom: 4%;
+}
+
+
+/* .one_floor ul .juice_extractor {
+    width: 100%;
+} */
+
+.two_name {
+    width: 58%;
+    margin: 10% auto 1.0rem;
+}
+
+.y_top {
+    z-index: 1;
+    position: relative;
+    padding-top: 1.28rem;
+}
+
+.y_bottom {
+    position: relative;
+    width: 100%;
+    height: 3rem;
+}
+
+._ydi {
+    position: absolute;
+    top: -123%;
+    display: inline-block;
+}
+
+.mao {
+    width: 100%;
+    height: 1.28rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #ffffff;
+}
+
+.mao a {
+    display: inline-block;
+    color: #000000;
+    width: 32.0%;
+    text-align: center;
+    font-size: 0.64rem;
+}

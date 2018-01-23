@@ -1,0 +1,226 @@
+html,body{
+    width:100%;
+ }
+.lcy_life{
+    width:100%;
+    font-family:"Microsoft YaHei","arial";
+    min-width:300px; 
+}
+.lcy_life ul li{
+    list-style:none;    
+}
+.lcy_life ul,li,div,p,h4{
+    margin:0;
+    padding:0;
+}
+.lcy_life .mui-bar-nav h4{
+    text-align: center;
+    margin:11px auto;
+}
+.mui-bar-nav a {
+    position: absolute;
+    width:20%;
+    height:44px;
+    display: flex;
+    display: -webkit-flex;
+}
+.mui-bar-nav .back_img {
+    margin: auto 0;
+    width: 70px;
+    height: 25px;
+    background: url(/public/img/back1.png) no-repeat 10px center;
+    background-size: contain;
+}
+/*头部可滑动nav*/
+.lcy_life .mui-content{
+    padding-bottom: 60px;
+}
+.lcy_life .mui-content .head_nav{
+    width:100%;
+}
+.lcy_life .mui-content .head_nav ul{
+    background: white;
+    height: 45px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    line-height: 45px;
+}
+.lcy_life .mui-content .head_nav ul li{
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+}
+.lcy_life .mui-content .head_nav ul .active{
+    height: 43px;
+    border-bottom: 2px #ef8201 solid;
+}
+.lcy_life .mui-content .head_nav ul li a{
+    text-align: center;
+    font-size: 12px;
+    color:#000;
+}
+/*各个小top*/
+.lcy_life .mui-content .xing_top{
+    margin-top: 0.296296rem;
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background: white;
+    font-size: 0.65rem;
+    border-bottom: 1px solid #f3f3f3;
+}
+.lcy_life .mui-content .xing_top span{
+    float: right;
+    font-family: "宋体";
+    font-weight: bold;
+    margin-right: 0.4rem;
+    font-size: 0.8rem;
+}
+/*星换购*/
+.lcy_life .mui-slider .mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+    color: #ef8201;
+    border-bottom: 2px solid #ef8201;
+    background: 0 0;
+}
+
+.lcy_life .mui-slider-indicator.mui-segmented-control{
+    background: white;
+}
+.lcy_life .mui-slider .mui-segmented-control.mui-segmented-control-inverted~.mui-slider-group .mui-slider-item {
+     border-top: 0; 
+     border-bottom: 0; 
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1{
+    float:left;
+    width:46%;
+    margin-left:2.5%;
+    margin-top:2%;
+    background: white;
+    overflow: hidden;
+}
+
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box{
+    width:90%;
+    height:6.296296rem;
+    display: -webkit-flex; 
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    background: white;;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_box a{
+    margin:auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .img_t{
+    width:100%;
+    display: block;
+    margin:auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 p{
+    width: 90%;
+    margin: 11px auto 0 auto;
+    font-size: 12px;
+    color: #000;
+    line-height: 15px;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece{
+    width: 90%;
+    margin: 0 auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece img{
+    width: 16px;
+    margin: 0 auto;
+}
+.lcy_life .mui-content #xing_hot_slider .xing_hot_goods_1 .piece .piece_big{
+    font-size: 16px;
+    color:#ef8201;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.lcy_life .foot_bottom{
+    padding-top: 5px;
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+}
+
+.lcy_life .foot_bottom ul{
+    margin:0;
+    padding:0;
+}
+.lcy_life .foot_bottom ul li{
+    list-style: none;
+    float:left;
+    width:20%;
+    height:50px;
+}
+
+.lcy_life .foot_bottom ul li a img {
+    margin: 0 auto;
+    display: block;
+    width: 26px;
+}
+.lcy_life .foot_bottom ul li a p {
+    font-size:12px;
+    margin:0 auto;
+    width:100%;
+    text-align:center;
+}
+.lcy_life .foot_bottom ul a .shopcar_n_box{
+    margin: 0 auto;
+    width: 28px;
+    height: 26px;
+    position: relative;
+}
+.lcy_life .foot_bottom ul li a .shopcar_n_box .shopcar_n{
+    position: absolute;
+    right: -9px;
+    margin-right: 26%;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: red;
+    border-radius: 50%;
+    font-size: 11px;
+    line-height: 13px;
+    font-family: "simsun";
+    text-align: center;
+    color: white;
+}
+.lcy_life .foot_bottom ul li a .footer_bottom_color{
+    color:#0068B6;
+}
+.login{
+    line-height:9px;
+    border: #FFE400 1px solid; 
+    font-size: 12px; 
+    color: black;
+    height: 21px;
+}

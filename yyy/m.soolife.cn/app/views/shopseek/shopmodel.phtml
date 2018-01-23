@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>如此生活|全民商探</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<link rel="stylesheet" type="text/css" href="/public/css/shopseek/shopseek.css ">
+</head>
+<body>
+	<div class="wrap">
+		<div class="header" id="header">
+			<span onclick="window.history.go(-1)"> 
+				<img src="/public/img/setting/xingfaner_back@2x.png" class="lefter">
+			</span>
+			<span class="lj_srt">全民商探</span> 
+		</div>
+		<div class="void" id="void"></div>
+		<div class="report">
+			<p class="rep_shop">商家报备</p>
+			<p class="details">提交商家相关信息，由如此生活专业人员进行洽谈，签单成功，提供1000元奖励，返还到星钱包（星钱包只能在如此生活平台使用，不可提现。）</p>
+			<a href="/shopseek/shopreport.html"><div class="reports">我要1000元</div></a>
+		</div>
+		<div class="report2">
+			<p class="rep_shop2">商家签约</p>
+			<p class="details2"> 自己跟商家洽谈,签约成功,并上传相应详细资料到如此生活平台,提供3000元现金奖励,返还到您绑定的账户。</p>
+			<a href="/shopseek/shopsign.html"><div class="reports2">我要3000元</div></a>
+		</div>
+	</div>
+</body>
+<script>
+	var isApp = /SoolifeApp/i.test(navigator.userAgent);
+	if(isApp){
+		document.getElementById('header').style.display = "none";
+		document.getElementById('void').style.display = "none";
+		document.getElementById('download-nav').style.display = "none";
+	};
+</script> 
+<script src="/public/js/rem.js"></script> 
+<script src="/public/ext/js/jquery-1.8.3.min.js"></script>
+</html>

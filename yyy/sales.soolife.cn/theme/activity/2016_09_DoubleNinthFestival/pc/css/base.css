@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, ul, li, h1, h2, h3, h4, h5, h6, p, input, a, img, dl, dd, dt {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+img,textarea,button {
+    border: 0;
+    display: block;
+    border: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+body {
+    font-family: Arial, "微软雅黑";
+    color: #666;
+    font-size: 12px;
+}
+
+.clear {
+    clear: both;
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.clearfix:after {
+    content: '';
+    clear: both;
+    width: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
